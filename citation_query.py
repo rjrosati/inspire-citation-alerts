@@ -29,7 +29,7 @@ for ptitle,(pid,seen) in papers_to_check.items():
                 authors = result['metadata']['authors']
                 print('\t',title)
                 if authcount < 5:
-                    print(f'\t\t {"; ".join(auth["full_name"] for auth in authors)}')
+                    print(f'\t\t {"; ".join(auth["first_name"]+" "+auth["last_name"] for auth in authors)}')
                 else:
                     print(f'\t\t {authors[0]["full_name"]} et al')
                 if hasarxiv:
