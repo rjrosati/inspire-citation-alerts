@@ -6,7 +6,7 @@ from datetime import datetime
 queries_to_make = {
         'Linde attractors' : '1503361',
         'Palti swampland' : '1725205',
-        'Ana Achucarro' : 'authors/1018994',
+        'Ana Achucarro' : 'A.Achucarro.1',
         }
 lastrun = datetime(2021,6,28)
 
@@ -17,8 +17,8 @@ def process_json_date(datestr):
         return datetime.strptime(datestr, "%Y-%m")
 
 for ptitle,pid in queries_to_make.items():
-    if '/' in pid:
-        url = f'https://inspirehep.net/api/{pid}'
+    if pid[1] == '.':
+        url = f'https://inspirehep.net/api/literature?sort=mostrecent&size=25&page=1&q=exactauthor%3A{pid}'
     else:
         url = f'https://inspirehep.net/api/literature?sort=mostrecent&size=25&page=1&q=refersto%3Arecid%3A{pid}'
     with urllib.request.urlopen(url) as r:
