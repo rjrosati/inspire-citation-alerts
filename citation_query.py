@@ -2,6 +2,7 @@ import urllib.request
 import json
 import time
 from datetime import datetime
+import os
 
 queries_to_make = {
         # papers
@@ -17,6 +18,7 @@ queries_to_make = {
         'Manyfield inflation prior dependence' : '1744453',
         'Palma BH' : '1790956',
         'Rapid-turn solutions' : '1827326',
+        'Palti swampland review' : '1725205',
         # people
         'Ana Achucarro' : 'A.Achucarro.1',
         'Yvette Welling' : 'Y.Welling.1',
@@ -41,7 +43,10 @@ queries_to_make = {
         'Spyros Sypsas' : 'S.Sypsas.1',
         'Fumagalli' : 'J.Fumagalli.1',
         'David Wands' : 'D.Wands.1',
-        'Mateo Fasiello' : 'M.Fasiello.1'
+        'Mateo Fasiello' : 'M.Fasiello.1',
+        'Tyson Littenberg1' : 'T.B.Littenberg.1',
+        'Tyson Littenberg2' : 'T.B.Littenberg.2',
+        'David Andriot' : 'D.Andriot.1',
         }
 lastrun = datetime(2021,6,28)
 
@@ -50,6 +55,32 @@ def process_json_date(datestr):
         return datetime.strptime(datestr, "%Y-%m-%d")
     except:
         return datetime.strptime(datestr, "%Y-%m")
+def output_info(ptitle,result):
+    outputstr = ""
+    title = result['titles'][0]['title']
+    hasarxiv = False
+    if 'arxiv_eprints' in result.keys():
+        hasarxiv = True
+        arxivno = result['arxiv_eprints'][0]['value']
+        arxivcat = result['primary_arxiv_category'][0]
+    controlno = result['control_number']
+    authcount = result['author_count']
+    authors = result['authors']
+    outputstr += f"{title}\n"
+    print('\t',title)
+    if authcount < 5:
+        authlist = f'{"; ".join(auth["first_name"]+" "+auth["last_name"] for auth in authors)}'
+    else:
+        authlist = f'{authors[0]["full_name"]} et al'
+    outputstr += f"{authlist}\n"
+    print(f'\t\t {authlist}')
+    if hasarxiv:
+        outputstr += f"https://arxiv.org/abs/{arxivno}\n"
+        print(f'\t\t https://arxiv.org/abs/{arxivno}')
+    outputstr += f"https://inspirehep.net/literature/{controlno}\n"
+    print(f'\t\t https://inspirehep.net/literature/{controlno}')
+    print('')
+    os.system(f'notify-send "New citation for {ptitle}" "{outputstr}"')
 
 for ptitle,pid in queries_to_make.items():
     if pid[1] == '.':
@@ -62,25 +93,10 @@ for ptitle,pid in queries_to_make.items():
         if lastrun < latest_update:
             print(f"{ptitle}: new results")
             for i in range(25):
-                result = data['hits']['hits'][i]
-                latest_update = process_json_date(result['metadata']['earliest_date'])
+                result = data['hits']['hits'][i]['metadata']
+                latest_update = process_json_date(result['earliest_date'])
                 if latest_update > lastrun:
-                    title = result['metadata']['titles'][0]['title']
-                    hasarxiv = False
-                    if 'arxiv_eprints' in result['metadata'].keys():
-                        hasarxiv = True
-                        arxivno = result['metadata']['arxiv_eprints'][0]['value']
-                        arxivcat = result['metadata']['primary_arxiv_category'][0]
-                    authcount = result['metadata']['author_count']
-                    authors = result['metadata']['authors']
-                    print('\t',title)
-                    if authcount < 5:
-                        print(f'\t\t {"; ".join(auth["first_name"]+" "+auth["last_name"] for auth in authors)}')
-                    else:
-                        print(f'\t\t {authors[0]["full_name"]} et al')
-                    if hasarxiv:
-                        print(f'\t\t https://arxiv.org/abs/{arxivno}')
-                    print('')
+                    output_info(ptitle,result)
                 else:
                     break
         time.sleep(1)
