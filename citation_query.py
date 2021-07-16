@@ -49,7 +49,7 @@ queries_to_make = {
         'Tyson Littenberg2' : 'T.B.Littenberg.2',
         'David Andriot' : 'D.Andriot.1',
         }
-lastrun = datetime(2021,7,10)
+lastrun = datetime(2021,7,14)
 
 def process_json_date(datestr):
     try:
@@ -81,7 +81,10 @@ def output_info(ptitle,result):
         print(f'\t\t https://arxiv.org/abs/{arxivno}')
     print(f'\t\t https://inspirehep.net/literature/{controlno}')
     print('')
-    os.system(f'notify-send "New citation for {ptitle}" "{outputstr}"')
+    if 'TERMUX_VERSION' in os.environ.keys():
+        os.system(f'termux-notification --action "xdg-open https://inspirehep.net/literature/{controlno}" -c "New citation for {ptitle}: {title}"')
+    else:
+        os.system(f'notify-send "New citation for {ptitle}" "{outputstr}"')
 
 for ptitle,pid in queries_to_make.items():
     if pid[1] == '.':
