@@ -19,6 +19,7 @@ queries_to_make = {
         'Palma BH' : '1790956',
         'Rapid-turn solutions' : '1827326',
         'Palti swampland review' : '1725205',
+        'GWTA' : '1877713',
         # people
         'Ana Achucarro' : 'A.Achucarro.1',
         'Yvette Welling' : 'Y.Welling.1',
@@ -48,7 +49,7 @@ queries_to_make = {
         'Tyson Littenberg2' : 'T.B.Littenberg.2',
         'David Andriot' : 'D.Andriot.1',
         }
-lastrun = datetime(2021,6,28)
+lastrun = datetime(2021,7,10)
 
 def process_json_date(datestr):
     try:
@@ -66,6 +67,7 @@ def output_info(ptitle,result):
     controlno = result['control_number']
     authcount = result['author_count']
     authors = result['authors']
+    outputstr += f"https://inspirehep.net/literature/{controlno}\n"
     outputstr += f"{title}\n"
     print('\t',title)
     if authcount < 5:
@@ -77,7 +79,6 @@ def output_info(ptitle,result):
     if hasarxiv:
         outputstr += f"https://arxiv.org/abs/{arxivno}\n"
         print(f'\t\t https://arxiv.org/abs/{arxivno}')
-    outputstr += f"https://inspirehep.net/literature/{controlno}\n"
     print(f'\t\t https://inspirehep.net/literature/{controlno}')
     print('')
     os.system(f'notify-send "New citation for {ptitle}" "{outputstr}"')
