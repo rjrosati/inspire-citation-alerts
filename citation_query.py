@@ -20,6 +20,7 @@ queries_to_make = {
         'Rapid-turn solutions' : '1827326',
         'Palti swampland review' : '1725205',
         'GWTA' : '1877713',
+        'Rapid turn sugra': '1942221',
         # people
         'Ana Achucarro' : 'A.Achucarro.1',
         'Yvette Welling' : 'Y.Welling.1',
@@ -48,14 +49,19 @@ queries_to_make = {
         'Tyson Littenberg1' : 'T.B.Littenberg.1',
         'Tyson Littenberg2' : 'T.B.Littenberg.2',
         'David Andriot' : 'D.Andriot.1',
+        'Mateo Braglia': 'M.Braglia.1',
+        'Vikas Aragam': 'V.Aragam.1',
         }
-lastrun = datetime(2021,7,14)
+lastrun = datetime(2021,10,18)
 
 def process_json_date(datestr):
     try:
         return datetime.strptime(datestr, "%Y-%m-%d")
     except:
-        return datetime.strptime(datestr, "%Y-%m")
+        try: 
+            return datetime.strptime(datestr, "%Y-%m")
+        except:
+            return datetime.strptime(datestr, "%Y")
 def output_info(ptitle,result):
     outputstr = ""
     title = result['titles'][0]['title']
@@ -71,7 +77,13 @@ def output_info(ptitle,result):
     outputstr += f"{title}\n"
     print('\t',title)
     if authcount < 5:
-        authlist = f'{"; ".join(auth["first_name"]+" "+auth["last_name"] for auth in authors)}'
+        auths = []
+        for auth in authors:
+            if 'last_name' in auth.keys():
+                auths.append(auth["first_name"]+" "+auth["last_name"])
+            else:
+                auths.append(auth["first_name"])
+        authlist = "; ".join(auths)
     else:
         authlist = f'{authors[0]["full_name"]} et al'
     outputstr += f"{authlist}\n"
