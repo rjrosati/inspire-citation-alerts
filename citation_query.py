@@ -21,6 +21,7 @@ queries_to_make = {
         'Palti swampland review' : '1725205',
         'GWTA' : '1877713',
         'Rapid turn sugra': '1942221',
+        'SGWBinner release': '1740929',
         # people
         'Ana Achucarro' : 'A.Achucarro.1',
         'Yvette Welling' : 'Y.Welling.1',
@@ -58,7 +59,7 @@ def process_json_date(datestr):
     try:
         return datetime.strptime(datestr, "%Y-%m-%d")
     except:
-        try: 
+        try:
             return datetime.strptime(datestr, "%Y-%m")
         except:
             return datetime.strptime(datestr, "%Y")
