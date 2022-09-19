@@ -3,6 +3,8 @@ import json
 import time
 from datetime import datetime
 import os
+from sys import platform
+import subprocess
 
 queries_to_make = {
         # papers
@@ -53,7 +55,7 @@ queries_to_make = {
         'Mateo Braglia': 'M.Braglia.1',
         'Vikas Aragam': 'V.Aragam.1',
         }
-lastrun = datetime(2022,8,3)
+lastrun = datetime(2022,9,17)
 
 def process_json_date(datestr):
     try:
@@ -94,21 +96,29 @@ def output_info(ptitle,result):
         print(f'\t\t https://arxiv.org/abs/{arxivno}')
     print(f'\t\t https://inspirehep.net/literature/{controlno}')
     print('')
-    if 'TERMUX_VERSION' in os.environ.keys():
-        os.system(f'termux-notification --action "xdg-open https://inspirehep.net/literature/{controlno}" -c "New citation for {ptitle}: {title}"')
+    if platform == 'darwin':
+        CMD = '''
+        on run argv
+          display notification (item 2 of argv) with title (item 1 of argv)
+        end run
+        '''
+        subprocess.call(['osascript', '-e', CMD, f"New citations for {ptitle}", outputstr])
     else:
-        os.system(f'notify-send "New citation for {ptitle}" "{outputstr}"')
+        if 'TERMUX_VERSION' in os.environ.keys():
+            os.system(f'termux-notification --action "xdg-open https://inspirehep.net/literature/{controlno}" -c "New citation for {ptitle}: {title}"')
+        else:
+            os.system(f'notify-send "New citation for {ptitle}" "{outputstr}"')
 
 for ptitle,pid in queries_to_make.items():
     if pid[1] == '.':
         url = f'https://inspirehep.net/api/literature?sort=mostrecent&size=25&page=1&q=exactauthor%3A{pid}'
     else:
         url = f'https://inspirehep.net/api/literature?sort=mostrecent&size=25&page=1&q=refersto%3Arecid%3A{pid}'
+    print(f"Checking {ptitle}")
     with urllib.request.urlopen(url) as r:
         data = json.loads(r.read())
         latest_update = process_json_date(data['hits']['hits'][0]['metadata']['earliest_date'])
         if lastrun < latest_update:
-            print(f"{ptitle}: new results")
             for i in range(25):
                 result = data['hits']['hits'][i]['metadata']
                 latest_update = process_json_date(result['earliest_date'])
