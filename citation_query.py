@@ -26,6 +26,11 @@ queries_to_make = {
         'SGWBinner release': '1740929',
         # people
         'Ana Achucarro' : 'A.Achucarro.1',
+        'Quentin Baghi' : 'Q.Baghi.1',
+        'John Baker' : 'J.G.Baker.1',
+        'Ira Thorpe' : 'J.I.Thorpe.1',
+        'Jacob Slutsky1' : 'J.Slutsky.1',
+        'Jacob Slutsky2' : 'J.Slutsky.2',
         'Yvette Welling' : 'Y.Welling.1',
         'Oliver Janssen' : 'O.Janssen.1',
         'Diederik Roest' : 'D.Roest.1',
