@@ -60,7 +60,7 @@ queries_to_make = {
         'Mateo Braglia': 'M.Braglia.1',
         'Vikas Aragam': 'V.Aragam.1',
         }
-lastrun = datetime(2022,9,21)
+lastrun = datetime(2022,9,28)
 
 def process_json_date(datestr):
     try:
