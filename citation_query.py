@@ -59,8 +59,11 @@ queries_to_make = {
         'David Andriot' : 'D.Andriot.1',
         'Mateo Braglia': 'M.Braglia.1',
         'Vikas Aragam': 'V.Aragam.1',
+        'Joseph Romano': 'J.D.Romano.1',
+        'Neil Cornish': 'N.J.Cornish.1',
+        'Matt Digman': 'M.C.Diagman.1',
         }
-lastrun = datetime(2022,9,28)
+lastrun = datetime(2023,1,1)
 
 def process_json_date(datestr):
     try:
@@ -122,7 +125,10 @@ for ptitle,pid in queries_to_make.items():
     print(f"Checking {ptitle}")
     with urllib.request.urlopen(url) as r:
         data = json.loads(r.read())
-        latest_update = process_json_date(data['hits']['hits'][0]['metadata']['earliest_date'])
+        try:
+            latest_update = process_json_date(data['hits']['hits'][0]['metadata']['earliest_date'])
+        except Exception as e:
+            print("Couldn't get latest update:",e)
         if lastrun < latest_update:
             for i in range(25):
                 result = data['hits']['hits'][i]['metadata']
