@@ -67,6 +67,7 @@ queries_to_make = {
         'M.C. David Marsh': 'M.C.D.Marsh.2',
         'Daniel Green': 'Daniel.R.Green.1',
         'Daniel Baumann': 'Daniel.Baumann.1',
+        'Mauro Pieroni': 'M.Pieroni.1',
         }
 
 def process_json_date(datestr):
