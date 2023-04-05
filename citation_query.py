@@ -157,7 +157,7 @@ for ptitle,pid in queries_to_make.items():
 with open('./lastrun','w') as f:
     f.write(datetime.now().isoformat())
 
-urls = set(urls)
+urls = list(set(urls))
 webbrowser.open_new(urls[0])
 for url in urls[1:]:
     webbrowser.open_new_tab(url)
