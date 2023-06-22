@@ -1,7 +1,7 @@
 import urllib.request
 import json
 import time
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 import os
 from sys import platform
 import subprocess
@@ -68,16 +68,23 @@ queries_to_make = {
         'Daniel Green': 'Daniel.R.Green.1',
         'Daniel Baumann': 'Daniel.Baumann.1',
         'Mauro Pieroni': 'M.Pieroni.1',
+        'Richard Easther': 'R.Easther.1',
+        'Martina Muratore': 'M.Muratore.1',
+        'Marc Lilley': 'M.Lilley.1',
+        'Jean-Baptiste Bayle': 'J.B.Bayle.1',
+        'Nikolaos Karnesis': 'N.Karnesis.3',
+        'Olaf Hartwig': 'O.Hartwig.1',
+        'Antoine Petiteau': 'A.Petiteau.1',
         }
 
 def process_json_date(datestr):
     try:
-        return datetime.strptime(datestr, "%Y-%m-%d")
+        return datetime.strptime(datestr, "%Y-%m-%d").astimezone(timezone.utc)
     except:
         try:
-            return datetime.strptime(datestr, "%Y-%m")
+            return datetime.strptime(datestr, "%Y-%m").astimezone(timezone.utc)
         except:
-            return datetime.strptime(datestr, "%Y")
+            return datetime.strptime(datestr, "%Y").astimezone(timezone.utc)
 def output_info(ptitle,result):
     outputstr = ""
     title = result['titles'][0]['title']
@@ -126,7 +133,7 @@ def output_info(ptitle,result):
 
 if os.path.exists('./lastrun'):
     with open('./lastrun','r') as f:
-        lastrun = datetime.fromisoformat(f.read())
+        lastrun = datetime.fromisoformat(f.read().strip())
 else:
     print("Couldn't find ./lastrun file! Searching the past week")
     lastrun = datetime.now() - timedelta(days=7)
@@ -155,9 +162,10 @@ for ptitle,pid in queries_to_make.items():
         time.sleep(1)
 
 with open('./lastrun','w') as f:
-    f.write(datetime.now().isoformat())
+    f.write(datetime.now(timezone.utc).astimezone().isoformat())
 
 urls = list(set(urls))
-webbrowser.open_new(urls[0])
-for url in urls[1:]:
-    webbrowser.open_new_tab(url)
+if len(urls) > 0:
+    webbrowser.open_new(urls[0])
+    for url in urls[1:]:
+        webbrowser.open_new_tab(url)
