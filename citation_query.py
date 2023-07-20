@@ -1,10 +1,11 @@
 import urllib.request
 import json
 import time
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
 import os
 from sys import platform
 import subprocess
+import webbrowser
 
 queries_to_make = {
         # papers
@@ -47,11 +48,10 @@ queries_to_make = {
         'Evangelos' : 'E.I.Sfakianakis.1',
         'David Kaiser' : 'D.I.Kaiser.1',
         'Thomas Hertog' : 'T.Hertog.1',
-        'Sebastien Renaux-Petel' : 'S.Renaux.Petel.1',
+        'Sébastien Renaux-Petel' : 'S.Renaux.Petel.1',
         'Claudia de Rham' : 'C.de.Rham.1',
         'Kristof Turzynski' : 'K.Turzynski.1',
         'Spyros Sypsas' : 'S.Sypsas.1',
-        'Fumagalli' : 'J.Fumagalli.1',
         'David Wands' : 'D.Wands.1',
         'Mateo Fasiello' : 'M.Fasiello.1',
         'Tyson Littenberg1' : 'T.B.Littenberg.1',
@@ -63,17 +63,29 @@ queries_to_make = {
         'Neil Cornish': 'N.J.Cornish.1',
         'Matt Digman': 'M.C.Digman.1',
         'Nikos Karnesis': "N.Karnesis.3",
+        'Jacopo Fumagalli': 'J.Fumagalli.1',
+        'Lucas Witowski': 'L.T.Witkowski.1',
+        'M.C. David Marsh': 'M.C.D.Marsh.2',
+        'Daniel Green': 'Daniel.R.Green.1',
+        'Daniel Baumann': 'Daniel.Baumann.1',
+        'Mauro Pieroni': 'M.Pieroni.1',
+        'Richard Easther': 'R.Easther.1',
+        'Martina Muratore': 'M.Muratore.1',
+        'Marc Lilley': 'M.Lilley.1',
+        'Jean-Baptiste Bayle': 'J.B.Bayle.1',
+        'Nikolaos Karnesis': 'N.Karnesis.3',
+        'Olaf Hartwig': 'O.Hartwig.1',
+        'Antoine Petiteau': 'A.Petiteau.1',
         }
-lastrun = datetime(2023,3,13)
 
 def process_json_date(datestr):
     try:
-        return datetime.strptime(datestr, "%Y-%m-%d")
+        return datetime.strptime(datestr, "%Y-%m-%d").astimezone(timezone.utc)
     except:
         try:
-            return datetime.strptime(datestr, "%Y-%m")
+            return datetime.strptime(datestr, "%Y-%m").astimezone(timezone.utc)
         except:
-            return datetime.strptime(datestr, "%Y")
+            return datetime.strptime(datestr, "%Y").astimezone(timezone.utc)
 def output_info(ptitle,result):
     outputstr = ""
     title = result['titles'][0]['title']
@@ -103,7 +115,8 @@ def output_info(ptitle,result):
     if hasarxiv:
         outputstr += f"https://arxiv.org/abs/{arxivno}\n"
         print(f'\t\t https://arxiv.org/abs/{arxivno}')
-    print(f'\t\t https://inspirehep.net/literature/{controlno}')
+    inspireurl = f'https://inspirehep.net/literature/{controlno}'
+    print(f'\t\t {inspireurl}')
     print('')
     if platform == 'darwin':
         CMD = '''
@@ -117,9 +130,17 @@ def output_info(ptitle,result):
             os.system(f'termux-notification --action "xdg-open https://inspirehep.net/literature/{controlno}" -c "New citation for {ptitle}: {title}"')
         else:
             os.system(f'notify-send "New citation for {ptitle}" "{outputstr}"')
+    return inspireurl
 
+if os.path.exists('./lastrun'):
+    with open('./lastrun','r') as f:
+        lastrun = datetime.fromisoformat(f.read().strip())
+else:
+    print("Couldn't find ./lastrun file! Searching the past week")
+    lastrun = datetime.now() - timedelta(days=7)
+urls = []
 for ptitle,pid in queries_to_make.items():
-    if pid[1] == '.':
+    if not pid[0].isdigit():
         url = f'https://inspirehep.net/api/literature?sort=mostrecent&size=25&page=1&q=exactauthor%3A{pid}'
     else:
         url = f'https://inspirehep.net/api/literature?sort=mostrecent&size=25&page=1&q=refersto%3Arecid%3A{pid}'
@@ -135,7 +156,17 @@ for ptitle,pid in queries_to_make.items():
                 result = data['hits']['hits'][i]['metadata']
                 latest_update = process_json_date(result['earliest_date'])
                 if latest_update > lastrun:
-                    output_info(ptitle,result)
+                    url = output_info(ptitle,result)
+                    urls.append(url)
                 else:
                     break
         time.sleep(1)
+
+with open('./lastrun','w') as f:
+    f.write(datetime.now(timezone.utc).astimezone().isoformat())
+
+urls = list(set(urls))
+if len(urls) > 0:
+    webbrowser.open_new(urls[0])
+    for url in urls[1:]:
+        webbrowser.open_new_tab(url)
