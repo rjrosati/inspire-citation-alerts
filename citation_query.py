@@ -62,6 +62,7 @@ queries_to_make = {
         'Joseph Romano': 'J.D.Romano.1',
         'Neil Cornish': 'N.J.Cornish.1',
         'Matt Digman': 'M.C.Digman.1',
+        'Nikos Karnesis': "N.Karnesis.3",
         }
 lastrun = datetime(2023,3,13)
 
