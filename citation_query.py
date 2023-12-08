@@ -138,6 +138,7 @@ if os.path.exists('./lastrun'):
 else:
     print("Couldn't find ./lastrun file! Searching the past week")
     lastrun = datetime.now() - timedelta(days=7)
+    lastrun = lastrun.astimezone()
 urls = []
 for ptitle,pid in queries_to_make.items():
     if not pid[0].isdigit():
