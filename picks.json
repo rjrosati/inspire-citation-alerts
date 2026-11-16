@@ -1,0 +1,357 @@
+{
+ "triaged_through": "2026-11-16T17:06:26+00:00",
+ "items": [
+  {
+   "id": "2611.17421",
+   "arxiv": "2611.17421",
+   "recid": null,
+   "title": "The Gravitational Wave Foreground from Galactic Cataclysmic Variables in LISA",
+   "authors": [
+    "Levi Schult",
+    "Alexander Criswell",
+    "Stephen R. Taylor",
+    "Katelyn Breivik"
+   ],
+   "author_count": 4,
+   "collaborations": [],
+   "categories": [
+    "astro-ph.SR",
+    "astro-ph.GA",
+    "gr-qc"
+   ],
+   "abstract": "Electromagnetic observations have been the primary medium for studying cataclysmic variable (CV) systems, capitalizing on the invaluable opportunity they present to study binary stellar evolution and accretion. The launch of the Laser Interferometer Space Antenna (LISA) mission, however, will enable a multi-messenger perspective of the population. We extend previous work to explore the gravitational wave (GW) spectra sourced by a local and Galactic population of CVs. Using the Bayesian LISA Inference Package (BLIP), we simulate LISA data containing these CV populations to understand their impact and our ability to jointly model CV and double white dwarf (DWD) GW spectra. While we find that a local CV population has negligible effect on the LISA datastream, a Galactic CV population will have a signal-to-noise ratio of approximately 76, depending on the characteristics of the DWD population present, and will bias existing DWD spectral models if ignored. Current approaches struggle to accurately recover both populations' respective spectra, calling for the creation of multi-component spectral models that include GW contributions from both CVs and DWDs. These results point toward a promising future for the study of CVs with LISA.",
+   "date": "2026-11-12",
+   "added": "2026-11-16T17:06:26+00:00",
+   "tags": [
+    "GW",
+    "LISA",
+    "data analysis"
+   ],
+   "why": [
+    {
+     "kind": "agent",
+     "label": "Simulates LISA data with BLIP to model the Galactic CV foreground jointly with double white dwarfs, showing spectral bias if ignored.",
+     "score": 3
+    }
+   ]
+  },
+  {
+   "id": "2611.17411",
+   "arxiv": "2611.17411",
+   "recid": null,
+   "title": "HydróDex: gotta match 'em all!",
+   "authors": [
+    "Giulio Barni",
+    "Eric Madge"
+   ],
+   "author_count": 2,
+   "collaborations": [],
+   "categories": [
+    "physics.flu-dyn",
+    "astro-ph.CO",
+    "hep-ph"
+   ],
+   "abstract": "We present a comprehensive hydrodynamic classification of stationary fluid profiles in first-order phase transitions within the constant-sound-speed model, a physically motivated extension of the standard bag model that allows the sound speeds in front of and behind the wall, $c_+$ and $c_-$, to differ. Solving the matching conditions at the bubble wall and evolving the profile in the surrounding plasma, we systematically identify and classify all the possible stationary solutions. The classification recovers all previously known direct and inverse detonation, deflagration, and hybrid solutions, while revealing a new class of stationary configurations, termed mixed hybrids, featuring rarefaction waves on both sides of the wall and oppositely directed fluid flows. For a sufficiently pronounced hierarchy $c_+ > c_-$, the classification in terms of the wall velocity $ξ_w$ and the asymptotic strength parameter $α_N$ further exhibits degenerate regions in parameter space, where multiple distinct stationary profiles correspond to the same physical inputs $(ξ_w,α_N)$. This non-uniqueness arises as the parametrization discards thermodynamic information and is resolved once the underlying microphysics is specified. We also compute the kinetic-energy budget and the associated acoustic gravitational-wave spectra within the sound-shell model, finding that mixed-hybrid solutions, despite their oppositely directed flows, introduce no additional spectral feature, and their spectra can be closely mimicked by ordinary direct or inverse hybrids with very different fluid profiles. Finally, we release HydróDex, a public code that implements the complete hydrodynamic classification, fluid-profile construction, kinetic-energy budget, and gravitational-wave calculation.",
+   "date": "2026-11-12",
+   "added": "2026-11-16T17:06:26+00:00",
+   "tags": [
+    "GW",
+    "cosmology"
+   ],
+   "why": [
+    {
+     "kind": "agent",
+     "label": "Classifies bubble hydrodynamic profiles for first-order transitions with unequal sound speeds, computes acoustic GW spectra and releases code; no explicit LISA forecast.",
+     "score": 2
+    }
+   ]
+  },
+  {
+   "id": "2611.17266",
+   "arxiv": "2611.17266",
+   "recid": null,
+   "title": "Global Fit Inference for LISA with samsara++",
+   "authors": [
+    "Lorenzo Valbusa Dall'Armi",
+    "Gabriele Astorino",
+    "Riccardo Buscicchio",
+    "Angelo Ricciardone",
+    "Walter Del Pozzo"
+   ],
+   "author_count": 5,
+   "collaborations": [],
+   "categories": [
+    "astro-ph.IM"
+   ],
+   "abstract": "The Laser Interferometer Space Antenna (LISA) will observe a superposition of gravitational-wave signals, requiring joint inference of an unknown number of sources, parameters, and instrumental noise. To disentangle these contributions, that overlap in both time and frequency, a Global Fit (GF) analysis is needed. We present samsara++, a C++/CUDA sampler designed to address this trans-dimensional GF problem. Building on the continuous-time MCMC framework of samsara, the algorithm combines birth-death processes for adding and removing sources, with mutation moves for parameter estimation. Birth and death are selected through posterior-dependent rates. Shared-memory parallelism, incremental likelihood updates, and indexed storage reduce the computational and memory costs, while parallel tempering improves the exploration of multimodal posteriors. We assess the performance using simulated one-year LISA datasets containing Galactic double white dwarf binaries and stationary Gaussian instrumental noise. Analyses of populations containing 143 and 866 binaries start from empty source models, without preliminary searches or proposals tailored to the injected population. These tests demonstrate source reconstruction and catalog generation, highlighting, at the same time, the importance of source-count, overlapping signals, and incomplete mixing on joint source and noise inference. Then we perform a separate stress test, initialized at the injected parameters, exploring a population of 16,435 binaries, corresponding to 131,480 source parameters. This run completes 15 million iterations in approximately 16 hours using about 3 GB of RAM. All together, these benchmarks show the computational feasibility of birth-death sampling for large Galactic-binary populations, and provide a foundation for extending samsara++ toward a comprehensive LISA global fit.",
+   "date": "2026-11-12",
+   "added": "2026-11-16T17:06:26+00:00",
+   "tags": [
+    "GW",
+    "LISA",
+    "data analysis"
+   ],
+   "why": [
+    {
+     "kind": "agent",
+     "label": "Presents samsara++, a trans-dimensional birth-death sampler for the LISA global fit, tested on galactic binary populations with noise.",
+     "score": 3
+    }
+   ]
+  },
+  {
+   "id": "2611.17396",
+   "arxiv": "2611.17396",
+   "recid": null,
+   "title": "WDM_GW_Wavelets: A fast, JAX-based Python implementation of the Wilson-Daubechies-Meyer wavelet transform for the time-frequency analysis of gravitational wave data",
+   "authors": [
+    "Christopher J. Moore",
+    "Tomasz Kinowski"
+   ],
+   "author_count": 2,
+   "collaborations": [],
+   "categories": [
+    "gr-qc",
+    "astro-ph.IM"
+   ],
+   "abstract": "This paper describes a JAX-based implementation of the Wilson-Daubechies-Meyer (WDM) time-frequency transformation, intended for use in gravitational-wave data analysis.",
+   "date": "2026-11-12",
+   "added": "2026-11-16T17:06:26+00:00",
+   "tags": [
+    "GW",
+    "LISA",
+    "data analysis"
+   ],
+   "why": [
+    {
+     "kind": "agent",
+     "label": "JAX implementation of the WDM wavelet transform for GW time-frequency analysis, a tool used in LISA global-fit pipelines.",
+     "score": 2
+    }
+   ]
+  },
+  {
+   "id": "2611.17069",
+   "arxiv": "2611.17069",
+   "recid": null,
+   "title": "The astrometric precision of incoherent pulsar timing arrays",
+   "authors": [
+    "Anna C. Tsai",
+    "Dylan L. Jow",
+    "Ue-Li Pen"
+   ],
+   "author_count": 3,
+   "collaborations": [],
+   "categories": [
+    "astro-ph.IM",
+    "astro-ph.CO"
+   ],
+   "abstract": "We address the astrometric precision with which a pulsar timing array (PTA) can localize a single astrophysical gravitational-wave source, in the regime where pulsar distances are poorly constrained compared to the gravitational wavelength. Using simple matched-filter, map-making simulations, we calculate the astrometric precision of the intrinsic PTA residual response as a function of the signal-to-noise ratio (SNR), where the SNR is that of the source in the matched-filter map, and find that the median angular error decreases as $\\sqrt{\\ln 2/3}\\,/[\\mathrm{SNR}\\sqrt{\\ln\\mathrm{SNR}}]$ over the relevant SNR range, with a pre-factor we derive from first principles. At an SNR of 6, this log term coming from the singular core of the convolution kernel produces an angular error approximately $1.4$ times smaller than for a Gaussian beam. We compare this sky-averaged maximum precision with the precision achieved across the sky by the pulsars of the International Pulsar Timing Array (IPTA) DR2. For a map with SNR of 6, the intrinsic array precision is $3.3^\\circ$. For the IPTA configuration at the same SNR, the median precision over the sky is worse due to sparse sampling of the underlying pulsar residual response, approximately $8.9^\\circ$; however, for sources in $14\\%$ of the sky, the high local pulsar density yields a precision better than $3.3^\\circ$.",
+   "date": "2026-11-12",
+   "added": "2026-11-16T17:06:26+00:00",
+   "tags": [
+    "GW",
+    "data analysis"
+   ],
+   "why": [
+    {
+     "kind": "agent",
+     "label": "Derives astrometric precision of pulsar timing arrays for single-source localization; PTA analysis method, moderately transferable to timing-based detection.",
+     "score": 2
+    }
+   ]
+  },
+  {
+   "id": "2611.16029",
+   "arxiv": "2611.16029",
+   "recid": null,
+   "title": "Silent Heavy Fields: An Exclusion Rule for the Cosmological Collider",
+   "authors": [
+    "Shuntaro Aoki",
+    "Zhehan Qin",
+    "Masahide Yamaguchi",
+    "Yuhang Zhu"
+   ],
+   "author_count": 4,
+   "collaborations": [],
+   "categories": [
+    "hep-th",
+    "astro-ph.CO",
+    "gr-qc",
+    "hep-ph"
+   ],
+   "abstract": "The cosmological collider uses oscillatory signatures in primordial correlators to probe heavy fields during inflation. This probe has blind spots, as heavy fields can keep ticking in time while remaining silent in the correlators. In this letter, we derive an exclusion rule under which cosmological collider signals vanish. The rule covers two classes of diagrams where a de Sitter invariant heavy sector couples covariantly to a single external field at one vertex. We first prove it for exchanges mediated by the two-point function of the heavy sector to all loop orders, using a spectral decomposition followed by a field redefinition. The result then extends to one-loop polygons by matching their oscillatory contributions onto those of the first class. The approximate signals of previously studied processes that fall into these classes must therefore be revisited. As a nonvanishing example, we derive the leading signal of a triangle loop for the first time in a toy model motivated by chemical potentials.",
+   "date": "2026-11-11",
+   "added": "2026-11-16T17:06:26+00:00",
+   "tags": [
+    "cosmology",
+    "inflation"
+   ],
+   "why": [
+    {
+     "kind": "agent",
+     "label": "Derives an exclusion rule under which cosmological collider signals from heavy fields vanish, directly relevant to heavy-field primordial correlators.",
+     "score": 2
+    }
+   ]
+  },
+  {
+   "id": "2611.15660",
+   "arxiv": "2611.15660",
+   "recid": null,
+   "title": "Triple-Massive-Exchange Bispectrum of Quasi-Single-Field Inflation",
+   "authors": [
+    "Xingang Chen",
+    "Zhong-Zhi Xianyu"
+   ],
+   "author_count": 2,
+   "collaborations": [],
+   "categories": [
+    "hep-th",
+    "astro-ph.CO",
+    "hep-ph"
+   ],
+   "abstract": "The triple-exchange bispectrum of the scalar quasi-single-field inflation model has resisted analytic evaluation across its full parameter space since its advent, despite rapid progress in cosmological collider physics. In this Letter, we solve it for general mass and mixing strength as a convergent double series, by applying the Mellin-Barnes representation directly to the mixed propagator between the massless and massive modes. The result is exact, non-perturbative, and physically transparent; the method is broadly applicable.",
+   "date": "2026-11-11",
+   "added": "2026-11-16T17:06:26+00:00",
+   "tags": [
+    "cosmology",
+    "inflation"
+   ],
+   "why": [
+    {
+     "kind": "agent",
+     "label": "Analytically computes triple-massive-exchange bispectrum in quasi-single-field inflation, a cosmological collider signal from heavy fields; adjacent topic.",
+     "score": 2
+    }
+   ]
+  },
+  {
+   "id": "2611.14788",
+   "arxiv": "2611.14788",
+   "recid": null,
+   "title": "Accurate calibration method of the Back-linked Fabry Perot interferometer using null channel for space-based gravitational wave antenna",
+   "authors": [
+    "Yusuke Okuma",
+    "Shoki Iwaguchi",
+    "Ryosuke Sugimoto",
+    "Yutaro Enomoto",
+    "Kiwamu Izumi"
+   ],
+   "author_count": 5,
+   "collaborations": [],
+   "categories": [
+    "astro-ph.IM",
+    "gr-qc"
+   ],
+   "abstract": "Accurate calibration of the detector response is essential for precision gravitational-wave (GW) observations. In the Back-linked Fabry-Perot Interferometer (BLFPI), which employs Fabry-Perot cavities to achieve high GW sensitivity, accurate calibration of the cavity response is particularly important because residual calibration errors directly limit the suppression of laser frequency noise. However, no practical calibration strategy for the cavity response has yet been established. In this paper, we propose a method for calibrating the cavity response using a null channel constructed from the three interferometer outputs of the triangular laser-link configuration. In null channel, GW signals are canceled and residual laser frequency noise indicates errors in the cavity response estimates. Therefore we can estimate the cavity response by optimizing the response parameters to minimize the integrated power of the null channel. We derive the estimation bias introduced by technical noise analytically and evaluate the performance of the proposed method numerically. The results show that the residual laser frequency noise after calibration is more than an order of magnitude below the designed BLFPI sensitivity throughout the observation band. This demonstrates that the proposed null-channel calibration method achieves the accuracy required for effective subtraction of laser frequency noise.",
+   "date": "2026-11-10",
+   "added": "2026-11-16T17:06:26+00:00",
+   "tags": [
+    "GW",
+    "LISA",
+    "data analysis"
+   ],
+   "why": [
+    {
+     "kind": "agent",
+     "label": "Proposes null-channel calibration of cavity response in a back-linked Fabry-Perot space GW antenna with TDI-like laser noise subtraction; transferable instrument-response method.",
+     "score": 2
+    }
+   ]
+  },
+  {
+   "id": "2611.14255",
+   "arxiv": "2611.14255",
+   "recid": null,
+   "title": "Simulation-Based Inference on EMRI Frequency Tracks: Harmonic Identification and Parameter Constraints from Search Outputs",
+   "authors": [
+    "Federico Fantoccoli",
+    "Lorenzo Speri",
+    "Bert Depoorter",
+    "Jonathan R. Gair"
+   ],
+   "author_count": 4,
+   "collaborations": [],
+   "categories": [
+    "gr-qc"
+   ],
+   "abstract": "Extreme Mass Ratio Inspirals (EMRIs) are key targets for the Laser Interferometer Space Antenna, but their long, multi-harmonic waveforms make search and parameter estimation computationally expensive. A promising alternative is to work directly with frequency tracks recovered by a time-frequency search pipeline. We investigate whether such tracks can be used to (i) identify which harmonic(s) a recovered track corresponds to, and (ii) constrain the intrinsic EMRI parameters, including when tracks are partially masked near plunge. We first train Simulation-Based Inference (SBI) networks on large banks of azimuthal and radial fundamental-frequency tracks. For harmonic identification, we combine pairs of candidate tracks under different harmonic-label assumptions and use the resulting posterior medians and network acceptance rates to classify the correct labelling. For parameter identification, we apply a sequential (truncated-prior) SBI scheme and refine the results by cross-checking posterior samples against a time-frequency detection statistic. The correct harmonic pair is among the top-2 ranked candidates with probability $>0.99$ across masking levels, and is identified outright in 98% of cases when restricted to physically plausible candidates. Sequential SBI shrinks the intrinsic-parameter prior volume by up to $10^{13}$ within a few hours of GPU time, and the detection-statistic refinement reduces it by up to four further orders of magnitude, even for heavily masked tracks. Frequency-track-based SBI thus provides a fast, waveform-free way to identify EMRI harmonics and obtain tight prior volumes for targeted follow-up, substantially reducing the burden on subsequent MCMC-based analyses.",
+   "date": "2026-11-10",
+   "added": "2026-11-16T17:06:26+00:00",
+   "tags": [
+    "GW",
+    "LISA",
+    "data analysis"
+   ],
+   "why": [
+    {
+     "kind": "agent",
+     "label": "Simulation-based inference on EMRI frequency tracks for LISA search outputs; a transferable SBI data-analysis method.",
+     "score": 2
+    }
+   ]
+  },
+  {
+   "id": "2611.13733",
+   "arxiv": "2611.13733",
+   "recid": null,
+   "title": "Scalar-Induced Gravitational Waves Probing Phase Transitions in the Standard Model and Beyond",
+   "authors": [
+    "Peizhi Du",
+    "Xiang-Xi Zeng",
+    "Jiahang Zhong"
+   ],
+   "author_count": 3,
+   "collaborations": [],
+   "categories": [
+    "astro-ph.CO",
+    "hep-ph"
+   ],
+   "abstract": "Scalar-induced gravitational waves (SIGWs) are unique messengers of physics in the early Universe and possible sources for the observed data from pulsar timing arrays (PTAs). It has been demonstrated that SIGWs have the potential to probe cosmological phase transitions via measurement of the equation of state and sound speed of the cosmic thermal bath, which have non-trivial time dependence during phase transitions. In this work, we improve on existing studies of SIGWs in a time-dependent background with time-dependent initial conditions and an entropy-conserving thermal history of the Standard Model (SM). We provide possible physical explanations for features of the gravitational wave spectrum from phase transitions, the most prominent of which for a scale-invariant curvature spectrum is a step due to entropy dilution. We show that current and future gravitational wave observations across a wide range of frequencies can probe phase transitions in the SM and physics beyond the Standard Model (BSM). Signals from the QCD crossover appear around 10 nHz, inside the observable window of PTAs. We perform data analyses using NANOGrav 15-year data, showing a mild preference for the QCD crossover over standard radiation domination for two choices of curvature spectra. BSM phase transitions in the TeV range lead to signals around mHz, which are accessible in future space-based experiments such as LISA, Taiji and TianQin.",
+   "date": "2026-11-10",
+   "added": "2026-11-16T17:06:26+00:00",
+   "tags": [
+    "GW",
+    "LISA",
+    "cosmology"
+   ],
+   "why": [
+    {
+     "kind": "agent",
+     "label": "Computes scalar-induced GW spectra through SM and BSM phase transitions with NANOGrav analysis and LISA/Taiji/TianQin reach; adjacent SIGW topic with partial forecast.",
+     "score": 2
+    }
+   ]
+  },
+  {
+   "id": "2611.13462",
+   "arxiv": "2611.13462",
+   "recid": null,
+   "title": "The out-state of scalar-induced gravitational waves",
+   "authors": [
+    "Yizhou Lu"
+   ],
+   "author_count": 1,
+   "collaborations": [],
+   "categories": [
+    "gr-qc",
+    "hep-th"
+   ],
+   "abstract": "Scalar-induced gravitational waves (SIGWs) are described by second-order tensor perturbations that contain free radiation together with a gauge-dependent response maintained by the scalar source. For a perfect fluid with constant equation of state $0<w<1$, we identify the free radiation with the out-state of the tensor perturbation, assembled from the light-cone residue of kernel functions for each pair of scalar modes. Its amplitudes follow from a classical LSZ-type reduction formula, in terms of the initial data and the light-cone-projected source. We prove a classical equivalence theorem: a redefinition of the tensor perturbation whose late-time shift has power-law envelopes and no tensor-frequency component leaves these amplitudes unchanged. Transformations between intrinsic gauges, whose slice-normal observers and spatial coordinates are fixed by the matter and geometry without an external clock or independent oscillatory dynamics, are redefinitions of this kind, except on resonance surfaces of zero measure. The out-state is therefore the same in all intrinsic gauges, including the standard gauges of cosmological perturbation theory. The late-time Newtonian kernel is then the out-state kernel, which justifies its use for the energy spectrum of the free radiation. In matter domination, the out-state instead separates the free radiation from the static tidal response.",
+   "date": "2026-11-10",
+   "added": "2026-11-16T17:06:26+00:00",
+   "tags": [
+    "GW",
+    "cosmology"
+   ],
+   "why": [
+    {
+     "kind": "agent",
+     "label": "Defines gauge-independent out-state of scalar-induced gravitational waves; theory of SIGW adjacent topic, but no inflationary mechanism or LISA forecast.",
+     "score": 2
+    }
+   ]
+  }
+ ]
+}
