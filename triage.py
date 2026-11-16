@@ -38,6 +38,7 @@ DEFAULT_CATEGORIES = ["hep-th", "gr-qc", "astro-ph.CO", "astro-ph.IM"]
 ATOM = {"a": "http://www.w3.org/2005/Atom", "x": "http://arxiv.org/schemas/atom"}
 PAGE = 200
 MAX_AUTHORS = 8
+OVERLAP_DAYS = 5
 
 SCHEMA = {
     "type": "object",
@@ -181,13 +182,17 @@ def main():
     if args.days:
         start = now - timedelta(days=args.days)
     elif picks.get("triaged_through"):
-        start = max(datetime.fromisoformat(picks["triaged_through"]), now - timedelta(days=30))
+        # Overlap the previous run: arXiv only lists a paper once it is announced,
+        # which can be days after its submission date (weekends, holidays).
+        start = max(datetime.fromisoformat(picks["triaged_through"]) - timedelta(days=OVERLAP_DAYS),
+                    now - timedelta(days=30))
     else:
         start = now - timedelta(days=7)
 
     print(f"Fetching arXiv {' '.join(args.categories)} from {start:%Y-%m-%d %H:%M} UTC")
     papers = fetch_arxiv(args.categories, start, now)
-    known = {it["id"] for it in feed} | read | {it["id"] for it in picks["items"]}
+    scored = picks.get("scored", {})  # id -> submission date, for papers already judged
+    known = {it["id"] for it in feed} | read | {it["id"] for it in picks["items"]} | set(scored)
     todo = [p for p in papers if p["id"] not in known]
     if args.limit:
         todo = todo[:args.limit]
@@ -236,12 +241,15 @@ def main():
             if it["id"] not in read and it["id"] not in feed_ids and it["date"] >= oldest]
     # Only advance the high-water mark if every batch succeeded and nothing was skipped.
     complete = len(scores) == len(todo) and not args.limit
+    keep_scored = (now - timedelta(days=OVERLAP_DAYS + 30)).strftime("%Y-%m-%d")
+    scored = {i: d for i, d in {**scored, **{i: by_id[i]["date"] for i in scores}}.items()
+              if d >= keep_scored}
     out = {"triaged_through": stamp if complete else picks.get("triaged_through"),
-           "items": new_picks + kept}
+           "items": new_picks + kept, "scored": scored}
     (DATA / "picks.json").write_text(
         json.dumps(out, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     run("git", "add", "picks.json", cwd=DATA)
-    if run("git", "status", "--porcelain", "picks.json", cwd=DATA):
+    if run("git", "diff", "--cached", "--name-only", cwd=DATA):
         run("git", "commit", "-m", f"Triage: {len(new_picks)} picks", cwd=DATA)
         run("git", "pull", "--rebase", "origin", "data", cwd=DATA)
         run("git", "push", "origin", "data", cwd=DATA)
