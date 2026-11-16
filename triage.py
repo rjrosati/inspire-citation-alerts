@@ -39,6 +39,7 @@ ATOM = {"a": "http://www.w3.org/2005/Atom", "x": "http://arxiv.org/schemas/atom"
 PAGE = 200
 MAX_AUTHORS = 8
 OVERLAP_DAYS = 5
+COST = [0.0]  # running total of what the claude CLI reports, in USD
 
 SCHEMA = {
     "type": "object",
@@ -66,7 +67,7 @@ def ensure_data_checkout():
     if not (DATA / ".git").exists():
         run("git", "fetch", "origin", "data", cwd=HERE)
         run("git", "worktree", "add", "-B", "data", str(DATA), "origin/data", cwd=HERE)
-    run("git", "pull", "--rebase", "origin", "data", cwd=DATA)
+    run("git", "pull", "--rebase", "--autostash", "origin", "data", cwd=DATA)
 
 
 def load_json(path, default):
@@ -120,7 +121,6 @@ def fetch_arxiv(categories, start, end):
                 "date": e.findtext("a:published", "", ATOM)[:10],
             })
         offset += PAGE
-        print(f"  fetched {min(offset, total)}/{total}", flush=True)
         if offset >= total:
             return papers
         time.sleep(3)  # arXiv asks for 3 s between API calls
@@ -144,7 +144,9 @@ def classify_batch(batch, prompt_template, tags, model):
                  "--output-format", "json", "--json-schema", json.dumps(SCHEMA)],
                 input=prompt, text=True, capture_output=True, cwd=tmp)
         try:
-            results = json.loads(proc.stdout)["structured_output"]["results"]
+            reply = json.loads(proc.stdout)
+            COST[0] += reply.get("total_cost_usd") or 0
+            results = reply["structured_output"]["results"]
             got = {r["id"]: r for r in results if r["id"] in want}
             if set(got) == want:
                 return got
@@ -160,7 +162,7 @@ def classify_batch(batch, prompt_template, tags, model):
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--days", type=int, help="look back this many days (default: since "
-                    "the last triage, or 7 days on the first run; capped at 30)")
+                    "the last triage, or 7 days on the first run)")
     ap.add_argument("--categories", nargs="+", default=DEFAULT_CATEGORIES)
     ap.add_argument("--model", default="sonnet")
     ap.add_argument("--min-score", type=int, default=2, choices=[1, 2, 3])
@@ -171,14 +173,20 @@ def main():
     args = ap.parse_args()
 
     ensure_data_checkout()
-    feed = load_json(DATA / "papers.json", {}).get("items", [])
+    feed_ids = {it["id"] for it in load_json(DATA / "papers.json", {}).get("items", [])}
     read = set(load_json(DATA / "read.json", {}).get("read", []))
     picks = load_json(DATA / "picks.json", {"items": []})
+    # id -> submission date of every paper already judged, so overlapping or
+    # interrupted runs never pay to score the same paper twice.
+    state = load_json(DATA / "triage_state.json", {"scored": {}})
+    scored = state["scored"]
     watch = load_json(HERE / "watchlist.json", {})
     tags = sorted({t for sec in ("papers", "authors") for w in watch.get(sec, [])
                    for t in w.get("tags", [])})
+    template = (HERE / "triage_prompt.md").read_text(encoding="utf-8")
 
     now = datetime.now(timezone.utc)
+    stamp = now.isoformat(timespec="seconds")
     if args.days:
         start = now - timedelta(days=args.days)
     elif picks.get("triaged_through"):
@@ -189,73 +197,77 @@ def main():
     else:
         start = now - timedelta(days=7)
 
-    print(f"Fetching arXiv {' '.join(args.categories)} from {start:%Y-%m-%d %H:%M} UTC")
-    papers = fetch_arxiv(args.categories, start, now)
-    scored = picks.get("scored", {})  # id -> submission date, for papers already judged
-    known = {it["id"] for it in feed} | read | {it["id"] for it in picks["items"]} | set(scored)
-    todo = [p for p in papers if p["id"] not in known]
-    if args.limit:
-        todo = todo[:args.limit]
-    print(f"{len(papers)} submissions, {len(todo)} not already in the feed or read")
+    oldest = (now - timedelta(days=400)).strftime("%Y-%m-%d")
+    items = [it for it in picks["items"]
+             if it["id"] not in read and it["id"] not in feed_ids and it["date"] >= oldest]
 
-    template = (HERE / "triage_prompt.md").read_text(encoding="utf-8")
-    batches = [todo[i:i + args.batch_size] for i in range(0, len(todo), args.batch_size)]
-    scores, done = {}, 0
-    with ThreadPoolExecutor(args.jobs) as pool:
-        for got in pool.map(lambda b: classify_batch(b, template, tags, args.model), batches):
-            scores.update(got)
-            done += 1
-            print(f"  scored batch {done}/{len(batches)}", flush=True)
+    def save(complete):
+        out = {"triaged_through": stamp if complete else picks.get("triaged_through"),
+               "items": sorted(items, key=lambda it: (it["added"][:10], it["date"]), reverse=True)}
+        (DATA / "picks.json").write_text(
+            json.dumps(out, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+        (DATA / "triage_state.json").write_text(json.dumps(
+            {"scored": {i: d for i, d in scored.items() if d >= oldest}}) + "\n", encoding="utf-8")
 
-    by_id = {p["id"]: p for p in todo}
-    stamp = now.isoformat(timespec="seconds")
-    new_picks = []
-    for pid, r in scores.items():
-        if r["score"] >= args.min_score:
-            new_picks.append({**by_id[pid], "added": stamp,
+    # Work through the period one week at a time, newest first, saving after
+    # each week so a long backfill can be interrupted and resumed.
+    all_scores, n_picks, n_failed, n_left = {}, 0, 0, args.limit
+    hi = now
+    while hi > start and (n_left is None or n_left > 0):
+        lo = max(start, hi - timedelta(days=7))
+        print(f"\narXiv {' '.join(args.categories)}  {lo:%Y-%m-%d} .. {hi:%Y-%m-%d}", flush=True)
+        papers = fetch_arxiv(args.categories, lo, hi)
+        known = feed_ids | read | {it["id"] for it in items} | set(scored)
+        todo = [p for p in papers if p["id"] not in known]
+        if n_left is not None:
+            todo = todo[:n_left]
+            n_left -= len(todo)
+        print(f"  {len(papers)} submissions, {len(todo)} to score", flush=True)
+        batches = [todo[i:i + args.batch_size] for i in range(0, len(todo), args.batch_size)]
+        scores = {}
+        with ThreadPoolExecutor(args.jobs) as pool:
+            for got in pool.map(lambda b: classify_batch(b, template, tags, args.model), batches):
+                scores.update(got)
+        by_id = {p["id"]: p for p in todo}
+        for pid, r in scores.items():
+            all_scores[pid] = {"title": by_id[pid]["title"], **r}
+            scored[pid] = by_id[pid]["date"]
+            if r["score"] >= args.min_score:
+                n_picks += 1
+                items.append({**by_id[pid], "added": stamp,
                               "tags": sorted(t for t in set(r["tags"]) if t in tags),
                               "why": [{"kind": "agent", "label": r["reason"].strip(),
                                        "score": r["score"]}]})
-    new_picks.sort(key=lambda it: -it["why"][0]["score"])
+                print(f"  [{r['score']}] {by_id[pid]['title']}\n      "
+                      f"https://arxiv.org/abs/{pid}\n      {r['reason'].strip()}", flush=True)
+        n_failed += len(todo) - len(scores)
+        if not args.dry_run:
+            save(complete=False)
+        hi = lo
 
-    hist = [sum(1 for r in scores.values() if r["score"] == s) for s in range(4)]
-    print(f"\nScores: 0:{hist[0]}  1:{hist[1]}  2:{hist[2]}  3:{hist[3]}"
-          f"   ({len(todo) - len(scores)} failed)")
-    for it in new_picks:
-        w = it["why"][0]
-        print(f"\n[{w['score']}] {it['title']}\n    https://arxiv.org/abs/{it['id']}\n    {w['label']}")
+    hist = [sum(1 for r in all_scores.values() if r["score"] == s) for s in range(4)]
+    print(f"\nScores: 0:{hist[0]}  1:{hist[1]}  2:{hist[2]}  3:{hist[3]}   ({n_failed} failed)"
+          f"   API-equivalent cost ${COST[0]:.2f}")
 
     # Full scores of this run, for tuning triage_prompt.md.
     (HERE / ".triage_last_run.json").write_text(json.dumps(
-        [{"id": i, "title": by_id[i]["title"], **{k: r[k] for k in ("score", "tags", "reason")}}
-         for i, r in sorted(scores.items(), key=lambda kv: -kv[1]["score"])],
-        ensure_ascii=False, indent=1), encoding="utf-8")
+        sorted(all_scores.values(), key=lambda r: -r["score"]), ensure_ascii=False, indent=1),
+        encoding="utf-8")
 
     if args.dry_run:
-        print("\nDry run: nothing written.")
+        print("Dry run: nothing written.")
         return
 
-    oldest = (now - timedelta(days=365)).strftime("%Y-%m-%d")
-    feed_ids = {it["id"] for it in feed}
-    kept = [it for it in picks["items"]
-            if it["id"] not in read and it["id"] not in feed_ids and it["date"] >= oldest]
     # Only advance the high-water mark if every batch succeeded and nothing was skipped.
-    complete = len(scores) == len(todo) and not args.limit
-    keep_scored = (now - timedelta(days=OVERLAP_DAYS + 30)).strftime("%Y-%m-%d")
-    scored = {i: d for i, d in {**scored, **{i: by_id[i]["date"] for i in scores}}.items()
-              if d >= keep_scored}
-    out = {"triaged_through": stamp if complete else picks.get("triaged_through"),
-           "items": new_picks + kept, "scored": scored}
-    (DATA / "picks.json").write_text(
-        json.dumps(out, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-    run("git", "add", "picks.json", cwd=DATA)
+    save(complete=n_failed == 0 and args.limit is None)
+    run("git", "add", "picks.json", "triage_state.json", cwd=DATA)
     if run("git", "diff", "--cached", "--name-only", cwd=DATA):
-        run("git", "commit", "-m", f"Triage: {len(new_picks)} picks", cwd=DATA)
-        run("git", "pull", "--rebase", "origin", "data", cwd=DATA)
+        run("git", "commit", "-m", f"Triage: {n_picks} picks", cwd=DATA)
+        run("git", "pull", "--rebase", "--autostash", "origin", "data", cwd=DATA)
         run("git", "push", "origin", "data", cwd=DATA)
-        print(f"\nPublished {len(new_picks)} picks.")
+        print(f"Published {n_picks} new picks ({len(items)} agent picks unread in total).")
     else:
-        print("\nNothing to publish.")
+        print("Nothing to publish.")
 
 
 if __name__ == "__main__":
