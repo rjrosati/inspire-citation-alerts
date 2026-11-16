@@ -64,6 +64,7 @@
     {"label": "Marc Lilley", "bai": "M.Lilley.1", "tags": ["LISA", "GW"]},
     {"label": "Jean-Baptiste Bayle", "bai": "J.B.Bayle.1", "tags": ["LISA", "GW", "data analysis"]},
     {"label": "Olaf Hartwig", "bai": "O.Hartwig.1", "tags": ["LISA", "GW", "data analysis"]},
-    {"label": "Antoine Petiteau", "bai": "Antoine.Petiteau.1", "tags": ["LISA", "GW", "data analysis"]}
+    {"label": "Antoine Petiteau", "bai": "Antoine.Petiteau.1", "tags": ["LISA", "GW", "data analysis"]},
+    {"label": "LISA Cosmology Working Group", "query": "collaboration:\"LISA Cosmology Working Group\"", "tags": ["LISA", "GW", "cosmology"]}
   ]
 }

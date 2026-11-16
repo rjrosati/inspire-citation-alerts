@@ -149,10 +149,10 @@ footer { color: var(--muted); font-size: 12.5px; margin-top: 30px; text-align: c
       <input type="text" id="addpaper" placeholder="Add paper: arXiv number, INSPIRE record id or URL">
       <button id="addpaperbtn">Add</button>
     </div>
-    <h3>Watched authors</h3>
+    <h3>Watched authors and collaborations</h3>
     <table id="tauthors"></table>
     <div class="row">
-      <input type="text" id="addauthor" placeholder="Add author: search INSPIRE by name">
+      <input type="text" id="addauthor" placeholder="Add author: search INSPIRE by name, or collaboration:&quot;Name&quot;">
       <button id="addauthorbtn">Search</button>
     </div>
     <div class="cands" id="cands"></div>
@@ -413,7 +413,7 @@ function fmtWatch(w) {
 function drawEditor() {
   const rows = (sec, idKey, href) => draft[sec].map((w, i) => h("tr", {},
     h("td", {}, h("input", { type: "text", value: w.label, "aria-label": "label", oninput: e => { w.label = e.target.value; } })),
-    h("td", { class: "id" }, h("a", { href: href(w[idKey]), target: "_blank", rel: "noopener" }, w[idKey])),
+    h("td", { class: "id" }, h("a", { href: w.query ? `https://inspirehep.net/literature?q=${encodeURIComponent(w.query)}` : href(w[idKey]), target: "_blank", rel: "noopener" }, w.query || w[idKey])),
     h("td", {}, h("input", { type: "text", value: tagStr(w), placeholder: "tags", "aria-label": "tags", oninput: e => { w.tags = parseTags(e.target.value); } })),
     h("td", { class: "x" }, h("button", { title: "Remove", onclick: () => { draft[sec].splice(i, 1); drawEditor(); } }, "✕"))));
   $("tpapers").replaceChildren(...rows("papers", "recid", id => `https://inspirehep.net/literature/${id}`));
@@ -464,6 +464,17 @@ async function watchCitations(it) {
 }
 $("addauthorbtn").onclick = async () => {
   const name = $("addauthor").value.trim(); if (!name) return;
+  if (name.includes(":")) {   // a raw INSPIRE query, e.g. collaboration:"LISA Cosmology Working Group"
+    try {
+      const hits = await inspire("literature", { q: name, size: 1, fields: "control_number" });
+      if (!hits.length) throw new Error("That INSPIRE query matches no papers.");
+      draft.authors.push({ label: name.replace(/^[^:]*:/, "").replace(/"/g, "").trim(), query: name, tags: [] });
+      drawEditor(); $("addauthor").value = "";
+      $("dlgmsg").textContent = "Added. Edit the label and tags if you like, then press Save watch list.";
+      $("tauthors").lastElementChild?.scrollIntoView({ block: "center" });
+    } catch (e) { $("dlgmsg").textContent = e.message; }
+    return;
+  }
   try {
     $("dlgmsg").textContent = "Searching…";
     const hits = await inspire("authors", { q: name, size: 8, fields: "name,ids,arxiv_categories,positions" });

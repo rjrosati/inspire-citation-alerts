@@ -22,6 +22,7 @@ import re
 import subprocess
 import sys
 import tempfile
+import threading
 import time
 import urllib.error
 import urllib.parse
@@ -40,6 +41,7 @@ PAGE = 200
 MAX_AUTHORS = 8
 OVERLAP_DAYS = 5
 COST = [0.0]  # running total of what the claude CLI reports, in USD
+STOP = threading.Event()  # set when claude refuses to answer (usage limit, not logged in)
 
 SCHEMA = {
     "type": "object",
@@ -100,9 +102,9 @@ def fetch_arxiv(categories, start, end):
                     break
             except (urllib.error.URLError, TimeoutError, ET.ParseError) as e:
                 print(f"  arXiv request failed ({e}), retrying", file=sys.stderr)
-            time.sleep(5 * (attempt + 1))
+            time.sleep(20 * (attempt + 1))  # arXiv rate-limits hard; back off generously
         if entries is None or (not entries and offset < total):
-            sys.exit("arXiv API kept failing; try again later.")
+            raise RuntimeError("arXiv API kept failing")
         for e in entries:
             m = re.search(r"abs/(.+?)(v\d+)?$", e.findtext("a:id", "", ATOM))
             if not m:
@@ -137,6 +139,8 @@ def classify_batch(batch, prompt_template, tags, model):
               .replace("{{PAPERS}}", listing))
     want = {p["id"] for p in batch}
     for attempt in range(3):
+        if STOP.is_set():
+            return {}
         # Run from an empty directory with no tools: this is pure classification.
         with tempfile.TemporaryDirectory() as tmp:
             proc = subprocess.run(
@@ -146,6 +150,14 @@ def classify_batch(batch, prompt_template, tags, model):
         try:
             reply = json.loads(proc.stdout)
             COST[0] += reply.get("total_cost_usd") or 0
+            if "structured_output" not in reply and not reply.get("total_cost_usd"):
+                # Nothing was billed and nothing came back: the CLI itself refused
+                # (usage limit reached, logged out...). Retrying would not help.
+                if not STOP.is_set():
+                    print(f"  claude is not answering: {str(reply.get('result'))[:200]}",
+                          file=sys.stderr)
+                STOP.set()
+                return {}
             results = reply["structured_output"]["results"]
             got = {r["id"]: r for r in results if r["id"] in want}
             if set(got) == want:
@@ -216,7 +228,12 @@ def main():
     while hi > start and (n_left is None or n_left > 0):
         lo = max(start, hi - timedelta(days=7))
         print(f"\narXiv {' '.join(args.categories)}  {lo:%Y-%m-%d} .. {hi:%Y-%m-%d}", flush=True)
-        papers = fetch_arxiv(args.categories, lo, hi)
+        try:
+            papers = fetch_arxiv(args.categories, lo, hi)
+        except RuntimeError as e:
+            print(f"  {e}; stopping here. Run again later to continue.", file=sys.stderr)
+            n_failed += 1
+            break
         known = feed_ids | read | {it["id"] for it in items} | set(scored)
         todo = [p for p in papers if p["id"] not in known]
         if n_left is not None:
@@ -243,6 +260,10 @@ def main():
         n_failed += len(todo) - len(scores)
         if not args.dry_run:
             save(complete=False)
+        if STOP.is_set():
+            print("  Stopping: claude stopped answering (usage limit?). Everything scored so "
+                  "far is saved; run the same command again later to continue.", file=sys.stderr)
+            break
         hi = lo
 
     hist = [sum(1 for r in all_scores.values() if r["score"] == s) for s in range(4)]

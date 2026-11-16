@@ -146,7 +146,10 @@ def main():
 
     queries = (
         [("cites", w, f"refersto:recid:{w['recid']}") for w in watch.get("papers", [])] +
-        [("author", w, f"exactauthor:{w['bai']}") for w in watch.get("authors", [])]
+        # An author entry normally has an INSPIRE author identifier ("bai"); it may
+        # instead carry a raw INSPIRE "query", e.g. for a collaboration.
+        [("author", w, w.get("query") or f"exactauthor:{w['bai']}")
+         for w in watch.get("authors", [])]
     )
 
     # Reasons are rebuilt for everything inside the window, so that removing a
@@ -162,9 +165,9 @@ def main():
         print(f"{label}: {len(recent)} recent / {total} total", flush=True)
         if total == 0:
             what = "has no citations yet" if kind == "cites" else \
-                "matches no papers - the INSPIRE author identifier is probably wrong or was renamed"
+                "matches no papers - the INSPIRE identifier or query is probably wrong or was renamed"
             if kind == "author":
-                warnings.append(f"Author watch “{label}” ({w['bai']}) {what}.")
+                warnings.append(f"Author watch “{label}” ({w.get('bai') or query}) {what}.")
             continue
         for item in recent:
             if item["id"] in read:
