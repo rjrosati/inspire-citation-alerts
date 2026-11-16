@@ -133,3 +133,7 @@ dmypy.json
 
 # last run
 lastrun
+
+# local checkout of the data branch + triage scratch
+.data/
+.triage_last_run.json

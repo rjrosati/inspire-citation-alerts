@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Paper feed</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
+<style>
+:root {
+  --bg: #fbfaf8; --panel: #fff; --text: #1d1d1f; --muted: #6b6b70; --line: #e4e2dd;
+  --accent: #1f5fbf; --chip: #eeece7; --cites: #e3eefc; --author: #e6f4e6; --agent: #fbefd5;
+  --warn: #fff3cd; --sel: #1f5fbf22;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #17181a; --panel: #1f2023; --text: #e8e8ea; --muted: #9a9aa2; --line: #33353a;
+    --accent: #7fb0ff; --chip: #2c2e33; --cites: #1d3152; --author: #1f3a24; --agent: #4a3a16;
+    --warn: #4a3d10; --sel: #7fb0ff33;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text);
+  font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+main { max-width: 880px; margin: 0 auto; padding: 0 16px 80px; }
+header { position: sticky; top: 0; z-index: 5; background: var(--bg);
+  border-bottom: 1px solid var(--line); padding: 10px 0 8px; }
+.top { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+h1 { font-size: 20px; margin: 0; }
+#count { color: var(--muted); }
+.spacer { flex: 1; }
+button, select, input { font: inherit; color: inherit; }
+button { background: var(--panel); border: 1px solid var(--line); border-radius: 6px;
+  padding: 3px 10px; cursor: pointer; }
+button:hover { border-color: var(--accent); }
+button.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+@media (prefers-color-scheme: dark) { button.primary { color: #111; } }
+input[type=text], input[type=search], input[type=password], select {
+  background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 3px 8px; }
+.filters { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; margin-top: 8px; }
+.filters input[type=search] { flex: 1; min-width: 140px; }
+.filters select { max-width: 220px; }
+.chip { display: inline-block; background: var(--chip); border: 1px solid transparent;
+  border-radius: 999px; padding: 0 9px; font-size: 13px; line-height: 22px; white-space: nowrap; }
+button.chip { cursor: pointer; }
+button.chip.on { background: var(--accent); color: #fff; }
+@media (prefers-color-scheme: dark) { button.chip.on { color: #111; } }
+.chip.cites { background: var(--cites); } .chip.author { background: var(--author); }
+.chip.agent { background: var(--agent); }
+.banner { background: var(--warn); border-radius: 8px; padding: 8px 12px; margin: 12px 0; font-size: 14px; }
+.day { color: var(--muted); font-size: 13px; text-transform: uppercase; letter-spacing: .05em;
+  margin: 22px 0 6px; }
+.item { background: var(--panel); border: 1px solid var(--line); border-radius: 10px;
+  padding: 10px 12px 8px; margin: 8px 0; display: grid; grid-template-columns: 1fr auto; gap: 2px 10px; }
+.item.cur { box-shadow: 0 0 0 2px var(--sel); border-color: var(--accent); }
+.item.isread { opacity: .55; }
+.item h2 { font-size: 16px; line-height: 1.35; margin: 0; font-weight: 600; }
+.item h2 a { color: var(--text); }
+.meta { color: var(--muted); font-size: 13.5px; grid-column: 1; }
+.chips { display: flex; flex-wrap: wrap; gap: 4px; margin: 4px 0 2px; grid-column: 1 / -1; }
+.reason { grid-column: 1 / -1; font-size: 14px; background: var(--agent); border-radius: 6px;
+  padding: 3px 8px; margin: 3px 0; }
+.item details { grid-column: 1 / -1; font-size: 14px; }
+.item summary { cursor: pointer; color: var(--muted); font-size: 13px; user-select: none; }
+.item summary .links { margin-left: 10px; }
+.item summary .links a, .item summary .links button { margin-right: 10px; }
+.linkbtn { border: 0; background: none; padding: 0; color: var(--accent); cursor: pointer; font-size: 13px; }
+.linkbtn:hover { text-decoration: underline; }
+.abstract { margin: 6px 0 4px; }
+.done { grid-row: 1 / span 2; grid-column: 2; align-self: start; width: 34px; height: 34px;
+  border-radius: 50%; padding: 0; font-size: 16px; }
+.empty { text-align: center; color: var(--muted); padding: 60px 0; }
+#toast { position: fixed; left: 50%; bottom: 20px; transform: translateX(-50%);
+  background: var(--text); color: var(--bg); border-radius: 8px; padding: 8px 14px;
+  display: none; gap: 12px; align-items: center; z-index: 20; font-size: 14px; }
+#toast button { background: none; border: 0; color: inherit; text-decoration: underline; padding: 0; }
+#status { font-size: 12.5px; color: var(--muted); }
+dialog { background: var(--bg); color: var(--text); border: 1px solid var(--line);
+  border-radius: 12px; width: min(900px, 96vw); max-height: 92vh; padding: 16px 18px; }
+dialog::backdrop { background: #0007; }
+dialog h3 { margin: 18px 0 6px; font-size: 15px; }
+dialog h3:first-of-type { margin-top: 4px; }
+dialog p { margin: 4px 0; font-size: 13.5px; color: var(--muted); }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+td { padding: 2px 4px 2px 0; vertical-align: middle; }
+td input[type=text] { width: 100%; }
+td.id { white-space: nowrap; font-size: 12.5px; color: var(--muted); width: 1%; }
+td.x { width: 1%; }
+.row { display: flex; gap: 6px; margin: 6px 0; flex-wrap: wrap; }
+.row input[type=text], .row input[type=password] { flex: 1; min-width: 180px; }
+.cands { font-size: 13.5px; }
+.cands button { display: block; width: 100%; text-align: left; margin: 3px 0; }
+.dlgfoot { display: flex; gap: 8px; align-items: center; margin-top: 16px;
+  position: sticky; bottom: -16px; background: var(--bg); padding: 10px 0; border-top: 1px solid var(--line); }
+kbd { background: var(--chip); border-radius: 4px; padding: 0 5px; font-size: 12px; }
+footer { color: var(--muted); font-size: 12.5px; margin-top: 30px; text-align: center; }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <div class="top">
+    <h1>Paper feed</h1>
+    <span id="count"></span>
+    <span class="spacer"></span>
+    <span id="status"></span>
+    <button id="markall" title="Mark everything currently shown as read">Mark shown read</button>
+    <button id="manage">Watch list &amp; settings</button>
+  </div>
+  <div class="filters">
+    <span id="kinds"></span>
+    <select id="watchsel" title="Show only papers matching one watch"></select>
+    <input type="search" id="q" placeholder="Search title, author, abstract">
+    <label style="font-size:13px;white-space:nowrap"><input type="checkbox" id="showread"> show read</label>
+  </div>
+  <div class="filters" id="tags"></div>
+</header>
+<div id="banners"></div>
+<div id="list"><div class="empty">Loading…</div></div>
+<footer>
+  <kbd>j</kbd>/<kbd>k</kbd> next/previous · <kbd>m</kbd> mark read · <kbd>o</kbd> open · <kbd>a</kbd> abstract
+  <div id="updated"></div>
+</footer>
+</main>
+
+<div id="toast"><span id="toastmsg"></span><button id="undo">Undo</button></div>
+
+<dialog id="dlg">
+  <h3>GitHub token</h3>
+  <p>Without a token this page is read-only and "read" marks stay in this browser.
+     With one, read marks sync through the repository and you can edit the watch list here.
+     Create a <a target="_blank" rel="noopener" href="https://github.com/settings/personal-access-tokens/new">fine-grained token</a>
+     limited to this repository with <b>Contents: Read and write</b>. It is stored only in this browser.</p>
+  <div class="row">
+    <input type="password" id="token" placeholder="github_pat_…" autocomplete="off">
+    <button id="savetoken">Save token</button>
+    <button id="forgettoken">Forget</button>
+  </div>
+  <p id="tokenmsg"></p>
+
+  <div id="editor">
+    <h3>Watched papers <span style="font-weight:normal;color:var(--muted)">(papers citing these appear in the feed)</span></h3>
+    <table id="tpapers"></table>
+    <div class="row">
+      <input type="text" id="addpaper" placeholder="Add paper: arXiv number, INSPIRE record id or URL">
+      <button id="addpaperbtn">Add</button>
+    </div>
+    <h3>Watched authors</h3>
+    <table id="tauthors"></table>
+    <div class="row">
+      <input type="text" id="addauthor" placeholder="Add author: search INSPIRE by name">
+      <button id="addauthorbtn">Search</button>
+    </div>
+    <div class="cands" id="cands"></div>
+    <p>Tags are comma-separated. Papers in the feed inherit the tags of every watch they match.</p>
+  </div>
+  <div class="dlgfoot">
+    <button class="primary" id="savewatch">Save watch list</button>
+    <button id="closedlg">Close</button>
+    <span id="dlgmsg" style="font-size:13.5px"></span>
+  </div>
+</dialog>
+
+<script>
+"use strict";
+// ---------- configuration ----------
+const qs = new URLSearchParams(location.search);
+const ghio = location.hostname.match(/^(.+)\.github\.io$/);
+const REPO = qs.get("repo") || (ghio ? `${ghio[1]}/${location.pathname.split("/")[1]}`
+                                     : "rjrosati/inspire-citation-alerts");
+const DATA_BRANCH = "data", MAIN_BRANCH = "main";
+const LOCAL_DATA = qs.get("data");            // e.g. ?data=../.data for local testing
+const INSPIRE = "https://inspirehep.net/api";
+
+// ---------- tiny helpers ----------
+const $ = id => document.getElementById(id);
+function h(tag, attrs, ...kids) {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs || {})) {
+    if (v == null || v === false) continue;
+    if (k.startsWith("on")) e.addEventListener(k.slice(2), v);
+    else if (k === "class") e.className = v;
+    else if (k === "value") e.value = v;
+    else e.setAttribute(k, v === true ? "" : v);
+  }
+  for (const kid of kids.flat()) if (kid != null && kid !== false) e.append(kid);
+  return e;
+}
+const store = {
+  get(k, d) { try { const v = localStorage.getItem(`feed:${REPO}:${k}`); return v == null ? d : JSON.parse(v); } catch { return d; } },
+  set(k, v) { try { localStorage.setItem(`feed:${REPO}:${k}`, JSON.stringify(v)); } catch {} },
+  del(k) { try { localStorage.removeItem(`feed:${REPO}:${k}`); } catch {} },
+};
+const b64enc = s => { let bin = ""; for (const x of new TextEncoder().encode(s)) bin += String.fromCharCode(x); return btoa(bin); };
+const b64dec = s => new TextDecoder().decode(Uint8Array.from(atob(s.replace(/\s/g, "")), c => c.charCodeAt(0)));
+const setStatus = t => { $("status").textContent = t; };
+
+// ---------- GitHub storage ----------
+let token = store.get("token", "");
+function gh(path, opts = {}) {
+  return fetch(`https://api.github.com/repos/${REPO}${path}`, {
+    cache: "no-store", ...opts,
+    headers: { Accept: "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28",
+               ...(token ? { Authorization: `Bearer ${token}` } : {}), ...(opts.headers || {}) },
+  });
+}
+// Returns {data, sha}; data is null when the file does not exist.
+async function readJSON(path, branch) {
+  if (LOCAL_DATA && branch === DATA_BRANCH) {
+    const r = await fetch(`${LOCAL_DATA}/${path}`, { cache: "no-store" });
+    return { data: r.ok ? await r.json() : null, sha: null };
+  }
+  if (!token) {
+    const r = await fetch(`https://raw.githubusercontent.com/${REPO}/${branch}/${path}`, { cache: "no-store" });
+    if (r.status === 404) return { data: null, sha: null };
+    if (!r.ok) throw new Error(`${path}: HTTP ${r.status}`);
+    return { data: await r.json(), sha: null };
+  }
+  const r = await gh(`/contents/${path}?ref=${branch}`);
+  if (r.status === 404) return { data: null, sha: null };
+  if (!r.ok) throw new Error(`${path}: HTTP ${r.status}${r.status === 401 ? " (bad or expired token)" : ""}`);
+  const j = await r.json();
+  if (j.content) return { data: JSON.parse(b64dec(j.content)), sha: j.sha };
+  // Files over 1 MB come back without content; fetch them raw.
+  const raw = await gh(`/contents/${path}?ref=${branch}`, { headers: { Accept: "application/vnd.github.raw+json" } });
+  return { data: await raw.json(), sha: j.sha };
+}
+function writeText(path, branch, text, sha, message) {
+  return gh(`/contents/${path}`, { method: "PUT", body: JSON.stringify(
+    { message, branch, content: b64enc(text), ...(sha ? { sha } : {}) }) });
+}
+
+// ---------- state ----------
+const S = { items: [], warnings: [], updated: null, triaged: null,
+            watch: { papers: [], authors: [] }, watchSha: null, read: new Set() };
+const F = { kind: "all", tags: new Set(), watch: "", q: "", showRead: false };
+let ops = store.get("ops", []);       // pending read-state changes: [["+"|"-", id], ...]
+let cur = -1;                          // keyboard cursor (index into shown list)
+let shown = [];
+
+async function load() {
+  try {
+    const [papers, picks, read, watch] = await Promise.all([
+      readJSON("papers.json", DATA_BRANCH), readJSON("picks.json", DATA_BRANCH),
+      readJSON("read.json", DATA_BRANCH), readJSON("watchlist.json", MAIN_BRANCH)]);
+    const byId = new Map();
+    for (const it of (papers.data?.items || [])) byId.set(it.id, it);
+    for (const it of (picks.data?.items || [])) {
+      const have = byId.get(it.id);
+      if (have) { have.why = have.why.concat(it.why); have.tags = [...new Set([...have.tags, ...it.tags])]; }
+      else byId.set(it.id, it);
+    }
+    S.items = [...byId.values()].sort((a, b) =>
+      (b.added || "").slice(0, 10).localeCompare((a.added || "").slice(0, 10)) || b.date.localeCompare(a.date));
+    S.warnings = papers.data?.warnings || [];
+    S.updated = papers.data?.updated; S.triaged = picks.data?.triaged_through;
+    if (watch.data) { S.watch = watch.data; S.watchSha = watch.sha; }
+    S.read = new Set(token ? (read.data?.read || []) : store.get("read", []));
+    if (token) for (const [op, id] of ops) op === "+" ? S.read.add(id) : S.read.delete(id);
+    if (!papers.data) S.warnings.unshift("No feed data found yet. The first update may still be running.");
+    loaded = true; buildFilters(); render();
+    if (token && ops.length) scheduleSync(100);
+  } catch (e) {
+    $("list").replaceChildren(h("div", { class: "empty" }, `Could not load the feed: ${e.message}`));
+  }
+}
+
+// ---------- read state ----------
+let syncTimer = null, syncing = false;
+function setRead(ids, isRead) {
+  for (const id of ids) {
+    isRead ? S.read.add(id) : S.read.delete(id);
+    if (token) ops.push([isRead ? "+" : "-", id]);
+  }
+  if (token) { store.set("ops", ops); scheduleSync(); } else store.set("read", [...S.read]);
+  render();
+}
+function scheduleSync(ms = 2500) { clearTimeout(syncTimer); syncTimer = setTimeout(syncRead, ms); }
+async function syncRead() {
+  if (!token || !ops.length) return;
+  if (syncing) return scheduleSync();
+  syncing = true; setStatus("saving…");
+  const sending = ops.slice();
+  try {
+    let ok = false;
+    for (let attempt = 0; attempt < 4 && !ok; attempt++) {
+      const { data, sha } = await readJSON("read.json", DATA_BRANCH);
+      const set = new Set(data?.read || []);
+      for (const [op, id] of sending) op === "+" ? set.add(id) : set.delete(id);
+      const r = await writeText("read.json", DATA_BRANCH, JSON.stringify({ read: [...set] }) + "\n", sha, "Update read marks");
+      if (r.ok) ok = true;
+      else if (r.status !== 409 && r.status !== 422) throw new Error(`HTTP ${r.status}`);
+    }
+    if (!ok) throw new Error("conflict");
+    ops = ops.slice(sending.length); store.set("ops", ops);
+    setStatus("saved");
+    if (ops.length) scheduleSync();
+  } catch (e) {
+    setStatus(`read marks not saved (${e.message}); will retry on next change`);
+  } finally { syncing = false; }
+}
+addEventListener("visibilitychange", () => { if (document.hidden && ops.length) { clearTimeout(syncTimer); syncRead(); } });
+
+let toastTimer = null, lastMarked = [];
+function toast(msg, ids) {
+  lastMarked = ids; $("toastmsg").textContent = msg; $("toast").style.display = "flex";
+  clearTimeout(toastTimer); toastTimer = setTimeout(() => { $("toast").style.display = "none"; }, 7000);
+}
+$("undo").onclick = () => { setRead(lastMarked, false); $("toast").style.display = "none"; };
+
+// ---------- filtering & rendering ----------
+function matches(it) {
+  if (!F.showRead && S.read.has(it.id)) return false;
+  if (F.kind !== "all" && !it.why.some(w => w.kind === F.kind)) return false;
+  if (F.tags.size && !it.tags.some(t => F.tags.has(t))) return false;
+  if (F.watch && !it.why.some(w => `${w.kind}:${w.label}` === F.watch)) return false;
+  if (F.q) {
+    const hay = [it.title, it.authors.join(" "), it.abstract, it.arxiv || "", it.collaborations.join(" ")].join(" ").toLowerCase();
+    if (!F.q.toLowerCase().split(/\s+/).every(w => hay.includes(w))) return false;
+  }
+  return true;
+}
+function buildFilters() {
+  const kinds = [["all", "All"], ["author", "Authors"], ["cites", "Citations"], ["agent", "Agent picks"]];
+  $("kinds").replaceChildren(...kinds.map(([k, label]) =>
+    h("button", { class: "chip" + (F.kind === k ? " on" : ""), onclick: () => { F.kind = k; buildFilters(); render(); } }, label)), " ");
+  const tags = [...new Set([...S.items.flatMap(it => it.tags),
+    ...["papers", "authors"].flatMap(s => (S.watch[s] || []).flatMap(w => w.tags || []))])].sort((a, b) => a.localeCompare(b));
+  $("tags").replaceChildren(...tags.map(t =>
+    h("button", { class: "chip" + (F.tags.has(t) ? " on" : ""), onclick: () => { F.tags.has(t) ? F.tags.delete(t) : F.tags.add(t); buildFilters(); render(); } }, t)));
+  const opt = (v, label) => h("option", { value: v, selected: F.watch === v }, label);
+  $("watchsel").replaceChildren(opt("", "Any watch"),
+    h("optgroup", { label: "Citations of" }, (S.watch.papers || []).map(w => opt(`cites:${w.label}`, w.label))),
+    h("optgroup", { label: "Authors" }, (S.watch.authors || []).map(w => opt(`author:${w.label}`, w.label))));
+}
+const fmtDay = d => d ? new Date(d + "T12:00:00").toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric" }) : "";
+function itemEl(it, i) {
+  const isRead = S.read.has(it.id);
+  const url = it.arxiv ? `https://arxiv.org/abs/${it.arxiv}` : `https://inspirehep.net/literature/${it.recid}`;
+  let authors = it.collaborations.length ? it.collaborations.join(", ") + " Collaboration" : it.authors.join(", ");
+  if (!it.collaborations.length && it.author_count > it.authors.length) authors += ` + ${it.author_count - it.authors.length} more`;
+  const agent = it.why.filter(w => w.kind === "agent");
+  const links = h("span", { class: "links" },
+    it.arxiv && h("a", { href: `https://arxiv.org/pdf/${it.arxiv}`, target: "_blank", rel: "noopener" }, "PDF"),
+    it.recid && h("a", { href: `https://inspirehep.net/literature/${it.recid}`, target: "_blank", rel: "noopener" }, "INSPIRE"),
+    h("button", { class: "linkbtn", title: "Add papers citing this one to the feed", onclick: ev => { ev.preventDefault(); watchCitations(it); } }, "Watch citations"));
+  return h("article", { class: "item" + (isRead ? " isread" : "") + (i === cur ? " cur" : ""), "data-i": i },
+    h("h2", {}, h("a", { href: url, target: "_blank", rel: "noopener" }, it.title)),
+    h("button", { class: "done", title: isRead ? "Mark unread" : "Mark read (m)",
+      onclick: () => { setRead([it.id], !isRead); if (!isRead) toast("Marked read", [it.id]); } }, isRead ? "↺" : "✓"),
+    h("div", { class: "meta" }, authors, " · ", it.date, it.categories.length ? ` · ${it.categories.slice(0, 3).join(" ")}` : ""),
+    h("div", { class: "chips" },
+      it.why.filter(w => w.kind !== "agent").map(w => h("span", { class: `chip ${w.kind}` }, (w.kind === "cites" ? "cites " : "by ") + w.label)),
+      it.tags.map(t => h("span", { class: "chip" }, t))),
+    agent.map(w => h("div", { class: "reason" }, "★".repeat(w.score || 1) + " ", w.label)),
+    h("details", {}, h("summary", {}, "Abstract", links), h("div", { class: "abstract" }, it.abstract || "(no abstract)")));
+}
+function render() {
+  shown = S.items.filter(matches);
+  if (cur >= shown.length) cur = shown.length - 1;
+  const unread = S.items.filter(it => !S.read.has(it.id)).length;
+  $("count").textContent = `${unread} unread` + (shown.length !== unread ? ` · ${shown.length} shown` : "");
+  document.title = unread ? `(${unread}) Paper feed` : "Paper feed";
+  $("banners").replaceChildren(...S.warnings.map(w => h("div", { class: "banner" }, "⚠ " + w)));
+  const out = []; let day = null;
+  shown.forEach((it, i) => {
+    const d = (it.added || "").slice(0, 10);
+    if (d !== day) { day = d; out.push(h("div", { class: "day" }, "Added " + fmtDay(d))); }
+    out.push(itemEl(it, i));
+  });
+  if (!out.length) out.push(h("div", { class: "empty" }, S.items.length ? "Nothing unread matches. 🎉" : "The feed is empty."));
+  $("list").replaceChildren(...out);
+  $("updated").textContent = (S.updated ? `Feed updated ${new Date(S.updated).toLocaleString()}` : "") +
+    (S.triaged ? ` · agent triage through ${new Date(S.triaged).toLocaleDateString()}` : "") + ` · ${REPO}`;
+  if (window.renderMathInElement) try {
+    renderMathInElement($("list"), { throwOnError: false, delimiters: [
+      { left: "$$", right: "$$", display: false }, { left: "$", right: "$", display: false },
+      { left: "\\(", right: "\\)", display: false }] });
+  } catch {}
+}
+$("q").oninput = e => { F.q = e.target.value.trim(); render(); };
+$("showread").onchange = e => { F.showRead = e.target.checked; render(); };
+$("watchsel").onchange = e => { F.watch = e.target.value; render(); };
+$("markall").onclick = () => {
+  const ids = shown.filter(it => !S.read.has(it.id)).map(it => it.id);
+  if (ids.length && confirm(`Mark ${ids.length} paper${ids.length > 1 ? "s" : ""} as read?`)) { setRead(ids, true); toast(`Marked ${ids.length} read`, ids); }
+};
+addEventListener("keydown", e => {
+  if (e.target.matches("input, select, textarea") || $("dlg").open || e.ctrlKey || e.metaKey || e.altKey) return;
+  const move = d => { cur = Math.max(0, Math.min(shown.length - 1, cur + d)); render();
+    document.querySelector(".item.cur")?.scrollIntoView({ block: "center" }); };
+  const it = shown[cur];
+  if (e.key === "j") move(1);
+  else if (e.key === "k") move(-1);
+  else if (e.key === "m" && it) { const was = S.read.has(it.id); setRead([it.id], !was); if (!was) toast("Marked read", [it.id]); }
+  else if (e.key === "o" && it) window.open(it.arxiv ? `https://arxiv.org/abs/${it.arxiv}` : `https://inspirehep.net/literature/${it.recid}`, "_blank", "noopener");
+  else if (e.key === "a" && it) { const d = document.querySelector(".item.cur details"); if (d) d.open = !d.open; }
+});
+
+// ---------- watch list editor ----------
+let draft = null;
+const tagStr = w => (w.tags || []).join(", ");
+const parseTags = s => [...new Set(s.split(",").map(t => t.trim()).filter(Boolean))];
+function fmtWatch(w) {
+  const entry = e => "    {" + Object.entries(e).map(([k, v]) => `${JSON.stringify(k)}: ${JSON.stringify(v)}`).join(", ") + "}";
+  const sec = k => `  "${k}": [\n${(w[k] || []).map(entry).join(",\n")}\n  ]`;
+  return `{\n${sec("papers")},\n${sec("authors")}\n}\n`;
+}
+function drawEditor() {
+  const rows = (sec, idKey, href) => draft[sec].map((w, i) => h("tr", {},
+    h("td", {}, h("input", { type: "text", value: w.label, "aria-label": "label", oninput: e => { w.label = e.target.value; } })),
+    h("td", { class: "id" }, h("a", { href: href(w[idKey]), target: "_blank", rel: "noopener" }, w[idKey])),
+    h("td", {}, h("input", { type: "text", value: tagStr(w), placeholder: "tags", "aria-label": "tags", oninput: e => { w.tags = parseTags(e.target.value); } })),
+    h("td", { class: "x" }, h("button", { title: "Remove", onclick: () => { draft[sec].splice(i, 1); drawEditor(); } }, "✕"))));
+  $("tpapers").replaceChildren(...rows("papers", "recid", id => `https://inspirehep.net/literature/${id}`));
+  $("tauthors").replaceChildren(...rows("authors", "bai", id => `https://inspirehep.net/authors?q=${encodeURIComponent(id)}`));
+}
+function openManage(msg = "") {
+  draft = JSON.parse(JSON.stringify({ papers: S.watch.papers || [], authors: S.watch.authors || [] }));
+  $("token").value = token; $("tokenmsg").textContent = token ? "A token is saved in this browser." : "";
+  $("dlgmsg").textContent = msg; $("cands").replaceChildren();
+  $("savewatch").disabled = !token;
+  if (!token) $("dlgmsg").textContent = "Add a token above to save changes to the watch list.";
+  drawEditor(); if (!$("dlg").open) $("dlg").showModal();
+}
+$("manage").onclick = () => openManage();
+$("closedlg").onclick = () => $("dlg").close();
+async function inspire(path, params) {
+  const r = await fetch(`${INSPIRE}/${path}?${new URLSearchParams(params)}`);
+  if (!r.ok) throw new Error(`INSPIRE HTTP ${r.status}`);
+  return (await r.json()).hits.hits;
+}
+async function resolvePaper(text) {
+  text = text.trim();
+  const rec = text.match(/literature\/(\d+)/) || text.match(/^(\d+)$/);
+  const ax = text.match(/(\d{4}\.\d{4,5}|[a-z-]+(?:\.[A-Z]{2})?\/\d{7})/);
+  const q = rec ? `recid:${rec[1]}` : ax ? `arxiv:${ax[1]}` : null;
+  if (!q) throw new Error("Enter an arXiv number, an INSPIRE record id or an INSPIRE URL.");
+  const hits = await inspire("literature", { q, size: 1, fields: "titles.title,control_number" });
+  if (!hits.length) throw new Error("INSPIRE has no record for that yet (new arXiv papers take a few days).");
+  return { recid: String(hits[0].metadata.control_number), title: hits[0].metadata.titles[0].title };
+}
+function addPaperToDraft(p, tags = []) {
+  if (draft.papers.some(w => w.recid === p.recid)) { $("dlgmsg").textContent = "Already watching citations of that paper."; return; }
+  draft.papers.push({ label: p.title.length > 60 ? p.title.slice(0, 57) + "…" : p.title, recid: p.recid, tags });
+  drawEditor();
+  $("dlgmsg").textContent = "Added. Edit the label and tags if you like, then press Save watch list.";
+  $("tpapers").lastElementChild?.scrollIntoView({ block: "center" });
+}
+$("addpaperbtn").onclick = async () => {
+  try { $("dlgmsg").textContent = "Looking up…"; addPaperToDraft(await resolvePaper($("addpaper").value)); $("addpaper").value = ""; }
+  catch (e) { $("dlgmsg").textContent = e.message; }
+};
+async function watchCitations(it) {
+  try {
+    setStatus("looking up…");
+    const p = it.recid ? { recid: it.recid, title: it.title } : await resolvePaper(it.arxiv);
+    setStatus(""); openManage(); addPaperToDraft(p, it.tags.slice());
+  } catch (e) { setStatus(""); alert(e.message); }
+}
+$("addauthorbtn").onclick = async () => {
+  const name = $("addauthor").value.trim(); if (!name) return;
+  try {
+    $("dlgmsg").textContent = "Searching…";
+    const hits = await inspire("authors", { q: name, size: 8, fields: "name,ids,arxiv_categories,positions" });
+    const cands = hits.map(x => x.metadata).map(m => ({
+      name: m.name.preferred_name || m.name.value.split(",").reverse().join(" ").trim(),
+      bai: (m.ids || []).find(i => i.schema === "INSPIRE BAI")?.value,
+      info: [(m.positions || []).find(p => p.current)?.institution, (m.arxiv_categories || []).join(" ")].filter(Boolean).join(" · "),
+    })).filter(c => c.bai);
+    $("dlgmsg").textContent = cands.length ? "Pick the right person:" : "No INSPIRE author profile found.";
+    $("cands").replaceChildren(...cands.map(c => h("button", { onclick: () => {
+      if (draft.authors.some(w => w.bai === c.bai)) { $("dlgmsg").textContent = "Already watching that author."; return; }
+      draft.authors.push({ label: c.name, bai: c.bai, tags: [] }); drawEditor(); $("cands").replaceChildren(); $("addauthor").value = "";
+      $("dlgmsg").textContent = "Added. Set tags if you like, then press Save watch list.";
+      $("tauthors").lastElementChild?.scrollIntoView({ block: "center" });
+    } }, `${c.name}  —  ${c.bai}${c.info ? "  —  " + c.info : ""}`)));
+  } catch (e) { $("dlgmsg").textContent = e.message; }
+};
+for (const [inp, btn] of [["addpaper", "addpaperbtn"], ["addauthor", "addauthorbtn"]])
+  $(inp).onkeydown = e => { if (e.key === "Enter") { e.preventDefault(); $(btn).click(); } };
+$("savewatch").onclick = async () => {
+  if (draft.papers.concat(draft.authors).some(w => !w.label.trim())) { $("dlgmsg").textContent = "Every entry needs a label."; return; }
+  $("dlgmsg").textContent = "Saving…";
+  try {
+    let r = await writeText("watchlist.json", MAIN_BRANCH, fmtWatch(draft), S.watchSha, "Update watch list");
+    if (r.status === 409 || r.status === 422) {   // changed elsewhere since this page loaded
+      S.watchSha = (await readJSON("watchlist.json", MAIN_BRANCH)).sha;
+      r = await writeText("watchlist.json", MAIN_BRANCH, fmtWatch(draft), S.watchSha, "Update watch list");
+    }
+    if (!r.ok) throw new Error(`HTTP ${r.status}${r.status === 403 || r.status === 404 ? " — the token needs Contents: Read and write on this repository" : ""}`);
+    S.watchSha = (await r.json()).content.sha; S.watch = JSON.parse(JSON.stringify(draft));
+    buildFilters(); render();
+    $("dlgmsg").textContent = "Saved. The feed re-runs automatically and updates in a few minutes.";
+  } catch (e) { $("dlgmsg").textContent = `Not saved: ${e.message}`; }
+};
+$("savetoken").onclick = async () => {
+  const t = $("token").value.trim(); if (!t) return;
+  $("tokenmsg").textContent = "Checking…";
+  const old = token; token = t;
+  try {
+    const r = await gh("");
+    if (!r.ok) throw new Error(r.status === 401 ? "GitHub rejected this token." : `HTTP ${r.status}`);
+    if (!(await r.json()).permissions?.push) throw new Error("This token cannot write to the repository (needs Contents: Read and write).");
+    store.set("token", t);
+    const local = store.get("read", []);      // carry over marks made before the token existed
+    if (local.length) { ops = ops.concat(local.map(id => ["+", id])); store.set("ops", ops); store.del("read"); }
+    $("tokenmsg").textContent = "Token saved."; $("savewatch").disabled = false; $("dlgmsg").textContent = "";
+    await load();
+  } catch (e) { token = old; $("tokenmsg").textContent = e.message; }
+};
+$("forgettoken").onclick = () => {
+  store.set("read", [...S.read]); store.del("token"); store.del("ops"); token = ""; ops = [];
+  $("token").value = ""; $("tokenmsg").textContent = "Token removed from this browser."; $("savewatch").disabled = true;
+};
+
+let loaded = false;
+addEventListener("load", () => { if (loaded) render(); });   // re-render once KaTeX has loaded
+load();
+</script>
+</body>
+</html>
