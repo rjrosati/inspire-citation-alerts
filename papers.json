@@ -1,7 +1,46 @@
 {
- "updated": "2026-11-16T17:04:01+00:00",
+ "updated": "2026-11-16T21:32:35+00:00",
  "warnings": [],
  "items": [
+  {
+   "id": "2603.03165",
+   "recid": "3125375",
+   "arxiv": "2603.03165",
+   "title": "Testing gravitational wave polarizations with LISA",
+   "authors": [
+    "Shingo Akama",
+    "Maxence Corman",
+    "Paola C.M. Delgado",
+    "Alice Garoffolo",
+    "Macarena Lagos",
+    "Alberto Mangiagli",
+    "Sylvain Marsat",
+    "Manuel Piarulli"
+   ],
+   "author_count": 19,
+   "collaborations": [
+    "LISA Cosmology Working Group"
+   ],
+   "categories": [
+    "astro-ph.CO",
+    "gr-qc",
+    "hep-ph"
+   ],
+   "abstract": "In this paper we quantify the ability of the Laser Interferometer Space Antenna (LISA) to test the presence of non-tensorial polarizations as well as modifications to the tensor ones in gravitational waves emitted from massive black hole binaries. We employ the Parametrized Post-Einsteinian (PPE) formalism to model deviations from General Relativity (GR) for tensor, vector, and scalar polarizations. Our PPE parametrization is inspired by post-Newtonian waveforms from four modified gravity theories: Horndeski, Einstein-aether, Rosen's bimetric, and Lightman-Lee. We consistently implement these modifications across the inspiral, merger, and ringdown phases, ensuring proper waveform alignment and tapering. Subsequently, we perform Fisher forecasts to derive expected constraints on deviations from General Relativity and map these constraints to the parameter spaces of the four gravity theories. For tensor polarizations, LISA achieves constraints on amplitude modifications ranging between $\\sim 10^{-4}-10^{-2}$ precision level, depending on the frequency evolution of the modifications, for systems with $10^5-10^7 {\\, \\rm M}_\\odot$ at $z = 1$. We find that LISA can distinguish breathing and longitudinal scalar polarizations only for relatively light binaries with $M \\lesssim 10^4 {\\, \\rm M}_\\odot$, beyond which these modes become degenerate in the detector response. Importantly, constraints on vector polarizations are approximately 2-3 times more precise than for scalar polarizations. For both vector and scalar modes, amplitude measurements reach precisions ranging between $\\sim 10^{-8}-10^{-2}$, depending on the frequency evolution of the modifications, for systems with $10^5-10^7 {\\, \\rm M}_\\odot$ at $z = 1$. These results demonstrate LISA's potential to probe gravity in the strong-field regime via gravitational wave polarizations.",
+   "date": "2026-03-03",
+   "added": "2026-11-16T21:32:35+00:00",
+   "why": [
+    {
+     "kind": "author",
+     "label": "LISA Cosmology Working Group"
+    }
+   ],
+   "tags": [
+    "GW",
+    "LISA",
+    "cosmology"
+   ]
+  },
   {
    "id": "2610.01825",
    "recid": "3210654",
