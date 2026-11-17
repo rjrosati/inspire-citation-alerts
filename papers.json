@@ -1,7 +1,42 @@
 {
- "updated": "2026-11-16T21:34:21+00:00",
+ "updated": "2026-11-17T08:46:07+00:00",
  "warnings": [],
  "items": [
+  {
+   "id": "2611.19293",
+   "recid": "3229462",
+   "arxiv": "2611.19293",
+   "title": "Bayesian Time-Varying Spectral Estimation for LISA with P-Splines",
+   "authors": [
+    "Avi Vajpeyi",
+    "Giorgio Mentasti",
+    "Ollie Burke",
+    "Renate Meyer",
+    "Patricio Maturana-Russel",
+    "Quentin Baghi"
+   ],
+   "author_count": 6,
+   "collaborations": [],
+   "categories": [
+    "stat.ME",
+    "astro-ph.IM",
+    "gr-qc"
+   ],
+   "abstract": "We model the evolutionary spectrum of a slowly time-varying process by a linear combination of products of time- and frequency-dependent B-splines, placing a Gaussian tensor-product penalty prior on the coefficients. The posterior distribution is obtained by updating the prior using a Whittle-type likelihood approximation of the Wilson-Daubechies-Meyer time-frequency coefficients. Separate regularisation in time and frequency allows non-stationary spectral structure to be inferred. An adaptive coarse-grained likelihood reduces the computational cost while preserving fine resolution around sharp spectral features. We first validate the method using repeated simulations of a locally stationary process with known spectrum, showing lower reconstruction errors and narrower posterior intervals as the sample size increases. We then apply it to a year-long simulated LISA data set with stationary instrumental single link spectra, an evolving time-delay interferometry (TDI) response, and a modulated Galactic foreground. We compare a flexible total power spectral density (PSD) model with models incorporating progressively stronger physical information and examine both continuous and gapped observations. Allowing time variation substantially improves reconstruction relative to a stationary model, while incorporating physical information about the TDI response further improves recovery, particularly near its moving spectral features. The results illustrate the trade-off between spectral flexibility, physical assumptions, and posterior uncertainty in non-stationary LISA noise estimation.",
+   "date": "2026-11-14",
+   "added": "2026-11-17T08:46:07+00:00",
+   "why": [
+    {
+     "kind": "author",
+     "label": "Quentin Baghi"
+    }
+   ],
+   "tags": [
+    "GW",
+    "LISA",
+    "data analysis"
+   ]
+  },
   {
    "id": "2603.03165",
    "recid": "3125375",
