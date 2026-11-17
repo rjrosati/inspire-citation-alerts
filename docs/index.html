@@ -320,7 +320,8 @@ $("undo").onclick = () => { setRead(lastMarked, false); $("toast").style.display
 // ---------- filtering & rendering ----------
 function matches(it) {
   if (!F.showRead && S.read.has(it.id)) return false;
-  if (F.kind !== "all" && !it.why.some(w => w.kind === F.kind)) return false;
+  if (F.kind === "agent3") { if (!it.why.some(w => w.kind === "agent" && w.score >= 3)) return false; }
+  else if (F.kind !== "all" && !it.why.some(w => w.kind === F.kind)) return false;
   if (F.tags.size && !it.tags.some(t => F.tags.has(t))) return false;
   if (F.watch && !it.why.some(w => `${w.kind}:${w.label}` === F.watch)) return false;
   if (F.q) {
@@ -330,7 +331,7 @@ function matches(it) {
   return true;
 }
 function buildFilters() {
-  const kinds = [["all", "All"], ["author", "Authors"], ["cites", "Citations"], ["agent", "Agent picks"]];
+  const kinds = [["all", "All"], ["author", "Authors"], ["cites", "Citations"], ["agent", "Agent picks"], ["agent3", "Agent ★★★"]];
   $("kinds").replaceChildren(...kinds.map(([k, label]) =>
     h("button", { class: "chip" + (F.kind === k ? " on" : ""), onclick: () => { F.kind = k; buildFilters(); render(); } }, label)), " ");
   const tags = [...new Set([...S.items.flatMap(it => it.tags),
