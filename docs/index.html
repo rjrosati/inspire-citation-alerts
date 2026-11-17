@@ -84,6 +84,7 @@ button.chip.on { background: var(--accent); color: #fff; }
 .acts button.on { background: var(--agent); border-color: var(--accent); }
 #views { display: inline-flex; gap: 4px; }
 #views .chip { font-size: 14px; line-height: 26px; padding: 0 12px; }
+.more { text-align: center; padding: 14px 0 4px; }
 .empty { text-align: center; color: var(--muted); padding: 60px 0; }
 #toast { position: fixed; left: 50%; bottom: 20px; transform: translateX(-50%);
   background: var(--text); color: var(--bg); border-radius: 8px; padding: 8px 14px;
@@ -255,6 +256,9 @@ let ops = store.get("ops", []);       // pending read-state changes: [["+"|"-", 
 let sops = store.get("sops", []);     // pending saved changes: [["+", paper] | ["-", id], ...]
 let cur = -1;                          // keyboard cursor (index into shown list)
 let shown = [];
+const PAGE = 100;
+let limit = PAGE;                      // how many of the shown papers are in the page right now
+const elCache = new Map();             // id -> { sig, el, math }: built papers, rebuilt only when their own state changes
 
 async function load() {
   try {
@@ -280,7 +284,7 @@ async function load() {
     S.read = new Set(token ? (read.data?.read || []) : store.get("read", []));
     if (token) for (const [op, id] of ops) op === "+" ? S.read.add(id) : S.read.delete(id);
     if (!papers.data) S.warnings.unshift("No feed data found yet. The first update may still be running.");
-    loaded = true; buildFilters(); render();
+    elCache.clear(); loaded = true; buildFilters(); render();
     if (token && (ops.length || sops.length)) scheduleSync(100);
   } catch (e) {
     $("list").replaceChildren(h("div", { class: "empty" }, `Could not load the feed: ${e.message}`));
@@ -395,18 +399,18 @@ function matches(it) {
 function buildFilters() {
   const kinds = [["all", "All"], ["author", "Authors"], ["cites", "Citations"], ["agent", "Agent picks"], ["agent3", "Agent ★★★"]];
   $("kinds").replaceChildren(...kinds.map(([k, label]) =>
-    h("button", { class: "chip" + (F.kind === k ? " on" : ""), onclick: () => { F.kind = k; buildFilters(); render(); } }, label)), " ");
+    h("button", { class: "chip" + (F.kind === k ? " on" : ""), onclick: () => { F.kind = k; buildFilters(); refilter(); } }, label)), " ");
   const tags = [...new Set([...S.items.flatMap(it => it.tags),
     ...["papers", "authors"].flatMap(s => (S.watch[s] || []).flatMap(w => w.tags || []))])].sort((a, b) => a.localeCompare(b));
   $("tags").replaceChildren(...tags.map(t =>
-    h("button", { class: "chip" + (F.tags.has(t) ? " on" : ""), onclick: () => { F.tags.has(t) ? F.tags.delete(t) : F.tags.add(t); buildFilters(); render(); } }, t)));
+    h("button", { class: "chip" + (F.tags.has(t) ? " on" : ""), onclick: () => { F.tags.has(t) ? F.tags.delete(t) : F.tags.add(t); buildFilters(); refilter(); } }, t)));
   const opt = (v, label) => h("option", { value: v, selected: F.watch === v }, label);
   $("watchsel").replaceChildren(opt("", "Any watch"),
     h("optgroup", { label: "Citations of" }, (S.watch.papers || []).map(w => opt(`cites:${w.label}`, w.label))),
     h("optgroup", { label: "Authors" }, (S.watch.authors || []).map(w => opt(`author:${w.label}`, w.label))));
 }
 const fmtDay = d => d ? new Date(d + "T12:00:00").toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric" }) : "";
-function itemEl(it, i) {
+function itemEl(it) {
   const isRead = S.read.has(it.id), isSaved = S.saved.has(it.id);
   const url = it.arxiv ? `https://arxiv.org/abs/${it.arxiv}` : `https://inspirehep.net/literature/${it.recid}`;
   let authors = it.collaborations.length ? it.collaborations.join(", ") + " Collaboration" : it.authors.join(", ");
@@ -416,7 +420,7 @@ function itemEl(it, i) {
     it.arxiv && h("a", { href: `https://arxiv.org/pdf/${it.arxiv}`, target: "_blank", rel: "noopener" }, "PDF"),
     it.recid && h("a", { href: `https://inspirehep.net/literature/${it.recid}`, target: "_blank", rel: "noopener" }, "INSPIRE"),
     h("button", { class: "linkbtn", title: "Add papers citing this one to the feed", onclick: ev => { ev.preventDefault(); watchCitations(it); } }, "Watch citations"));
-  return h("article", { class: "item" + (isRead ? " isread" : "") + (i === cur ? " cur" : ""), "data-i": i },
+  return h("article", { class: "item" + (isRead ? " isread" : "") },
     h("h2", {}, h("a", { href: url, target: "_blank", rel: "noopener" }, it.title)),
     h("div", { class: "acts" },
       h("button", { class: isSaved ? "on" : null, title: isSaved ? "Remove from saved (s)" : "Save for later (s)",
@@ -430,45 +434,77 @@ function itemEl(it, i) {
     agent.map(w => h("div", { class: "reason" }, "★".repeat(w.score || 1) + " ", w.label)),
     h("details", {}, h("summary", {}, "Abstract", links), h("div", { class: "abstract" }, it.abstract || "(no abstract)")));
 }
+function typeset(el) {
+  try {
+    renderMathInElement(el, { throwOnError: false, delimiters: [
+      { left: "$$", right: "$$", display: false }, { left: "$", right: "$", display: false },
+      { left: "\\(", right: "\\)", display: false }] });
+  } catch {}
+}
+// Reuse a paper's element (formulas already typeset) unless its read/saved state changed.
+function itemNode(it) {
+  const sig = `${S.read.has(it.id)}|${S.saved.has(it.id)}`;
+  let c = elCache.get(it.id);
+  if (!c || c.sig !== sig) { c = { sig, el: itemEl(it), math: false }; elCache.set(it.id, c); }
+  if (!c.math && window.renderMathInElement) { typeset(c.el); c.math = true; }
+  return c.el;
+}
+const showMore = () => { limit += PAGE; render(); };
+const more = h("div", { class: "more" }, h("button", { onclick: showMore }, "Show more"));
+new IntersectionObserver(es => { if (es.some(e => e.isIntersecting)) showMore(); }, { rootMargin: "1000px" }).observe(more);
+function refilter() { limit = PAGE; cur = -1; render(); }
+const dayCache = new Map();
+const dayNode = d => dayCache.get(d) || dayCache.set(d, h("div", { class: "day" }, "Added " + fmtDay(d))).get(d);
+// Make the list's children equal `nodes`, touching only what changed (marking one paper
+// read removes one element instead of re-inserting hundreds).
+function reconcile(list, nodes) {
+  const want = new Set(nodes);
+  for (const ch of [...list.children]) if (!want.has(ch)) ch.remove();
+  let ref = list.firstChild;
+  for (const node of nodes) {
+    if (node === ref) { ref = ref.nextSibling; continue; }
+    list.insertBefore(node, ref);
+  }
+}
 function render() {
   shown = S.items.filter(matches);
   if (cur >= shown.length) cur = shown.length - 1;
   const inbox = S.items.filter(it => !S.read.has(it.id) && !S.saved.has(it.id)).length;
   const nsaved = S.items.filter(it => S.saved.has(it.id)).length;
   const tab = (v, label) => h("button", { class: "chip" + (F.view === v ? " on" : ""),
-    onclick: () => { F.view = v; cur = -1; render(); scrollTo(0, 0); } }, label);
+    onclick: () => { F.view = v; refilter(); scrollTo(0, 0); } }, label);
   $("views").replaceChildren(tab("inbox", `Inbox ${inbox}`), tab("saved", `Saved ${nsaved}`));
   const base = F.view === "saved" ? nsaved : inbox;
   $("count").textContent = shown.length !== base ? `${shown.length} shown` : "";
   document.title = inbox ? `(${inbox}) Paper feed` : "Paper feed";
   $("banners").replaceChildren(...S.warnings.map(w => h("div", { class: "banner" }, "⚠ " + w)));
   const out = []; let day = null;
-  shown.forEach((it, i) => {
+  shown.slice(0, limit).forEach((it, i) => {
     const d = (it.added || "").slice(0, 10);
-    if (d !== day) { day = d; out.push(h("div", { class: "day" }, "Added " + fmtDay(d))); }
-    out.push(itemEl(it, i));
+    if (d !== day) { day = d; out.push(dayNode(d)); }
+    const el = itemNode(it);
+    el.classList.toggle("cur", i === cur);
+    out.push(el);
   });
+  if (shown.length > limit) out.push(more);
   if (!out.length) out.push(h("div", { class: "empty" }, F.view === "saved" ? "Nothing saved for later."
     : S.items.length ? "Nothing unread matches. 🎉" : "The feed is empty."));
-  $("list").replaceChildren(...out);
+  reconcile($("list"), out);
   $("updated").textContent = (S.updated ? `Feed updated ${new Date(S.updated).toLocaleString()}` : "") +
     (S.triaged ? ` · agent triage through ${new Date(S.triaged).toLocaleDateString()}` : "") + ` · ${REPO}`;
-  if (window.renderMathInElement) try {
-    renderMathInElement($("list"), { throwOnError: false, delimiters: [
-      { left: "$$", right: "$$", display: false }, { left: "$", right: "$", display: false },
-      { left: "\\(", right: "\\)", display: false }] });
-  } catch {}
 }
-$("q").oninput = e => { F.q = e.target.value.trim(); render(); };
-$("showread").onchange = e => { F.showRead = e.target.checked; render(); };
-$("watchsel").onchange = e => { F.watch = e.target.value; render(); };
+$("q").oninput = e => { F.q = e.target.value.trim(); refilter(); };
+$("showread").onchange = e => { F.showRead = e.target.checked; refilter(); };
+$("watchsel").onchange = e => { F.watch = e.target.value; refilter(); };
 $("markall").onclick = () => {
   const ids = shown.filter(it => !S.read.has(it.id)).map(it => it.id);
   if (ids.length && confirm(`Mark ${ids.length} paper${ids.length > 1 ? "s" : ""} as read?`)) markRead(ids, `Marked ${ids.length} read`);
 };
 addEventListener("keydown", e => {
   if (e.target.matches("input, select, textarea") || $("dlg").open || e.ctrlKey || e.metaKey || e.altKey) return;
-  const move = d => { cur = Math.max(0, Math.min(shown.length - 1, cur + d)); render();
+  const move = d => { cur = Math.max(0, Math.min(shown.length - 1, cur + d));
+    if (cur >= limit - 3) limit = cur + PAGE;
+    render();
     document.querySelector(".item.cur")?.scrollIntoView({ block: "center" }); };
   const it = shown[cur];
   if (e.key === "j") move(1);
