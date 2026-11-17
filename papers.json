@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T08:54:43+00:00",
+ "updated": "2026-11-17T14:41:47+00:00",
  "warnings": [],
  "items": [
   {
@@ -379,35 +379,6 @@
    ]
   },
   {
-   "id": "2609.34788",
-   "recid": "3208852",
-   "arxiv": "2609.34788",
-   "title": "The separate universe approach with non minimal coupling to gravity",
-   "authors": [
-    "Hugo Holland",
-    "Julien Grain"
-   ],
-   "author_count": 2,
-   "collaborations": [],
-   "categories": [
-    "astro-ph.CO",
-    "gr-qc",
-    "hep-th"
-   ],
-   "abstract": "In this paper we extend a study of the validity conditions of the separate universe approach of cosmological perturbations to models of inflation with multiple fields that are non minimally coupled to gravity. The separate universe approach effectively describes the universe as a collection of homogeneous and isotropic patches, leading to an effective description of cosmological perturbations at large scales. This approximation is a necessary step in stochastic inflation and in the $δ\\N$ formalism. We study and compare the dynamics of cosmological perturbation theory at large scales to the dynamics derived in the separate universe picture for non linear sigma models where we have allowed a non minimal coupling between the fields and gravity. We found that the separate universe approach adequately reproduces the dynamics of the large scale perturbations, provided the wavelength of the modes considered is greater than a list of lower bounds derived from the background evolution of the model we consider. These lower bounds are then compared to those derived in the classically equivalent Einstein frame description of the Jordan frame model at hand. In particular these conditions are derived and compared for a Higgs-like toy model of inflation in the large field limit.",
-   "date": "2026-09-28",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "cites",
-     "label": "Achucarro+ non-Gauss"
-    }
-   ],
-   "tags": [
-    "inflation"
-   ]
-  },
-  {
    "id": "2609.32572",
    "recid": "3208532",
    "arxiv": "2609.32572",
@@ -717,71 +688,6 @@
    "tags": [
     "cosmology",
     "strings"
-   ]
-  },
-  {
-   "id": "2609.22717",
-   "recid": "3205504",
-   "arxiv": "2609.22717",
-   "title": "Semiclassical reconstruction of the Toda pole lattice via analytic continuation of the Probabilistic Approach",
-   "authors": [
-    "Jacques Distler",
-    "Bahaa Elshimy"
-   ],
-   "author_count": 2,
-   "collaborations": [],
-   "categories": [
-    "hep-th"
-   ],
-   "abstract": "We develop a probabilistic construction of Toda field theory correlators from the Coulomb gas representation. Reinterpreting $n$-point functions of primaries as $w$-moments of random variables with respect to a Gaussian measure, we derive constraints on the Toda momenta and coupling constant. $L^2$ and $L^p$ convergence conditions for the associated random variables, triviality constraints on the correlators, and local integrability conditions for the cross-moments are derived. These constraints define an extended region of convergence for the Toda correlators and provide a systematic, probabilistic interpretation of the Seiberg bounds. We proceed to analytically continue the moment indices by employing a Mellin-Barnes representation of the random variables. The local convergence boundaries become meromorphic local integrability divisors, and, in the semiclassical $b\\to0$ limit, these divisors reconstruct the Liouville charge pole lattice. For $A_n$ Toda theory, we show that natural $W_n$-closure conditions in this semiclassical limit select rank-one, Virasoro-like submodules inside the full Toda theory. On these slices, the scalar integrability conditions reduce to Liouville-like divisors and recover the corresponding Toda charge pole lattices.",
-   "date": "2026-09-19",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Jacques Distler"
-    }
-   ],
-   "tags": [
-    "strings"
-   ]
-  },
-  {
-   "id": "2609.20552",
-   "recid": "3204962",
-   "arxiv": "2609.20552",
-   "title": "Mineral Detection of Neutrinos and Dark Matter 2026 Proceedings",
-   "authors": [
-    "Alexey Elykov",
-    "Patrick Stengel",
-    "Natsue Abe",
-    "Daniel Ang",
-    "Lorenzo Apollonio",
-    "Levente Balogh",
-    "Laura Baudis",
-    "Chinmay Bharathulwar"
-   ],
-   "author_count": 84,
-   "collaborations": [],
-   "categories": [
-    "physics.ins-det",
-    "astro-ph.CO",
-    "astro-ph.IM",
-    "hep-ex",
-    "hep-ph"
-   ],
-   "abstract": "The fourth \"Mineral Detection of Neutrinos and Dark Matter\" (MDvDM'26) meeting was held April 14-17, 2026 in Karlsruhe, Germany, hosted by the Institute for Astroparticle Physics (IAP) at Karlsruhe Institute of Technology (KIT). These proceedings detail the contributions that were presented during MDvDM'26, illustrating the unprecedented progress in theoretical, computational and experimental studies towards the realization of the concept of mineral detectors. Mineral detectors represent an emerging particle detection concept that has risen in prominence in recent years due to the advent of modern computational and high-resolution microscopy techniques. Natural and synthetic crystals are capable of retaining microscopic damage features induced by nuclear recoils, which could be then read out with a variety of micrometer and nanometer resolution microscopy techniques. On laboratory time scales mineral detectors could be employed for reactor neutrino monitoring and dark matter detection, with the potential to measure the directions as well as the energies of the induced nuclear recoils. Uniquely, ancient natural crystals (so-called paleo-detectors) that have been recording nuclear recoils over geological timescales could be used for studying astrophysical neutrinos, cosmic rays, dark matter and heavy exotic particles, as well as the variation of their fluxes over our Galaxy's lifetime. In recent years the international MDvDM community has been successfully tackling the challenges associated with realizing the concept of mineral detectors, opening the pathway towards a fully fledged experimental program and potential future discoveries.",
-   "date": "2026-09-17",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Katie Freese"
-    }
-   ],
-   "tags": [
-    "cosmology",
-    "inflation"
    ]
   },
   {
@@ -1233,36 +1139,6 @@
     }
    ],
    "tags": [
-    "inflation"
-   ]
-  },
-  {
-   "id": "2609.01583",
-   "recid": "3198592",
-   "arxiv": "2609.01583",
-   "title": "Higgsino Dark Matter Interpretation of the LUX-ZEPLIN 248 keV Nuclear-Recoil Event",
-   "authors": [
-    "Katherine Freese",
-    "Dionysios P. Theodosopoulos"
-   ],
-   "author_count": 2,
-   "collaborations": [],
-   "categories": [
-    "hep-ph",
-    "astro-ph.CO",
-    "hep-th"
-   ],
-   "abstract": "We propose Higgsino dark matter as a potential interpretation of the $248~\\mathrm{keV}$ nuclear-recoil event of interest reported by the LUX-ZEPLIN (LZ) experiment. LZ studied several rare background processes and detector effects in detail, but did not identify any as a likely explanation of the event. A nearly pure Higgsino naturally realizes inelastic dark matter through the off-diagonal $Z$ coupling of two nearly degenerate neutral Majorana states separated by a mass splitting $δ$. The same electroweak interaction fixes the inelastic Higgsino-nucleon scattering cross section, rather than leaving it as a free parameter. We show that the predicted Higgsino inelastic scattering cross section approaches the published LZ two-sided 90% confidence interval for a Higgsino mass $m_{\\widetilde H}\\sim1~\\mathrm{TeV}$ and a mass splitting $δ\\sim350~\\mathrm{keV}$.",
-   "date": "2026-09-01",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Katie Freese"
-    }
-   ],
-   "tags": [
-    "cosmology",
     "inflation"
    ]
   },
@@ -1970,40 +1846,6 @@
    ]
   },
   {
-   "id": "2608.10105",
-   "recid": "3189976",
-   "arxiv": "2608.10105",
-   "title": "Reconstructing Dark Matter Mass and Discriminating Standard and Non-Standard WIMP-Nucleus Interactions with Paleo-Detectors",
-   "authors": [
-    "Dionysios P. Theodosopoulos",
-    "Katherine Freese",
-    "Chris Kelso",
-    "Patrick Stengel"
-   ],
-   "author_count": 4,
-   "collaborations": [],
-   "categories": [
-    "astro-ph.CO",
-    "astro-ph.IM",
-    "hep-ex",
-    "hep-ph",
-    "physics.ins-det"
-   ],
-   "abstract": "Paleo-detectors record and retain crystal damage in ancient minerals from nuclear recoils induced by dark matter scattering over geological timescales. Previous studies have shown that paleo-detectors can provide sensitivity to a variety of dark matter (DM) scenarios which is complementary to conventional direct-detection experiments. In this paper, we complete the first detailed study of how well paleo-detectors can reconstruct DM parameters or distinguish between different types of DM interactions with nuclei in the presence of a DM signal, considering both elastic and inelastic DM-nucleus scattering. For representative nuclear recoil track read-out scenarios, we demonstrate that weakly interacting massive particle (WIMP) DM masses can be reconstructed for a variety of Non-Relativistic Effective Field Theory (NREFT) interactions between WIMPs and nuclei. In particular, paleo-detectors are projected to be capable of reconstructing WIMP masses $\\lesssim$ 10 GeV, a regime that is challenging for conventional direct-detection experiments; further, we find that paleo-detectors could reconstruct WIMP masses up to 1 TeV for hypothetical signals within their accessible parameter space, extending the mass range over which reconstruction is possible by up to a factor of $\\sim 2$ compared with analogous studies of conventional direct-detection experiments. In addition, we demonstrate that paleo-detectors could discriminate between canonical spin-independent or spin-dependent NREFT interactions and non-canonical interactions which can depend on the relative velocity or momentum transferred between the WIMP and nucleus. Specifically, at WIMP masses $\\gtrsim$ 10 GeV, we project that canonical NREFT interactions can be excluded by paleo-detectors in the cases of nearly all non-canonical interactions without measurement of nuclear recoil direction, which conventional experiments typically require.",
-   "date": "2026-08-10",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Katie Freese"
-    }
-   ],
-   "tags": [
-    "cosmology",
-    "inflation"
-   ]
-  },
-  {
    "id": "2608.09781",
    "recid": "3189304",
    "arxiv": "2608.09781",
@@ -2075,49 +1917,6 @@
    ]
   },
   {
-   "id": "2608.07453",
-   "recid": "3188701",
-   "arxiv": "2608.07453",
-   "title": "Sensitivity of Next-Generation CMB Surveys to Neutrinos and Other Light Relics",
-   "authors": [
-    "Cynthia Trendafilova",
-    "Srinivasan Raghunathan",
-    "Benjamin Wallisch",
-    "Joel Meyers",
-    "Kevork N. Abazajian",
-    "Edoardo Altamura",
-    "Carlo Baccigalupi",
-    "Kimberly K. Boddy"
-   ],
-   "author_count": 36,
-   "collaborations": [
-    "CMB-S4"
-   ],
-   "categories": [
-    "astro-ph.CO",
-    "astro-ph.IM",
-    "hep-ph",
-    "hep-th"
-   ],
-   "abstract": "Neutrinos and other light relics leave characteristic imprints in the cosmic microwave background anisotropies, making their observation a sensitive probe of the particle content and thermal history of the early universe. The energy density in these relativistic species is parameterized by their effective number $N_\\mathrm{eff}$. Measuring this parameter at the percent level, which is a long-standing science goal of CMB-S4 and other experiments, would test a wide range of well-motivated physics within and beyond the Standard Model of particle physics. In this paper, we present Fisher-matrix forecasts of the projected sensitivity to $N_\\mathrm{eff}$ of several CMB-S4 survey configurations considered during its extensive design phase. The conceptual design reaches $σ(N_\\mathrm{eff}) < 0.03$ over its seven-year observing period, while the revised configuration achieves the same precision over a longer timescale. We complement these results with a cosmic-variance-limited survey over the same multipole range to quantify the room for improvement accessible with additional instrumental, observational, and theoretical efforts. Finally, we discuss the broad implications of precise $N_\\mathrm{eff}$ measurements for the radiation sector, big bang nucleosynthesis, light thermal relics, and other early-universe physics. The forecasts presented in this work are performed with the publicly released DRAFT (Dark Radiation Anisotropy Flowdown Team) tool. It provides an end-to-end pipeline from simulated foreground maps and component separation to delensing and projected sensitivities for any cosmological parameter, and it can be directly applied to other cosmic microwave background survey designs.",
-   "date": "2026-08-07",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Katie Freese"
-    },
-    {
-     "kind": "author",
-     "label": "Daniel Green"
-    }
-   ],
-   "tags": [
-    "cosmology",
-    "inflation"
-   ]
-  },
-  {
    "id": "2608.06709",
    "recid": "3188582",
    "arxiv": "2608.06709",
@@ -2173,40 +1972,6 @@
     {
      "kind": "author",
      "label": "Daniel Green"
-    }
-   ],
-   "tags": [
-    "cosmology",
-    "inflation"
-   ]
-  },
-  {
-   "id": "inspire:3193100",
-   "recid": "3193100",
-   "arxiv": null,
-   "title": "Review of Particle Physics",
-   "authors": [
-    "F. Takahashi",
-    "K. Hikasa",
-    "Y. Sumino",
-    "M. Tanabashi",
-    "J. Tanaka",
-    "M. Yokoyama",
-    "K. Agashe",
-    "G. Aielli"
-   ],
-   "author_count": 259,
-   "collaborations": [
-    "Particle Data Group"
-   ],
-   "categories": [],
-   "abstract": "The Review summarizes much of particle physics and cosmology. Using data from previous editions, plus 3,200 new measurements from 903 papers, we list, evaluate, and average measured properties of gauge bosons and the recently discovered Higgs boson, leptons, quarks, mesons, and baryons. We summarize searches for hypothetical particles such as supersymmetric particles, heavy bosons, axions, dark photons, etc. Particle properties and search limits are listed in Summary Tables. We give numerous tables, figures, formulae, and reviews of topics such as Higgs Boson Physics, Supersymmetry, Grand Unified Theories, Neutrino Mixing, Dark Energy, Dark Matter, Cosmology, Particle Detectors, Colliders, Probability and Statistics. Most of the 118 reviews are updated, including many that are heavily revised. The Review is divided into two volumes. Volume 1 includes the Summary Tables and 96 review articles. Volume 2 consists of the Particle Listings and contains also 22 reviews that address specific aspects of the data presented in the Listings. The complete Review (both volumes) is published online on the website of the Particle Data Group (pdg.lbl.gov) and in a journal. Volume 1 is available in print as the PDG Book. A Particle Physics Booklet with the Summary Tables and essential tables, figures, and equations from selected review articles is available in print, as a web version optimized for use on phones, and as an Android app. The PDG API (Application Programming Interface) provides access to the data published in the Review in machine-readable format.",
-   "date": "2026-08-05",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "David Wands"
     }
    ],
    "tags": [
@@ -2698,35 +2463,6 @@
    ]
   },
   {
-   "id": "2607.24922",
-   "recid": "3183868",
-   "arxiv": "2607.24922",
-   "title": "Unitary Dual-Resonance S-matrices",
-   "authors": [
-    "Claudia de Rham",
-    "Andrew J. Tolley",
-    "Zhuo-Hui Wang",
-    "Shuang-Yong Zhou"
-   ],
-   "author_count": 4,
-   "collaborations": [],
-   "categories": [
-    "hep-th"
-   ],
-   "abstract": "Dual-resonance models realize crossing symmetry, Regge behavior and infinitely many resonances in a compact analytic form but their canonical tree-level realizations fall short of genuine S-matrix unitarity. Here we explicitly construct fully unitary dual-resonance amplitudes distinct from the conventional worldsheet construction. The zero-width resonance towers are promoted into a physical absorptive spectrum that retains their characteristic crossing and Regge organization, while unitarizing the amplitude through a mechanism distinct from standard eikonalization. The resulting S-matrices are also local and analytic, and can contain controllable second-sheet Regge trajectories as well as substantial inelasticity. More broadly, our construction opens up a new route to charting the space of consistent strongly coupled S-matrices.",
-   "date": "2026-07-27",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Claudia de Rham"
-    }
-   ],
-   "tags": [
-    "cosmology"
-   ]
-  },
-  {
    "id": "2607.23398",
    "recid": "3183531",
    "arxiv": "2607.23398",
@@ -2781,38 +2517,6 @@
    "tags": [
     "strings",
     "swampland"
-   ]
-  },
-  {
-   "id": "2607.23616",
-   "recid": "3183546",
-   "arxiv": "2607.23616",
-   "title": "Standard Model Effective Field Theory and Oscillons",
-   "authors": [
-    "Z. Drogosz",
-    "E., I. Sfakianakis",
-    "K. Slawinska",
-    "A. Wereszczynski"
-   ],
-   "author_count": 4,
-   "collaborations": [],
-   "categories": [
-    "hep-th",
-    "hep-ph",
-    "nlin.PS"
-   ],
-   "abstract": "We show that the inclusion of a dimension-six operator in the Higgs potential has a dramatic impact on the stability of oscillons in the $SU(2)$ bosonic sector of the Standard Model, extending their lifetime by orders of magnitude. This happens for the physical value of the ratio between the Higgs and W boson masses, $m_H/m_W=1.556$ and for the dimension-six operator $O_6 = (Φ^\\dagger Φ)^3$ whose coupling constant is below the current upper bound.",
-   "date": "2026-07-26",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Evangelos Sfakianakis"
-    }
-   ],
-   "tags": [
-    "cosmology",
-    "inflation"
    ]
   },
   {
@@ -3272,36 +2976,6 @@
    ]
   },
   {
-   "id": "2607.15337",
-   "recid": "3181487",
-   "arxiv": "2607.15337",
-   "title": "Searching for Folded Primordial Non-Gaussianity with Galaxy Surveys",
-   "authors": [
-    "Si-Xiang Yang",
-    "Oliver H.E. Philcox"
-   ],
-   "author_count": 2,
-   "collaborations": [],
-   "categories": [
-    "astro-ph.CO",
-    "gr-qc",
-    "hep-ph",
-    "hep-th"
-   ],
-   "abstract": "Large-scale structure provides a powerful probe of inflationary physics through primordial non-Gaussianity (PNG): the galaxy power spectrum depends on local PNG through scale-dependent bias, while the galaxy bispectrum depends sensitively on both equilateral and orthogonal PNG. In this paper, we study whether galaxy surveys can also probe folded PNG, whose shape is enhanced near $k_1+k_2-k_3\\rightarrow0$. We consider three inflationary models with folded PNG, including excited initial states, imaginary speeds of sound, and dissipative inflation. These models fall into two classes: cutoff-regulated cases in which the folded-enhanced region has a power-law width, and dissipation-regulated cases in which the enhanced region is exponentially narrow. We develop a numerical pipeline for computing the corresponding PNG contributions to the redshift-space galaxy power spectrum multipoles and bispectrum monopole within the EFTofLSS. Using Fisher forecasts, we show that most of the constraining power on folded PNG comes from the galaxy bispectrum. For the cutoff-regulated models, nuisance parameter marginalization causes only a mild loss of information at large folded enhancement, but finite Fourier-space binning degrades constraints once the folded region becomes narrower than the bin width. For the dissipation-regulated models, the exponentially narrow folded enhancement is hard to resolve and the observable signal instead comes from the broader support of the template, leading to weaker binning dependence but larger overlap with the equilateral template. Our results show that folded PNG is a distinctive and promising target for galaxy bispectrum analyses, and the detectability depends on the width and morphology of the folded enhancement. The numerical pipeline developed in this work is general and can be used to study a wide class of non-separable primordial bispectra.",
-   "date": "2026-07-16",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "cites",
-     "label": "High slope potentials"
-    }
-   ],
-   "tags": [
-    "inflation"
-   ]
-  },
-  {
    "id": "2607.15507",
    "recid": "3181499",
    "arxiv": "2607.15507",
@@ -3602,37 +3276,6 @@
    ]
   },
   {
-   "id": "2607.05327",
-   "recid": "3177640",
-   "arxiv": "2607.05327",
-   "title": "Cosmological Correlators in KLF and the Double-Exchange",
-   "authors": [
-    "Nathan Belrhali",
-    "Arthur Poisson",
-    "Sébastien Renaux-Petel"
-   ],
-   "author_count": 3,
-   "collaborations": [],
-   "categories": [
-    "hep-th",
-    "astro-ph.CO",
-    "gr-qc"
-   ],
-   "abstract": "In this work, we present the procedure to find series representations of tree-level cosmological correlators using the Kontorovich-Lebedev-Fourier (KLF) space formalism. This framework allows us to trade the in-in nested time integrals for frequency integrals over rational propagators and vertex functions, which encode interactions among quantum fields on a de Sitter background. Because these functions are the key objects to understand in order to perform a diagrammatic computation, we derive their relevant analytic properties by using both their integral representation and series representation in terms of Lauricella functions. For a vertex involving any number of fields, we obtain the location of singularities, the corresponding residues and the large-frequency asymptotic behaviour. Gathering these properties at each frequency integration allows us to compute a tree-level correlator directly, without relying on the differential equations it satisfies. To illustrate this procedure, we provide a complete treatment of the double-exchange diagram. The computation naturally distinguishes the different physical contributions, whether to the background or to the cosmological collider signal. The newly derived result is expressed at most in terms of a double series over hypergeometric functions, which simplifies the analytical expression of the correlator.",
-   "date": "2026-07-06",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Sébastien Renaux-Petel"
-    }
-   ],
-   "tags": [
-    "cosmology",
-    "inflation"
-   ]
-  },
-  {
    "id": "inspire:3193087",
    "recid": "3193087",
    "arxiv": null,
@@ -3864,68 +3507,6 @@
    ]
   },
   {
-   "id": "2606.27309",
-   "recid": "3173064",
-   "arxiv": "2606.27309",
-   "title": "Laplace Space for Cosmological Correlators",
-   "authors": [
-    "Nathan Belrhali",
-    "Arthur Poisson",
-    "Sébastien Renaux-Petel"
-   ],
-   "author_count": 3,
-   "collaborations": [],
-   "categories": [
-    "hep-th",
-    "astro-ph.CO",
-    "gr-qc"
-   ],
-   "abstract": "Deep inside the horizon, every cosmological mode oscillates as a flat-space plane wave. A Laplace transform turns this fact into a general method: it resolves each curved-space mode into a superposition of plane waves dressed by a kernel that encodes the spacetime geometry, field content and dynamics, collapsing the time integrals onto flat-space ones. This provides simple diagrammatic rules that turn cosmological correlator diagrams into their flat-space counterparts integrated against Laplace-space kernels. On the paradigmatic massive single exchange, this integral representation makes the energy singularities manifest and evaluates in closed form as a single, rapidly convergent series valid throughout the kinematic domain, with no patching of separate expansions. The Laplace approach sheds conceptual and computational light on cosmological correlators in virtually any theory of the early universe.",
-   "date": "2026-06-25",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Sébastien Renaux-Petel"
-    }
-   ],
-   "tags": [
-    "cosmology",
-    "inflation"
-   ]
-  },
-  {
-   "id": "2606.27311",
-   "recid": "3173071",
-   "arxiv": "2606.27311",
-   "title": "Massive Cosmological Correlators from Flat Space: a Laplace-Space Approach",
-   "authors": [
-    "Nathan Belrhali",
-    "Arthur Poisson",
-    "Sébastien Renaux-Petel"
-   ],
-   "author_count": 3,
-   "collaborations": [],
-   "categories": [
-    "hep-th",
-    "astro-ph.CO",
-    "gr-qc"
-   ],
-   "abstract": "We develop a new approach to cosmological correlators, built on a simple physical fact: deep inside the Hubble radius every mode oscillates as a flat-space plane wave, the curvature of spacetime making itself felt only as the mode is stretched towards the horizon. A Laplace transform turns this observation into a computational tool, resolving each curved-space mode function into a continuous superposition of plane waves labelled by a dual variable and dressed by a kernel that encodes the spacetime geometry, field content and dynamics. Every time integral then reduces to an elementary flat-space one, yielding simple diagrammatic rules for cosmological correlators. We illustrate the construction on the massive single-exchange correlator. The Laplace representation makes its total- and partial-energy singularities transparent ''from flat space'', and yields a single closed-form, rapidly convergent series valid throughout the entire kinematic domain. Although developed for conformally coupled fields exchanging massive scalars in de Sitter, the approach carries over essentially unchanged to virtually all situations of interest in primordial cosmology.",
-   "date": "2026-06-25",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Sébastien Renaux-Petel"
-    }
-   ],
-   "tags": [
-    "cosmology",
-    "inflation"
-   ]
-  },
-  {
    "id": "2606.26004",
    "recid": "3172579",
    "arxiv": "2606.26004",
@@ -4008,34 +3589,6 @@
    "tags": [
     "inflation",
     "strings"
-   ]
-  },
-  {
-   "id": "2606.25154",
-   "recid": "3172590",
-   "arxiv": "2606.25154",
-   "title": "Diffeomorphic Scalar Duality",
-   "authors": [
-    "Claudia de Rham",
-    "Andrew J. Tolley"
-   ],
-   "author_count": 2,
-   "collaborations": [],
-   "categories": [
-    "hep-th",
-    "gr-qc"
-   ],
-   "abstract": "We show that every local scalar effective field theory admits a new kind of duality to an infinite class of local scalar field theories with distinct Lagrangians. The duality map takes the form of a field-dependent diffeomorphism, and cannot be obtained via purely local field redefinitions, nevertheless the dual theory has an identical $S$-matrix. The subset of interactions that maintain second-order equations of motion is non-trivially mapped into themselves under this transformation. We show how to couple generic scalar field theories to gravity in a way that preserves the duality. Crucially, this requires working in the Einstein-Cartan formalism, with the vielbein and spin connection treated as independent variables. When coupling to massless gravity, the duality is interpreted as a local field redefinition in which the vielbein transforms while the spin connection is held fixed; consequently, a torsion-free configuration is generically mapped to a dual configuration with non-zero torsion. We specify the general family of first-order gravitational theories that map into themselves under the duality. In the weak gravitational field limit, these reduce to scalar theories kinetically mixed with the graviton, which themselves form a family closed under the duality.",
-   "date": "2026-06-23",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Claudia de Rham"
-    }
-   ],
-   "tags": [
-    "cosmology"
    ]
   },
   {
@@ -4312,39 +3865,6 @@
    "tags": [
     "strings",
     "swampland"
-   ]
-  },
-  {
-   "id": "2606.20269",
-   "recid": "3170420",
-   "arxiv": "2606.20269",
-   "title": "An explicit and differentiable Wilson-Daubechies-Meyer transform for gravitational-wave data analysis",
-   "authors": [
-    "Avi Vajpeyi",
-    "Giorgio Mentasti",
-    "Quentin Baghi",
-    "Ollie Burke",
-    "Lorenzo Speri"
-   ],
-   "author_count": 5,
-   "collaborations": [],
-   "categories": [
-    "gr-qc",
-    "astro-ph.HE"
-   ],
-   "abstract": "The Wilson-Daubechies-Meyer (WDM) time-frequency transform has been widely used in gravitational-wave astronomy, yet a self-contained, mathematically explicit reference for practitioners remains lacking. This is especially true for those wishing to adopt the transform in modern Python and JAX inference workflows. We present wdm_transform, an open-source Python package implementing the WDM wavelet-packet time-frequency transform, and document its mathematical foundations, statistical properties, and practical implementation for gravitational-wave data analysis. The package supplies NumPy and JAX backends, both transforms (forward and inverse) validated to floating-point precision, with the JAX backend enabling GPU-accelerated transforms of million-point data streams in tens of milliseconds. As a worked example, we verify that the WDM-domain likelihood reproduces frequency-domain posteriors for a resolved LISA galactic binary under a shared stationary noise model, confirming numerical equivalence of the two representations in that controlled setting. This work paves the way for systematic optimisation of WDM tilings, a particularly promising direction for the non-stationary noise, stochastic backgrounds, and data gaps anticipated in future detectors, and for direct comparisons with alternative time-frequency representations needed to meet the challenges of future gravitational-wave data analysis.",
-   "date": "2026-06-18",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Quentin Baghi"
-    }
-   ],
-   "tags": [
-    "GW",
-    "LISA",
-    "data analysis"
    ]
   },
   {
@@ -4913,41 +4433,6 @@
    "tags": [
     "strings",
     "swampland"
-   ]
-  },
-  {
-   "id": "2606.06484",
-   "recid": "3165468",
-   "arxiv": "2606.06484",
-   "title": "Phenomenology of Inflaton-Driven Early QCD Confinement and Solution to Axion Isocurvature Problem",
-   "authors": [
-    "Evangelos I. Sfakianakis",
-    "Barmak Shams Es Haghi",
-    "Katherine Freese"
-   ],
-   "author_count": 3,
-   "collaborations": [],
-   "categories": [
-    "astro-ph.CO",
-    "hep-ph",
-    "hep-th"
-   ],
-   "abstract": "We study the phenomenology of early QCD confinement during inflation, driven by a direct coupling between the inflaton and Standard Model gluons. This coupling dynamically raises the QCD confinement scale, making the axion sufficiently heavy to suppress isocurvature perturbations during the CMB epoch. As inflation proceeds, the confinement scale decreases and the axion becomes light, allowing de Sitter fluctuations during the late stages of inflation or post-inflationary thermal fluctuations to generate the observed dark matter abundance. In addition, QCD-induced corrections to the inflationary potential can shift the scalar spectral index towards smaller values, providing a further observational handle. We embed this mechanism in an $α$-attractor model of inflation and explore the resulting parameter space. We show that, in the minimal scenario with reheating into gluons, successful dark matter production requires deconfinement to occur shortly after the CMB window. Extensions involving reheating through heavy right-handed neutrinos generally require large Yukawa couplings, which induce sizable loop corrections that spoil inflationary dynamics. We show that this tension can be resolved in the presence of supersymmetry and derive constraints on the SUSY breaking scale that allow the mechanism to remain viable within plateau models of inflation. Treating the reheat temperature as a free parameter further enlarges the viable parameter space.",
-   "date": "2026-06-04",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Katie Freese"
-    },
-    {
-     "kind": "author",
-     "label": "Evangelos Sfakianakis"
-    }
-   ],
-   "tags": [
-    "cosmology",
-    "inflation"
    ]
   },
   {
@@ -5891,41 +5376,6 @@
    ]
   },
   {
-   "id": "2605.15192",
-   "recid": "3155464",
-   "arxiv": "2605.15192",
-   "title": "Isocurvature-Free QCD Axion Dark Matter from Inflaton-Driven Early QCD: the Necessity of Inflationary Plateaus",
-   "authors": [
-    "Katherine Freese",
-    "Evangelos I. Sfakianakis",
-    "Barmak Shams Es Haghi"
-   ],
-   "author_count": 3,
-   "collaborations": [],
-   "categories": [
-    "astro-ph.CO",
-    "hep-ph",
-    "hep-th"
-   ],
-   "abstract": "A direct coupling between the inflaton and Standard Model gluons can dynamically raise the QCD confinement scale during inflation, making the axion temporarily heavy and suppressing axion isocurvature perturbations. As inflation proceeds, the confinement scale relaxes, the axion becomes light, and late-time de Sitter fluctuations can generate the observed dark matter abundance. We analyze this mechanism without specifying an inflationary potential, instead parametrizing the background by $ε(N) \\propto 1/N^p$, where $N$ is the number of $e$-folds before the end of inflation. The single parameter $p$ distinguishes monomial models ($p=1$), standard plateau models ($p=2$), and ultra-flat plateau or hilltop-like models ($p\\ge 3$). We analytically show that the mechanism selects plateau-like ($p\\ge 2$) inflation: monomial models generically cause the confinement scale to grow too rapidly, while plateau models keep the QCD sector under perturbative control. In the minimal scenario, reheating occurs through the same inflaton-gluon coupling, and viable axion dark matter production is obtained when deconfinement occurs after the CMB window. The early-confinement sector also generically shifts the scalar spectral index to smaller, redder values. Because ultra-flat ($p \\ge 3$) models inherently predict overly red spectra, this shift exacerbates their tension with CMB data, leaving $p=2$ plateau models as the phenomenologically viable parameter space (in this parametrization).",
-   "date": "2026-05-14",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Katie Freese"
-    },
-    {
-     "kind": "author",
-     "label": "Evangelos Sfakianakis"
-    }
-   ],
-   "tags": [
-    "cosmology",
-    "inflation"
-   ]
-  },
-  {
    "id": "2605.12948",
    "recid": "3155177",
    "arxiv": "2605.12948",
@@ -6250,37 +5700,6 @@
    ]
   },
   {
-   "id": "2605.05322",
-   "recid": "3152716",
-   "arxiv": "2605.05322",
-   "title": "Automorphic Structures of Heterotic Vacua",
-   "authors": [
-    "Jacob M. Leedom",
-    "Nicole Righi",
-    "Alexander Westphal"
-   ],
-   "author_count": 3,
-   "collaborations": [],
-   "categories": [
-    "hep-th",
-    "math-ph",
-    "math.MP"
-   ],
-   "abstract": "We study moduli stabilization in 4D effective field theories with Sp(4,$\\mathbb{Z}$) self-duality inspired by heterotic orbifold compactifications with Wilson lines. The target-space duality group of these theories is enhanced from SL$(2,\\mathbb{Z})$ to Sp$(4,\\mathbb{Z})$, making Siegel modular forms the appropriate language to formulate the effective supergravity action. We construct the corresponding effective theory including moduli-dependent threshold corrections to the gauge kinetic function and nonperturbative effects in the superpotential. The degeneration limit of the Wilson lines distinguishes different sectors and dictates which combination of cusp forms appears in threshold corrections. We compute the resulting scalar potential and prove several general statements about its extrema. In particular, we show that the fixed points of Sp$(4,\\mathbb{Z})$ are extrema of the potential, and derive genus-2 analogues of no-go theorems for de Sitter vacua. Finally, we show how positive-energy metastable minima can arise once supersymmetry is broken in the dilaton direction by nonperturbative contributions to the Kähler potential.",
-   "date": "2026-05-06",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Alex Westphal"
-    }
-   ],
-   "tags": [
-    "inflation",
-    "strings"
-   ]
-  },
-  {
    "id": "2605.05444",
    "recid": "3152831",
    "arxiv": "2605.05444",
@@ -6472,38 +5891,6 @@
    ]
   },
   {
-   "id": "2604.27835",
-   "recid": "3150602",
-   "arxiv": "2604.27835",
-   "title": "Some Properties and Uses of the Species Scale",
-   "authors": [
-    "Luis E. Ibáñez"
-   ],
-   "author_count": 1,
-   "collaborations": [],
-   "categories": [
-    "hep-th",
-    "hep-ph"
-   ],
-   "abstract": "The 'Species Scale' has proved to be an important concept when studying consistent effective actions in Quantum Gravity. This is a short summary of my contribution to the Corfu Summer Institute in September 2025, in which I covered two topics, both related in different ways to the fact that the Species Scale is moduli dependent. In the first, based on work done in collaboration with C. Aoufia and A. Castellano, we show how the one-loop Wilson coefficients $\\mathcal{F}_n^{(d)}$ multiplyiing BPS protected ${\\cal R}^{2n}$ operators obey Laplace-like eigenvalue differential equations of the form $\\mathcal{D}^2_{\\bf {\\cal M}} \\mathcal{F}^{(d)}_n = η_d\\, \\mathcal{F}^{(d)}_n$. This is true both for $n=2$ with 32 and 16 SUSY generators in 10,9,8 dimensions and theories with 8 SUSY generators in 6,5,4 dimensions $(n=1)$. We argue that this fact is at the root of some Swampland conjectures put forward in the past, like bounds on the dumping rates for the tower scales and the exponential behaviour in the Swampland Distance Conjecture. For the second topic, based on work done in collaboration with G.F. Casas, we discuss the one loop potential of the no-scale moduli in GKP-like Type IIB 4d orientifolds. To compute this potential we sum both over light and heavy (tower) modes using the Species Scale as a UV cut-off. We find a generic form $V_{1-loop}\\sim g^2m_{3/2}^2M_p^2(g^{i{\\bar i}}(\\partial_iΛ)(\\partial_{\\bar i}Λ))/Λ^2$, with $Λ$ the Species Scale. This has minima at the $desert$$points$ in moduli space and exponentially decreases at large moduli, with a dS hill in between. We argue that this potential may lead to the stabilisation of some or all Kahler moduli at the desert points in 4d Type IIB orientifolds of phenomenological interest.",
-   "date": "2026-04-30",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "cites",
-     "label": "Palti swampland review"
-    },
-    {
-     "kind": "author",
-     "label": "Luis Ibáñez"
-    }
-   ],
-   "tags": [
-    "strings",
-    "swampland"
-   ]
-  },
-  {
    "id": "2605.00252",
    "recid": "3150834",
    "arxiv": "2605.00252",
@@ -6592,31 +5979,6 @@
    ]
   },
   {
-   "id": "inspire:3148813",
-   "recid": "3148813",
-   "arxiv": null,
-   "title": "Gravitational Symmetry Breaking, the Higgs and the Cosmos",
-   "authors": [
-    "Giorgio Laverda"
-   ],
-   "author_count": 1,
-   "collaborations": [],
-   "categories": [],
-   "abstract": "",
-   "date": "2026-04-24",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "cites",
-     "label": "Linde attractors"
-    }
-   ],
-   "tags": [
-    "inflation",
-    "landscape"
-   ]
-  },
-  {
    "id": "2604.22656",
    "recid": "3149010",
    "arxiv": "2604.22656",
@@ -6646,36 +6008,6 @@
    "tags": [
     "strings",
     "swampland"
-   ]
-  },
-  {
-   "id": "2604.22418",
-   "recid": "3148981",
-   "arxiv": "2604.22418",
-   "title": "Graviton propagation in ghost-free massive gravity",
-   "authors": [
-    "Claudia de Rham",
-    "Jan Kożuszek",
-    "Andrew J. Tolley",
-    "Toby Wiseman"
-   ],
-   "author_count": 4,
-   "collaborations": [],
-   "categories": [
-    "hep-th",
-    "gr-qc"
-   ],
-   "abstract": "We consider the ghost-free dRGT massive gravity with two of its three possible mass terms. This theory has five gravitational degrees of freedom. On Minkowski spacetime these modes have helicity-2, -1 and -0 and propagate on the Minkowski lightcone in the high-frequency limit. However for a general background the degrees of freedom corresponding to the helicity-1 and -0 modes have characteristics different to that of the metric lightcone. Here we prove in all generality, that the two degrees of freedom corresponding to the helicity-2 mode always propagate on the metric lightcone for any background in the high-frequency limit, which has significant relevance for current and future observational tests of the theory.",
-   "date": "2026-04-24",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Claudia de Rham"
-    }
-   ],
-   "tags": [
-    "cosmology"
    ]
   },
   {
@@ -6798,37 +6130,6 @@
    ]
   },
   {
-   "id": "2604.15251",
-   "recid": "3145866",
-   "arxiv": "2604.15251",
-   "title": "Kontorovich-Lebedev-Fourier Space for de Sitter Correlators",
-   "authors": [
-    "Nathan Belrhali",
-    "Arthur Poisson",
-    "Sébastien Renaux-Petel",
-    "Denis Werth"
-   ],
-   "author_count": 4,
-   "collaborations": [],
-   "categories": [
-    "hep-th",
-    "gr-qc"
-   ],
-   "abstract": "In this work, we build a novel frequency-momentum space for $(d+1)$-dimensional de Sitter (dS) correlators from first principles. This construction follows directly from the decomposition into unitary irreducible representations (UIRs) of the spacetime isometry group $\\mathrm{SO}(1,d+1)$. While the spatial momentum space is given by the standard $d$-dimensional Fourier transform, the frequency space arises from diagonalising the quadratic Casimir operator, leading to the $(d+1)$-dimensional Kontorovich-Lebedev-Fourier (KLF) transform. We show that square-integrable functions decompose only along the principal series, whereas more general functions can receive discrete contributions from other UIRs. Applying this framework to the bulk CFT two-point function reproduces its Källén-Lehmann representation. Using the path integral formulation, we derive the Feynman rules for in-in perturbation theory in KLF space, leading to the introduction of KLF-space correlators, which are simply related to late-time correlation functions through a reduction formula. Furthermore, the KLF-space formulation sheds light on the simple mathematical structure of perturbative computations. In particular, the propagators take the form of simple rational functions, and tree-level diagrams can be written as spectral integrals over known meromorphic functions, as demonstrated in the example of the single-exchange four-point function. At the loop level, we show, through the example of the self-energy correction to the scalar propagator, that the group-theoretical nature of the construction allows the momentum integral to be recast as an orthogonality relation among $\\mathrm{SO}(1,d+1)$ Clebsch-Gordan coefficients.",
-   "date": "2026-04-16",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Sébastien Renaux-Petel"
-    }
-   ],
-   "tags": [
-    "cosmology",
-    "inflation"
-   ]
-  },
-  {
    "id": "inspire:3144535",
    "recid": "3144535",
    "arxiv": null,
@@ -6851,39 +6152,6 @@
    "tags": [
     "strings",
     "swampland"
-   ]
-  },
-  {
-   "id": "2604.11755",
-   "recid": "3144184",
-   "arxiv": "2604.11755",
-   "title": "Ringing of rapidly rotating black holes in effective field theory",
-   "authors": [
-    "Tom van der Steen",
-    "Simon Maenaut",
-    "Stef J.B. Husken",
-    "Pedro G.S. Fernandes",
-    "Maxim D. Jockwer",
-    "Vitor Cardoso",
-    "Thomas Hertog",
-    "Tjonnie G.F. Li"
-   ],
-   "author_count": 8,
-   "collaborations": [],
-   "categories": [
-    "gr-qc"
-   ],
-   "abstract": "Within the effective field theory approach to gravity, deviations from general relativity can be systematically described by higher-curvature operators. However, computing the resulting corrections to black hole quasinormal mode spectra remains challenging in the rapidly rotating regime, where perturbative expansions in the spin break down. We use recently constructed numerical rotating black hole solutions to compute quasinormal mode frequency corrections at leading order in the effective field theory. Focusing on scalar perturbations, we evaluate cubic-curvature corrections, which constitute the leading modifications. We employ a pseudo-spectral collocation method to solve the resulting perturbation equations on these backgrounds, enabling accurate computation across a broad parameter range. We obtain frequency corrections for fundamental modes with $l\\le5$ for all $m$, and the first overtone of $2 \\le l \\le 5$ modes for all $m$ for spins up to $a=0.99M$, with relative errors below $10^{-4}$. We observe that corrections to certain modes grow significantly as the spin approaches the near-extremal regime.",
-   "date": "2026-04-13",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Thomas Hertog"
-    }
-   ],
-   "tags": [
-    "cosmology"
    ]
   },
   {
@@ -7145,39 +6413,6 @@
    "tags": [
     "cosmology",
     "inflation"
-   ]
-  },
-  {
-   "id": "2604.02214",
-   "recid": "3138881",
-   "arxiv": "2604.02214",
-   "title": "Quadratic gravity corrections to scalar QNMs of rapidly rotating black holes",
-   "authors": [
-    "Stef J.B. Husken",
-    "Tom van der Steen",
-    "Simon Maenaut",
-    "Kelvin Ka-Ho Lam",
-    "Maxim D. Jockwer",
-    "Adrian Ka-Wai Chung",
-    "Thomas Hertog",
-    "Tjonnie G.F. Li"
-   ],
-   "author_count": 9,
-   "collaborations": [],
-   "categories": [
-    "gr-qc"
-   ],
-   "abstract": "In an effective-field-theory framework for gravity, black-hole quasinormal mode spectra acquire corrections in quadratic-curvature, scalar-tensor extensions of general relativity. Previous calculations of such corrections were limited to moderate spins, since the corresponding background solutions relied on expansions in the spin parameter. Using recently constructed numerical black-hole solutions valid for large spin, we compute the leading-order deviations from general relativity in the scalar quasinormal mode spectrum of rotating black holes in scalar Gauss-Bonnet and dynamical Chern-Simons gravity. We solve the resulting perturbation equations with pseudo-spectral collocation methods, allowing us to determine the quasinormal-mode corrections for dimensionless spins up to $a/M=0.99$, with accuracy better than $\\lesssim 10^{-3}$ for the $l=m=0$ mode and $\\lesssim 10^{-6}$ for higher multipoles. For spins $a/M>0.9$, the corrections to certain modes can increase by orders of magnitude.",
-   "date": "2026-04-02",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Thomas Hertog"
-    }
-   ],
-   "tags": [
-    "cosmology"
    ]
   },
   {
@@ -7758,51 +6993,6 @@
    ]
   },
   {
-   "id": "2603.22377",
-   "recid": "3133878",
-   "arxiv": "2603.22377",
-   "title": "LISA science ground segment conventions",
-   "authors": [
-    "Quentin Baghi",
-    "Stanislas Babak",
-    "Leor Barack",
-    "Jean-Baptiste Bayle",
-    "Ollie Burke",
-    "Raffi Enficiaud",
-    "Hector Estelles",
-    "Cecilio García Quirós"
-   ],
-   "author_count": 26,
-   "collaborations": [],
-   "categories": [
-    "astro-ph.IM",
-    "astro-ph.HE",
-    "gr-qc"
-   ],
-   "abstract": "This document sets out the conventions used for data simulations, waveforms, and analysis pipelines within the Distributed Data Processing Centre (DDPC) of the Laser Interferometer Space Antenna (LISA). It can also be considered a best practice guide for all publications related to the LISA mission. Topics covered include time-to-frequency transformations, gravitational-wave source parametrization, the instrumental response to gravitational waves, time-delay interferometry, and reference frame definitions.",
-   "date": "2026-03-23",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Quentin Baghi"
-    },
-    {
-     "kind": "author",
-     "label": "Jean-Baptiste Bayle"
-    },
-    {
-     "kind": "author",
-     "label": "Olaf Hartwig"
-    }
-   ],
-   "tags": [
-    "GW",
-    "LISA",
-    "data analysis"
-   ]
-  },
-  {
    "id": "2603.22415",
    "recid": "3133827",
    "arxiv": "2603.22415",
@@ -8265,69 +7455,6 @@
    "tags": [
     "strings",
     "swampland"
-   ]
-  },
-  {
-   "id": "2603.13629",
-   "recid": "3129892",
-   "arxiv": "2603.13629",
-   "title": "Projected Sensitivity of Paleo-Detectors to Dark Matter Effective Interactions with Nuclei",
-   "authors": [
-    "Dionysios P. Theodosopoulos",
-    "Katherine Freese",
-    "Chris Kelso",
-    "Patrick Stengel"
-   ],
-   "author_count": 4,
-   "collaborations": [],
-   "categories": [
-    "astro-ph.CO",
-    "astro-ph.IM",
-    "hep-ex",
-    "hep-ph",
-    "physics.ins-det"
-   ],
-   "abstract": "Paleo-detectors are a proposed experimental technique for direct detection (DD) of dark matter (DM) via the read-out of DM-induced nuclear recoil tracks in natural minerals. The large detector mass required for the sensitivity of conventional DD experiments to rare events is replaced by the exposure of paleo-detectors to DM-induced nuclear recoils over geological timescales. In this paper, we extend previous theoretical predictions for canonical spin-independent coherent and spin-dependent scattering (proportional to $A^2$ and the spin of the nucleus, respectively). We estimate the sensitivity of paleo-detectors to interactions between weakly interacting massive particle (WIMP) DM and nuclei within the framework of a Non-Relativistic Effective Field Theory (NREFT), considering isoscalar couplings to nucleons for both elastic and inelastic scattering. Taking into account cosmogenic, astrophysical and radiogenic backgrounds, we project the 90% confidence-level (CL) upper limits on the isoscalar NREFT coupling constants for both scattering types. We consider representative read-out scenarios and examine several target minerals. The projected sensitivities of paleo-detectors are compared with the 90% CL limits from the XENON100, LUX-ZEPLIN, and PandaX-II experiments, as well as with the 95% Bayesian credible region of the 2D marginalized posterior distribution from SuperCDMS. For DM masses from 1 GeV-10 GeV, paleo-detectors are projected to have sensitivity superior to that of conventional experiments for WIMP-nucleus interactions via all NREFT operators, largely independent of read-out scenario or target mineral. For DM masses from 10 GeV-5 TeV, we find that the sensitivity of paleo-detectors is projected to be comparable to or better than that of conventional experiments for WIMP-nucleus interactions via several NREFT operators, depending on the read-out scenario and target mineral.",
-   "date": "2026-03-13",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Katie Freese"
-    }
-   ],
-   "tags": [
-    "cosmology",
-    "inflation"
-   ]
-  },
-  {
-   "id": "2603.12444",
-   "recid": "3129103",
-   "arxiv": "2603.12444",
-   "title": "Stress-Energy Tensor of a Scalar Field on a Product Spacetime with a Time-Dependent Compact Dimension",
-   "authors": [
-    "Anamitra Paul",
-    "Sonia Paban"
-   ],
-   "author_count": 2,
-   "collaborations": [],
-   "categories": [
-    "hep-th",
-    "gr-qc"
-   ],
-   "abstract": "We compute the vacuum expectation value of the stress-energy tensor of a scalar field on a product spacetime composed of an FLRW background times a compact dimension ($\\mathcal{M}^{1, \\,d-1} \\times \\mathcal{S}^1$), where the size of the latter is allowed to vary with time. We modify the standard adiabatic regularization prescription to obtain analytic expressions for both $d=3$ and $d=4$. In the massless and conformally coupled limit, the leading order time-dependent results are consistent with known time-independent Casimir contributions. Furthermore, in this limit, the higher-order time-dependent corrections, when the FLRW and compact-dimension scale factors coincide, match known results for ($1+d$)-dimensional FLRW spacetime.",
-   "date": "2026-03-12",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Sonia Paban"
-    }
-   ],
-   "tags": [
-    "inflation",
-    "strings"
    ]
   },
   {
@@ -8934,34 +8061,6 @@
    ]
   },
   {
-   "id": "2602.20355",
-   "recid": "3123232",
-   "arxiv": "2602.20355",
-   "title": "Complex Inflaton Potentials with Nonminimal Coupling: Robust Inflation and Geometric Reheating",
-   "authors": [
-    "Sergio Dias Campos"
-   ],
-   "author_count": 1,
-   "collaborations": [],
-   "categories": [
-    "gr-qc",
-    "astro-ph.CO"
-   ],
-   "abstract": "We investigate an inflationary scenario driven by a complex scalar field nonminimally coupled to gravity and subject to a non-symmetric complex potential. The real part of the potential controls the cosmological background and realizes a plateau-type inflation compatible with $α$-attractor $\\mathrm{T}$-models, while the imaginary part acts as an effective non-Hermitian deformation encoding dissipative effects. Working in the Jordan frame and imposing ghost-free conditions on the effective Planck mass, we derive the background equations and define a complex equation-of-state parameter whose real part governs the expansion and whose imaginary part quantifies departures from conservative dynamics. Numerical integration shows that the duration of inflation is primarily controlled by the nonminimal coupling $ζ$, whereas the complex asymmetry parameter $Δ\\varepsilon$ has a negligible impact on the real background: the real energy density and pressure vary by less than $10^{-5}$ as $Δ\\varepsilon$ is scanned over its allowed range. Mapping the two-field dynamics to an effective single-field description in the Einstein frame, we obtain a spectral index $n_s\\simeq 0.968-0.971$ and a tensor-to-scalar ratio $r<10^{-3}$, fully consistent with Planck 2018 bounds. We introduce a relevance parameter and show that non-Hermitian effects remain strongly suppressed during slow roll but grow to $\\mathcal{O}(1)$ near the end of inflation, triggering an efficient reheating phase without additional fields or {\\it ad hoc} friction terms. In this sense, the imaginary sector behaves as an effective $\\mathcal{PT}$-symmetric channel for energy transfer, providing a geometrical mechanism for inflation and its exit within a non-Hermitian scalar-tensor framework.",
-   "date": "2026-02-23",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "cites",
-     "label": "Dias, Frazer, Marsh"
-    }
-   ],
-   "tags": [
-    "inflation",
-    "landscape"
-   ]
-  },
-  {
    "id": "2602.20075",
    "recid": "3122932",
    "arxiv": "2602.20075",
@@ -9059,36 +8158,6 @@
     "GW",
     "LISA",
     "data analysis"
-   ]
-  },
-  {
-   "id": "2602.17380",
-   "recid": "3121665",
-   "arxiv": "2602.17380",
-   "title": "Constraining $β$-Exponential Inflation with the latest ACT observations",
-   "authors": [
-    "Jureeporn Yuennan",
-    "Farruh Atamurotov",
-    "Salvatore Capozziello",
-    "Phongpichit Channuie"
-   ],
-   "author_count": 4,
-   "collaborations": [],
-   "categories": [
-    "gr-qc"
-   ],
-   "abstract": "Recent observations from the Atacama Cosmology Telescope (ACT), especially when combined with DESI baryon acoustic oscillation data, indicate a scalar spectral index $n_s$ higher than the value reported by \\textit{Planck} 2018, placing tension on universal inflationary attractor models. Motivated by this discrepancy, we investigate the inflationary predictions of the $β$-exponential potential, $V(ϕ)=V_0\\left(1-λβϕ/M_p\\right)^{1/β}$ considering both minimally and non-minimally coupled realizations. This potential generalizes standard exponential inflation and naturally arises in braneworld scenarios. We derive analytical expressions for the slow-roll parameters and inflationary observables using a perturbative expansion in the non-minimal coupling $ξ$, and validate these results through numerical calculations. In the minimally coupled case, the model predicts $n_s \\simeq 0.976$ and $r \\simeq 0.035$ for $N=50$ and moderate values of β, remaining compatible with ACT+DESI constraints at the 1σlevel while yielding a spectral tilt larger than the universal attractor prediction. Introducing a small non-minimal coupling significantly improves agreement with observations by suppressing the tensor-to-scalar ratio while preserving the enhanced scalar tilt. For $N=60, λ\\sim 0.3-0.5$, and $β\\sim O(1-5)$, the non-minimally coupled model yields $n_s \\simeq 0.974-0.976$ and $r \\lesssim 0.03$, comfortably consistent with ACT, DESI, and BICEP/Keck bounds. Our results show that the $β$-exponential potential, especially when implemented with a non-minimal coupling, exhibits good agreement with the latest CMB observations. Our inflationary predictions of the non-minimal model of $n_s$ and $r$ confirming the leading-order contributions in $ξ$ are sufficient to capture the essential features of both $r$ and $n_s$ in observationally relevant regimes.",
-   "date": "2026-02-19",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "cites",
-     "label": "Linde attractors"
-    }
-   ],
-   "tags": [
-    "inflation",
-    "landscape"
    ]
   },
   {
@@ -9772,37 +8841,6 @@
    ]
   },
   {
-   "id": "2601.15228",
-   "recid": "3109807",
-   "arxiv": "2601.15228",
-   "title": "De Sitter Momentum Space",
-   "authors": [
-    "Nathan Belrhali",
-    "Arthur Poisson",
-    "Sébastien Renaux-Petel",
-    "Denis Werth"
-   ],
-   "author_count": 4,
-   "collaborations": [],
-   "categories": [
-    "hep-th",
-    "gr-qc"
-   ],
-   "abstract": "We construct a natural and nonperturbative momentum space for quantum field theory on $(d+1)$-dimensional de Sitter (dS) spacetime in the Poincaré slicing, adapted to early Universe cosmology. In particular, we identify the dS frequency as the unitary-representation label of the dS isometry group $\\mathrm{SO}(1, d+1)$. By diagonalizing the quadratic Casimir together with spatial translations, we provide a harmonic expansion of operators in what we call the Kontorovitch-Lebedev-Fourier (KLF) space. This momentum space shares many structural properties with its Minkowski counterpart, for instance: equations of motion reduce to algebraic equations, and the quadratic dynamics provides a simple propagator analogous to flat space. We reformulate the perturbative computation of in-in correlators in KLF momentum space, showing from first principles how time integrals turn into frequency-space integrals over meromorphic functions. We show how our construction streamlines computations, naturally accommodates the contributions from principal and complementary series in the Källén-Lehmann spectral decomposition of composite operators, and leads to a group-theoretical method to evaluate loop momentum integrals.",
-   "date": "2026-01-21",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Sébastien Renaux-Petel"
-    }
-   ],
-   "tags": [
-    "cosmology",
-    "inflation"
-   ]
-  },
-  {
    "id": "2601.15365",
    "recid": "3110484",
    "arxiv": "2601.15365",
@@ -9982,40 +9020,6 @@
    ]
   },
   {
-   "id": "2601.09834",
-   "recid": "3105674",
-   "arxiv": "2601.09834",
-   "title": "Very-High-Frequency Gravitational Waves from Multi-Monodromy Inflation",
-   "authors": [
-    "Guido D'Amico",
-    "Andrew A. Geraci",
-    "Nemanja Kaloper",
-    "Alexander Westphal"
-   ],
-   "author_count": 4,
-   "collaborations": [],
-   "categories": [
-    "hep-ph",
-    "astro-ph.CO",
-    "gr-qc",
-    "hep-th",
-    "quant-ph"
-   ],
-   "abstract": "We show that in multi-stage axion monodromy inflation an interruption near the end of the penultimate stage can lead to a spike in the gravitational wave background. These gravitational waves are in the frequency range and with an amplitude accessible to proposed terrestrial detectors such as the Einstein Telescope, Cosmic Explorer, and future Levitated Sensor Detector experiments.",
-   "date": "2026-01-14",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Alex Westphal"
-    }
-   ],
-   "tags": [
-    "inflation",
-    "strings"
-   ]
-  },
-  {
    "id": "2601.08622",
    "recid": "3103955",
    "arxiv": "2601.08622",
@@ -10045,55 +9049,6 @@
     "GW",
     "cosmology",
     "inflation"
-   ]
-  },
-  {
-   "id": "2601.07595",
-   "recid": "3103348",
-   "arxiv": "2601.07595",
-   "title": "Deep Search for Joint Sources of Gravitational Waves and High-Energy Neutrinos with IceCube During the Third Observing Run of LIGO and Virgo",
-   "authors": [
-    "R. Abbasi",
-    "M. Ackermann",
-    "J. Adams",
-    "S.K. Agarwalla",
-    "J.A. Aguilar",
-    "M. Ahlers",
-    "J.M. Alameddine",
-    "S. Ali"
-   ],
-   "author_count": 2206,
-   "collaborations": [
-    "IceCube",
-    "LIGO Scientific",
-    "VIRGO",
-    "KAGRA"
-   ],
-   "categories": [
-    "astro-ph.HE"
-   ],
-   "abstract": "The discovery of joint sources of high-energy neutrinos and gravitational waves has been a primary target for the LIGO, Virgo, KAGRA, and IceCube observatories. The joint detection of high-energy neutrinos and gravitational waves would provide insight into cosmic processes, from the dynamics of compact object mergers and stellar collapses to the mechanisms driving relativistic outflows. The joint detection of multiple cosmic messengers can also elevate the significance of the common observation even when some or all of the constituent messengers are sub-threshold, i.e. not significant enough to declare their detection individually. Using data from the LIGO, Virgo, and IceCube observatories, including sub-threshold events, we searched for common sources of gravitational waves and high-energy neutrinos during the third observing run of Advanced LIGO and Advanced Virgo detectors. Our search did not identify significant joint sources. We derive constraints on the rate densities of joint sources. Our results constrain the isotropic neutrino emission from gravitational-wave sources for very high values of the total energy emitted in neutrinos (> $10^{52} - 10^{54}$ erg).",
-   "date": "2026-01-12",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Thomas Hertog"
-    },
-    {
-     "kind": "author",
-     "label": "Tyson Littenberg"
-    },
-    {
-     "kind": "author",
-     "label": "Neil Cornish"
-    }
-   ],
-   "tags": [
-    "GW",
-    "LISA",
-    "cosmology",
-    "data analysis"
    ]
   },
   {
@@ -10665,38 +9620,6 @@
    ]
   },
   {
-   "id": "2512.22652",
-   "recid": "3096088",
-   "arxiv": "2512.22652",
-   "title": "Schwinger-Keldysh Cosmological Cutting Rules",
-   "authors": [
-    "Francisco Colipí-Marchant",
-    "Gabriel Marin",
-    "Gonzalo A. Palma",
-    "Francisco Rojas"
-   ],
-   "author_count": 4,
-   "collaborations": [],
-   "categories": [
-    "hep-th",
-    "astro-ph.CO",
-    "gr-qc"
-   ],
-   "abstract": "In this work, we study the realisation of unitarity-based cutting rules for primordial cosmological correlators computed within the Schwinger-Keldysh path integral formalism. While cutting rules have been previously derived for wavefunction coefficients, here we examine them directly at the level of cosmological observables expressed diagrammatically. The resulting rules closely resemble those familiar from flat-space scattering amplitudes, but with an additional subtlety: in order to express the discontinuity of a correlator as the product of lower-order correlators, one must introduce a specific combinations of diagrams which do not appear in the computation of observables themselves. We explicitly verify these rules for several classes of correlators, both at tree level and with loop corrections, arising from theories involving different types of interactions.",
-   "date": "2025-12-27",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Gonzalo Palma"
-    }
-   ],
-   "tags": [
-    "cosmology",
-    "inflation"
-   ]
-  },
-  {
    "id": "2512.21392",
    "recid": "3095770",
    "arxiv": "2512.21392",
@@ -11056,35 +9979,6 @@
    ]
   },
   {
-   "id": "2512.15969",
-   "recid": "3093920",
-   "arxiv": "2512.15969",
-   "title": "Quantum Liouville Cosmology",
-   "authors": [
-    "Dionysios Anninos",
-    "Thomas Hertog",
-    "Joel Karlsson"
-   ],
-   "author_count": 3,
-   "collaborations": [],
-   "categories": [
-    "hep-th",
-    "gr-qc"
-   ],
-   "abstract": "We provide a detailed analysis of the disk path integral of timelike Liouville theory, conceived as a tractable and precise toy-model quantum cosmology in two dimensions. Disk path integrals with the insertion of matter field operators, taken along a judiciously chosen complex contour, yield states akin to the Hartle-Hawking wavefunction. Working in the fixed $K$-representation, where $K$ is the trace of the extrinsic curvature, we compute the one-loop wavefunctions and put forward a conjecture for the all-loop expressions. A suitable pairing of Liouville disk path integrals yields a $K$-independent quantity that may form the basis for a well-defined inner product on the space of Euclidean histories. We also consider other ensembles, including one with fixed area, and provide a static patch perspective with a timelike feature.",
-   "date": "2025-12-17",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Thomas Hertog"
-    }
-   ],
-   "tags": [
-    "cosmology"
-   ]
-  },
-  {
    "id": "2512.15292",
    "recid": "3093694",
    "arxiv": "2512.15292",
@@ -11401,34 +10295,6 @@
    ]
   },
   {
-   "id": "2512.11980",
-   "recid": "3092762",
-   "arxiv": "2512.11980",
-   "title": "Mixed signals in the IR: Positivity bounds with indefinite species",
-   "authors": [
-    "Claudia de Rham",
-    "Sumer Jaitly",
-    "Greg Kaplanek"
-   ],
-   "author_count": 3,
-   "collaborations": [],
-   "categories": [
-    "hep-th"
-   ],
-   "abstract": "In theories with multiple particle species standard fixed-t positivity bounds do not directly apply to 2-to-2 definite species scattering amplitudes when the initial and final state are not the same (inelastic processes). These inelastic amplitudes are nevertheless constrained by positivity bounds indirectly, by considering scattering states which are arbitrary superpositions of definite species two-particle states. While these `superposition bounds' have been studied and utilised extensively in the past, earlier analyses typically consider cases insensitive to relative particle masses and IR branch cuts. Here we derive new families of bounds that take account and depend explicitly on mass differences between species making no assumption of weak-coupling. We emphasise unusual non-analyticities induced by the IR mass difference within the superposition amplitude and use fixed (backwards) angle dispersion relations to prove our bounds. We then discuss extensions of our results to `improved bounds', with implications worth exploring for pions and other EFTs of the Standard Model and Beyond, particularly where IR branch cuts are non-negligible.",
-   "date": "2025-12-12",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Claudia de Rham"
-    }
-   ],
-   "tags": [
-    "cosmology"
-   ]
-  },
-  {
    "id": "2512.10381",
    "recid": "3092184",
    "arxiv": "2512.10381",
@@ -11517,41 +10383,6 @@
     "GW",
     "LISA",
     "data analysis"
-   ]
-  },
-  {
-   "id": "2512.09197",
-   "recid": "3091762",
-   "arxiv": "2512.09197",
-   "title": "Gravitational-Wave Signatures of Massive Black Hole Formation",
-   "authors": [
-    "Bernard J. Kelly",
-    "Sarah Gossan",
-    "Leonardo R. Werneck",
-    "John Wise",
-    "Zachariah B. Etienne",
-    "Thiago Assumpção",
-    "Aláine Lee",
-    "John G. Baker"
-   ],
-   "author_count": 8,
-   "collaborations": [],
-   "categories": [
-    "gr-qc",
-    "astro-ph.GA"
-   ],
-   "abstract": "Direct-collapse black holes (DCBHs) are an important component of the massive black hole population of the early universe, and their formation and early mergers will be prominent in the data stream of the Laser Interferometer Space Antenna (LISA). However, the population and binary properties of these early black holes are poorly understood, with masses, mass ratios, spins, and orbital eccentricities strongly dependent on the details of their formation, and the properties of the remaining exterior material (baryonic and non-baryonic), which may be substantial to the point of merger. We report on initial work to simulate the formation, collapse, and/or merger of such DCBH regions in order to extract the resulting gravitational-wave signals.",
-   "date": "2025-12-09",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "John Baker"
-    }
-   ],
-   "tags": [
-    "GW",
-    "LISA"
    ]
   },
   {
@@ -11814,52 +10645,6 @@
    ]
   },
   {
-   "id": "inspire:3113501",
-   "recid": "3113501",
-   "arxiv": null,
-   "title": "Non-Geometric Compactifications and String Cosmology in the Swampland",
-   "authors": [
-    "Guoen Nian"
-   ],
-   "author_count": 1,
-   "collaborations": [],
-   "categories": [],
-   "abstract": "This thesis comprises three research projects conducted during the author's doctoral program, which are presented individually in the following chapters. In Chapter II, we demonstrate that field trajectories leading to cosmic acceleration and exhibiting rapid turns near the boundary of the moduli space lie within the Swampland. Specifically, our analysis assumes the validity of the Swampland Distance Conjecture in the presence of a scalar potential and focuses on hyperbolic",
-   "date": "2025-12-02",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "cites",
-     "label": "Swampland"
-    },
-    {
-     "kind": "cites",
-     "label": "High slope potentials"
-    },
-    {
-     "kind": "cites",
-     "label": "Palma BH"
-    },
-    {
-     "kind": "cites",
-     "label": "Rapid-turn solutions"
-    },
-    {
-     "kind": "cites",
-     "label": "Palti swampland review"
-    },
-    {
-     "kind": "cites",
-     "label": "Rapid turn sugra"
-    }
-   ],
-   "tags": [
-    "inflation",
-    "strings",
-    "swampland"
-   ]
-  },
-  {
    "id": "inspire:3091559",
    "recid": "3091559",
    "arxiv": null,
@@ -11948,37 +10733,6 @@
    "tags": [
     "strings",
     "swampland"
-   ]
-  },
-  {
-   "id": "2511.21071",
-   "recid": "3086746",
-   "arxiv": "2511.21071",
-   "title": "Cosmological tensions in Proca-Nuevo theory",
-   "authors": [
-    "Hsu-Wen Chiang",
-    "Claudia de Rham",
-    "Sebastian Garcia-Saenz",
-    "Xue Zhou"
-   ],
-   "author_count": 4,
-   "collaborations": [],
-   "categories": [
-    "hep-th",
-    "astro-ph.CO",
-    "gr-qc"
-   ],
-   "abstract": "We study the cosmological predictions of (extended) Proca-Nuevo theory. This vector-tensor theory enjoys stable homogeneous and isotropic solutions characterized by an effective dark energy fluid, with behavior that ranges from freezing quintessential to thawing phantom-like, serving as a motivated framework to scrutinize the cosmological tensions that affect the standard $Λ$CDM model. While the model we consider is sufficiently generic to encompass a large class of field theories, it distinguishes itself from scalar dark energy models (quintessential ones, kinetic ones and non-minimally coupled ones) by the presence of what would be classed as a vector degree of freedom which can be for instance inherited from more generic theories of gravity. We improve on previous work in several directions: we consider a general one-parameter class of background models; identify a so-called 'special' model and analyze observational constraints taking also into account perturbations and making use of wide up-to-date catalogs of datasets including recently released ones. We find that the one-parameter Proca-Nuevo model is preferred over $Λ$CDM at $1.5σ$ when fitting CMB and BAO data, and at $2.4σ$ when further adding low-redshift data. The Hubble tension is alleviated, dropping from $5.8σ$ to $2.3σ$ (resp. $1.5σ$) between CMB with (and resp. without) BAO data and local measurements. On the other hand, we find that the vector field generically introduces a significant enhancement of the effective Newton constant for natural values of parameters, so that matching the observed matter power spectrum requires a mild amount of tuning to suppress the impact of perturbations. Since, at the background level, Proca-Nuevo is degenerate with other classes of theories, our results are also relevant to a wider range of set-ups including and beyond vector-tensor models.",
-   "date": "2025-11-26",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Claudia de Rham"
-    }
-   ],
-   "tags": [
-    "cosmology"
    ]
   },
   {
@@ -12104,37 +10858,6 @@
    "tags": [
     "strings",
     "swampland"
-   ]
-  },
-  {
-   "id": "2511.17216",
-   "recid": "3085505",
-   "arxiv": "2511.17216",
-   "title": "Constraining non-minimally coupled squared-Quartic Hilltop Inflation in light of ACT observations",
-   "authors": [
-    "Jureeporn Yuennan",
-    "Thammarong Eadkhong",
-    "Farruh Atamurotov",
-    "Phongpichit Channuie"
-   ],
-   "author_count": 4,
-   "collaborations": [],
-   "categories": [
-    "astro-ph.CO",
-    "gr-qc"
-   ],
-   "abstract": "The combination of the data from the Dark Energy Spectroscopic Instrument (DESI) with the recent measurements from the Atacama Cosmology Telescope (ACT) indicate that the scalar spectral index \\( n_s \\) has a larger value than the Planck 2018 which leads to tension within standard inflationary models. In this study in order to explain the new data, We consider the squared-Quartic Hilltop inflation potential \\( V(ϕ) = V_0 [1 - λ(ϕ/M_p)^4]^2 \\) within the Einstein and Jordan frames. In the Jordan frame we introduce the coupling term \\( ξϕ^2 R \\) and we calculate analytic expressions for the slow-roll parameters, scalar spectral index, and tensor-to-scalar ratio on the weak and strong coupling regimes. In the weak limit (\\( ξ\\ll 1 \\)), perturbative corrections slightly increase \\( n_s \\) and suppress \\( r \\), leading to \\( n_s \\simeq 0.9743 \\) and \\( r \\sim 7.8 \\times 10^{-5} \\) for representative parameters \\( λ= 10^{-3}, ξ= 10^{-3}, {\\cal N} = 117 \\), values which are in agreement with the joint Planck--ACT--DESI (P-ACT-LB) constraints. On the other hand, for a strong coupled (\\( ξ\\gg 1 \\)), the conformal rescaling provides an exponentially flat potential plateau, which allows us to calculate \\( n_s \\approx 0.9743 \\) with \\( r \\lesssim 5 \\times 10^{-4} \\) for \\( {\\cal N} = 65{-}70 \\), consistent with ACT and BK18 bounds. The associated energy scale of inflation, \\( V_0^{1/4} \\sim 10^{-3}{-}10^{-2} M_p \\), remains compatible with high-scale inflationary scenarios.",
-   "date": "2025-11-21",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "cites",
-     "label": "Linde attractors"
-    }
-   ],
-   "tags": [
-    "inflation",
-    "landscape"
    ]
   },
   {
@@ -12803,63 +11526,6 @@
    ]
   },
   {
-   "id": "2611.03383",
-   "recid": "3222423",
-   "arxiv": "2611.03383",
-   "title": "Geometric duality between effective field theories. Part II. Exact classical solutions",
-   "authors": [
-    "Tomáš Brauner",
-    "Diederik Roest",
-    "Tianzhi Wang",
-    "Zhihao Zhang"
-   ],
-   "author_count": 4,
-   "collaborations": [],
-   "categories": [
-    "hep-th"
-   ],
-   "abstract": "Geometric duality reveals a novel bridge between a series of well-known scalar effective field theories: the Yang-Mills theory coupled to a specific scalar sector (aka the Yang-Mills-scalar theory), the nonlinear sigma model on a symmetric coset space, the Dirac-Born-Infeld theory, and the special Galileon theory. In our previous work, we used the geometric duality to map scattering amplitudes in the various theories to one another. In this sequel, we show that the duality makes it also possible to transport exact classical solutions. Thus, exact solutions of the nonlinear sigma model are mapped to a subset of solutions of the Yang-Mills-scalar theory. Likewise, solutions of the special Galileon theory map to solutions of the Dirac-Born-Infeld theory, which in turn map to solutions of the nonlinear sigma model coupled to dynamical gravity. For all these duality maps, we provide explicit examples of exact solutions of the source theory and their corresponding image in the target theory. While the duality maps are manifest at the level of certain geometric building blocks of the theories, we show that with a suitable choice of parametrisation, it is also possible to map directly the elementary scalar fields of the various theories to one another. This offers a practically convenient tool for constructing new exact solutions of the target theories. Finally, the duality sequence including the nonlinear sigma model and the Yang-Mills-scalar theory can be extended by uplifting the solutions of the latter to a higher-dimensional spacetime. One thus arrives at a class of exact solutions of pure Yang-Mills theory in higher dimensions. In a similar vein, it is possible to obtain exact solutions of higher-dimensional pure gravity by uplifting solutions of the nonlinear sigma model, coupled to dynamical gravity, obtained via a duality map from solutions of the special Galileon theory.",
-   "date": "2026-11-02",
-   "added": "2026-11-16T16:50:52+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Diederik Roest"
-    }
-   ],
-   "tags": [
-    "cosmology",
-    "inflation"
-   ]
-  },
-  {
-   "id": "2611.03510",
-   "recid": "3222439",
-   "arxiv": "2611.03510",
-   "title": "I want to Break Free: The Positive Side of Symmetry Breaking",
-   "authors": [
-    "Anubha Bal",
-    "Claudia de Rham"
-   ],
-   "author_count": 2,
-   "collaborations": [],
-   "categories": [
-    "hep-th"
-   ],
-   "abstract": "We study the role of internal field-space symmetries in Effective Field Theories constrained by positivity bounds. For theories with $N$ real scalar fields, we classify derivative operators according to the internal symmetries they preserve, organising them into hierarchies based on the maximal symmetry $O(N)$ and its subgroups. We find that the Wilson coefficients of operators that depart from an enhanced symmetry are bounded in terms of those that respect it. This means that departures from an enhanced internal symmetry cannot be made arbitrarily large while maintaining a standard UV completion, even when the enhanced internal symmetry was not imposed in constructing the low-energy theory. Moreover, along a cascade of progressively smaller preserved subgroups, the coefficients of operators preserving lower levels of symmetry are bounded by those preserving larger subgroups in the cascade, and are consequently subject to progressively stronger constraints. We demonstrate these results through a variety of examples involving $2-2$ and $3-3$ scattering of indefinite states formed from superpositions of multiple scalar species.",
-   "date": "2026-11-02",
-   "added": "2026-11-16T16:50:52+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Claudia de Rham"
-    }
-   ],
-   "tags": [
-    "cosmology"
-   ]
-  },
-  {
    "id": "inspire:3223776",
    "recid": "3223776",
    "arxiv": null,
@@ -13021,72 +11687,6 @@
    ]
   },
   {
-   "id": "2610.40763",
-   "recid": "3220979",
-   "arxiv": "2610.40763",
-   "title": "Quantum Cosmology at the Cusp",
-   "authors": [
-    "Luis A. Anchordoqui",
-    "Alek Bedroya",
-    "Muldrow Etheredge",
-    "Dieter Lüst",
-    "Severin Lüst",
-    "Alexander Westphal"
-   ],
-   "author_count": 6,
-   "collaborations": [],
-   "categories": [
-    "hep-th"
-   ],
-   "abstract": "In top-down quantum gravity constructions, saxionic directions typically lead to cusps in moduli space, where the scalar potential and the axion decay constant asymptotically behave as $V\\sim e^{-αϕ}$ and $f\\sim e^{-γϕ}$ in reduced Planck units. Such cusps admit axion-supported scaling cosmologies that expand faster than the corresponding solutions with the axion held fixed, for the same scalar potential. In spatially compact universes, axionic momentum is quantized, and any semiclassical state in the cusp with a localized axion carries nonzero axionic kinetic energy. We show using the Wheeler-DeWitt equation that this contribution drives the late-time evolution towards the axion-supported scaling solution whenever $(d-2)α(α+2γ)>4(d-1)$ in $d$ spacetime dimensions. We derive an upper bound on the transition time. Long-lived accelerated expansion requires $2γ>(d-2)α$. The trans-Planckian censorship conjecture requires the opposite inequality, $2γ\\leq(d-2)α$, which also follows independently from requiring the brane magnetically charged under the axion to remain heavier than the Hubble scale.",
-   "date": "2026-10-29",
-   "added": "2026-11-16T16:50:52+00:00",
-   "why": [
-    {
-     "kind": "cites",
-     "label": "Rapid turn sugra"
-    },
-    {
-     "kind": "author",
-     "label": "Alex Westphal"
-    }
-   ],
-   "tags": [
-    "inflation",
-    "strings"
-   ]
-  },
-  {
-   "id": "2610.38254",
-   "recid": "3220140",
-   "arxiv": "2610.38254",
-   "title": "Circuit complexity of coupled four-mode squeezed states in two-field inflation",
-   "authors": [
-    "Tao Li",
-    "Hai-Bing Fu",
-    "Lei-Hua Liu"
-   ],
-   "author_count": 3,
-   "collaborations": [],
-   "categories": [
-    "hep-th",
-    "gr-qc"
-   ],
-   "abstract": "We study the circuit complexity of coupled curvature and entropy perturbations in two-field inflation. We start from the quadratic action and derive the full Hamiltonian. The Hamiltonian includes all diagonal and off-diagonal quadratic terms. We then obtain three coupled equations for the pair amplitudes of the four-mode squeezed state. From these amplitudes, we calculate the two principal squeezing strengths. We use them to determine the Nielsen circuit complexity. For an equal-weight Gaussian circuit, the complexity takes the form $\\mathcal{C}_{2,k}=\\sqrt{2(r_{1k}^{2}+r_{2k}^{2})}$. It depends on the squeezing strengths but not explicitly on the squeezing angles. Our numerical results show that the complexity grows after horizon crossing in both coupled and uncoupled models. Interfield coupling changes the pair amplitudes and the four-mode squeezed state. However, its effect on the circuit complexity is small for the parameters considered. This result shows that different four-mode pair-amplitude matrices can yield similar values of the chosen equal-weight circuit complexity. The present calculation provides a reference for studying Gaussian circuit complexity in more general two-field inflationary models.",
-   "date": "2026-10-28",
-   "added": "2026-11-16T16:50:52+00:00",
-   "why": [
-    {
-     "kind": "cites",
-     "label": "Dias, Frazer, Marsh"
-    }
-   ],
-   "tags": [
-    "inflation",
-    "landscape"
-   ]
-  },
-  {
    "id": "2610.39048",
    "recid": "3220368",
    "arxiv": "2610.39048",
@@ -13243,35 +11843,6 @@
    "tags": [
     "strings",
     "swampland"
-   ]
-  },
-  {
-   "id": "2610.34720",
-   "recid": "3218965",
-   "arxiv": "2610.34720",
-   "title": "Fermion Mass and Mixing Patterns from Fusion Algebras",
-   "authors": [
-    "Jacques Distler",
-    "Can Kilic",
-    "Sanjay Mathai"
-   ],
-   "author_count": 3,
-   "collaborations": [],
-   "categories": [
-    "hep-ph",
-    "hep-th"
-   ],
-   "abstract": "The large hierarchy of fermion masses in the Standard Model has long posed a challenge to be explained. One approach is to try to invoke a symmetry principle to dictate the structure (\"texture\") of the matrices of fermion Yukawa couplings to the Higgs field. Here we invoke noninvertible symmetries, specifically, fusion algebras, to provide such textures. In particular, the structure of the fusion-algebra can be used to assign labels to each field, which determines how suppressed any given composite operator is as a term in the Lagrangian. In UV completions, this can be interpreted as specifying a hierarchy of operators that in the IR effective theory become the Yukawa couplings to the Higgs field. Remaining agnostic of a specific UV model, we perform a Monte Carlo numerical scan over unknown Wilson coefficients, and we identify the rank-8 fusion algebra $\\rm{FR}^{8,6}_8$ as the one providing the best fit for the textures of the up-quark, down-quark and charged-lepton Yukawa matrices. We also study the predictions for the CKM and PMNS mixing matrices, with the conclusion that none of the fusion algebras we study provide an accurate fit for the masses and mixing angles simultaneously. The fusion algebra structure ensures that the textures that we find are stable under RG running and persist down to low energies.",
-   "date": "2026-10-26",
-   "added": "2026-11-16T16:50:52+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Jacques Distler"
-    }
-   ],
-   "tags": [
-    "strings"
    ]
   },
   {
@@ -13551,40 +12122,6 @@
    ]
   },
   {
-   "id": "2610.28505",
-   "recid": "3216951",
-   "arxiv": "2610.28505",
-   "title": "Blueprint for an AI-Enabled Particle Theory Community",
-   "authors": [
-    "George T. Fleming",
-    "Daniel C. Hackett",
-    "James Halverson",
-    "T.J. Hobbs",
-    "Stefan Hoeche",
-    "Brandon Kriesten",
-    "Konstantin T. Matchev",
-    "Tony Menzo"
-   ],
-   "author_count": 84,
-   "collaborations": [],
-   "categories": [
-    "hep-ph"
-   ],
-   "abstract": "Rapid advances in the capabilities and reach of artificial intelligence (AI) are changing research in particle physics. In this new era, AI is an innovative tool for theoretical physicists, while the interaction of AI and particle theory is itself a developing field. We argue that particle theory requires a community-scale effort to realize its full potential. We show how particle theory occupies a unique position in the AI for physics landscape, and describe the complementarity of AI and theory developments. We conclude with a series of recommendations on how to build an AI-enabled theory community for the Genesis Mission.",
-   "date": "2026-10-20",
-   "added": "2026-11-16T16:50:52+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Liam McAllister"
-    }
-   ],
-   "tags": [
-    "inflation",
-    "strings"
-   ]
-  },
-  {
    "id": "2610.27319",
    "recid": "3216838",
    "arxiv": "2610.27319",
@@ -13735,36 +12272,6 @@
    "tags": [
     "strings",
     "swampland"
-   ]
-  },
-  {
-   "id": "2610.21574",
-   "recid": "3215557",
-   "arxiv": "2610.21574",
-   "title": "Krylov complexity and oscillatory quantum dynamics in two-field inflation",
-   "authors": [
-    "Tao Li",
-    "Lei-Hua Liu",
-    "Hai-Bing Fu"
-   ],
-   "author_count": 3,
-   "collaborations": [],
-   "categories": [
-    "hep-th",
-    "gr-qc"
-   ],
-   "abstract": "We investigate Krylov-space dynamics of primordial perturbations in two-field inflation. Starting from the quadratic action for coupled curvature and entropy perturbations, we solve the mode equations with Bunch-Davies initial conditions and construct the corresponding quadratic Hamiltonian. The Gaussian quantum state is described by a four-mode squeezed state with two squeezing channels. We derive the evolution of the squeezing strength and squeezing angle and use them to evaluate the Krylov complexity, Krylov entropy, and channel-resolved Lanczos coefficients. Our numerical results show that the two channels remain weakly squeezed inside the horizon but develop different squeezing histories after horizon exit. The second channel develops strong squeezing earlier and dominates the intermediate evolution, whereas the first channel shows a delayed enhancement. The corresponding Krylov complexities exhibit distinct oscillatory structures across horizon crossing and pronounced fluctuations in the strongly squeezed superhorizon regime. These features arise from the phase-sensitive squeezing dynamics and reflect the different responses of the two channels to curvature-entropy coupling.",
-   "date": "2026-10-15",
-   "added": "2026-11-16T16:50:52+00:00",
-   "why": [
-    {
-     "kind": "cites",
-     "label": "Dias, Frazer, Marsh"
-    }
-   ],
-   "tags": [
-    "inflation",
-    "landscape"
    ]
   },
   {
@@ -14106,64 +12613,6 @@
    ]
   },
   {
-   "id": "2610.12174",
-   "recid": "3213061",
-   "arxiv": "2610.12174",
-   "title": "Probability measures for de Sitter JT gravity",
-   "authors": [
-    "Wilfried Buchmüller",
-    "Alexander Westphal"
-   ],
-   "author_count": 2,
-   "collaborations": [],
-   "categories": [
-    "hep-th"
-   ],
-   "abstract": "Jackiw-Teitelboim (JT) gravity with positive cosmological constant is a toy model to study the emergence of expanding de Sitter universes from a quantum state. Its density matrix is a superposition of double-trumpet amplitudes which are solutions of a Wheeler-DeWitt equation. We compare predictions of such mixed states for classical expanding universes with the corresponding predictions of no-boundary wavefunctions. Double-trumpet amplitudes consistent with holography, whose semiclassical limit matches the result from Schwarzian boundary fluctuations, lead to a flat probability distribution for the size of the universe, consistent with models of inflation. This is in contrast to the suppression of large universes predicted by no-boundary wave functions.",
-   "date": "2026-10-08",
-   "added": "2026-11-16T16:50:52+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Alex Westphal"
-    }
-   ],
-   "tags": [
-    "inflation",
-    "strings"
-   ]
-  },
-  {
-   "id": "2610.12564",
-   "recid": "3213635",
-   "arxiv": "2610.12564",
-   "title": "Seeing in the Dark: Gravitational Waves from Resonant Production of Dark Photon Dark Matter",
-   "authors": [
-    "Yanou Cui",
-    "Pankaj Saha",
-    "Evangelos I. Sfakianakis"
-   ],
-   "author_count": 3,
-   "collaborations": [],
-   "categories": [
-    "hep-ph",
-    "astro-ph.CO"
-   ],
-   "abstract": "Ultralight dark photons (DPs) are well-motivated dark matter candidates. A promising yet underexplored mechanism for their relic abundance is parametric resonance in the Abelian-Higgs model that generates the DP mass. We advance previous analytical studies through dedicated 3D lattice simulations that capture important nonlinear effects, including backreaction and relic partitioning between the dark Higgs and DPs. We further predict the associated stochastic gravitational-wave (GW) signal, which can be within reach of a broad range of detectors, opening a new avenue to probe ultralight DP dark matter.",
-   "date": "2026-10-08",
-   "added": "2026-11-16T16:50:52+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Evangelos Sfakianakis"
-    }
-   ],
-   "tags": [
-    "cosmology",
-    "inflation"
-   ]
-  },
-  {
    "id": "2610.12308",
    "recid": "3212985",
    "arxiv": "2610.12308",
@@ -14413,36 +12862,6 @@
     "GW",
     "LISA",
     "data analysis"
-   ]
-  },
-  {
-   "id": "2610.03692",
-   "recid": "3211119",
-   "arxiv": "2610.03692",
-   "title": "Higgsino dark matter compatible with the LUX-ZEPLIN high-energy nuclear-recoil event and IceCube constraints",
-   "authors": [
-    "Katherine Freese",
-    "Dionysios P. Theodosopoulos"
-   ],
-   "author_count": 2,
-   "collaborations": [],
-   "categories": [
-    "hep-ph",
-    "astro-ph.CO",
-    "hep-th"
-   ],
-   "abstract": "We examine Higgsino dark matter (DM) as a potential explanation of the $248~\\mathrm{keV}$ nuclear-recoil event of interest reported by the LUX-ZEPLIN (LZ) experiment, taking into account IceCube constraints on DM annihilation in the Sun. In the nearly pure Higgsino limit, two neutral Majorana states separated by a small mass splitting $δ$ are connected by an off-diagonal coupling to the $Z$ boson, providing a natural realization of inelastic DM. Using a likelihood analysis, we identify 90% confidence regions compatible with the LZ event and consistent with the null results of IceCube searches, both with and without including a constraint from the absence of events in the LZ high-energy sideband. In our LZ analysis, we consider the DM distribution in the Standard Halo Model alone as well as possible enhancements of the high-speed tail induced by the Large Magellanic Cloud (LMC). We present four variants of bounds from IceCube on Higgsino dark matter, depending on various assumptions on cooling channels in the Sun, motivated by severe theoretical uncertainties about Higgsino-nucleon elastic scattering (unimportant for direct detection but crucial for IceCube bounds). Whereas the thermal Higgsino with a mass of $1.1~\\mathrm{TeV}$ remains only marginally compatible with both the LZ event and the IceCube limits when the LMC-induced high-speed tail is included and both elastic cooling in the Sun and the LZ high-energy sideband constraint are neglected, higher mass Higgsinos are excellent candidates for the LZ event in light of IceCube constraints. Depending on the halo distribution, cooling interactions, and whether the LZ high-energy sideband is included, the compatible regions in the Higgsino parameter space $(m_χ,δ)$ extend from masses of $\\sim2~\\mathrm{TeV}$ to hundreds of TeV or higher, with mass splittings ranging approximately from $350$ to $525~\\mathrm{keV}$.",
-   "date": "2026-10-02",
-   "added": "2026-11-16T16:50:52+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Katie Freese"
-    }
-   ],
-   "tags": [
-    "cosmology",
-    "inflation"
    ]
   }
  ]
