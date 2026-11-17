@@ -144,8 +144,9 @@ footer { color: var(--muted); font-size: 12.5px; margin-top: 30px; text-align: c
 
 <dialog id="dlg">
   <h3>GitHub token</h3>
-  <p>Without a token this page is read-only, and read marks and saved papers stay in this browser.
-     With one, they sync through the repository and you can edit the watch list here.
+  <p>Without a token this page shows read marks and saved papers synced from your other devices,
+     but the ones you make here stay in this browser.
+     With a token, they sync through the repository and you can edit the watch list here.
      Create a <a target="_blank" rel="noopener" href="https://github.com/settings/personal-access-tokens/new">fine-grained token</a>
      limited to this repository with <b>Contents: Read and write</b>. It is stored only in this browser.</p>
   <div class="row">
@@ -252,20 +253,49 @@ const S = { items: [], warnings: [], updated: null, triaged: null,
             watch: { papers: [], authors: [] }, watchSha: null, read: new Set(),
             saved: new Map() };       // id -> full copy of the paper, so pruning the feed never loses it
 const F = { view: "inbox", kind: "all", tags: new Set(), watch: "", q: "", showRead: false };
-let ops = store.get("ops", []);       // pending read-state changes: [["+"|"-", id], ...]
-let sops = store.get("sops", []);     // pending saved changes: [["+", paper] | ["-", id], ...]
+// Changes made in this browser that are not in the repository yet. With a token they are
+// pushed and dropped; without one they stay here, applied on top of what the repository says.
+let ops = store.get("ops", []);       // read-state changes: [["+"|"-", id], ...]
+let sops = store.get("sops", []);     // saved changes: [["+", paper] | ["-", id], ...]
+{ // Older versions kept full "read"/"saved" lists in token-less browsers; turn them into changes.
+  const r = store.get("read", null), s = store.get("saved", null);
+  if (r) { ops = ops.concat(r.map(id => ["+", id])); store.del("read"); }
+  if (s) { sops = sops.concat(s.map(it => ["+", it])); store.del("saved"); }
+  if (r || s) { store.set("ops", ops); store.set("sops", sops); }
+}
+// Keep only the last change per paper, and only if the repository does not already agree.
+function compact(q, idOf, has) {
+  const last = new Map();
+  for (const e of q) { last.delete(idOf(e)); last.set(idOf(e), e); }
+  return [...last.values()].filter(e => (e[0] === "+") !== has(idOf(e)));
+}
 let cur = -1;                          // keyboard cursor (index into shown list)
 let shown = [];
 const PAGE = 100;
 let limit = PAGE;                      // how many of the shown papers are in the page right now
 const elCache = new Map();             // id -> { sig, el, math }: built papers, rebuilt only when their own state changes
 
+let writes = 0;      // successful syncs, so a load that overlapped one can tell its files may be stale
+let lastLoad = 0;
 async function load() {
+  const w0 = writes; lastLoad = Date.now();
   try {
     const [papers, picks, read, saved, watch] = await Promise.all([
       readJSON("papers.json", DATA_BRANCH), readJSON("picks.json", DATA_BRANCH),
       readJSON("read.json", DATA_BRANCH), readJSON("saved.json", DATA_BRANCH),
       readJSON("watchlist.json", MAIN_BRANCH)]);
+    if (writes !== w0) return load();
+    const remoteRead = new Set(read.data?.read || []);
+    const remoteSaved = new Map((saved.data?.saved || []).map(it => [it.id, it]));
+    if (!token) {
+      ops = compact(ops, e => e[1], id => remoteRead.has(id));
+      sops = compact(sops, e => e[0] === "+" ? e[1].id : e[1], id => remoteSaved.has(id));
+      store.set("ops", ops); store.set("sops", sops);
+    }
+    S.read = remoteRead;
+    for (const [op, id] of ops) op === "+" ? S.read.add(id) : S.read.delete(id);
+    S.saved = remoteSaved;
+    for (const [op, x] of sops) op === "+" ? S.saved.set(x.id, x) : S.saved.delete(x);
     const byId = new Map();
     for (const it of (papers.data?.items || [])) byId.set(it.id, it);
     for (const it of (picks.data?.items || [])) {
@@ -273,39 +303,46 @@ async function load() {
       if (have) { have.why = have.why.concat(it.why); have.tags = [...new Set([...have.tags, ...it.tags])]; }
       else byId.set(it.id, it);
     }
-    S.saved = new Map((token ? (saved.data?.saved || []) : store.get("saved", [])).map(it => [it.id, it]));
-    if (token) for (const [op, x] of sops) op === "+" ? S.saved.set(x.id, x) : S.saved.delete(x);
     for (const [id, it] of S.saved) if (!byId.has(id)) byId.set(id, it);   // saved, but gone from the feed
+    const curId = shown[cur]?.id;
     S.items = [...byId.values()].sort((a, b) =>
       (b.added || "").slice(0, 10).localeCompare((a.added || "").slice(0, 10)) || b.date.localeCompare(a.date));
     S.warnings = papers.data?.warnings || [];
+    // Rendered papers can be reused across a refresh unless the feed itself was regenerated.
+    if (papers.data?.updated !== S.updated || picks.data?.triaged_through !== S.triaged) elCache.clear();
     S.updated = papers.data?.updated; S.triaged = picks.data?.triaged_through;
     if (watch.data) { S.watch = watch.data; S.watchSha = watch.sha; }
-    S.read = new Set(token ? (read.data?.read || []) : store.get("read", []));
-    if (token) for (const [op, id] of ops) op === "+" ? S.read.add(id) : S.read.delete(id);
     if (!papers.data) S.warnings.unshift("No feed data found yet. The first update may still be running.");
-    elCache.clear(); loaded = true; buildFilters(); render();
+    if (curId) { const i = S.items.filter(matches).findIndex(it => it.id === curId); if (i >= 0) cur = i; }
+    loaded = true; buildFilters(); render();
     if (token && (ops.length || sops.length)) scheduleSync(100);
   } catch (e) {
-    $("list").replaceChildren(h("div", { class: "empty" }, `Could not load the feed: ${e.message}`));
+    if (loaded) setStatus(`could not refresh (${e.message})`);
+    else $("list").replaceChildren(h("div", { class: "empty" }, `Could not load the feed: ${e.message}`));
   }
 }
+// Pick up marks made on other devices: re-read when the page comes back into view or gets
+// focus, and every few minutes while it is on screen.
+function refresh() { if (loaded && !syncing && Date.now() - lastLoad > 60e3) load(); }
+addEventListener("focus", refresh);
+addEventListener("pageshow", e => { if (e.persisted) refresh(); });
+setInterval(() => { if (!document.hidden) refresh(); }, 5 * 60e3);
 
 // ---------- read state ----------
 let syncTimer = null, syncing = false;
 function persist() {
-  if (token) { store.set("ops", ops); store.set("sops", sops); scheduleSync(); }
-  else { store.set("read", [...S.read]); store.set("saved", [...S.saved.values()]); }
+  store.set("ops", ops); store.set("sops", sops);
+  if (token) scheduleSync();
 }
 // Marking a saved paper read also takes it out of Saved; returns those papers so undo can restore them.
 function setRead(ids, isRead) {
   const unsaved = [];
   for (const id of ids) {
     isRead ? S.read.add(id) : S.read.delete(id);
-    if (token) ops.push([isRead ? "+" : "-", id]);
+    ops.push([isRead ? "+" : "-", id]);
     if (isRead && S.saved.has(id)) {
       unsaved.push(S.saved.get(id)); S.saved.delete(id);
-      if (token) sops.push(["-", id]);
+      sops.push(["-", id]);
     }
   }
   persist(); render();
@@ -316,11 +353,11 @@ function setSaved(list, on) {
     if (on) {
       const copy = { ...it, saved_at: new Date().toISOString() };
       S.saved.set(it.id, copy);
-      if (token) sops.push(["+", copy]);
-      if (S.read.has(it.id)) { S.read.delete(it.id); if (token) ops.push(["-", it.id]); }
+      sops.push(["+", copy]);
+      if (S.read.has(it.id)) { S.read.delete(it.id); ops.push(["-", it.id]); }
     } else {
       S.saved.delete(it.id);
-      if (token) sops.push(["-", it.id]);
+      sops.push(["-", it.id]);
     }
   }
   persist(); render();
@@ -360,7 +397,7 @@ async function syncAll() {
       for (let attempt = 0; attempt < 4 && !ok; attempt++) {
         const { data, sha } = await readJSON(f.path, DATA_BRANCH);
         const r = await writeText(f.path, DATA_BRANCH, JSON.stringify(f.apply(data, sending)) + "\n", sha, f.msg);
-        if (r.ok) ok = true;
+        if (r.ok) { ok = true; writes++; }
         else if (r.status !== 409 && r.status !== 422) throw new Error(`HTTP ${r.status}`);
       }
       if (!ok) throw new Error("conflict");
@@ -373,7 +410,8 @@ async function syncAll() {
   } finally { syncing = false; }
 }
 addEventListener("visibilitychange", () => {
-  if (document.hidden && (ops.length || sops.length)) { clearTimeout(syncTimer); syncAll(); } });
+  if (!document.hidden) refresh();
+  else if (token && (ops.length || sops.length)) { clearTimeout(syncTimer); syncAll(); } });
 
 let toastTimer = null, undoFn = null;
 function toast(msg, undo) {
@@ -631,18 +669,13 @@ $("savetoken").onclick = async () => {
     const r = await gh("");
     if (!r.ok) throw new Error(r.status === 401 ? "GitHub rejected this token." : `HTTP ${r.status}`);
     if (!(await r.json()).permissions?.push) throw new Error("This token cannot write to the repository (needs Contents: Read and write).");
-    store.set("token", t);
-    const local = store.get("read", []);      // carry over marks made before the token existed
-    if (local.length) { ops = ops.concat(local.map(id => ["+", id])); store.set("ops", ops); store.del("read"); }
-    const localSaved = store.get("saved", []);
-    if (localSaved.length) { sops = sops.concat(localSaved.map(it => ["+", it])); store.set("sops", sops); store.del("saved"); }
+    store.set("token", t);   // marks made here without a token are still queued, and get pushed now
     $("tokenmsg").textContent = "Token saved."; $("savewatch").disabled = false; $("dlgmsg").textContent = "";
     await load();
   } catch (e) { token = old; $("tokenmsg").textContent = e.message; }
 };
-$("forgettoken").onclick = () => {
-  store.set("read", [...S.read]); store.set("saved", [...S.saved.values()]);
-  store.del("token"); store.del("ops"); store.del("sops"); token = ""; ops = []; sops = [];
+$("forgettoken").onclick = () => {   // unsynced changes stay queued in this browser
+  store.del("token"); token = ""; clearTimeout(syncTimer);
   $("token").value = ""; $("tokenmsg").textContent = "Token removed from this browser."; $("savewatch").disabled = true;
 };
 

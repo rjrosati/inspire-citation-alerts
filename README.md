@@ -27,7 +27,10 @@ Open "Watch list & settings" and paste a GitHub
 restricted to this repository with **Contents: Read and write**. With it, read
 marks and saved papers sync across devices and you can add, relabel, retag or remove watches
 from the page. "Watch citations" on any paper adds it to the watch list.
-Without a token the page is read-only and read marks stay in that browser.
+Without a token the page still shows marks synced from your other devices
+(GitHub's file cache can delay them by up to five minutes), but read marks and
+saves made there stay in that browser. An open tab picks up changes from other
+devices when you switch back to it, and every few minutes while it is on screen.
 
 Papers you want to come back to can be saved for later (🔖 or `s`): they leave
 the inbox without being marked read and wait in the Saved tab, kept in
