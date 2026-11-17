@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T08:46:07+00:00",
+ "updated": "2026-11-17T08:52:18+00:00",
  "warnings": [],
  "items": [
   {
@@ -850,7 +850,7 @@
    "author_count": 1,
    "collaborations": [],
    "categories": [],
-   "abstract": "Effective field theories (EFTs) provide a powerful and universal framework to study physical phenomena, allowing us to disentangle effects occurring at widely separated scales. Fundamental principles such as causality, unitarity, and Poincaré invariance impose stringent constraints on the space of allowed EFTs, arising both from internal consistency of the infrared description and from compatibility with a healthy UV completion. In this thesis, we investigate the landscape of consistent effective field theories, with a particular focus on the interplay with long-range interactions mediated by massless particles.\n\nWe first study EFTs of weakly coupled massive spin-3/2 particles and show that positivity bounds forbid a parametric separation between the particle mass m and the cutoff scale unless long-range mediators are also present and couple in a supersymmetric way. In particular, gravity is required by consistency, as well as photons when the spin-3/2 particle is charged, with couplings consistent with both the no-global-symmetry and weak gravity conjectures. These results motivate the study of the EFT-hedron associated with the longitudinal modes, described by massless spin-1/2 fermions. We derive novel t-u symmetric dispersion relations and identify extremal UV completions, recovering EFTs of goldstinos.\n\nWe then address the non-trivial infrared structure induced by long-range interactions in four dimensions. We show that infrared-safe positivity bounds can be obtained by introducing a family of stripped amplitudes, labeled by an energy resolution scale, which preserve analyticity, crossing symmetry, and Regge behavior while remaining infrared finite. In an appropriate regime, they also satisfy unitarity and admit a physical interpretation in terms of inclusive observables. We illustrate the formalism in the low-energy effective theory of pions coupled to electromagnetism and gravity.\n\nFinally, we investigate the consistency of continuous-spin particles (CSPs), the most general massless representations of the Poincaré group. We show that their on-shell scattering amplitudes are strongly constrained by symmetry, analyticity, and factorization. We bootstrap the corresponding three- and four-point amplitudes, explore the main features of these theories and their coupling to gravity, and show how CSPs can provide a novel infrared deformation of ordinary massless scattering.",
+   "abstract": "Effective field theories (EFTs) provide a powerful and universal framework to study physical phenomena, allowing us to disentangle effects occurring at widely separated scales. Fundamental principles such as causality, unitarity, and Poincaré invariance impose stringent constraints on the space of allowed EFTs, arising both from internal consistency of the infrared description and from compatibility with a healthy UV completion. In this thesis, we investigate the landscape of consistent effective field theories, with a particular focus on the interplay with long-range interactions mediated by massless particles. We first study EFTs of weakly coupled massive spin-3/2 particles and show that positivity bounds forbid a parametric separation between the particle mass m and the cutoff scale unless long-range mediators are also present and couple in a supersymmetric way. In particular, gravity is required by consistency, as well as photons when the spin-3/2 particle is charged, with couplings consistent with both the no-global-symmetry and weak gravity conjectures. These results motivate the study of the EFT-hedron associated with the longitudinal modes, described by massless spin-1/2 fermions. We derive novel t-u symmetric dispersion relations and identify extremal UV completions, recovering EFTs of goldstinos. We then address the non-trivial infrared structure induced by long-range interactions in four dimensions. We show that infrared-safe positivity bounds can be obtained by introducing a family of stripped amplitudes, labeled by an energy resolution scale, which preserve analyticity, crossing symmetry, and Regge behavior while remaining infrared finite. In an appropriate regime, they also satisfy unitarity and admit a physical interpretation in terms of inclusive observables. We illustrate the formalism in the low-energy effective theory of pions coupled to electromagnetism and gravity. Finally, we investigate the consistency of continuous-spin particles (CSPs), the most general massless representations of the Poincaré group. We show that their on-shell scattering amplitudes are strongly constrained by symmetry, analyticity, and factorization. We bootstrap the corresponding three- and four-point amplitudes, explore the main features of these theories and their coupling to gravity, and show how CSPs can provide a novel infrared deformation of ordinary massless scattering.",
    "date": "2026-09-15",
    "added": "2026-11-16T17:04:01+00:00",
    "why": [
@@ -930,7 +930,7 @@
    "id": "2609.15916",
    "recid": "3203829",
    "arxiv": "2609.15916",
-   "title": "Curvature regularization and dynamical vacuum structure in pseudo-complex general relativity",
+   "title": "Curvture Regularization and Dynamical Vacuum Structure in Pseudo-Complex General Relativity",
    "authors": [
     "Fridolin Weber",
     "Peter Otto Hess",
@@ -1277,7 +1277,7 @@
    "author_count": 1,
    "collaborations": [],
    "categories": [],
-   "abstract": "The Standard Model of particle physics provides a remarkably successful description of known fundamental particles and their interactions. However, it leaves several key questions unanswered, such as the origin of dark matter and the observed imbalance between matter and antimatter, motivating the exploration of physics beyond the Standard Model. Moreover, the detection of gravitational waves has opened a new observational window on the Universe, offering a unique opportunity to potentially probe such new physics that could have been realized in the early Universe, where the temperature was extremely high and all matter existed as a primordial hot plasma. As the Universe expanded, this plasma cooled and underwent a series of phase transitions. In Beyond the Standard Model theories, these phase transitions can be of first order type, such that bubbles of a new phase could have formed and grown, similar to bubble formation in boiling water. The interactions of these bubbles with one another, as well as with the surrounding cosmic plasma, leave behind traces in the form of gravitational waves. The strength and spectral shape of this gravitational-wave signal depend both on the underlying high-energy physics and on how the bubbles expand. In particular, if the bubble velocity is known, the observed signal can be used to probe the underlying high-energy physics.\n\nWe therefore investigate in this dissertation several aspects of bubble dynamics of first order phase transitions in the early Universe and how they can address some of the open questions of fundamental particle physics and cosmology. We first review the state of the art of friction forces acting on bubble walls expanding in the cosmic plasma, and subsequently introduce an additional criterion, beyond what is usually considered, to determine whether a bubble eventually reaches a steady, constant velocity.\n\nUnderstanding bubble dynamics is crucial, because rapidly expanding bubbles in the early Universe can play a key role in fundamental processes, such as generating the observed imbalance between matter and antimatter and producing dark matter. We therefore examine both cases in detail and show that ultra-fast expanding bubbles can significantly enhance the resulting matter asymmetry and dark matter abundance, while also generating gravitational waves that may be detectable by future experiments. Moreover, we find that dark matter today can be heavy and have a non-vanishing velocity, features that would not arise without the presence of relativistically expanding bubbles.\n\nClosely related to expanding bubbles, which convert the Universe from one phase into another, are domain walls, acting as sheet-like boundaries between regions of equally favoured phases. These structures can also serve as a mechanism for the creation of the matter asymmetry and dark matter, as we study in the last part of this thesis.",
+   "abstract": "The Standard Model of particle physics provides a remarkably successful description of known fundamental particles and their interactions. However, it leaves several key questions unanswered, such as the origin of dark matter and the observed imbalance between matter and antimatter, motivating the exploration of physics beyond the Standard Model. Moreover, the detection of gravitational waves has opened a new observational window on the Universe, offering a unique opportunity to potentially probe such new physics that could have been realized in the early Universe, where the temperature was extremely high and all matter existed as a primordial hot plasma. As the Universe expanded, this plasma cooled and underwent a series of phase transitions. In Beyond the Standard Model theories, these phase transitions can be of first order type, such that bubbles of a new phase could have formed and grown, similar to bubble formation in boiling water. The interactions of these bubbles with one another, as well as with the surrounding cosmic plasma, leave behind traces in the form of gravitational waves. The strength and spectral shape of this gravitational-wave signal depend both on the underlying high-energy physics and on how the bubbles expand. In particular, if the bubble velocity is known, the observed signal can be used to probe the underlying high-energy physics. We therefore investigate in this dissertation several aspects of bubble dynamics of first order phase transitions in the early Universe and how they can address some of the open questions of fundamental particle physics and cosmology. We first review the state of the art of friction forces acting on bubble walls expanding in the cosmic plasma, and subsequently introduce an additional criterion, beyond what is usually considered, to determine whether a bubble eventually reaches a steady, constant velocity. Understanding bubble dynamics is crucial, because rapidly expanding bubbles in the early Universe can play a key role in fundamental processes, such as generating the observed imbalance between matter and antimatter and producing dark matter. We therefore examine both cases in detail and show that ultra-fast expanding bubbles can significantly enhance the resulting matter asymmetry and dark matter abundance, while also generating gravitational waves that may be detectable by future experiments. Moreover, we find that dark matter today can be heavy and have a non-vanishing velocity, features that would not arise without the presence of relativistically expanding bubbles. Closely related to expanding bubbles, which convert the Universe from one phase into another, are domain walls, acting as sheet-like boundaries between regions of equally favoured phases. These structures can also serve as a mechanism for the creation of the matter asymmetry and dark matter, as we study in the last part of this thesis.",
    "date": "2026-08-31",
    "added": "2026-11-16T17:04:01+00:00",
    "why": [
@@ -2007,7 +2007,7 @@
    "id": "2608.09781",
    "recid": "3189304",
    "arxiv": "2608.09781",
-   "title": "Pulsar Timing Array Sensitivity to Anisotropy: Empirical Sensitivity Curves, Scaling Relations, and the Multi-resolution Pixel Basis",
+   "title": "Pulsar Timing Array Sensitivity to Anisotropy: Empirical Sensitivity Curves, Scaling Relations, and the Multi-Resolution Pixel Basis",
    "authors": [
     "Taha T. Moursy",
     "Nihan S. Pol",
@@ -2325,7 +2325,7 @@
    "author_count": 1,
    "collaborations": [],
    "categories": [],
-   "abstract": "<p dir=\"ltr\">Even though the quantisation of the gravitational interaction remains one of the most elusive challenges in modern theoretical physics, asymptotic safety offers the chance for a fundamental and predictive quantum field theory of gravity, thanks to an interacting ultraviolet fixed point of the renormalisation group. While the existence of this fixed point is established, the unitarity, testability and the nature of the fundamental degrees of freedom of the theory remain open questions.</p><p dir=\"ltr\"> In this thesis, we tackle these questions by studying the absence of Ostrogradsky ghost modes in the asymptotic safety spectrum, and its consequences for unitarity, in two complementary settings. We then make first steps towards a testable quantum gravity prediction. First, we use Lorentzian spectral functions of coupled graviton modes to directly diagnose the physical spectrum of asymptotically safe gravity, highlighting the absence of ghosts and tachyons, showing asymptotic safety is compatible with unitarity. For the first time, we emphasise the importance of gauge symmetry identities to preserve the spectral nature of flow equations. We further study Einsteinian cubic gravity, which is classically ghost-free, as a controlled toy higher-curvature setting in which to investigate the fate of ghost degrees of freedom under quantisation. Despite quantum fluctuations, the theory retains its Einsteinian structure and remains continuously connected to general relativity without introducing ghost modes. Moreover, we obtain analytic expressions for its running couplings, providing an unusually tractable example of a quantum higher-curvature theory, making it a useful framework for analysing quantum black holes and cosmologies. Alongside these foundational theoretical questions, we address the persistent lack of experimental guidance which has plagued quantum gravity since its beginning, by making predictions of dark matter couplings with Standard Model gauge bosons, under the assumption of an asymptotically safe quantum gravity trans-Planckian theory. </p><p dir=\"ltr\"> Our results lay the groundwork for the study of purely gravitational scattering amplitudes in Lorentzian spacetimes, and of simple quantum black holes and cosmologies. They also invite further investigations to find phenomenological signatures of quantum gravity.</p>",
+   "abstract": "Even though the quantisation of the gravitational interaction remains one of the most elusive challenges in modern theoretical physics, asymptotic safety offers the chance for a fundamental and predictive quantum field theory of gravity, thanks to an interacting ultraviolet fixed point of the renormalisation group. While the existence of this fixed point is established, the unitarity, testability and the nature of the fundamental degrees of freedom of the theory remain open questions. In this thesis, we tackle these questions by studying the absence of Ostrogradsky ghost modes in the asymptotic safety spectrum, and its consequences for unitarity, in two complementary settings. We then make first steps towards a testable quantum gravity prediction. First, we use Lorentzian spectral functions of coupled graviton modes to directly diagnose the physical spectrum of asymptotically safe gravity, highlighting the absence of ghosts and tachyons, showing asymptotic safety is compatible with unitarity. For the first time, we emphasise the importance of gauge symmetry identities to preserve the spectral nature of flow equations. We further study Einsteinian cubic gravity, which is classically ghost-free, as a controlled toy higher-curvature setting in which to investigate the fate of ghost degrees of freedom under quantisation. Despite quantum fluctuations, the theory retains its Einsteinian structure and remains continuously connected to general relativity without introducing ghost modes. Moreover, we obtain analytic expressions for its running couplings, providing an unusually tractable example of a quantum higher-curvature theory, making it a useful framework for analysing quantum black holes and cosmologies. Alongside these foundational theoretical questions, we address the persistent lack of experimental guidance which has plagued quantum gravity since its beginning, by making predictions of dark matter couplings with Standard Model gauge bosons, under the assumption of an asymptotically safe quantum gravity trans-Planckian theory. Our results lay the groundwork for the study of purely gravitational scattering amplitudes in Lorentzian spacetimes, and of simple quantum black holes and cosmologies. They also invite further investigations to find phenomenological signatures of quantum gravity.",
    "date": "2026-08-01",
    "added": "2026-11-16T17:04:01+00:00",
    "why": [
@@ -2683,7 +2683,7 @@
    "author_count": 1,
    "collaborations": [],
    "categories": [],
-   "abstract": "We investigate inflationary dynamics within the framework of Weyl gravity from the perspective of the swampland program, emphasizing both theoretical consistency and observational viability. By embedding the Weyl gravity inflationary potential into the slow-roll formalism and applying the further refined de Sitter swampland conjecture (FRDSSC), we derive explicit constraints on the free parameters of the model. We demonstrate that the inflationary scenario satisfies the FRDSSC while remaining compatible with current cosmological observations, including the latest data from ACT and Planck. Using theoretical predictions as well as observational bounds on the scalar spectral index and tensor-to-scalar ratio, we obtain robust constraints on the FRDSSC parameters a and b, showing that the condition <math altimg=\"si9.svg\"><mrow><mi>a</mi><mo linebreak=\"goodbreak\">+</mo><mi>b</mi><mo linebreak=\"goodbreak\">=</mo><mn>1</mn></mrow></math> can be consistently maintained across all datasets. We further extend our analysis to the Scalar Weak Gravity Conjecture (SWGC) and the Strong Scalar Weak Gravity Conjecture (SSWGC). Our results indicate that the SSWGC generally allows a broader region of parameter space than the SWGC, providing increased flexibility for realizing consistent inflationary dynamics. We find that the swampland compatibility of the model is highly sensitive to the constant parameters of inflation model ξ and α. Varying these parameters over several orders of magnitude reveals stable regions where the model simultaneously satisfies the FRDSSC, SWGC, and SSWGC, while remaining consistent with observational constraints. These results demonstrate the robustness of the Weyl gravity inflationary framework under variations of fundamental parameters. Overall, our study shows that Weyl gravity provides a theoretically consistent and observationally viable realization of inflation within the swampland paradigm, offering a promising avenue for constructing inflationary models that bridge quantum gravity constraints and precision cosmology.",
+   "abstract": "We investigate inflationary dynamics within the framework of Weyl gravity from the perspective of the swampland program, emphasizing both theoretical consistency and observational viability. By embedding the Weyl gravity inflationary potential into the slow-roll formalism and applying the further refined de Sitter swampland conjecture (FRDSSC), we derive explicit constraints on the free parameters of the model. We demonstrate that the inflationary scenario satisfies the FRDSSC while remaining compatible with current cosmological observations, including the latest data from ACT and Planck. Using theoretical predictions as well as observational bounds on the scalar spectral index and tensor-to-scalar ratio, we obtain robust constraints on the FRDSSC parameters a and b, showing that the condition a + b = 1 can be consistently maintained across all datasets. We further extend our analysis to the Scalar Weak Gravity Conjecture (SWGC) and the Strong Scalar Weak Gravity Conjecture (SSWGC). Our results indicate that the SSWGC generally allows a broader region of parameter space than the SWGC, providing increased flexibility for realizing consistent inflationary dynamics. We find that the swampland compatibility of the model is highly sensitive to the constant parameters of inflation model ξ and α. Varying these parameters over several orders of magnitude reveals stable regions where the model simultaneously satisfies the FRDSSC, SWGC, and SSWGC, while remaining consistent with observational constraints. These results demonstrate the robustness of the Weyl gravity inflationary framework under variations of fundamental parameters. Overall, our study shows that Weyl gravity provides a theoretically consistent and observationally viable realization of inflation within the swampland paradigm, offering a promising avenue for constructing inflationary models that bridge quantum gravity constraints and precision cosmology.",
    "date": "2026-07-27",
    "added": "2026-11-16T17:04:01+00:00",
    "why": [
@@ -2859,7 +2859,7 @@
    "author_count": 1,
    "collaborations": [],
    "categories": [],
-   "abstract": "<p dir=\"ltr\">Primordial black holes (PBHs) are a compelling dark matter candidate and offer a unique probe of the early universe, linking inflationary dynamics to late-time cosmology. Their formation is governed by the shape of the primordial curvature power spectrum and the thermal history of the universe, encoded in the equation of state. This thesis examines sev-eral key aspects of PBH formation and constraints, focusing on the role of phase transitions,physics beyond the Standard Model, and non-Gaussianity.</p><p dir=\"ltr\">Drops in the equation of state, such as those at the QCD and electroweak transitions, reduce the collapse threshold and enhance the PBH abundance. We develop a technique to quantify this enhancement and show it depends sensitively on the width and peak scale of the power spectrum. Extending this to beyond Standard Model scenarios, we find that motivated models can lower the equation of state arbitrarily, with the drop sensitive to the number of additional degrees of freedom predicted by the theory, and the corresponding mass distribution.</p><p dir=\"ltr\">Regarding PBH constraints, we compute cosmic microwave background spectral distortion limits in the presence of extreme local non-Gaussianity, using an analytic two-loop calculation. The bounds on supermassive PBHs remain essentially unchanged, ruling out anon-Gaussian evasion. More broadly, we demonstrate that the most restrictive observa-tional constraint on a PBH population depends on the power spectrum parametrisation,highlighting the need for a combined treatment of formation physics and limits whenassessing PBH dark matter.</p>",
+   "abstract": "Primordial black holes (PBHs) are a compelling dark matter candidate and offer a unique probe of the early universe, linking inflationary dynamics to late-time cosmology. Their formation is governed by the shape of the primordial curvature power spectrum and the thermal history of the universe, encoded in the equation of state. This thesis examines sev-eral key aspects of PBH formation and constraints, focusing on the role of phase transitions,physics beyond the Standard Model, and non-Gaussianity. Drops in the equation of state, such as those at the QCD and electroweak transitions, reduce the collapse threshold and enhance the PBH abundance. We develop a technique to quantify this enhancement and show it depends sensitively on the width and peak scale of the power spectrum. Extending this to beyond Standard Model scenarios, we find that motivated models can lower the equation of state arbitrarily, with the drop sensitive to the number of additional degrees of freedom predicted by the theory, and the corresponding mass distribution. Regarding PBH constraints, we compute cosmic microwave background spectral distortion limits in the presence of extreme local non-Gaussianity, using an analytic two-loop calculation. The bounds on supermassive PBHs remain essentially unchanged, ruling out anon-Gaussian evasion. More broadly, we demonstrate that the most restrictive observa-tional constraint on a PBH population depends on the power spectrum parametrisation,highlighting the need for a combined treatment of formation physics and limits whenassessing PBH dark matter.",
    "date": "2026-07-24",
    "added": "2026-11-16T17:04:01+00:00",
    "why": [
@@ -3194,8 +3194,8 @@
    ]
   },
   {
-   "id": "inspire:3226094",
-   "recid": "3226094",
+   "id": "inspire:3215272",
+   "recid": "3215272",
    "arxiv": null,
    "title": "Aspects of Black holes in String Theory and the Swampland program",
    "authors": [
@@ -3204,7 +3204,7 @@
    "author_count": 1,
    "collaborations": [],
    "categories": [],
-   "abstract": "Diese Dissertation befasst sich mit Schwarzen Löchern in der Quantengravitation. Ein zentrales Thema ist dabei ihr Zusammenhang mit den Türmen leichter Zustände, die von der Stringtheorie vorhergesagt werden, sowie die Frage, wie dieses Zusammenspiel gravitative effektive Feldtheorien einschränkt und Einblicke in die Quantenstruktur Schwarzer Löcher ermöglicht. Teil I gibt eine in sich geschlossene Einführung in die grundlegenden Elemente der Stringtheorie und der Physik Schwarzer Löcher, die im weiteren Verlauf der Dissertation benötigt werden. In jedem Kapitel nutzen wir diese beiden Gebiete, um Einsichten in die Struktur konsistenter effektiver Feldtheorien zu gewinnen, die an Gravitationgekoppelt sind. Viele dieser Einsichten werden in späteren Kapiteln im Zusammenhang mit Swampland-Vermutungen eine zentrale Rolle spielen.Teil II nutzt semiklassische Schwarze Löcher als Sonden, um aus einer Bottom-up-Perspektive allgemeine Eigenschaften der Quantengravitation herauszuarbeiten, und verwendet umgekehrt bestehende Vermutungen, um neue Erkenntnisse über die Physik Schwarzer Löcher zu gewinnen. Genauer untersuchen wir, wie PhasenübergängeSchwarzer Löcher auf verschiedenen Energieskalen entstehen, und nutzen sie, um die Entstehung und die physikalischen Konsequenzen asymptotischer unendlicher Türme leichter Zustände in der Stringtheorie zu erforschen.Teil III untersucht die Auswirkungen dieser Türme auf die Quantenstruktur Schwarzer Löcher. Wir konzentrieren uns auf vierdimensionale N = 2–Kompaktifizierungen der Typ-IIA-Stringtheorie auf Calabi–Yau-Mannigfaltigkeiten und berechnen die exakte nichtperturbative effektive Wirkung auf Ein-Schleifen-Niveau, die durch solcheZustände in der Nahhorizontgeometrie extremaler geladener Schwarzer Löcher erzeugt wird, nämlich in AdS2 ×S2. Anschließend berechnen wir die nichtperturbativen Korrekturen am Entropiefunktional der allgemeinsten BPS-Lösung Schwarzer Löcher in diesem Rahmen. Schließlich zeigen wir, dass die Physik dieser Korrekturen empfindlich von der Art des betrachteten Schwarzen Lochs und des jeweiligen Turms abhängt, und schlagen eine semiklassische Erklärung dafür vor, wie die Thermodynamik Schwarzer Löcher durch deren Anwesenheit verändert wird.Die Dissertation schließt in Teil IV mit einer Zusammenfassung der wichtigsten Ergebnisse und einigen abschließenden Bemerkungen.",
+   "abstract": "This thesis is devoted to the study of Black holes in Quantum Gravity. A central theme throughout is their relation to the towers of light states predicted by String Theory, and the way this interplay constrains gravitational effective field theories and sheds light on the quantum structure of Black hole backgrounds. Part I provides a self-contained review of the basic elements of String Theory and Black hole physics that will be used throughout the thesis. In each chapter, we draw from these two frameworks a set of insights into the structure of consistent effective field theories coupled to gravity, many of which will play a central role in later chapters related to the Swampland program. Part II uses semiclassical Black holes as probes to extract general features of Quantum Gravity from a bottom-up perspective, and conversely employs existing conjectures to derive new insights into Black hole physics. More precisely, we study how Black hole phase transitions arise at different energy scales and use them to investigate the emergence and physical consequences of infinite towers of asymptotically light states in String Theory. Part III studies the effects of these towers on the quantum structure of Black holes. We focus on four-dimensional 𝒩 = 2 Type IIA compactifications on Calabi--Yau threefolds, and we compute the exact one-loop effective action, including non-perturbative contributions generated by such states in the near-horizon geometry of supersymmetric charged Black holes, namely AdS₂ × S². We then compute a class of non-perturbative corrections to the entropy functional of the most general BPS Black hole solution in this framework. Finally, we show how the physics of these corrections depends sensitively on the type of Black hole and tower under consideration, and propose a semiclassical explanation of how Black hole thermodynamics is modified by their presence. The thesis concludes in Part IV, where we summarize the main results and present some final remarks.",
    "date": "2026-07-17",
    "added": "2026-11-16T17:04:01+00:00",
    "why": [
@@ -3360,7 +3360,7 @@
    "id": "2607.13168",
    "recid": "3180747",
    "arxiv": "2607.13168",
-   "title": "Modeling nonstationary noise: Applications in gravitational wave astronomy",
+   "title": "Modeling non-stationary noise: applications in gravitational wave astronomy",
    "authors": [
     "Neil J. Cornish"
    ],
@@ -3395,7 +3395,7 @@
    "author_count": 1,
    "collaborations": [],
    "categories": [],
-   "abstract": "This thesis provides new non-perturbative numerical methods and exact analytic constructions in the context of low-dimensional conformal field theory and holography.\nThe main results are a six-point extension of the numerical conformal bootstrap and the identification of the holographic dual of anti-de Sitter (AdS) D-branes in minimal pure NSNS AdS$_3$.\n\nOn the numerical side, the thesis introduces a six-point bootstrap framework that exploits positivity in decompositions of six-point correlation functions into products of four-point correlators to derive rigorous bounds on solutions to six-point crossing equations.\nThe resulting optimisation problem involves semi-definite programming (SDP) with infinite-dimensional constraint matrices.\nBy employing sparse SDP techniques, the problem is recast into a numerically tractable form.\nAs a proof of concept, the method is implemented for conformally invariant correlation functions in one dimension, providing e.g.~a non-perturbative handle on correlations of holographic boundary modes in interacting quantum field theories defined on AdS$_2$.\n\nOn the analytic side, the thesis introduces a family of one-dimensional holographic interfaces between symmetric product orbifolds.\nThese interfaces are first analysed algebraically via explicit boundary states in the folded theory.\nIn this framework, the partition function of interface-changing operators is computed and exactly matched with the annulus partition function of AdS$_2$ branes in the Eberhardt–Gaber\\-diel–Go\\-pa\\-kumar tensionless limit of superstring theory on pure NSNS AdS$_3 \\times S_3 \\times \\mathbb{T}^4$.\nFinally, an alternative description of the interfaces in terms of a novel class of generalised covering maps is provided, which yields significantly improved control over interface correlators and higher-genus partition functions.\nWith this new handle on the interface correlators, a 't Hooft-like expansion is established which structurally matches string perturbation theory to all orders in the string coupling.",
+   "abstract": "This thesis provides new non-perturbative numerical methods and exact analytic constructions in the context of low-dimensional conformal field theory and holography. The main results are a six-point extension of the numerical conformal bootstrap and the identification of the holographic dual of anti-de Sitter (AdS) D-branes in minimal pure NSNS AdS$_3$. On the numerical side, the thesis introduces a six-point bootstrap framework that exploits positivity in decompositions of six-point correlation functions into products of four-point correlators to derive rigorous bounds on solutions to six-point crossing equations. The resulting optimisation problem involves semi-definite programming (SDP) with infinite-dimensional constraint matrices. By employing sparse SDP techniques, the problem is recast into a numerically tractable form. As a proof of concept, the method is implemented for conformally invariant correlation functions in one dimension, providing e.g.~a non-perturbative handle on correlations of holographic boundary modes in interacting quantum field theories defined on AdS$_2$. On the analytic side, the thesis introduces a family of one-dimensional holographic interfaces between symmetric product orbifolds. These interfaces are first analysed algebraically via explicit boundary states in the folded theory. In this framework, the partition function of interface-changing operators is computed and exactly matched with the annulus partition function of AdS$_2$ branes in the Eberhardt–Gaber\\-diel–Go\\-pa\\-kumar tensionless limit of superstring theory on pure NSNS AdS$_3 \\times S_3 \\times \\mathbb{T}^4$. Finally, an alternative description of the interfaces in terms of a novel class of generalised covering maps is provided, which yields significantly improved control over interface correlators and higher-genus partition functions. With this new handle on the interface correlators, a 't Hooft-like expansion is established which structurally matches string perturbation theory to all orders in the string coupling.",
    "date": "2026-07-13",
    "added": "2026-11-16T17:04:01+00:00",
    "why": [
@@ -3445,7 +3445,7 @@
    "id": "2607.08248",
    "recid": "3178755",
    "arxiv": "2607.08248",
-   "title": "Probing quadratically coupled ultralight dark matter with the laser interferometer space antenna",
+   "title": "Probing Quadratically Coupled Ultralight Dark Matter with the Laser Interferometer Space Antenna",
    "authors": [
     "Xucheng Gan",
     "Hyungjin Kim",
@@ -3507,7 +3507,7 @@
    "id": "2607.07765",
    "recid": "3178804",
    "arxiv": "2607.07765",
-   "title": "Sub-torque-balance Upper Limits on Continuous Gravitational Waves from Scorpius X-1",
+   "title": "Sub-Torque-Balance Upper Limits on Continuous Gravitational Waves from Scorpius X-1",
    "authors": [
     "A.G. Abac",
     "I. Abouelfettouh",
@@ -4103,7 +4103,7 @@
    "id": "2606.22985",
    "recid": "3171013",
    "arxiv": "2606.22985",
-   "title": "Detector orientation matters: Consequences for gravitational-wave background detectability",
+   "title": "Orientation matters: Consequences for gravitational-wave background detectability",
    "authors": [
     "Nelson Christensen",
     "Joseph D. Romano",
@@ -4408,7 +4408,7 @@
    "id": "2606.27388",
    "recid": "3174925",
    "arxiv": "2606.27388",
-   "title": "Solar system and atomic clock bounds on locally coupled swampland scalars",
+   "title": "Solar System and Atomic Clock Bounds on Locally Coupled Swampland Scalars",
    "authors": [
     "Suraj Gavhale",
     "Maxim Khlopov",
@@ -4982,7 +4982,7 @@
    "id": "2606.04933",
    "recid": "3165064",
    "arxiv": "2606.04933",
-   "title": "AdS$_{D}$× I solutions in axio-dilaton gravity",
+   "title": "$\\text{AdS}_D\\times I$ solutions in axio-dilaton gravity",
    "authors": [
     "Giuseppe Dibitetto",
     "Nicolò Petri"
@@ -5066,7 +5066,7 @@
    "id": "2606.02706",
    "recid": "3164862",
    "arxiv": "2606.02706",
-   "title": "Majoron dark matter, high-scale seesaw framework, and leptogenesis",
+   "title": "Majoron Dark Matter, High-Scale Seesaw, and Leptogenesis",
    "authors": [
     "Brian Batell",
     "Arnab Dasgupta",
@@ -5254,7 +5254,7 @@
    "id": "2605.31600",
    "recid": "3163047",
    "arxiv": "2605.31600",
-   "title": "Gravitational waves from hybrid defects as probe of flavor symmetry breaking: machine-learning approach",
+   "title": "Gravitational Waves from hybrid defects as probe of Flavor symmetry breaking: Machine-Learning Approach",
    "authors": [
     "Anish Ghoshal",
     "Ilia Gogoladze",
@@ -5297,31 +5297,6 @@
     "hep-th"
    ],
    "abstract": "We propose a sigma-model analogue of Hodge loci in the moduli space of geometric Calabi-Yau compactifications, characterized by the emergence of non-trivial rational Hodge endomorphisms, using generalized symmetries. In the CFT description, the complex cohomology is spanned by Ramond-Ramond ground states, the Hodge decomposition is determined by the $U(1)\\times U(1)$ R-charges, and the rational structure is provided by BPS boundary states, with polarization induced by the open string Witten index. Hodge loci are identified by the existence of a non-trivial category $TDL$ of topological defects preserving the $N=(2,2)$ superconformal algebra and acting invertibly on the spectral-flow generators. At special points on these loci, the category $TDL$ exhibits additional arithmetic structure and admits embeddings of finite products of number fields with Complex Multiplication, leading to stronger constraints on the boundary states of the theory. Although the construction is general, we analyze in detail the cases of elliptic curves and $K3$ surfaces.",
-   "date": "2026-05-28",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "cites",
-     "label": "Palti swampland review"
-    }
-   ],
-   "tags": [
-    "strings",
-    "swampland"
-   ]
-  },
-  {
-   "id": "inspire:3215272",
-   "recid": "3215272",
-   "arxiv": null,
-   "title": "Aspects of Black holes in String Theory and the Swampland program",
-   "authors": [
-    "Carmine Montella"
-   ],
-   "author_count": 1,
-   "collaborations": [],
-   "categories": [],
-   "abstract": "This thesis is devoted to the study of Black holes in Quantum Gravity. A central theme throughout is their relation to the towers of light states predicted by String Theory, and the way this interplay constrains gravitational effective field theories and sheds light on the quantum structure of Black hole backgrounds.\nPart I provides a self-contained review of the basic elements of String Theory and Black hole physics that will be used throughout the thesis. In each chapter, we draw from these two frameworks a set of insights into the structure of consistent effective field theories coupled to gravity, many of which will play a central role in later chapters related to the Swampland program.\nPart II uses semiclassical Black holes as probes to extract general features of Quantum Gravity from a bottom-up perspective, and conversely employs existing conjectures to derive new insights into Black hole physics. More precisely, we study how Black hole phase transitions arise at different energy scales and use them to investigate the emergence and physical consequences of infinite towers of asymptotically light states in String Theory.\nPart III studies the effects of these towers on the quantum structure of Black holes. We focus on four-dimensional 𝒩 = 2 Type IIA compactifications on Calabi--Yau threefolds, and we compute the exact one-loop effective action, including non-perturbative contributions generated by such states in the near-horizon geometry of supersymmetric charged Black holes, namely AdS₂ × S². We then compute a class of non-perturbative corrections to the entropy functional of the most general BPS Black hole solution in this framework. Finally, we show how the physics of these corrections depends sensitively on the type of Black hole and tower under consideration, and propose a semiclassical explanation of how Black hole thermodynamics is modified by their presence.\nThe thesis concludes in Part IV, where we summarize the main results and present some final remarks.",
    "date": "2026-05-28",
    "added": "2026-11-16T17:04:01+00:00",
    "why": [
@@ -5667,7 +5642,7 @@
    "id": "2605.26204",
    "recid": "3160236",
    "arxiv": "2605.26204",
-   "title": "Electromagnetic Signatures from Primordial Black Holes in the Solar System",
+   "title": "Electromagnetic Signatures From Primordial Black Holes in the Solar System",
    "authors": [
     "Alexandra P. Klipfel",
     "David I. Kaiser"
@@ -5760,7 +5735,7 @@
    "id": "2605.22362",
    "recid": "3158602",
    "arxiv": "2605.22362",
-   "title": "Constraining spatial curvature with priors from swampland conjectures",
+   "title": "Constraining Spatial Curvature with Priors from Swampland Conjectures",
    "authors": [
     "Simran Arora",
     "Hun Jang",
@@ -5954,7 +5929,7 @@
    "id": "2605.12948",
    "recid": "3155177",
    "arxiv": "2605.12948",
-   "title": "Secondary gravitational wave signatures from 5D rotating primordial black holes in the dark dimension",
+   "title": "Secondary Gravitational Wave Signatures from 5D Rotating Primordial Black Holes in the Dark Dimension",
    "authors": [
     "Waqas Ahmed",
     "George K. Leontaris"
@@ -5985,7 +5960,7 @@
    "id": "2605.12579",
    "recid": "3155155",
    "arxiv": "2605.12579",
-   "title": "Phase-resolved field-space distance criteria in ekpyrotic, bouncing, and cyclic cosmologies",
+   "title": "Phase-resolved field-space distance criteria in ekpyrotic, bouncing and cyclic cosmologies",
    "authors": [
     "Marcin Postolak"
    ],
@@ -6014,7 +5989,7 @@
    "id": "2605.10197",
    "recid": "3154266",
    "arxiv": "2605.10197",
-   "title": "Controlled penumbral inflation from monodromic valleys",
+   "title": "Controlled Penumbral Inflation from Monodromic Valleys",
    "authors": [
     "Pirzada",
     "Tianjun Li"
@@ -6044,7 +6019,7 @@
    "id": "2605.10476",
    "recid": "3154274",
    "arxiv": "2605.10476",
-   "title": "Breaking Free from the Swampland of Impossible Universes Through the DESI Portal",
+   "title": "Breaking Free from the Swampland of Impossible Universes through the DESI Portal",
    "authors": [
     "Luis Alfredo Anchordoqui",
     "Dieter Lust"
@@ -6136,7 +6111,7 @@
    "id": "2605.11068",
    "recid": "3154755",
    "arxiv": "2605.11068",
-   "title": "Towards the realization of the dark dimension scenario in Hořava-Witten theory",
+   "title": "Towards the Realization of the Dark Dimension Scenario in Hořava-Witten Theory",
    "authors": [
     "Ralph Blumenhagen",
     "Antonia Paraskevopoulou"
@@ -6171,7 +6146,7 @@
    "author_count": 1,
    "collaborations": [],
    "categories": [],
-   "abstract": "Looped Spacetime Cosmology (LSC) explores whether black hole interiors and the cosmological origin may be linked by a single global spacetime structure. The framework posits a compact <jats:inline-formula> <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" id=\"m1\"> <mml:mrow> <mml:msup> <mml:mrow> <mml:mi>S</mml:mi> </mml:mrow> <mml:mrow> <mml:mn>3</mml:mn> </mml:mrow> </mml:msup> <mml:mo>×</mml:mo> <mml:msup> <mml:mrow> <mml:mi>S</mml:mi> </mml:mrow> <mml:mrow> <mml:mn>1</mml:mn> </mml:mrow> </mml:msup> </mml:mrow> </mml:math> </jats:inline-formula> topology in which astrophysical black hole trapped regions are globally identified with a common Big Bang hypersurface so that classical terminal curvature endpoints are replaced (at the level of induced data) by a compact global completion. As a minimal realization of nonterminal high-curvature behavior, we employ effective dynamics inspired by loop quantum cosmology (LQC), without assuming a specific ultraviolet completion. The resulting consequences are conditional: if the identification is dynamically admissible, then (i) classical singularities may be avoided in an effective description via bounded-density transitions; (ii) information carried by infalling degrees of freedom need not terminate at a singular boundary but can be globally accounted for on the identified hypersurface, contingent on an isometric mapping across the transition region; (iii) fine-grained entropy can remain globally conserved, while coarse-grained observers still experience an emergent arrow of time; and (iv) compact topology provides a setting in which infrared-regulated vacuum contributions can be consistent with a small late-time cosmological constant in representative models. LSC is formulated as a falsifiable hypothesis rather than a completed theory. Its empirical program is organized as hierarchical tests: Tier I gates probe sign-fixed curvature/topology consistency and can falsify the framework outright; Tier II tests constrain dark-sector realizations without negating the global identification if Tier I survives; and Tier III probes transition-region microphysics (e.g., model-dependent compact-object phenomenology) and is logically downstream. Near-term scrutiny is provided by spatial curvature and topology constraints, population-level compact-object spin statistics, and cross-channel consistency checks using cosmic microwave background (CMB) and large-scale structure data.",
+   "abstract": "Looped Spacetime Cosmology (LSC) explores whether black hole interiors and the cosmological origin may be linked by a single global spacetime structure. The framework posits a compact S 3 × S 1 topology in which astrophysical black hole trapped regions are globally identified with a common Big Bang hypersurface so that classical terminal curvature endpoints are replaced (at the level of induced data) by a compact global completion. As a minimal realization of nonterminal high-curvature behavior, we employ effective dynamics inspired by loop quantum cosmology (LQC), without assuming a specific ultraviolet completion. The resulting consequences are conditional: if the identification is dynamically admissible, then (i) classical singularities may be avoided in an effective description via bounded-density transitions; (ii) information carried by infalling degrees of freedom need not terminate at a singular boundary but can be globally accounted for on the identified hypersurface, contingent on an isometric mapping across the transition region; (iii) fine-grained entropy can remain globally conserved, while coarse-grained observers still experience an emergent arrow of time; and (iv) compact topology provides a setting in which infrared-regulated vacuum contributions can be consistent with a small late-time cosmological constant in representative models. LSC is formulated as a falsifiable hypothesis rather than a completed theory. Its empirical program is organized as hierarchical tests: Tier I gates probe sign-fixed curvature/topology consistency and can falsify the framework outright; Tier II tests constrain dark-sector realizations without negating the global identification if Tier I survives; and Tier III probes transition-region microphysics (e.g., model-dependent compact-object phenomenology) and is logically downstream. Near-term scrutiny is provided by spatial curvature and topology constraints, population-level compact-object spin statistics, and cross-channel consistency checks using cosmic microwave background (CMB) and large-scale structure data.",
    "date": "2026-05-08",
    "added": "2026-11-16T17:04:01+00:00",
    "why": [
@@ -6247,7 +6222,7 @@
    "id": "2605.05122",
    "recid": "3152399",
    "arxiv": "2605.05122",
-   "title": "Exponential quintessence: analytic relationship between the current equation of state parameter and the potential parameter",
+   "title": "Exponential Quintessence: Analytic Relationship Between the Current Equation of State Parameter and the Potential Parameter",
    "authors": [
     "Naoto Maki",
     "Kazunori Kohri"
@@ -6446,7 +6421,7 @@
    "id": "2605.03005",
    "recid": "3152063",
    "arxiv": "2605.03005",
-   "title": "Taxonomy of instanton corrections in infinite distance limits",
+   "title": "Taxonomy of Instanton Corrections in Infinite Distance Limits",
    "authors": [
     "Manuel Artime",
     "Ralph Blumenhagen",
@@ -6482,7 +6457,7 @@
    "author_count": 1,
    "collaborations": [],
    "categories": [],
-   "abstract": "The Universe offers a unique precision laboratory for fundamental physics, carrying in its observables the imprints of processes at energy scales and in regimes that are inaccessible to any terrestrial experiment. This dissertation develops theoretical predictions and observational tools together, with the goal of turning current and upcoming measurements of the cosmic microwave background (CMB) and the large- scale structure (LSS) of the Universe into robust probes of fundamental physics. In particular, it addresses three interconnected frontiers of beyond-the-Standard-Model physics: the microphysics of inflation, the nature of the dark sector, and the free-streaming properties of cosmic neutrinos.\nReaching furthest back in cosmic history, inflation is usually assumed to take place in an empty, supercooled Universe, but a well-motivated alternative — warm inflation — posits that the inflaton remains thermally coupled to a bath of radiation throughout the accelerated expansion. We develop the theoretical framework and computational infrastructure needed to confront this scenario with data, and show that the persistent thermal environment gives rise to novel phenomena with no analogue in the standard picture, including a new mechanism for producing the observed dark matter abundance during inflation itself and an irreducible background of gravitational waves of thermal origin.\nCloser to the present day, dark matter and dark energy together dominate the energy budget of the Universe, yet their fundamental nature remains unknown. We show that cosmological observations — in particular the CMB — and terrestrial experiments provide complementary and sometimes surprisingly powerful handles on dark matter properties, probing interaction strengths and candidate scenarios that neither approach could constrain alone. On the dark energy side, we demonstrate that the interpretation of recent observational hints for a time-varying equation of state depends critically on the theoretical assumptions underlying the analysis, and that incorporating well-motivated physical priors substantially weakens the apparent evidence for new physics.\nAmong the most elusive species in the Standard Model itself, cosmic neutrinos leave a wealth of imprints on cosmological observables, including a characteristic and coherent phase shift in the acoustic oscillations of the primordial plasma — a signature that is uniquely sensitive to their free-streaming nature and difficult to mimic through changes in other cosmological parameters. We develop a comprehensive framework for extracting this imprint from cosmological data, obtain a high-significance detection consistent with three free-streaming neutrino species, and extend the analysis to directly constrain non-standard neutrino interactions. We further identify a qualitatively new manifestation of this signature in the 21-cm signal emitted by neutral hydrogen during cosmic dawn, opening a complementary observational window with distinct sensitivity to the properties of neutrinos and other light relics.",
+   "abstract": "The Universe offers a unique precision laboratory for fundamental physics, carrying in its observables the imprints of processes at energy scales and in regimes that are inaccessible to any terrestrial experiment. This dissertation develops theoretical predictions and observational tools together, with the goal of turning current and upcoming measurements of the cosmic microwave background (CMB) and the large- scale structure (LSS) of the Universe into robust probes of fundamental physics. In particular, it addresses three interconnected frontiers of beyond-the-Standard-Model physics: the microphysics of inflation, the nature of the dark sector, and the free-streaming properties of cosmic neutrinos. Reaching furthest back in cosmic history, inflation is usually assumed to take place in an empty, supercooled Universe, but a well-motivated alternative — warm inflation — posits that the inflaton remains thermally coupled to a bath of radiation throughout the accelerated expansion. We develop the theoretical framework and computational infrastructure needed to confront this scenario with data, and show that the persistent thermal environment gives rise to novel phenomena with no analogue in the standard picture, including a new mechanism for producing the observed dark matter abundance during inflation itself and an irreducible background of gravitational waves of thermal origin. Closer to the present day, dark matter and dark energy together dominate the energy budget of the Universe, yet their fundamental nature remains unknown. We show that cosmological observations — in particular the CMB — and terrestrial experiments provide complementary and sometimes surprisingly powerful handles on dark matter properties, probing interaction strengths and candidate scenarios that neither approach could constrain alone. On the dark energy side, we demonstrate that the interpretation of recent observational hints for a time-varying equation of state depends critically on the theoretical assumptions underlying the analysis, and that incorporating well-motivated physical priors substantially weakens the apparent evidence for new physics. Among the most elusive species in the Standard Model itself, cosmic neutrinos leave a wealth of imprints on cosmological observables, including a characteristic and coherent phase shift in the acoustic oscillations of the primordial plasma — a signature that is uniquely sensitive to their free-streaming nature and difficult to mimic through changes in other cosmological parameters. We develop a comprehensive framework for extracting this imprint from cosmological data, obtain a high-significance detection consistent with three free-streaming neutrino species, and extend the analysis to directly constrain non-standard neutrino interactions. We further identify a qualitatively new manifestation of this signature in the 21-cm signal emitted by neutral hydrogen during cosmic dawn, opening a complementary observational window with distinct sensitivity to the properties of neutrinos and other light relics.",
    "date": "2026-05-01",
    "added": "2026-11-16T17:04:01+00:00",
    "why": [
@@ -6500,7 +6475,7 @@
    "id": "2604.27835",
    "recid": "3150602",
    "arxiv": "2604.27835",
-   "title": "Some properties and uses of the Species Scale",
+   "title": "Some Properties and Uses of the Species Scale",
    "authors": [
     "Luis E. Ibáñez"
    ],
@@ -6563,7 +6538,7 @@
    "id": "2604.25918",
    "recid": "3149858",
    "arxiv": "2604.25918",
-   "title": "De Sitter in string theory vs. Gibbons & Hawking",
+   "title": "de Sitter in String Theory vs. Gibbons & Hawking",
    "authors": [
     "Yoav Zigdon"
    ],
@@ -6707,7 +6682,7 @@
    "id": "2604.20762",
    "recid": "3148095",
    "arxiv": "2604.20762",
-   "title": "Spontaneous baryogenesis from axions on induced electroweak walls",
+   "title": "Spontaneous Baryogenesis from Axions on Induced Electroweak Walls",
    "authors": [
     "Miguel Vanvlasselaer",
     "Wen Yin"
@@ -6737,7 +6712,7 @@
    "id": "2604.20768",
    "recid": "3148123",
    "arxiv": "2604.20768",
-   "title": "Primordial magnetogenesis and Gravitational Waves from ALP-assisted phase transition",
+   "title": "Primordial Magnetogenesis and Gravitational Waves from ALP-assisted Phase Transition",
    "authors": [
     "Pankaj Borah",
     "P.S. Bhupal Dev",
@@ -6826,7 +6801,7 @@
    "id": "2604.15251",
    "recid": "3145866",
    "arxiv": "2604.15251",
-   "title": "Kontorovich-Lebedev-Fourier space for de Sitter correlators",
+   "title": "Kontorovich-Lebedev-Fourier Space for de Sitter Correlators",
    "authors": [
     "Nathan Belrhali",
     "Arthur Poisson",
@@ -7012,7 +6987,7 @@
    "id": "2604.08968",
    "recid": "3143543",
    "arxiv": "2604.08968",
-   "title": "Probing the kinematic dipole with LISA: an analytical treatment",
+   "title": "Probing the Kinematic Dipole with LISA: an analytical treatment",
    "authors": [
     "Jacopo Fumagalli",
     "Giulia Cusin",
@@ -7176,7 +7151,7 @@
    "id": "2604.02214",
    "recid": "3138881",
    "arxiv": "2604.02214",
-   "title": "Quadratic gravity corrections to scalar quasinormal modes of rapidly rotating black holes",
+   "title": "Quadratic gravity corrections to scalar QNMs of rapidly rotating black holes",
    "authors": [
     "Stef J.B. Husken",
     "Tom van der Steen",
@@ -7209,7 +7184,7 @@
    "id": "2604.01035",
    "recid": "3138571",
    "arxiv": "2604.01035",
-   "title": "Universal non-Gaussian signatures from transient instabilities",
+   "title": "Universal Non-Gaussian Signatures from Transient Instabilities",
    "authors": [
     "Shuntaro Aoki",
     "Diederik Roest",
@@ -7285,7 +7260,7 @@
    "id": "2605.11703",
    "recid": "3154837",
    "arxiv": "2605.11703",
-   "title": "GW240925 and GW250207: Astrophysical Calibration of Gravitational Wave Detectors",
+   "title": "GW240925 and GW250207: Astrophysical Calibration of Gravitational-wave Detectors",
    "authors": [
     "A.G. Abac",
     "I. Abouelfettouh",
@@ -7503,7 +7478,7 @@
    "id": "2603.27673",
    "recid": "3137327",
    "arxiv": "2603.27673",
-   "title": "Avoiding recollapse in an open AdS universe via a self-tuninglike mechanism",
+   "title": "Avoiding recollapse in an open-AdS Universe via a self-tuning-like mechanism",
    "authors": [
     "Yupeng Zhang",
     "Shuxun Tian",
@@ -7643,7 +7618,7 @@
    "id": "2603.25808",
    "recid": "3136106",
    "arxiv": "2603.25808",
-   "title": "Searches for Continuous Gravitational Waves from Supernova Remnants in the First Part of the LIGO-Virgo-KAGRA Fourth Observing Run",
+   "title": "Searches for Continuous Gravitational Waves from Supernova Remnants in the first part of the LIGO-Virgo-KAGRA Fourth Observing run",
    "authors": [
     "A.G. Abac",
     "I. Abouelfettouh",
@@ -7683,7 +7658,7 @@
    "id": "2603.25938",
    "recid": "3136113",
    "arxiv": "2603.25938",
-   "title": "Narrowband Searches for Continuous Gravitational Waves from known Pulsars in the First Two Parts of the Fourth LIGO–Virgo–KAGRA Observing Run",
+   "title": "Narrowband searches for continuous gravitational waves from known pulsars in the first two parts of the fourth LIGO--Virgo--KAGRA observing run",
    "authors": [
     "A.G. Abac",
     "I. Abouelfettouh",
@@ -7723,7 +7698,7 @@
    "id": "2603.23473",
    "recid": "3133864",
    "arxiv": "2603.23473",
-   "title": "Solving the cosmic coincidence problem: The locally pumped dark energy model",
+   "title": "Solving the Cosmic Coincidence Problem: The Locally Pumped Dark Energy Model",
    "authors": [
     "Carlo R. Contaldi",
     "Mauro Pieroni"
@@ -7754,7 +7729,7 @@
    "id": "2603.21762",
    "recid": "3132922",
    "arxiv": "2603.21762",
-   "title": "Inflationary phase transitions in the early Universe: A Bayesian study with space-based gravitational-wave detectors",
+   "title": "Inflationary Phase Transitions in the Early Universe: A Bayesian Study with Space-Based Gravitational Waves Detectors",
    "authors": [
     "Qingyuan Liang",
     "Chen Yang",
@@ -7899,7 +7874,7 @@
    "author_count": 1,
    "collaborations": [],
    "categories": [],
-   "abstract": "We investigate the interplay between the weak gravity conjecture (WGC)\nand weak cosmic censorship conjecture (WCCC) for Reissner-Nordström\nanti-de Sitter (RN-AdS) black holes surrounded by perfect fluid dark\nmatter (PFDM) within restricted phase space thermodynamics (RPST) and\nconformal field theory (CFT) thermodynamics frameworks. The WGC ensures\nthat gravity must be the weakest force in any consistent quantum gravity\ntheory, while the WCCC asserts that singularities from gravitational\ncollapse must be hidden behind event horizons. We derive complete\nthermodynamic descriptions including mass, temperature, entropy, and\nfree energy in both formalisms, accounting for PFDM parameterized by\n\\(\\gamma\\). Our analysis reveals characteristic swallowtail patterns in\nfree energy curves, indicating van der Waals-like first-order phase\ntransitions under specific parameter conditions. We demonstrate that the\nPFDM parameter \\(\\gamma\\) and AdS radius \\(\\ell\\) play crucial roles in\nsatisfying both conjectures. Significantly, we find that the\ncompatibility range for WGC in CFT thermodynamics\n\\((\\sqrt{3}\\,\\ell < \\gamma < 10\\ell)\\) is substantially wider than in\nRPST \\((\\sqrt{2/3}\\,\\ell < \\gamma < 5\\ell)\\). This result suggests that\nthe holographic dictionary acts as a natural filter for Swampland\nconstraints, rendering the boundary CFT description more fundamental for\nconsistency checks than the bulk thermodynamic variables. At critical\npoints of black hole parameters, we verify simultaneous satisfaction of\nWGC and WCCC, demonstrating robustness within the critical framework.\nOur results provide compelling evidence that the holographic boundary\ndescription naturally encodes quantum gravity consistency conditions\nmore efficiently than bulk thermodynamic formalisms, with perfect fluid\ndark matter serving as a crucial mediator enabling the reconciliation of\nthese fundamental principles.",
+   "abstract": "We investigate the interplay between the weak gravity conjecture (WGC) and weak cosmic censorship conjecture (WCCC) for Reissner-Nordström anti-de Sitter (RN-AdS) black holes surrounded by perfect fluid dark matter (PFDM) within restricted phase space thermodynamics (RPST) and conformal field theory (CFT) thermodynamics frameworks. The WGC ensures that gravity must be the weakest force in any consistent quantum gravity theory, while the WCCC asserts that singularities from gravitational collapse must be hidden behind event horizons. We derive complete thermodynamic descriptions including mass, temperature, entropy, and free energy in both formalisms, accounting for PFDM parameterized by \\(\\gamma\\). Our analysis reveals characteristic swallowtail patterns in free energy curves, indicating van der Waals-like first-order phase transitions under specific parameter conditions. We demonstrate that the PFDM parameter \\(\\gamma\\) and AdS radius \\(\\ell\\) play crucial roles in satisfying both conjectures. Significantly, we find that the compatibility range for WGC in CFT thermodynamics \\((\\sqrt{3}\\,\\ell < \\gamma < 10\\ell)\\) is substantially wider than in RPST \\((\\sqrt{2/3}\\,\\ell < \\gamma < 5\\ell)\\). This result suggests that the holographic dictionary acts as a natural filter for Swampland constraints, rendering the boundary CFT description more fundamental for consistency checks than the bulk thermodynamic variables. At critical points of black hole parameters, we verify simultaneous satisfaction of WGC and WCCC, demonstrating robustness within the critical framework. Our results provide compelling evidence that the holographic boundary description naturally encodes quantum gravity consistency conditions more efficiently than bulk thermodynamic formalisms, with perfect fluid dark matter serving as a crucial mediator enabling the reconciliation of these fundamental principles.",
    "date": "2026-03-19",
    "added": "2026-11-16T17:04:01+00:00",
    "why": [
@@ -8097,7 +8072,7 @@
    "id": "2603.15514",
    "recid": "3129563",
    "arxiv": "2603.15514",
-   "title": "Probing gravitational-wave four-point correlators",
+   "title": "Probing Gravitational-Wave Four-Point Correlators",
    "authors": [
     "Martina Ciprini",
     "Maria Lucia Marcelli",
@@ -8296,7 +8271,7 @@
    "id": "2603.13629",
    "recid": "3129892",
    "arxiv": "2603.13629",
-   "title": "Projected sensitivity of paleodetectors to dark matter effective interactions with nuclei",
+   "title": "Projected Sensitivity of Paleo-Detectors to Dark Matter Effective Interactions with Nuclei",
    "authors": [
     "Dionysios P. Theodosopoulos",
     "Katherine Freese",
@@ -8330,7 +8305,7 @@
    "id": "2603.12444",
    "recid": "3129103",
    "arxiv": "2603.12444",
-   "title": "Stress-energy tensor of a scalar field on a product spacetime with a time-dependent compact dimension",
+   "title": "Stress-Energy Tensor of a Scalar Field on a Product Spacetime with a Time-Dependent Compact Dimension",
    "authors": [
     "Anamitra Paul",
     "Sonia Paban"
@@ -8359,7 +8334,7 @@
    "id": "2603.12216",
    "recid": "3128791",
    "arxiv": "2603.12216",
-   "title": "Scale-dependent loop corrections to the inflationary power spectrum",
+   "title": "Scale-Dependent Loop Corrections to the Inflationary Power Spectrum",
    "authors": [
     "Matteo Braglia",
     "Sebastián Céspedes",
@@ -8424,7 +8399,7 @@
    "id": "2603.11167",
    "recid": "3128823",
    "arxiv": "2603.11167",
-   "title": "Gravitational-wave Measurement of the M$_{BH}$–M$_{bulge}$ Intrinsic Scatter at High Redshift",
+   "title": "Gravitational Wave Measurement of the $M_\\mathrm{BH}$-$M_\\mathrm{bulge}$ Intrinsic Scatter at High Redshift",
    "authors": [
     "Cayenne Matt",
     "Kayhan Gültekin",
@@ -8465,7 +8440,7 @@
    "id": "2603.09816",
    "recid": "3128153",
    "arxiv": "2603.09816",
-   "title": "A Swampland-Modified Hod Bound for Charged Black Holes with Exotic Matter",
+   "title": "A Swampland-modified Hod bound for charged black holes with exotic matter",
    "authors": [
     "S. Saoud",
     "M.A. Rbah",
@@ -8611,7 +8586,7 @@
    "id": "2603.07298",
    "recid": "3127669",
    "arxiv": "2603.07298",
-   "title": "Time dependent string compactification: towards bouncing cosmology",
+   "title": "Time Dependent String Compactification: Towards Bouncing Cosmology",
    "authors": [
     "Mir Mehedi Faruk"
    ],
@@ -8672,7 +8647,7 @@
    "id": "2603.06786",
    "recid": "3127649",
    "arxiv": "2603.06786",
-   "title": "All <math display=\"inline\"><mn>2</mn><mi>D</mi></math> generalized dilaton theories from <math display=\"inline\"><mi>d</mi><mo>≥</mo><mn>4</mn></math> gravities",
+   "title": "All $2D$ generalised dilaton theories from $d\\geq 4$ gravities",
    "authors": [
     "Johanna Borissova"
    ],
@@ -8836,7 +8811,7 @@
    "id": "2603.02332",
    "recid": "3125440",
    "arxiv": "2603.02332",
-   "title": "Crunching, bouncing, and cyclical cosmologies from dark sector interactions",
+   "title": "Crunching, Bouncing, and Cyclical Cosmologies from Dark Sector Interactions",
    "authors": [
     "Marcel van der Westhuizen",
     "Amare Abebe"
@@ -8865,7 +8840,7 @@
    "id": "2602.22930",
    "recid": "3123950",
    "arxiv": "2602.22930",
-   "title": "Testing the weak gravity conjecture via gravitational lensing, black hole shadows, and Barrow thermodynamics in F(R)-Euler-Heisenberg (A)dS black holes",
+   "title": "Testing the Weak Gravity Conjecture via Gravitational Lensing, Black Hole Shadows, and Barrow Thermodynamics in F(R)-Euler-Heisenberg (A)dS Black Holes",
    "authors": [
     "Saeed Noori Gashti",
     "Izzet Sakalli",
@@ -8900,7 +8875,7 @@
    "id": "2602.22074",
    "recid": "3123642",
    "arxiv": "2602.22074",
-   "title": "Beyond Gaussian assumptions: A new robust statistical framework for gravitational-wave data analysis",
+   "title": "Beyond Gaussian Assumptions: A new robust statistical framework for gravitational-wave data analysis",
    "authors": [
     "Argyro Sasli",
     "Minas Karamanis",
@@ -8962,7 +8937,7 @@
    "id": "2602.20355",
    "recid": "3123232",
    "arxiv": "2602.20355",
-   "title": "Complex inflaton potentials with nonminimal coupling: Robust inflation and geometric reheating",
+   "title": "Complex Inflaton Potentials with Nonminimal Coupling: Robust Inflation and Geometric Reheating",
    "authors": [
     "Sergio Dias Campos"
    ],
@@ -9021,7 +8996,7 @@
    "id": "2602.19118",
    "recid": "3122878",
    "arxiv": "2602.19118",
-   "title": "Exponential quintessence model: Analytical quantification of the fine-tuning problem in dark energy",
+   "title": "Exponential Quintessence Model: Analytical Quantification of the Fine-Tuning Problem in Dark Energy",
    "authors": [
     "Naoto Maki",
     "Kazunori Kohri"
@@ -9052,7 +9027,7 @@
    "id": "2602.18560",
    "recid": "3122883",
    "arxiv": "2602.18560",
-   "title": "Inferring the population properties of Galactic binaries from LISA’s stochastic foreground",
+   "title": "Inferring the population properties of galactic binaries from LISA's stochastic foreground",
    "authors": [
     "Federico De Santi",
     "Alessandro Santini",
@@ -9090,7 +9065,7 @@
    "id": "2602.17380",
    "recid": "3121665",
    "arxiv": "2602.17380",
-   "title": "Constraining $\\beta $-exponential inflation with the latest ACT observations",
+   "title": "Constraining $β$-Exponential Inflation with the latest ACT observations",
    "authors": [
     "Jureeporn Yuennan",
     "Farruh Atamurotov",
@@ -9145,7 +9120,7 @@
    "id": "2602.16963",
    "recid": "3121598",
    "arxiv": "2602.16963",
-   "title": "Inflationary Reheating to Preheating-A Personal Account",
+   "title": "Inflationary Reheating to Preheating - A Personal Account",
    "authors": [
     "Robert Brandenberger",
     "Jennie Traschen"
@@ -9481,7 +9456,7 @@
    "id": "2602.04957",
    "recid": "3116925",
    "arxiv": "2602.04957",
-   "title": "Curvature divergences and gravity decoupling in Calabi-Yau rigid limits",
+   "title": "Curvature divergences and gravity decoupling in Calabi--Yau rigid limits",
    "authors": [
     "Alberto Castellano",
     "Fernando Marchesano",
@@ -9570,7 +9545,7 @@
    "id": "2601.23230",
    "recid": "3113291",
    "arxiv": "2601.23230",
-   "title": "Detectability of gravitational-wave memory with LISA: A Bayesian approach",
+   "title": "Detectability of Gravitational-Wave Memory with LISA: A Bayesian Approach",
    "authors": [
     "Adrien Cogez",
     "Silvia Gasparotto",
@@ -9605,7 +9580,7 @@
    "id": "2601.21136",
    "recid": "3112938",
    "arxiv": "2601.21136",
-   "title": "Background Instability of Quintessence Model in Light of Entropy and Distance Conjecture",
+   "title": "Background instability of quintessence model in light of entropy and distance conjecture",
    "authors": [
     "Min-Seok Seo"
    ],
@@ -9674,7 +9649,7 @@
    "id": "2601.18863",
    "recid": "3112060",
    "arxiv": "2601.18863",
-   "title": "Tame complexity of effective field theories in the quantum gravity landscape",
+   "title": "Tame Complexity of Effective Field Theories in the Quantum Gravity Landscape",
    "authors": [
     "Thomas W. Grimm",
     "David Prieto",
@@ -9772,7 +9747,7 @@
    "id": "2601.15489",
    "recid": "3110485",
    "arxiv": "2601.15489",
-   "title": "A Computational Companion to Transient de Sitter and Quasi de Sitter States in SO(32) and E<sub>8</sub>× E<sub>8</sub>Heterotic String Theories I: Formalisms",
+   "title": "A Computational Companion to Transient de Sitter and Quasi de Sitter States in SO(32) and E_8 X E_8 Heterotic String Theories I: Formalisms",
    "authors": [
     "Archana Maji"
    ],
@@ -9876,7 +9851,7 @@
    "id": "2601.14394",
    "recid": "3109778",
    "arxiv": "2601.14394",
-   "title": "Gravitational waves in an A$_{4}$ neutrino mass model",
+   "title": "Gravitational Waves in an A4 Neutrino Mass Model",
    "authors": [
     "Mu-Chun Chen",
     "Harold J. Matias",
@@ -9930,7 +9905,7 @@
    "id": "2601.09481",
    "recid": "3105013",
    "arxiv": "2601.09481",
-   "title": "The NANOGrav 15 yr Data Set: Piecewise Power-law Reconstruction of the Gravitational-wave Background",
+   "title": "The NANOGrav 15 yr Data Set: Piecewise Power-Law Reconstruction of the Gravitational-Wave Background",
    "authors": [
     "Gabriella Agazie",
     "Akash Anumarlapudi",
@@ -10010,7 +9985,7 @@
    "id": "2601.09834",
    "recid": "3105674",
    "arxiv": "2601.09834",
-   "title": "Very-high-frequency gravitational waves from multimonodromy inflation",
+   "title": "Very-High-Frequency Gravitational Waves from Multi-Monodromy Inflation",
    "authors": [
     "Guido D'Amico",
     "Andrew A. Geraci",
@@ -10044,7 +10019,7 @@
    "id": "2601.08622",
    "recid": "3103955",
    "arxiv": "2601.08622",
-   "title": "Primordial gravitational waves from scalar backreaction in axion-SU(2) inflation",
+   "title": "Primordial Gravitational Waves from Scalar Backreaction in Axion-SU(2) Inflation",
    "authors": [
     "Mattia Cielo",
     "Matteo Fasiello",
@@ -10076,7 +10051,7 @@
    "id": "2601.07595",
    "recid": "3103348",
    "arxiv": "2601.07595",
-   "title": "Deep Search for Joint Sources of Gravitational Waves and High-energy Neutrinos with IceCube during the Third Observing Run of LIGO and Virgo",
+   "title": "Deep Search for Joint Sources of Gravitational Waves and High-Energy Neutrinos with IceCube During the Third Observing Run of LIGO and Virgo",
    "authors": [
     "R. Abbasi",
     "M. Ackermann",
@@ -10186,7 +10161,7 @@
    "id": "2601.05935",
    "recid": "3100140",
    "arxiv": "2601.05935",
-   "title": "Gravitational ionization by Schwarzschild primordial black holes",
+   "title": "Gravitational Ionization by Schwarzschild Primordial Black Holes",
    "authors": [
     "Alexandra P. Klipfel",
     "David I. Kaiser"
@@ -10242,7 +10217,7 @@
    "id": "2601.00992",
    "recid": "3097821",
    "arxiv": "2601.00992",
-   "title": "From the wavefunction of the Universe to in-in-correlators: a perturbative map to all orders",
+   "title": "From the Wavefunction of the Universe to In-In-Correlators: A Perturbative Map to All Orders",
    "authors": [
     "Gonzalo A. Palma"
    ],
@@ -10518,7 +10493,7 @@
    "id": "2512.24697",
    "recid": "3096553",
    "arxiv": "2512.24697",
-   "title": "Non-SUSY DW’s in ISO(7) gauged supergravity",
+   "title": "Non-SUSY DW's in ISO(7) gauged supergravity",
    "authors": [
     "Nathan Bagshaw",
     "Giuseppe Dibitetto"
@@ -10546,7 +10521,7 @@
    "id": "2602.02861",
    "recid": "3111043",
    "arxiv": "2602.02861",
-   "title": "Probing Beyond the Standard Model with Gravitational Waves from Phase Transitions",
+   "title": "Probing beyond the Standard Model with gravitational waves from phase transitions",
    "authors": [
     "Chiara Caprini"
    ],
@@ -10636,7 +10611,7 @@
    "id": "2512.23376",
    "recid": "3096159",
    "arxiv": "2512.23376",
-   "title": "Axion coupling accelerates the Universe through <math display=\"inline\"><mrow><mi mathvariant=\"script\">PT</mi></mrow></math>-symmetric phases",
+   "title": "The axion coupling accelerates the Universe through PT-symmetric phases",
    "authors": [
     "Leqian Chen",
     "Nick E. Mavromatos",
@@ -10693,7 +10668,7 @@
    "id": "2512.22652",
    "recid": "3096088",
    "arxiv": "2512.22652",
-   "title": "Schwinger-Keldysh cosmological cutting rules",
+   "title": "Schwinger-Keldysh Cosmological Cutting Rules",
    "authors": [
     "Francisco Colipí-Marchant",
     "Gabriel Marin",
@@ -10725,7 +10700,7 @@
    "id": "2512.21392",
    "recid": "3095770",
    "arxiv": "2512.21392",
-   "title": "Sensitivity of weak lensing surveys to gravitational waves from inspiraling supermassive black hole binaries",
+   "title": "Sensitivity of Weak Lensing Surveys to Gravitational Waves from Inspiraling Supermassive Black Hole Binaries",
    "authors": [
     "Tal Adi",
     "Kris Pardo",
@@ -10785,7 +10760,7 @@
    "id": "2512.19668",
    "recid": "3094863",
    "arxiv": "2512.19668",
-   "title": "Are primordial black holes truly fine-tuned?",
+   "title": "Are Primordial Black Holes Truly Fine-Tuned?",
    "authors": [
     "A.J. Iovino",
     "A. Riotto"
@@ -10842,7 +10817,7 @@
    "id": "2512.17990",
    "recid": "3094760",
    "arxiv": "2512.17990",
-   "title": "Constraints on Gravitational Waves from the 2024 Vela Pulsar Glitch",
+   "title": "Constraints on gravitational waves from the 2024 Vela pulsar glitch",
    "authors": [
     "A.G. Abac",
     "I. Abouelfettouh",
@@ -10976,7 +10951,7 @@
    "id": "2512.16347",
    "recid": "3094005",
    "arxiv": "2512.16347",
-   "title": "GWTC-4.0: Searches for Gravitational-wave Lensing Signatures",
+   "title": "GWTC-4.0: Searches for Gravitational-Wave Lensing Signatures",
    "authors": [
     "A.G. Abac",
     "I. Abouelfettouh",
@@ -11084,7 +11059,7 @@
    "id": "2512.15969",
    "recid": "3093920",
    "arxiv": "2512.15969",
-   "title": "Quantum Liouville cosmology",
+   "title": "Quantum Liouville Cosmology",
    "authors": [
     "Dionysios Anninos",
     "Thomas Hertog",
@@ -11113,7 +11088,7 @@
    "id": "2512.15292",
    "recid": "3093694",
    "arxiv": "2512.15292",
-   "title": "Ultralight dark matter constraints from nano-Hertz gravitational waves",
+   "title": "Ultralight Dark Matter Constraints from NanoHertz Gravitational Waves",
    "authors": [
     "Shreyas Tiruvaskar",
     "Russell Boey",
@@ -11240,7 +11215,7 @@
    "id": "2512.14204",
    "recid": "3093333",
    "arxiv": "2512.14204",
-   "title": "Cosmic lockdown: when decoherence saves the universe from tunneling",
+   "title": "Cosmic Lockdown: When Decoherence Saves the Universe from Tunneling",
    "authors": [
     "Robson Christie",
     "Jaewoo Joo",
@@ -11339,7 +11314,7 @@
    "id": "2512.13780",
    "recid": "3093263",
    "arxiv": "2512.13780",
-   "title": "Positivity with long-range interactions",
+   "title": "Positivity with Long-Range Interactions",
    "authors": [
     "B. Bellazzini",
     "J. Berman",
@@ -11398,7 +11373,7 @@
    "id": "2512.13842",
    "recid": "3093282",
    "arxiv": "2512.13842",
-   "title": "Quantum walks and exact RG in de Sitter space",
+   "title": "Quantum Walks and Exact RG in de Sitter Space",
    "authors": [
     "Daniel Green",
     "Kshitij Gupta"
@@ -11429,7 +11404,7 @@
    "id": "2512.11980",
    "recid": "3092762",
    "arxiv": "2512.11980",
-   "title": "Mixed signals in the IR: positivity bounds with indefinite species",
+   "title": "Mixed signals in the IR: Positivity bounds with indefinite species",
    "authors": [
     "Claudia de Rham",
     "Sumer Jaitly",
@@ -11457,7 +11432,7 @@
    "id": "2512.10381",
    "recid": "3092184",
    "arxiv": "2512.10381",
-   "title": "5D rotating black holes as dark matter in dark dimension scenario: Hawking radiation versus the memory burden effect",
+   "title": "5D Rotating Black Holes as dark matter in Dark Dimension Scenario: Hawking Radiation versus the Memory Burden Effect",
    "authors": [
     "George K. Leontaris",
     "George Prampromis"
@@ -11517,7 +11492,7 @@
    "id": "2512.08521",
    "recid": "3091121",
    "arxiv": "2512.08521",
-   "title": "Time-averaged Template for Stochastic Gravitational-wave Background Detection in Space-based Interferometers",
+   "title": "Time-Averaged Template for Stochastic Gravitational-Wave Background Detection in Space-Based Interferometers",
    "authors": [
     "Jing-yi Wu",
     "Yong Tang"
@@ -11548,7 +11523,7 @@
    "id": "2512.09197",
    "recid": "3091762",
    "arxiv": "2512.09197",
-   "title": "Gravitational-wave signatures of massive black hole formation",
+   "title": "Gravitational-Wave Signatures of Massive Black Hole Formation",
    "authors": [
     "Bernard J. Kelly",
     "Sarah Gossan",
@@ -11583,7 +11558,7 @@
    "id": "2512.09052",
    "recid": "3091817",
    "arxiv": "2512.09052",
-   "title": "Neutrinos, B-L symmetry and the dark dimension",
+   "title": "Neutrinos, B-L Symmetry and the Dark Dimension",
    "authors": [
     "Miguel Montero",
     "Cumrun Vafa",
@@ -11613,7 +11588,7 @@
    "id": "2512.07930",
    "recid": "3091096",
    "arxiv": "2512.07930",
-   "title": "Inflationary particle production and the Swampland",
+   "title": "Inflationary Particle Production and the Swampland",
    "authors": [
     "Dieter Lüst",
     "Joaquin Masias",
@@ -11685,7 +11660,7 @@
    "id": "2512.07922",
    "recid": "3091140",
    "arxiv": "2512.07922",
-   "title": "Beyond extremality: Weak Gravity Conjecture constraints on gravitational lensing in gravity’s rainbow",
+   "title": "Beyond Extremality: Weak Gravity Conjecture Constraints on Gravitational Lensing in Gravity's Rainbow",
    "authors": [
     "Saeed Noori Gashti",
     "Behnam Pourhassan",
@@ -11741,7 +11716,7 @@
    "id": "2512.04151",
    "recid": "3089315",
    "arxiv": "2512.04151",
-   "title": "Counting AdS vacua",
+   "title": "Counting AdS Vacua",
    "authors": [
     "Zihni Kaan Baykara",
     "Alessandro Tomasiello",
@@ -11774,7 +11749,7 @@
    "id": "2512.04199",
    "recid": "3089324",
    "arxiv": "2512.04199",
-   "title": "Primordial black holes from inflation with a spectator field",
+   "title": "Primordial Black Holes from Inflation with a Spectator Field",
    "authors": [
     "Dario L. Lorenzoni",
     "Sarah R. Geller",
@@ -11811,7 +11786,7 @@
    "id": "2512.03645",
    "recid": "3089017",
    "arxiv": "2512.03645",
-   "title": "Gauge symmetries, contact reduction, and singular field theories",
+   "title": "Gauge Symmetries, Contact Reduction, and Singular Field Theories",
    "authors": [
     "Callum Bell",
     "David Sloan"
@@ -11849,7 +11824,7 @@
    "author_count": 1,
    "collaborations": [],
    "categories": [],
-   "abstract": "<jats:p xml:lang=\"en\">This thesis comprises three research projects conducted during the author's doctoral program, which are presented individually in the following chapters. In Chapter II, we demonstrate that field trajectories leading to cosmic acceleration and exhibiting rapid turns near the boundary of the moduli space lie within the Swampland. Specifically, our analysis assumes the validity of the Swampland Distance Conjecture in the presence of a scalar potential and focuses on hyperbolic",
+   "abstract": "This thesis comprises three research projects conducted during the author's doctoral program, which are presented individually in the following chapters. In Chapter II, we demonstrate that field trajectories leading to cosmic acceleration and exhibiting rapid turns near the boundary of the moduli space lie within the Swampland. Specifically, our analysis assumes the validity of the Swampland Distance Conjecture in the presence of a scalar potential and focuses on hyperbolic",
    "date": "2025-12-02",
    "added": "2026-11-16T17:04:01+00:00",
    "why": [
@@ -11898,7 +11873,7 @@
    "author_count": 4,
    "collaborations": [],
    "categories": [],
-   "abstract": "The Laser Interferometer Space Antenna (LISA) will be a space-borne gravitational wave (GW) detector to be launched in the next decade. Central to LISA data analysis is time-delay interferometry (TDI), a numerical procedure which drastically reduces otherwise overwhelming laser frequency noise. LISA data analysis is usually performed on subsets of TDI variables which form a basis e.g., Michelson variables $(X, Y, Z)$ or quasiorthogonal variables $(A, E, T)$. We investigate a less standard TDI variable, denoted $\\kappa$, which depends on time and two parameters $(\\beta, \\lambda)$. For any GW source located at sky position $(\\beta_\\star, \\lambda_\\star)$, $\\kappa$ has the singular property of canceling GW signal when $(\\beta, \\lambda)$ tend to $(\\beta_\\star, \\lambda_\\star)$, very much like a coronagraph. Thanks to this property, coronagraphic TDI has the potential to be an efficient model-agnostic method for sky localization of GW sources with LISA. These characteristics make it relevant for low-latency searches of sources with a high multi-messenger potential, such as Massive Black Hole Binaries (MBHBs). Building upon previous theoretical work, and a first assessment of the sky localization capabilities of $\\kappa$ in the current LISA configuration, we investigate a sky localization algorithm based on coronagraphic TDI. We discuss the results in the context of the accuracy required by facilities susceptible of detecting electromagnetic counterparts emitted by such sources.",
+   "abstract": "The Laser Interferometer Space Antenna (LISA) will be a space-borne gravitational wave (GW) detector to be launched in the next decade. Central to LISA data analysis is time-delay interferometry (TDI), a numerical procedure which drastically reduces otherwise overwhelming laser frequency noise. LISA data analysis is usually performed on subsets of TDI variables which form a basis e.g., Michelson variables $(X, Y, Z)$ or quasiorthogonal variables $(A, E, T)$. We investigate a less standard TDI variable, denoted $\\kappa$, which depends on time and two parameters $(\\beta, \\lambda)$. For any GW source located at sky position $(\\beta_\\star, \\lambda_\\star)$, $\\kappa$ has the singular property of canceling GW signal when $(\\beta, \\lambda)$ tend to $(\\beta_\\star, \\lambda_\\star)$, very much like a coronagraph. Thanks to this property, coronagraphic TDI has the potential to be an efficient model-agnostic method for sky localization of GW sources with LISA. These characteristics make it relevant for low-latency searches of sources with a high multi-messenger potential, such as Massive Black Hole Binaries (MBHBs). Building upon previous theoretical work, and a first assessment of the sky localization capabilities of $\\kappa$ in the current LISA configuration, we investigate a sky localization algorithm based on coronagraphic TDI. We discuss the results in the context of the accuracy required by facilities susceptible of detecting electromagnetic counterparts emitted by such sources.",
    "date": "2025-12-01",
    "added": "2026-11-16T17:04:01+00:00",
    "why": [
@@ -11917,7 +11892,7 @@
    "id": "2511.23219",
    "recid": "3087571",
    "arxiv": "2511.23219",
-   "title": "Witten-O’Raifeartaigh potential revisited in the context of warm inflation",
+   "title": "Witten-O'Raifeartaigh potential revisited in the context of Warm Inflation",
    "authors": [
     "Suratna Das",
     "Umang Kumar",
@@ -11950,7 +11925,7 @@
    "id": "2511.21809",
    "recid": "3087495",
    "arxiv": "2511.21809",
-   "title": "Expanding the weak gravity conjecture in AdS space",
+   "title": "Expanding the Weak Gravity Conjecture in AdS Space",
    "authors": [
     "Puxin Lin",
     "Alessandro Mininno",
@@ -12040,7 +12015,7 @@
    "id": "2511.19911",
    "recid": "3086383",
    "arxiv": "2511.19911",
-   "title": "Search for planetary-mass ultracompact binaries using data from the first part of the LIGO–Virgo–KAGRA fourth observing run",
+   "title": "Search for planetary-mass ultra-compact binaries using data from the first part of the LIGO--Virgo--KAGRA fourth observing run",
    "authors": [
     "A.G. Abac",
     "I. Abouelfettouh",
@@ -12080,7 +12055,7 @@
    "id": "2601.07716",
    "recid": "3103406",
    "arxiv": "2601.07716",
-   "title": "Induced gravitational waves - beyond linear cosmological perturbation theory",
+   "title": "Induced gravitational waves -- beyond linear cosmological perturbation theory",
    "authors": [
     "Raphael Picard"
    ],
@@ -12135,7 +12110,7 @@
    "id": "2511.17216",
    "recid": "3085505",
    "arxiv": "2511.17216",
-   "title": "Constraining non-minimally coupled squared-quartic hilltop inflation in light of ACT observations",
+   "title": "Constraining non-minimally coupled squared-Quartic Hilltop Inflation in light of ACT observations",
    "authors": [
     "Jureeporn Yuennan",
     "Thammarong Eadkhong",
@@ -12166,7 +12141,7 @@
    "id": "2512.01265",
    "recid": "3087985",
    "arxiv": "2512.01265",
-   "title": "Kiselev black holes in anti-de Sitter spacetime are not viable",
+   "title": "Kiselev Black Holes in Anti-de Sitter Spacetime Are Not Viable",
    "authors": [
     "Jiayi Xia",
     "Yen Chin Ong"
@@ -12295,7 +12270,7 @@
    "id": "2511.14673",
    "recid": "3084500",
    "arxiv": "2511.14673",
-   "title": "Closing in on α-attractors",
+   "title": "Closing in on $α$-attractors",
    "authors": [
     "Laura Iacconi",
     "Sukannya Bhattacharya",
@@ -13331,7 +13306,7 @@
    "id": "2610.35947",
    "recid": "3219314",
    "arxiv": "2610.35947",
-   "title": "Clock-WEP tests of string-derived dilaton and modulus sectors",
+   "title": "Clock--WEP Tests of String-Derived Dilaton and Modulus Sectors",
    "authors": [
     "Ahmed Farag Ali"
    ],
@@ -14116,7 +14091,7 @@
    "author_count": 1,
    "collaborations": [],
    "categories": [],
-   "abstract": "We investigate the thermodynamic, topological, and extremal properties of a charged black hole in a nonlinear electrodynamics (NED) model with a logarithmically confining interaction. Throughout the analysis, we adopt a consistent normalization of the confinement parameter, which fixes the relation among the electric field, the logarithmic correction to the metric, the horizon potential, and the thermodynamic mass. Because the potential is defined relative to a reference scale, the logarithmic sector introduces this scale into the mass, whereas the extremal horizon radius remains independent of it. The finite-temperature thermodynamic behavior differs qualitatively from the extremal limit. In particular, the Hawking temperature vanishes at the extremal horizon, increases to a single maximum at a finite horizon radius, and subsequently falls off as the inverse horizon radius. This behavior is accompanied by a nontrivial thermodynamic topology consisting of two finite-temperature branches with opposite winding numbers, so that the total topological charge is <math altimg=\"si285.svg\" display=\"inline\" id=\"d1e696\"><mrow><mi>W</mi><mo linebreak=\"goodbreak\" linebreakstyle=\"after\">=</mo><mn>0</mn></mrow></math>. The same two-branch structure is also evident from the fixed-charge heat capacity: the inner branch is thermodynamically stable, with positive heat capacity, whereas the large-radius branch has negative heat capacity. We also analyze the extremal charge-to-mass ratio as a classical diagnostic of the black-hole geometry. This ratio varies non-monotonically with the charge, with its behavior determined jointly by the confinement parameter and the logarithmic reference scale. We stress that comparing this quantity with the Einstein–Maxwell unit benchmark is not sufficient to establish the Weak Gravity Conjecture, since the conjecture concerns the charged spectrum of the underlying theory rather than the geometry of a particular black-hole solution. A semiclassical tunneling analysis gives the expected charged thermal factor and provides a local criterion for discharge. In nonlinear electrodynamics, this criterion need not coincide with the extremal charge-to-mass ratio. Finally, we consider a phenomenological logarithmic correction to the entropy. When the metric is kept fixed, this correction leaves the geometric extremal radius unchanged, while altering the thermodynamic response away from extremality. Taken together, these results distinguish the separate roles played by extremality, thermodynamic stability, topological classification, and quantum-gravitational consistency in charged black holes with logarithmically confining NED interactions.",
+   "abstract": "We investigate the thermodynamic, topological, and extremal properties of a charged black hole in a nonlinear electrodynamics (NED) model with a logarithmically confining interaction. Throughout the analysis, we adopt a consistent normalization of the confinement parameter, which fixes the relation among the electric field, the logarithmic correction to the metric, the horizon potential, and the thermodynamic mass. Because the potential is defined relative to a reference scale, the logarithmic sector introduces this scale into the mass, whereas the extremal horizon radius remains independent of it. The finite-temperature thermodynamic behavior differs qualitatively from the extremal limit. In particular, the Hawking temperature vanishes at the extremal horizon, increases to a single maximum at a finite horizon radius, and subsequently falls off as the inverse horizon radius. This behavior is accompanied by a nontrivial thermodynamic topology consisting of two finite-temperature branches with opposite winding numbers, so that the total topological charge is W = 0 . The same two-branch structure is also evident from the fixed-charge heat capacity: the inner branch is thermodynamically stable, with positive heat capacity, whereas the large-radius branch has negative heat capacity. We also analyze the extremal charge-to-mass ratio as a classical diagnostic of the black-hole geometry. This ratio varies non-monotonically with the charge, with its behavior determined jointly by the confinement parameter and the logarithmic reference scale. We stress that comparing this quantity with the Einstein–Maxwell unit benchmark is not sufficient to establish the Weak Gravity Conjecture, since the conjecture concerns the charged spectrum of the underlying theory rather than the geometry of a particular black-hole solution. A semiclassical tunneling analysis gives the expected charged thermal factor and provides a local criterion for discharge. In nonlinear electrodynamics, this criterion need not coincide with the extremal charge-to-mass ratio. Finally, we consider a phenomenological logarithmic correction to the entropy. When the metric is kept fixed, this correction leaves the geometric extremal radius unchanged, while altering the thermodynamic response away from extremality. Taken together, these results distinguish the separate roles played by extremality, thermodynamic stability, topological classification, and quantum-gravitational consistency in charged black holes with logarithmically confining NED interactions.",
    "date": "2026-10-08",
    "added": "2026-11-16T16:50:52+00:00",
    "why": [
