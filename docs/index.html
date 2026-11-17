@@ -63,6 +63,9 @@ button.chip.on { background: var(--accent); color: #fff; }
   padding: 10px 12px 8px; margin: 8px 0; display: grid; grid-template-columns: 1fr auto; gap: 2px 10px; }
 .item.cur { box-shadow: 0 0 0 2px var(--sel); border-color: var(--accent); }
 .item.isread { opacity: .55; }
+.item > * { min-width: 0; }   /* let long titles and formulas wrap instead of widening the page */
+.item h2, .meta, .reason, .abstract { overflow-wrap: anywhere; }
+.item .katex { white-space: normal; }
 .item h2 { font-size: 16px; line-height: 1.35; margin: 0; font-weight: 600; }
 .item h2 a { color: var(--text); }
 .meta { color: var(--muted); font-size: 13.5px; grid-column: 1; }
@@ -76,8 +79,11 @@ button.chip.on { background: var(--accent); color: #fff; }
 .linkbtn { border: 0; background: none; padding: 0; color: var(--accent); cursor: pointer; font-size: 13px; }
 .linkbtn:hover { text-decoration: underline; }
 .abstract { margin: 6px 0 4px; }
-.done { grid-row: 1 / span 2; grid-column: 2; align-self: start; width: 34px; height: 34px;
-  border-radius: 50%; padding: 0; font-size: 16px; }
+.acts { grid-row: 1 / span 2; grid-column: 2; align-self: start; display: flex; gap: 6px; }
+.acts button { width: 34px; height: 34px; border-radius: 50%; padding: 0; font-size: 16px; }
+.acts button.on { background: var(--agent); border-color: var(--accent); }
+#views { display: inline-flex; gap: 4px; }
+#views .chip { font-size: 14px; line-height: 26px; padding: 0 12px; }
 .empty { text-align: center; color: var(--muted); padding: 60px 0; }
 #toast { position: fixed; left: 50%; bottom: 20px; transform: translateX(-50%);
   background: var(--text); color: var(--bg); border-radius: 8px; padding: 8px 14px;
@@ -110,6 +116,7 @@ footer { color: var(--muted); font-size: 12.5px; margin-top: 30px; text-align: c
 <header>
   <div class="top">
     <h1>Paper feed</h1>
+    <span id="views"></span>
     <span id="count"></span>
     <span class="spacer"></span>
     <span id="status"></span>
@@ -127,7 +134,7 @@ footer { color: var(--muted); font-size: 12.5px; margin-top: 30px; text-align: c
 <div id="banners"></div>
 <div id="list"><div class="empty">Loading…</div></div>
 <footer>
-  <kbd>j</kbd>/<kbd>k</kbd> next/previous · <kbd>m</kbd> mark read · <kbd>o</kbd> open · <kbd>a</kbd> abstract
+  <kbd>j</kbd>/<kbd>k</kbd> next/previous · <kbd>m</kbd> mark read · <kbd>s</kbd> save for later · <kbd>o</kbd> open · <kbd>a</kbd> abstract
   <div id="updated"></div>
 </footer>
 </main>
@@ -136,8 +143,8 @@ footer { color: var(--muted); font-size: 12.5px; margin-top: 30px; text-align: c
 
 <dialog id="dlg">
   <h3>GitHub token</h3>
-  <p>Without a token this page is read-only and "read" marks stay in this browser.
-     With one, read marks sync through the repository and you can edit the watch list here.
+  <p>Without a token this page is read-only, and read marks and saved papers stay in this browser.
+     With one, they sync through the repository and you can edit the watch list here.
      Create a <a target="_blank" rel="noopener" href="https://github.com/settings/personal-access-tokens/new">fine-grained token</a>
      limited to this repository with <b>Contents: Read and write</b>. It is stored only in this browser.</p>
   <div class="row">
@@ -241,17 +248,20 @@ function writeText(path, branch, text, sha, message) {
 
 // ---------- state ----------
 const S = { items: [], warnings: [], updated: null, triaged: null,
-            watch: { papers: [], authors: [] }, watchSha: null, read: new Set() };
-const F = { kind: "all", tags: new Set(), watch: "", q: "", showRead: false };
+            watch: { papers: [], authors: [] }, watchSha: null, read: new Set(),
+            saved: new Map() };       // id -> full copy of the paper, so pruning the feed never loses it
+const F = { view: "inbox", kind: "all", tags: new Set(), watch: "", q: "", showRead: false };
 let ops = store.get("ops", []);       // pending read-state changes: [["+"|"-", id], ...]
+let sops = store.get("sops", []);     // pending saved changes: [["+", paper] | ["-", id], ...]
 let cur = -1;                          // keyboard cursor (index into shown list)
 let shown = [];
 
 async function load() {
   try {
-    const [papers, picks, read, watch] = await Promise.all([
+    const [papers, picks, read, saved, watch] = await Promise.all([
       readJSON("papers.json", DATA_BRANCH), readJSON("picks.json", DATA_BRANCH),
-      readJSON("read.json", DATA_BRANCH), readJSON("watchlist.json", MAIN_BRANCH)]);
+      readJSON("read.json", DATA_BRANCH), readJSON("saved.json", DATA_BRANCH),
+      readJSON("watchlist.json", MAIN_BRANCH)]);
     const byId = new Map();
     for (const it of (papers.data?.items || [])) byId.set(it.id, it);
     for (const it of (picks.data?.items || [])) {
@@ -259,6 +269,9 @@ async function load() {
       if (have) { have.why = have.why.concat(it.why); have.tags = [...new Set([...have.tags, ...it.tags])]; }
       else byId.set(it.id, it);
     }
+    S.saved = new Map((token ? (saved.data?.saved || []) : store.get("saved", [])).map(it => [it.id, it]));
+    if (token) for (const [op, x] of sops) op === "+" ? S.saved.set(x.id, x) : S.saved.delete(x);
+    for (const [id, it] of S.saved) if (!byId.has(id)) byId.set(id, it);   // saved, but gone from the feed
     S.items = [...byId.values()].sort((a, b) =>
       (b.added || "").slice(0, 10).localeCompare((a.added || "").slice(0, 10)) || b.date.localeCompare(a.date));
     S.warnings = papers.data?.warnings || [];
@@ -268,7 +281,7 @@ async function load() {
     if (token) for (const [op, id] of ops) op === "+" ? S.read.add(id) : S.read.delete(id);
     if (!papers.data) S.warnings.unshift("No feed data found yet. The first update may still be running.");
     loaded = true; buildFilters(); render();
-    if (token && ops.length) scheduleSync(100);
+    if (token && (ops.length || sops.length)) scheduleSync(100);
   } catch (e) {
     $("list").replaceChildren(h("div", { class: "empty" }, `Could not load the feed: ${e.message}`));
   }
@@ -276,49 +289,98 @@ async function load() {
 
 // ---------- read state ----------
 let syncTimer = null, syncing = false;
+function persist() {
+  if (token) { store.set("ops", ops); store.set("sops", sops); scheduleSync(); }
+  else { store.set("read", [...S.read]); store.set("saved", [...S.saved.values()]); }
+}
+// Marking a saved paper read also takes it out of Saved; returns those papers so undo can restore them.
 function setRead(ids, isRead) {
+  const unsaved = [];
   for (const id of ids) {
     isRead ? S.read.add(id) : S.read.delete(id);
     if (token) ops.push([isRead ? "+" : "-", id]);
+    if (isRead && S.saved.has(id)) {
+      unsaved.push(S.saved.get(id)); S.saved.delete(id);
+      if (token) sops.push(["-", id]);
+    }
   }
-  if (token) { store.set("ops", ops); scheduleSync(); } else store.set("read", [...S.read]);
-  render();
+  persist(); render();
+  return unsaved;
 }
-function scheduleSync(ms = 2500) { clearTimeout(syncTimer); syncTimer = setTimeout(syncRead, ms); }
-async function syncRead() {
-  if (!token || !ops.length) return;
+function setSaved(list, on) {
+  for (const it of list) {
+    if (on) {
+      const copy = { ...it, saved_at: new Date().toISOString() };
+      S.saved.set(it.id, copy);
+      if (token) sops.push(["+", copy]);
+      if (S.read.has(it.id)) { S.read.delete(it.id); if (token) ops.push(["-", it.id]); }
+    } else {
+      S.saved.delete(it.id);
+      if (token) sops.push(["-", it.id]);
+    }
+  }
+  persist(); render();
+}
+function markRead(ids, msg) {
+  const unsaved = setRead(ids, true);
+  toast(msg, () => { setRead(ids, false); if (unsaved.length) setSaved(unsaved, true); });
+}
+function toggleSave(it) {
+  const on = !S.saved.has(it.id);
+  setSaved([it], on);
+  toast(on ? "Saved for later" : "Removed from saved", () => setSaved([it], !on));
+}
+
+const SYNC = [
+  { path: "read.json", msg: "Update read marks", pending: () => ops,
+    done: n => { ops = ops.slice(n); store.set("ops", ops); },
+    apply: (data, q) => { const set = new Set(data?.read || []);
+      for (const [op, id] of q) op === "+" ? set.add(id) : set.delete(id);
+      return { read: [...set] }; } },
+  { path: "saved.json", msg: "Update saved papers", pending: () => sops,
+    done: n => { sops = sops.slice(n); store.set("sops", sops); },
+    apply: (data, q) => { const m = new Map((data?.saved || []).map(it => [it.id, it]));
+      for (const [op, x] of q) op === "+" ? m.set(x.id, x) : m.delete(x);
+      return { saved: [...m.values()] }; } },
+];
+function scheduleSync(ms = 2500) { clearTimeout(syncTimer); syncTimer = setTimeout(syncAll, ms); }
+async function syncAll() {
+  if (!token || !(ops.length || sops.length)) return;
   if (syncing) return scheduleSync();
   syncing = true; setStatus("saving…");
-  const sending = ops.slice();
   try {
-    let ok = false;
-    for (let attempt = 0; attempt < 4 && !ok; attempt++) {
-      const { data, sha } = await readJSON("read.json", DATA_BRANCH);
-      const set = new Set(data?.read || []);
-      for (const [op, id] of sending) op === "+" ? set.add(id) : set.delete(id);
-      const r = await writeText("read.json", DATA_BRANCH, JSON.stringify({ read: [...set] }) + "\n", sha, "Update read marks");
-      if (r.ok) ok = true;
-      else if (r.status !== 409 && r.status !== 422) throw new Error(`HTTP ${r.status}`);
+    for (const f of SYNC) {
+      const sending = f.pending().slice();
+      if (!sending.length) continue;
+      let ok = false;
+      for (let attempt = 0; attempt < 4 && !ok; attempt++) {
+        const { data, sha } = await readJSON(f.path, DATA_BRANCH);
+        const r = await writeText(f.path, DATA_BRANCH, JSON.stringify(f.apply(data, sending)) + "\n", sha, f.msg);
+        if (r.ok) ok = true;
+        else if (r.status !== 409 && r.status !== 422) throw new Error(`HTTP ${r.status}`);
+      }
+      if (!ok) throw new Error("conflict");
+      f.done(sending.length);
     }
-    if (!ok) throw new Error("conflict");
-    ops = ops.slice(sending.length); store.set("ops", ops);
     setStatus("saved");
-    if (ops.length) scheduleSync();
+    if (ops.length || sops.length) scheduleSync();
   } catch (e) {
-    setStatus(`read marks not saved (${e.message}); will retry on next change`);
+    setStatus(`changes not saved (${e.message}); will retry on next change`);
   } finally { syncing = false; }
 }
-addEventListener("visibilitychange", () => { if (document.hidden && ops.length) { clearTimeout(syncTimer); syncRead(); } });
+addEventListener("visibilitychange", () => {
+  if (document.hidden && (ops.length || sops.length)) { clearTimeout(syncTimer); syncAll(); } });
 
-let toastTimer = null, lastMarked = [];
-function toast(msg, ids) {
-  lastMarked = ids; $("toastmsg").textContent = msg; $("toast").style.display = "flex";
+let toastTimer = null, undoFn = null;
+function toast(msg, undo) {
+  undoFn = undo; $("toastmsg").textContent = msg; $("toast").style.display = "flex";
   clearTimeout(toastTimer); toastTimer = setTimeout(() => { $("toast").style.display = "none"; }, 7000);
 }
-$("undo").onclick = () => { setRead(lastMarked, false); $("toast").style.display = "none"; };
+$("undo").onclick = () => { undoFn?.(); undoFn = null; $("toast").style.display = "none"; };
 
 // ---------- filtering & rendering ----------
 function matches(it) {
+  if ((F.view === "saved") !== S.saved.has(it.id)) return false;
   if (!F.showRead && S.read.has(it.id)) return false;
   if (F.kind === "agent3") { if (!it.why.some(w => w.kind === "agent" && w.score >= 3)) return false; }
   else if (F.kind !== "all" && !it.why.some(w => w.kind === F.kind)) return false;
@@ -345,7 +407,7 @@ function buildFilters() {
 }
 const fmtDay = d => d ? new Date(d + "T12:00:00").toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric" }) : "";
 function itemEl(it, i) {
-  const isRead = S.read.has(it.id);
+  const isRead = S.read.has(it.id), isSaved = S.saved.has(it.id);
   const url = it.arxiv ? `https://arxiv.org/abs/${it.arxiv}` : `https://inspirehep.net/literature/${it.recid}`;
   let authors = it.collaborations.length ? it.collaborations.join(", ") + " Collaboration" : it.authors.join(", ");
   if (!it.collaborations.length && it.author_count > it.authors.length) authors += ` + ${it.author_count - it.authors.length} more`;
@@ -356,8 +418,11 @@ function itemEl(it, i) {
     h("button", { class: "linkbtn", title: "Add papers citing this one to the feed", onclick: ev => { ev.preventDefault(); watchCitations(it); } }, "Watch citations"));
   return h("article", { class: "item" + (isRead ? " isread" : "") + (i === cur ? " cur" : ""), "data-i": i },
     h("h2", {}, h("a", { href: url, target: "_blank", rel: "noopener" }, it.title)),
-    h("button", { class: "done", title: isRead ? "Mark unread" : "Mark read (m)",
-      onclick: () => { setRead([it.id], !isRead); if (!isRead) toast("Marked read", [it.id]); } }, isRead ? "↺" : "✓"),
+    h("div", { class: "acts" },
+      h("button", { class: isSaved ? "on" : null, title: isSaved ? "Remove from saved (s)" : "Save for later (s)",
+        "aria-pressed": isSaved ? "true" : "false", onclick: () => toggleSave(it) }, "🔖"),
+      h("button", { title: isRead ? "Mark unread" : "Mark read (m)",
+        onclick: () => isRead ? setRead([it.id], false) : markRead([it.id], "Marked read") }, isRead ? "↺" : "✓")),
     h("div", { class: "meta" }, authors, " · ", it.date, it.categories.length ? ` · ${it.categories.slice(0, 3).join(" ")}` : ""),
     h("div", { class: "chips" },
       it.why.filter(w => w.kind !== "agent").map(w => h("span", { class: `chip ${w.kind}` }, (w.kind === "cites" ? "cites " : "by ") + w.label)),
@@ -368,9 +433,14 @@ function itemEl(it, i) {
 function render() {
   shown = S.items.filter(matches);
   if (cur >= shown.length) cur = shown.length - 1;
-  const unread = S.items.filter(it => !S.read.has(it.id)).length;
-  $("count").textContent = `${unread} unread` + (shown.length !== unread ? ` · ${shown.length} shown` : "");
-  document.title = unread ? `(${unread}) Paper feed` : "Paper feed";
+  const inbox = S.items.filter(it => !S.read.has(it.id) && !S.saved.has(it.id)).length;
+  const nsaved = S.items.filter(it => S.saved.has(it.id)).length;
+  const tab = (v, label) => h("button", { class: "chip" + (F.view === v ? " on" : ""),
+    onclick: () => { F.view = v; cur = -1; render(); scrollTo(0, 0); } }, label);
+  $("views").replaceChildren(tab("inbox", `Inbox ${inbox}`), tab("saved", `Saved ${nsaved}`));
+  const base = F.view === "saved" ? nsaved : inbox;
+  $("count").textContent = shown.length !== base ? `${shown.length} shown` : "";
+  document.title = inbox ? `(${inbox}) Paper feed` : "Paper feed";
   $("banners").replaceChildren(...S.warnings.map(w => h("div", { class: "banner" }, "⚠ " + w)));
   const out = []; let day = null;
   shown.forEach((it, i) => {
@@ -378,7 +448,8 @@ function render() {
     if (d !== day) { day = d; out.push(h("div", { class: "day" }, "Added " + fmtDay(d))); }
     out.push(itemEl(it, i));
   });
-  if (!out.length) out.push(h("div", { class: "empty" }, S.items.length ? "Nothing unread matches. 🎉" : "The feed is empty."));
+  if (!out.length) out.push(h("div", { class: "empty" }, F.view === "saved" ? "Nothing saved for later."
+    : S.items.length ? "Nothing unread matches. 🎉" : "The feed is empty."));
   $("list").replaceChildren(...out);
   $("updated").textContent = (S.updated ? `Feed updated ${new Date(S.updated).toLocaleString()}` : "") +
     (S.triaged ? ` · agent triage through ${new Date(S.triaged).toLocaleDateString()}` : "") + ` · ${REPO}`;
@@ -393,7 +464,7 @@ $("showread").onchange = e => { F.showRead = e.target.checked; render(); };
 $("watchsel").onchange = e => { F.watch = e.target.value; render(); };
 $("markall").onclick = () => {
   const ids = shown.filter(it => !S.read.has(it.id)).map(it => it.id);
-  if (ids.length && confirm(`Mark ${ids.length} paper${ids.length > 1 ? "s" : ""} as read?`)) { setRead(ids, true); toast(`Marked ${ids.length} read`, ids); }
+  if (ids.length && confirm(`Mark ${ids.length} paper${ids.length > 1 ? "s" : ""} as read?`)) markRead(ids, `Marked ${ids.length} read`);
 };
 addEventListener("keydown", e => {
   if (e.target.matches("input, select, textarea") || $("dlg").open || e.ctrlKey || e.metaKey || e.altKey) return;
@@ -402,7 +473,8 @@ addEventListener("keydown", e => {
   const it = shown[cur];
   if (e.key === "j") move(1);
   else if (e.key === "k") move(-1);
-  else if (e.key === "m" && it) { const was = S.read.has(it.id); setRead([it.id], !was); if (!was) toast("Marked read", [it.id]); }
+  else if (e.key === "m" && it) S.read.has(it.id) ? setRead([it.id], false) : markRead([it.id], "Marked read");
+  else if (e.key === "s" && it) toggleSave(it);
   else if (e.key === "o" && it) window.open(it.arxiv ? `https://arxiv.org/abs/${it.arxiv}` : `https://inspirehep.net/literature/${it.recid}`, "_blank", "noopener");
   else if (e.key === "a" && it) { const d = document.querySelector(".item.cur details"); if (d) d.open = !d.open; }
 });
@@ -526,12 +598,15 @@ $("savetoken").onclick = async () => {
     store.set("token", t);
     const local = store.get("read", []);      // carry over marks made before the token existed
     if (local.length) { ops = ops.concat(local.map(id => ["+", id])); store.set("ops", ops); store.del("read"); }
+    const localSaved = store.get("saved", []);
+    if (localSaved.length) { sops = sops.concat(localSaved.map(it => ["+", it])); store.set("sops", sops); store.del("saved"); }
     $("tokenmsg").textContent = "Token saved."; $("savewatch").disabled = false; $("dlgmsg").textContent = "";
     await load();
   } catch (e) { token = old; $("tokenmsg").textContent = e.message; }
 };
 $("forgettoken").onclick = () => {
-  store.set("read", [...S.read]); store.del("token"); store.del("ops"); token = ""; ops = [];
+  store.set("read", [...S.read]); store.set("saved", [...S.saved.values()]);
+  store.del("token"); store.del("ops"); store.del("sops"); token = ""; ops = []; sops = [];
   $("token").value = ""; $("tokenmsg").textContent = "Token removed from this browser."; $("savewatch").disabled = true;
 };
 

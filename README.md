@@ -15,7 +15,7 @@ Feed page: https://rjrosati.github.io/inspire-citation-alerts/
 | `update.py` | Queries INSPIRE for every watch and merges new hits into `papers.json`. Run daily by `.github/workflows/update.yml`, and again whenever `watchlist.json` changes. |
 | `triage.py` + `triage_prompt.md` | Run by hand. Pulls recent arXiv submissions that the feed did not catch, has Sonnet score them against the interests in `triage_prompt.md`, and publishes the good ones to `picks.json`. |
 | `docs/index.html` | The feed page (GitHub Pages). Filter by tag, watch or kind; mark read; edit the watch list. |
-| `data` branch | `papers.json` (written by the workflow), `picks.json` (written by `triage.py`), `read.json` (written by the page). Kept off `main` so the daily commits stay out of the code history. |
+| `data` branch | `papers.json` (written by the workflow), `picks.json` (written by `triage.py`), `read.json` and `saved.json` (written by the page). Kept off `main` so the daily commits stay out of the code history. |
 
 Citations and disambiguated authors come from INSPIRE because the arXiv API
 has neither. The arXiv API is used only for the triage listing.
@@ -25,11 +25,15 @@ has neither. The arXiv API is used only for the triage listing.
 Open "Watch list & settings" and paste a GitHub
 [fine-grained token](https://github.com/settings/personal-access-tokens/new)
 restricted to this repository with **Contents: Read and write**. With it, read
-marks sync across devices and you can add, relabel, retag or remove watches
+marks and saved papers sync across devices and you can add, relabel, retag or remove watches
 from the page. "Watch citations" on any paper adds it to the watch list.
 Without a token the page is read-only and read marks stay in that browser.
 
-Keys: `j`/`k` move, `m` mark read, `o` open, `a` toggle abstract.
+Papers you want to come back to can be saved for later (🔖 or `s`): they leave
+the inbox without being marked read and wait in the Saved tab, kept in
+`saved.json` on the `data` branch, until you mark them read.
+
+Keys: `j`/`k` move, `m` mark read, `s` save for later, `o` open, `a` toggle abstract.
 
 ## Running things by hand
 

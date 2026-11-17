@@ -12,7 +12,9 @@ no "last run" timestamp to lose and a missed day is caught up automatically.
 Standard library only.
 """
 import argparse
+import html
 import json
+import re
 import sys
 import time
 import urllib.error
@@ -65,6 +67,15 @@ def norm_date(s):
     return s[:10]
 
 
+# Publisher-sourced records can carry HTML or MathML (<p>, <mml:math>...). Only strip
+# things that look like real tags, so plain-text inequalities such as "m < 10" survive.
+TAG = re.compile(r"</?[A-Za-z][\w:.-]*(?:\s[^<>]*)?/?>")
+
+
+def clean(text):
+    return " ".join(html.unescape(TAG.sub(" ", text or "")).split())
+
+
 def display_name(full_name):
     last, _, first = full_name.partition(",")
     return f"{first.strip()} {last.strip()}".strip()
@@ -84,13 +95,14 @@ def to_item(meta):
         "id": arxiv or f"inspire:{recid}",
         "recid": recid,
         "arxiv": arxiv,
-        "title": titles[0].get("title", "(untitled)"),
+        "title": clean(next((t["title"] for t in titles if t.get("source") == "arXiv"
+                             and t.get("title")), titles[0].get("title"))) or "(untitled)",
         "authors": authors[:MAX_AUTHORS],
         "author_count": meta.get("author_count") or len(authors),
         "collaborations": [c["value"] for c in (meta.get("collaborations") or [])
                            if c.get("value")],
         "categories": (eprints[0].get("categories") or []) if eprints else [],
-        "abstract": abstract,
+        "abstract": clean(abstract),
         "date": norm_date(meta.get("earliest_date")),
     }
 
