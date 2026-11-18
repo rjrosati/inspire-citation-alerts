@@ -1,7 +1,64 @@
 {
- "updated": "2026-11-17T14:41:47+00:00",
+ "updated": "2026-11-18T14:20:39+00:00",
  "warnings": [],
  "items": [
+  {
+   "id": "2611.22647",
+   "recid": "3230348",
+   "arxiv": "2611.22647",
+   "title": "Inflation with an Exponential Power-Law Potential:Analytical Slow-Roll Relations, Branch Dynamics, and Conditional Reheating Matching",
+   "authors": [
+    "Feyzollah Younesizadeh",
+    "Younes Younesizadeh",
+    "Wen-Xiang Chen"
+   ],
+   "author_count": 3,
+   "collaborations": [],
+   "categories": [
+    "gr-qc"
+   ],
+   "abstract": "We study canonical single-field inflation driven by the potential $V(ϕ)=M^4\\exp(ϕ/M_{\\rm Pl})(1+kϕ/M_{\\rm Pl})^{-1/k}$ with $k<0$. We retain the canonical Einstein--scalar action and derive analytical relations within the slow-roll approximation. Expressing the local spectra through the logarithmic slope $A=kx/(1+kx)$, with $x=ϕ/M_{\\rm Pl}$, yields an endpoint-independent consistency relation among the scalar tilt, tensor ratio, and running at their stated approximation orders. On the negative-field branch, an exact phase-space argument shows that an initially downhill, inflationary hilltop trajectory cannot end inflation within the bare single-field model. We specify the endpoint as a phenomenological input and use a Lambert-$W$ solution of the slow-roll e-fold integral. Tables and figures illustrate the fixed choice $x_e=-2$ and must be interpreted conditionally on a completion that implements this endpoint and preserves the adiabatic spectrum. The reheating-matching relation uses explicit scale and thermal conventions and imposes both endpoint energy bounds and nonnegative reheating duration. The observational comparison uses published marginalized intervals rather than reconstructed joint posteriors. These results establish local analytical structure and conditional numerical benchmarks. A complete exit mechanism, a unique reheating equation of state, and precision spectral predictions remain unestablished.",
+   "date": "2026-11-17",
+   "added": "2026-11-18T14:20:39+00:00",
+   "why": [
+    {
+     "kind": "cites",
+     "label": "Swampland"
+    }
+   ],
+   "tags": [
+    "strings",
+    "swampland"
+   ]
+  },
+  {
+   "id": "2611.21722",
+   "recid": "3230181",
+   "arxiv": "2611.21722",
+   "title": "Cosmic Censorship in the Landscape of SUSY-Broken AdS Vacua",
+   "authors": [
+    "Netta Engelhardt",
+    "Richard Nally"
+   ],
+   "author_count": 2,
+   "collaborations": [],
+   "categories": [
+    "hep-th",
+    "gr-qc"
+   ],
+   "abstract": "We investigate signatures of weak cosmic censorship in non-supersymmetric vacua of both IIA and IIB string theory. In particular, we examine the Penrose Inequality, which can be proven holographically using Ryu-Takayanagi, and can be independently proven in SUSY AdS vacua for spherically symmetric initial data. We prove that any EFT of scalars coupled to gravity in AdS, including in particular those of string compactifications, satisfies both the Penrose Inequality and a positive mass theorem if a function that we call a \"weak fake superpotential\" exists. We demonstrate that this condition is satisfied globally for the DGKT skew-whiffed vacua in IIA. Since there is no known nonperturbative instability in this DGKT vacuum, this provides evidence that the IIA SUSY-broken AdS vacua may be absolutely stable. We also find the weak fake superpotential exists locally in field space in some SUSY-broken AdS vacua in a KKLT construction in IIB. Thus, within the framework considered here, some false SUSY-broken KKLT AdS vacua are stable against vacuum decay. Conversely, we find that some KKLT vacua do not have a weak fake superpotential, and correspondingly violate the Penrose Inequality and fail to have a positive mass theorem; the DGKT vacua only violate the Penrose Inequality in the presence of designer gravity boundary conditions. In all cases studied, this is due to false vacuum decay. We discuss the implications of these violations for holography and black hole thermodynamics in these SUSY-broken AdS vacua.",
+   "date": "2026-11-16",
+   "added": "2026-11-18T14:20:39+00:00",
+   "why": [
+    {
+     "kind": "cites",
+     "label": "Rapid-turn solutions"
+    }
+   ],
+   "tags": [
+    "inflation"
+   ]
+  },
   {
    "id": "2611.19293",
    "recid": "3229462",
@@ -662,63 +719,6 @@
    ]
   },
   {
-   "id": "2609.24714",
-   "recid": "3205940",
-   "arxiv": "2609.24714",
-   "title": "The phenomenology of Axion Relic Pockets",
-   "authors": [
-    "Wafaa Khater",
-    "M.C. David Marsh",
-    "Charalampos Nikolis"
-   ],
-   "author_count": 3,
-   "collaborations": [],
-   "categories": [
-    "hep-ph"
-   ],
-   "abstract": "Axion relic pockets are phase-transition remnants consisting of regions of false vacuum stabilised from collapse by a hot axion gas. Axion relic pockets can comprise dark matter, but little is known about their phenomenology. We consider trapped axions coupled to electromagnetism and derive the axion to photon conversion rate accounting for the pocket's compactness and spherical geometry. As a case study, we show that axion-photon conversion occurs in atomic electric fields, leading to high-energy electromagnetic cascades that may be detectable by neutrino, cosmic-ray, and dark-matter experiments. The distribution of electromagnetic showers is inherently isotropic, and upward-going showers provide a smoking-gun signal for the model. Using recent data from the IceCube neutrino telescope, we derive the first limits from terrestrial experiments on axion relic pockets as dark matter. However, for the simplest realisation of the model, only a small part of the parameter space can give signals strong enough to be constrained by current data. We also comment on the prospects for discovering axion relic pockets using fluorescence and radio Cherenkov detection by atmospheric instruments and balloon-borne payloads, as well as traditional dark matter direct detection experiments. These results provide the necessary tools to initiate phenomenological studies of axion relic pockets across different environments.",
-   "date": "2026-09-21",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "M.C. David Marsh"
-    }
-   ],
-   "tags": [
-    "cosmology",
-    "strings"
-   ]
-  },
-  {
-   "id": "2609.20915",
-   "recid": "3205109",
-   "arxiv": "2609.20915",
-   "title": "A Type IIB Dualifold",
-   "authors": [
-    "Zihni Kaan Baykara",
-    "Cumrun Vafa"
-   ],
-   "author_count": 2,
-   "collaborations": [],
-   "categories": [
-    "hep-th"
-   ],
-   "abstract": "We present evidence that ten-dimensional type IIB string theory orbifolded by the $\\mathbb{Z}_3$ duality symmetry at the strong-coupling fixed point $τ=\\exp(2πi/3)$ defines a consistent theory. Motivated by its F-theory dual description and its duality with M-theory in nine dimensions and type IIA string theory in eight dimensions, we argue that the resulting theory is a ten-dimensional chiral non-supersymmetric theory with a discrete gauge symmetry whose bosonic part is the automorphism group of the Narain lattice $Γ^{2,2}(A_2)$ ($S_3 \\times S_3 \\times \\mathbb{Z}_2$). We further identify the ten-dimensional tachyon fields with the corresponding Narain moduli. Gauge anomalies cancel nontrivially through a topological Green-Schwarz mechanism involving a $\\mathbb{Z}_3$-valued two-form gauge symmetry: the ten-dimensional lift of the familiar zero-form orbifold quantum symmetry in the eight-dimensional type IIA description.",
-   "date": "2026-09-17",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Cumrun Vafa"
-    }
-   ],
-   "tags": [
-    "strings",
-    "swampland"
-   ]
-  },
-  {
    "id": "2609.19262",
    "recid": "3204775",
    "arxiv": "2609.19262",
@@ -954,37 +954,6 @@
    ]
   },
   {
-   "id": "2609.10535",
-   "recid": "3202063",
-   "arxiv": "2609.10535",
-   "title": "For Whom Does Bell Hold?",
-   "authors": [
-    "Daniel Green",
-    "Kshitij Gupta",
-    "Qiya Zhang"
-   ],
-   "author_count": 3,
-   "collaborations": [],
-   "categories": [
-    "hep-th",
-    "astro-ph.CO",
-    "quant-ph"
-   ],
-   "abstract": "Violations of Bell's inequalities offer a definitive signal of non-classical (quantum) behavior in local deterministic systems. Yet, in many physical settings where quantum mechanics is expected to play an important role, one cannot construct a Bell-type test using the available observables. Cosmology offers one concrete example, where cosmic structure may have originated from quantum vacuum fluctuations yet all observations are effectively classical. Nevertheless, recent work suggests that quantum and classical time evolution may still be differentiated by the pattern of statistical correlations of these observables. In this paper, we explore and generalize the use of correlations as Bell-type test of the nature of time evolution. We show that quantum vacuum fluctuations of closed systems undergoing Hamiltonian evolution produce unique correlations that are not mimicked by classical Hamiltonian systems. Correlations in the quantum vacuum are generally time-independent and are controlled by the energy gap between the ground and exited states. Classical systems exhibit apparent poles at physical frequencies that do not arise in the quantum vacuum. As one approaches the poles, the evolution becomes dominated by a resonant Hamiltonian giving rise to time dependent correlations that eventually decay through dephasing. Finally, we show that this behavior is distinct from other signals of quantum evolution, including applications to quantum optics, quantum walks, and quantum search.",
-   "date": "2026-09-09",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Daniel Green"
-    }
-   ],
-   "tags": [
-    "cosmology",
-    "inflation"
-   ]
-  },
-  {
    "id": "2609.09261",
    "recid": "3201874",
    "arxiv": "2609.09261",
@@ -1109,37 +1078,6 @@
    "tags": [
     "strings",
     "swampland"
-   ]
-  },
-  {
-   "id": "2609.02970",
-   "recid": "3199448",
-   "arxiv": "2609.02970",
-   "title": "Finite-duration non-slow-roll effects in inflationary production of ultralight vector dark matter",
-   "authors": [
-    "Imtiaz Khan",
-    "Niamat Ullah",
-    "Chengxun Yuan",
-    "G. Mustafa",
-    "Farruh Atamurotov",
-    "Ahmadjon Abdujabbarov"
-   ],
-   "author_count": 6,
-   "collaborations": [],
-   "categories": [
-    "hep-ph"
-   ],
-   "abstract": "Inflationary production of ultralight vector dark matter can be amplified by a brief non-slow-roll phase, yet instantaneous mass transitions generate ultraviolet ringing and leave finite-time predictions unresolved. We replace the sharp transition with a smooth profile and derive the momentum-response kernel of the longitudinal mode. Finite duration preserves the infrared enhancement, suppresses modes that resolve the transition, and introduces a profile-dependent correction to the relic abundance. After fixing the dark matter abundance, the induced gravitational-wave signal retains an independent transverse-traceless source dependence, so abundance rescaling alone leaves residual profile information. Numerical mode evolution and radiation-era tensor integration support the finite-width treatment. Transition duration therefore links microscopic inflationary dynamics to ultralight vector abundance and its low-frequency gravitational-wave signal.",
-   "date": "2026-09-01",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "cites",
-     "label": "Palma BH"
-    }
-   ],
-   "tags": [
-    "inflation"
    ]
   },
   {
@@ -1374,47 +1312,6 @@
    "tags": [
     "cosmology",
     "inflation"
-   ]
-  },
-  {
-   "id": "2608.23477",
-   "recid": "3195428",
-   "arxiv": "2608.23477",
-   "title": "Updated Upper Limits on the Isotropic Gravitational-Wave Background from LIGO, Virgo, and KAGRA Data through April 2025",
-   "authors": [
-    "A.G. Abac",
-    "A. Abe",
-    "I. Abouelfettouh",
-    "F. Acernese",
-    "K. Ackley",
-    "A. Adam",
-    "C. Adamcewicz",
-    "S. Adhicary"
-   ],
-   "author_count": 1805,
-   "collaborations": [
-    "LIGO Scientific",
-    "VIRGO",
-    "KAGRA"
-   ],
-   "categories": [
-    "gr-qc",
-    "astro-ph.CO",
-    "astro-ph.HE"
-   ],
-   "abstract": "We report results from a search for an isotropic stochastic gravitational-wave background using data collected by the LIGO--Virgo--KAGRA Collaboration. The analysis uses data from the first observing run through April 1, 2025, during the fourth observing run. New frequency-domain cuts are implemented to address a class of non-stationary spectral noise features that were not effectively identified and mitigated by existing data-quality checks in past analyses. Consequently, previously analyzed data from the fourth observing run are re-processed with the updated cuts. We find no evidence for a stochastic background signal and place upper limits on the gravitational-wave energy density. In particular, for a background following a power law with spectral index 2/3 as predicted by inspiralling compact binaries, we find $Ω_\\mathrm{GW}(25\\,\\mathrm{Hz}) \\leq 2.0 \\times 10^{-9}$, while scale-invariant backgrounds are constrained to $Ω_\\mathrm{GW}(25\\,\\mathrm{Hz}) \\leq 2.8 \\times 10^{-9}$, both at the 95% credible level for a log-uniform prior on $Ω_\\mathrm{GW}$. Relative to the constraints from previous data recomputed with the new frequency-domain cuts, these limits improve by a factor of 1.4. We also update bounds on alternative gravity scenarios predicting non-standard polarization modes, and we verify that correlated magnetic noise sources remain below the sensitivity of this search. Combining these observational constraints with population models of compact binary coalescences informed by the latest gravitational-wave transient catalog, GWTC-5.0, we predict the amplitude of the compact binary background to be $Ω_\\mathrm{CBC}(25\\,\\mathrm{Hz}) = 6.3^{+5.0}_{-2.2} \\times 10^{-10}$ at the 90% credible level.",
-   "date": "2026-08-24",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Neil Cornish"
-    }
-   ],
-   "tags": [
-    "GW",
-    "LISA",
-    "data analysis"
    ]
   },
   {
@@ -1671,86 +1568,6 @@
    ]
   },
   {
-   "id": "2608.11620",
-   "recid": "3190356",
-   "arxiv": "2608.11620",
-   "title": "Constraints on ultralight bosons from merging binary and remnant black holes observed during the second and third parts of the fourth LIGO-Virgo-KAGRA observing run",
-   "authors": [
-    "A.G. Abac",
-    "A. Abe",
-    "I. Abouelfettouh",
-    "F. Acernese",
-    "K. Ackley",
-    "A. Adam",
-    "S. Adhicary",
-    "D. Adhikari"
-   ],
-   "author_count": 1819,
-   "collaborations": [
-    "LIGO Scientific Collaboration, Virgo Collaboration,",
-    "KAGRA",
-    "LIGO Scientific"
-   ],
-   "categories": [
-    "gr-qc",
-    "astro-ph.HE",
-    "hep-ph"
-   ],
-   "abstract": "We present constraints on ultralight bosons using binary black hole mergers observed in the second and third parts of the fourth LIGO-Virgo-KAGRA observing run. Directed searches are conducted for long-transient gravitational waves from ultralight vector boson clouds around merger remnants, using a hidden-Markov-model (HMM) tracking scheme. We target the remnant black holes formed in the binary coalescences that produced GW250114 and GW250207. We find no evidence for such signals from either target. Estimating our search sensitivity at a threshold corresponding to a 1% false alarm probability, we thus disfavor vector boson masses in the range of $[2.80, 3.95]\\times 10^{-13}$ eV with greater than 90% confidence. In addition, we derive constraints on ultralight scalar and vector bosons from the inferred high spins of the constituent black holes in three binaries, using events GW240515, GW241113, and GW241225_08. The excluded mass ranges in this approach depend on the assumed black-hole ages. At $10^5$ years, corresponding to typical dynamically formed binaries, we exclude scalar and vector bosons in the ranges $[1.39, 6.94]\\times 10^{-13}$ eV and $[0.32, 14.4]\\times 10^{-13}$ eV at 90% confidence, respectively.",
-   "date": "2026-08-12",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Neil Cornish"
-    }
-   ],
-   "tags": [
-    "GW",
-    "LISA",
-    "data analysis"
-   ]
-  },
-  {
-   "id": "2608.11673",
-   "recid": "3190374",
-   "arxiv": "2608.11673",
-   "title": "LIGO A$^\\sharp$: Detector Design and Science Prospects Beyond A+",
-   "authors": [
-    "L. Sun",
-    "K. Kuns",
-    "B.J.J. Slagmolen",
-    "P. Fritschel",
-    "P. Schmidt",
-    "B.T. Lantz",
-    "S.S.Y. Chua",
-    "Divyajyoti"
-   ],
-   "author_count": 1156,
-   "collaborations": [
-    "LIGO"
-   ],
-   "categories": [
-    "astro-ph.IM",
-    "astro-ph.HE",
-    "gr-qc"
-   ],
-   "abstract": "We present the LIGO A$^\\sharp$ detector concept, an upgrade for the LIGO observatories based on room-temperature interferometers beyond the fifth observing run (O5). Building on the A+ sensitivity, A$^\\sharp$ targets broadband sensitivity improvements through heavier test masses, improved suspensions and seismic isolation, increased arm-cavity power, enhanced frequency-dependent squeezing, reduced coating thermal noise considering two scenarios, and improved control of mechanical motion and optical modes. We describe the principal design choices, projected noise performance, and corresponding astrophysical prospects. LIGO A$^\\sharp$ substantially increases compact-binary detection rates, strengthens population inference, and improves both early-warning times and localization for binary neutron star mergers. The improved sensitivity enables more detailed studies of compact-binary coalescences, including higher-order multipoles, intermediate-mass black holes, remnant black hole ringdown, and the neutron star equation of state. It also broadens the discovery potential for new gravitational-wave sources such as continuous waves and bursts, should enable detection of the stochastic background from compact binary mergers if it remains undetected after O5, and strengthens the role of gravitational-wave detectors as probes of fundamental physics. We discuss key technical challenges and the role of A$^\\sharp$ as both a major scientific upgrade for the 2030s and a technology pathfinder for next-generation gravitational-wave observatories, such as Cosmic Explorer.",
-   "date": "2026-08-12",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Neil Cornish"
-    }
-   ],
-   "tags": [
-    "GW",
-    "LISA",
-    "data analysis"
-   ]
-  },
-  {
    "id": "2608.11086",
    "recid": "3190080",
    "arxiv": "2608.11086",
@@ -1843,48 +1660,6 @@
    "tags": [
     "strings",
     "swampland"
-   ]
-  },
-  {
-   "id": "2608.09781",
-   "recid": "3189304",
-   "arxiv": "2608.09781",
-   "title": "Pulsar Timing Array Sensitivity to Anisotropy: Empirical Sensitivity Curves, Scaling Relations, and the Multi-Resolution Pixel Basis",
-   "authors": [
-    "Taha T. Moursy",
-    "Nihan S. Pol",
-    "Gabriella Agazie",
-    "Nikita Agarwal",
-    "Akash Anumarlapudi",
-    "Anne M. Archibald",
-    "Zaven Arzoumanian",
-    "Anjana Ashok"
-   ],
-   "author_count": 118,
-   "collaborations": [
-    "NANOGrav"
-   ],
-   "categories": [
-    "astro-ph.IM",
-    "astro-ph.HE"
-   ],
-   "abstract": "We quantify pulsar timing array (PTA) sensitivity to anisotropy in the gravitational wave background using the cross-correlation based Fisher information matrix in the pixel and spherical harmonic bases. We use a set of simulations to empirically determine scaling relations of a PTA's sensitivity to anisotropy with the number of pulsars $N_\\mathrm{psr}$ in the array, the error $δt$ on the times of arrival, the frequency $f_\\mathrm{GW}$ of the gravitational waves, and the angular scale $ΔΩ$ of the anisotropy. The sensitivity scales approximately as $N_\\mathrm{psr}^{0.8}$, $δt^{-0.08}$, and $ΔΩ^{1.6}-ΔΩ^{2.1}$ (depending on the ranges of $\\ell$ and $m$ under consideration). In addition, we use realistic simulations to project the NANOGrav PTA sensitivity to a 30-year baseline and quantify the growth in sensitivity at several timeslices. Except at the lowest frequencies, we find negligible effect on sensitivity through increasing the observation duration only. Finally, we introduce a multi-resolution pixel basis motivated by the large dependence of the sensitivity on sky location, and demonstrate the operation of the basis through a set of injections and recoveries.",
-   "date": "2026-08-10",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Joseph Romano"
-    },
-    {
-     "kind": "author",
-     "label": "Neil Cornish"
-    }
-   ],
-   "tags": [
-    "GW",
-    "LISA",
-    "data analysis"
    ]
   },
   {
@@ -2520,64 +2295,6 @@
    ]
   },
   {
-   "id": "2607.23119",
-   "recid": "3183505",
-   "arxiv": "2607.23119",
-   "title": "Parameter Estimation on LIGO-Virgo-KAGRA O4a Binary Merger Triggers with Sub-solar Mass Components",
-   "authors": [
-    "Nelson Christensen",
-    "Neil Cornish",
-    "Florian Kühnel",
-    "Mairi Sakellariadou",
-    "Andres Santiago Villares Guanga"
-   ],
-   "author_count": 5,
-   "collaborations": [],
-   "categories": [
-    "gr-qc",
-    "astro-ph.CO"
-   ],
-   "abstract": "The LIGO-Virgo-KAGRA collaboration has reported the results for searches for sub-solar mass components in compact binary coalescence during observing run O4a. No detection candidates were identified, but the most significant seven triggers were reported. We present the results of Bayesian parameter inference on these triggers. Five of the triggers show agreement between the Bayesian parameter estimation and the search pipeline trigger. Our results show that three of the triggers may contain a possible sub-solar mass component. Parameter estimation indicates that the other two events, if real, would be neutron star - black hole binaries. The remaining two triggers do not provide informative parameter estimation. We also study three O4a compact binary coalescence triggers, and one O3 trigger, that have been noted by three other groups, and our parameter estimation indicates that three of these may contain a sub-solar mass component. We study the data quality associated with these triggers. Finally, we discuss the challenges for parameter estimation on compact binary coalescence events containing a sub-solar mass component: long signal duration, possible small chirp masses, possible small mass ratios, and data quality issues over potentially hundreds of seconds of data.",
-   "date": "2026-07-25",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Neil Cornish"
-    }
-   ],
-   "tags": [
-    "GW",
-    "LISA",
-    "data analysis"
-   ]
-  },
-  {
-   "id": "inspire:3213548",
-   "recid": "3213548",
-   "arxiv": null,
-   "title": "Constraining and enhancing primordial black hole abundances",
-   "authors": [
-    "Xavier Pritchard"
-   ],
-   "author_count": 1,
-   "collaborations": [],
-   "categories": [],
-   "abstract": "Primordial black holes (PBHs) are a compelling dark matter candidate and offer a unique probe of the early universe, linking inflationary dynamics to late-time cosmology. Their formation is governed by the shape of the primordial curvature power spectrum and the thermal history of the universe, encoded in the equation of state. This thesis examines sev-eral key aspects of PBH formation and constraints, focusing on the role of phase transitions,physics beyond the Standard Model, and non-Gaussianity. Drops in the equation of state, such as those at the QCD and electroweak transitions, reduce the collapse threshold and enhance the PBH abundance. We develop a technique to quantify this enhancement and show it depends sensitively on the width and peak scale of the power spectrum. Extending this to beyond Standard Model scenarios, we find that motivated models can lower the equation of state arbitrarily, with the drop sensitive to the number of additional degrees of freedom predicted by the theory, and the corresponding mass distribution. Regarding PBH constraints, we compute cosmic microwave background spectral distortion limits in the presence of extreme local non-Gaussianity, using an analytic two-loop calculation. The bounds on supermassive PBHs remain essentially unchanged, ruling out anon-Gaussian evasion. More broadly, we demonstrate that the most restrictive observa-tional constraint on a PBH population depends on the power spectrum parametrisation,highlighting the need for a combined treatment of formation physics and limits whenassessing PBH dark matter.",
-   "date": "2026-07-24",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "cites",
-     "label": "Manyfield inflation prior dependence"
-    }
-   ],
-   "tags": [
-    "inflation",
-    "landscape"
-   ]
-  },
-  {
    "id": "2607.22442",
    "recid": "3183165",
    "arxiv": "2607.22442",
@@ -2725,46 +2442,6 @@
    "tags": [
     "strings",
     "swampland"
-   ]
-  },
-  {
-   "id": "2607.19293",
-   "recid": "3182294",
-   "arxiv": "2607.19293",
-   "title": "GWTC-5.0: Tests of General Relativity",
-   "authors": [
-    "A.G. Abac",
-    "A. Abe",
-    "I. Abouelfettouh",
-    "F. Acernese",
-    "K. Ackley",
-    "A. Adam",
-    "S. Adhicary",
-    "D. Adhikari"
-   ],
-   "author_count": 1823,
-   "collaborations": [
-    "LIGO Scientific",
-    "VIRGO",
-    "KAGRA"
-   ],
-   "categories": [
-    "gr-qc",
-    "astro-ph.HE"
-   ],
-   "abstract": "The signals from the LIGO-Virgo-KAGRA network of gravitational-wave (GW) detectors allow us to perform sensitive tests of general relativity (GR) in the dynamical and strong-field regime of gravity. We present the results of seven tests of GR using the observed binary signals in the fifth GW Transient Catalog (GWTC-5.0), i.e., up to and including the second part of the fourth observing run (O4b). We restrict our analysis to the confident signals, henceforth called events, observed by at least two detectors that have estimated false alarm rates $\\le 10^{-3} \\ \\rm{yr}^{-1}$. These include 72 events from O4b and five events from the first part of the fourth observing run that are now analyzed due to their increased significance from updated search results, bringing the total number of events for tests of GR in the cumulative GWTC to 168. After subtracting the best-fit waveforms, we find the residuals are consistent with detector noise for all events considered. We also find no strong evidence for additional polarizations beyond those predicted by GR. We perform tests of GW generation, improving the constraints on deviations from the GR post-Newtonian coefficients by factors of 1.2-2.6. Finally, we find overall consistency of the remnants with GR using both time- and frequency-domain methods. For GW240621_195059, postmerger data are consistent with the dominant quadrupolar ($\\ell=|m|=2$) mode of a Kerr black hole and its first overtone, with spurious high-frequency content preventing a spectroscopic constraint of GR. In the frequency-domain ringdown analysis, the GR prediction lies in the tails of the combined results, possibly due to the limited catalog size. However, the combined results indicate improved consistency with GR over GWTC-4.0, owing to the contribution of GW250114 with a network matched-filter signal-to-noise ratio of 76.9. Overall, we find no evidence for physics beyond GR.",
-   "date": "2026-07-21",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Neil Cornish"
-    }
-   ],
-   "tags": [
-    "GW",
-    "LISA",
-    "data analysis"
    ]
   },
   {
@@ -3178,47 +2855,6 @@
    ]
   },
   {
-   "id": "2607.07765",
-   "recid": "3178804",
-   "arxiv": "2607.07765",
-   "title": "Sub-Torque-Balance Upper Limits on Continuous Gravitational Waves from Scorpius X-1",
-   "authors": [
-    "A.G. Abac",
-    "I. Abouelfettouh",
-    "F. Acernese",
-    "K. Ackley",
-    "A. Adam",
-    "C. Adamcewicz",
-    "S. Adhicary",
-    "D. Adhikari"
-   ],
-   "author_count": 1834,
-   "collaborations": [
-    "LIGO Scientific",
-    "VIRGO",
-    "KAGRA",
-    "Precision Ephemerides for Gravitational-Wave Searches (PEGS) Project"
-   ],
-   "categories": [
-    "astro-ph.HE",
-    "gr-qc"
-   ],
-   "abstract": "We present the results of a search for continuous gravitational waves from the low-mass X-ray binary Scorpius X-1 using LIGO data from the first part of the fourth LIGO-Virgo-KAGRA observing run. By applying the resampling version of the cross-correlation pipeline to search for signal frequencies $f_0$ between $25$ and $200\\un{Hz}$ (corresponding to neutron star spin frequencies of $12.5$ to $100\\un{Hz}$ for GW due to triaxiality, or $\\sim15-20$ to $\\sim120-150\\un{Hz}$ for GW due to $r$-modes), we set upper limits below the standard torque balance level, independent of neutron star spin inclination, for $50\\un{Hz}\\lesssim f_0\\lesssim200\\un{Hz}$. While uncertainties in the modelling of torque and equation of state limit the strength of our inference, our results nonetheless argue against torque balance in this spin range for a neutron star described by a hadronic equation of state. The most sensitive upper limits on the gravitational wave amplitude $h_0$, at the upper end of the frequency band searched, approach $5\\times10^{-26}$ marginalized over inclination angle and $2\\times10^{-26}$ assuming the most favorable inclination. The marginalized upper limits correspond to a sensitivity depth of $70-75\\un{Hz}^{-1/2}$, improving sensitivity considerably over previous searches. Expressed as constraints on the triaxial deformation of the neutron star, the limits correspond to an ellipticity of $3\\times10^{-5}$ if the GW frequency $f_0$ is $75\\un{Hz}$ and $3\\times10^{-6}$ if $f_0=200\\un{Hz}$, approaching deformations which could be supported by ordinary nuclear matter. Outliers from the search were ruled out as potential signals by a combination of hierarchical followup and analysis of additional data from later in the observing run.",
-   "date": "2026-07-08",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Neil Cornish"
-    }
-   ],
-   "tags": [
-    "GW",
-    "LISA",
-    "data analysis"
-   ]
-  },
-  {
    "id": "inspire:3193910",
    "recid": "3193910",
    "arxiv": null,
@@ -3241,38 +2877,6 @@
    "tags": [
     "strings",
     "swampland"
-   ]
-  },
-  {
-   "id": "2607.06834",
-   "recid": "3178483",
-   "arxiv": "2607.06834",
-   "title": "A new framework for lightning-fast gravitational wave analysis of pulsar timing data",
-   "authors": [
-    "Aiden Gundersen",
-    "Rutger van Haasteren",
-    "Neil J. Cornish",
-    "Michele Vallisneri",
-    "Patrick M. Meyers"
-   ],
-   "author_count": 5,
-   "collaborations": [],
-   "categories": [
-    "gr-qc"
-   ],
-   "abstract": "Pulsar timing array data analysis is computationally expensive, limiting the complexity of models which can be studied. As pulsar timing datasets and their respective models grow in size and sophistication, faster and scalable inference methods are essential. In this paper, we accelerate pulsar timing analyses by sampling in the space of Fourier coefficients instead of analytically marginalizing over them. Previous studies have shown the Fourier space induces a complex, high-dimensional posterior geometry, from which it is generally difficult to sample. We show that under an appropriate coordinate transformation the Fourier coefficients approximately follow a standard normal distribution, and may be efficiently sampled using a Hamiltonian Monte Carlo scheme. Under this coordinate transformation, for datasets of size and complexity comparable to the NANOGrav 15-year release, the new method produces converged posterior distributions for a range of models which include inter-pulsar correlations, stochastic, and deterministic signals in approximately 15 minutes on an NVIDIA GeForce RTX 3090 GPU. By comparison, the legacy pulsar timing analysis software \\texttt{ENTERPRISE} would require months of computation on a CPU cluster to analyze comparable datasets under the same joint stochastic and deterministic models.",
-   "date": "2026-07-07",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Neil Cornish"
-    }
-   ],
-   "tags": [
-    "GW",
-    "LISA",
-    "data analysis"
    ]
   },
   {
@@ -3467,46 +3071,6 @@
    ]
   },
   {
-   "id": "2606.28554",
-   "recid": "3174615",
-   "arxiv": "2606.28554",
-   "title": "The NANOGrav 15 yr Data Set: Impacts of Customized Chromatic Noise Models on Gravitational Wave Analyses",
-   "authors": [
-    "Nikita Agarwal",
-    "Gabriella Agazie",
-    "Alessandra Amosso",
-    "Akash Anumarlapudi",
-    "Anne M. Archibald",
-    "Zaven Arzoumanian",
-    "Anjana Ashok",
-    "Jeremy G. Baier"
-   ],
-   "author_count": 123,
-   "collaborations": [],
-   "categories": [
-    "astro-ph.CO",
-    "astro-ph.HE"
-   ],
-   "abstract": "We report updated nHz gravitational wave (GW) significance, characterization, and interpretations using the customized chromatic-noise models (CNMs) developed in Larsen, Baier et al. (2026). for the NANOGrav 15-year data set. We find increased evidence for the Hellings-Downs (HD) correlation signature of the stochastic gravitational wave background (GWB), with a Bayes factor of $1571\\pm14$ for HD-correlations over a common uncorrelated red-noise process using a power-law model with $14$ Fourier modes. We find this $\\sim8\\times$ increase in Bayes factor from Agazie et al. (2023a) is a result of improved noise mitigation. Assuming an analytic null distribution for the frequentist interpulsar correlation statistic, this corresponds to a slightly more significant measurement from $3.16σ$ to $3.32σ$ against the no-correlation scenario. Spectral inference with CNMs brings the power-law GWB amplitude down to $A_{\\rm GWB} = 2.1^{+0.6}_{-0.5}\\times10^{-15}$ at fixed $γ_{\\rm GWB} = 13/3$. In a varied-$γ$ analysis, the spectral index increases to $γ_{\\rm GWB}=3.5^{+0.7}_{-0.6}$. We report updates on an all-sky continuous gravitational wave (CW) search as well as select targeted searches and calculate a $3.2\\times$ larger detection volume for the NANOGrav detector. With CNMs, we find reduced evidence for a non-Einsteinian, scalar-transverse mode of gravity. Finally, we reinterpret the GWB first with the assumption of an astrophysical background sourced by SMBHBs and then assuming the more exotic origins of cosmic inflation, a first-order cosmological phase transition, and stable cosmic strings. Under both the SMBHB hypothesis and the cosmological hypotheses, we see only marginal shifts in model parameter posteriors which are consistent with the slightly quieter and steeper power-law GWB spectrum.",
-   "date": "2026-06-26",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Joseph Romano"
-    },
-    {
-     "kind": "author",
-     "label": "Neil Cornish"
-    }
-   ],
-   "tags": [
-    "GW",
-    "LISA",
-    "data analysis"
-   ]
-  },
-  {
    "id": "2606.26004",
    "recid": "3172579",
    "arxiv": "2606.26004",
@@ -3589,36 +3153,6 @@
    "tags": [
     "inflation",
     "strings"
-   ]
-  },
-  {
-   "id": "2606.23307",
-   "recid": "3171033",
-   "arxiv": "2606.23307",
-   "title": "Primordial Black Holes from Vector-Induced Curvature Perturbations Sourced by Primordial Magnetic Fields",
-   "authors": [
-    "Chang Han",
-    "Zu-Cheng Chen",
-    "Hongwei Yu",
-    "Puxun Wu"
-   ],
-   "author_count": 4,
-   "collaborations": [],
-   "categories": [
-    "gr-qc",
-    "astro-ph.CO"
-   ],
-   "abstract": "Generating an appreciable abundance of primordial black holes (PBHs) requires a substantial enhancement of primordial curvature perturbations on small scales. In this Letter, we propose a new post-inflationary mechanism in which such an enhancement arises during a stiff, or kination, epoch. The mechanism is driven by metric vector perturbations sourced by the vector component of the electromagnetic stress-energy tensor associated with primordial magnetic fields (PMFs). Since these first-order vector modes remain approximately constant during kination, they act as persistent nonlinear sources for second-order scalar perturbations. We show that the resulting vector-induced curvature perturbations are amplified toward the infrared cutoff of the kination band and exhibit the characteristic scaling $\\mathcal P_{\\mathcal R}(k)\\propto k^{-5}$. As a concrete realization, we consider PMFs generated in a Ratra-type magnetogenesis scenario and find that the induced curvature perturbations can produce PBHs with an abundance large enough to constitute a substantial fraction of the dark matter.",
-   "date": "2026-06-22",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "cites",
-     "label": "Palma BH"
-    }
-   ],
-   "tags": [
-    "inflation"
    ]
   },
   {
@@ -3716,35 +3250,6 @@
    ],
    "tags": [
     "GW",
-    "data analysis"
-   ]
-  },
-  {
-   "id": "2606.23035",
-   "recid": "3171053",
-   "arxiv": "2606.23035",
-   "title": "MaxWave Signal: Rapid, coherent maximum likelihood wavelet reconstruction of transient signals in gravitational wave data",
-   "authors": [
-    "Sudhi Mathur",
-    "Neil J. Cornish"
-   ],
-   "author_count": 2,
-   "collaborations": [],
-   "categories": [
-    "gr-qc"
-   ],
-   "abstract": "Advances in gravitational-wave detector sensitivity have increased the rate of transient signal detections, demanding faster automated analysis. We extend MaxWave, a fast maximum likelihood wavelet reconstruction algorithm, to perform coherent multi-detector signal reconstruction and glitch rejection. We coherently search for a common set of wavelets modeling the signal in all detectors. Multi-detector data are aligned using z-statistic time and phase offsets and amplitude scalings relative to the dominant reconstruction, as well as adaptive noise weightings derived from a geometrically averaged noise spectrum. By aligning and weighting individual detectors, we form a synthetic detector that amplifies non-Gaussian features, down-weights noisy detectors, and preserves Gaussian noise statistics. We extract the coherent signal using this synthetic detector, improving sensitivity to weak events while rejecting coincident glitches that lack consistent phase and amplitude evolution. Our algorithm provides real-time, low-latency, model-independent signal reconstructions, safely denoises gravitational wave data without removing transient signals, and can complement existing burst search and reconstruction frameworks through a fundamentally distinct approach, strengthening detection confidence and improving sensitivity to diverse signal morphologies.",
-   "date": "2026-06-22",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Neil Cornish"
-    }
-   ],
-   "tags": [
-    "GW",
-    "LISA",
     "data analysis"
    ]
   },
@@ -4344,35 +3849,6 @@
    ]
   },
   {
-   "id": "2606.09996",
-   "recid": "3167161",
-   "arxiv": "2606.09996",
-   "title": "On BPS Branes",
-   "authors": [
-    "Cumrun Vafa",
-    "David H. Wu",
-    "Kai Xu"
-   ],
-   "author_count": 3,
-   "collaborations": [],
-   "categories": [
-    "hep-th"
-   ],
-   "abstract": "We study supersymmetric BPS branes (BPS-B) in supergravity theories. Some of these states are anticipated by BPS black-brane (BPS-BB) solutions of supergravity. In particular, we define and distinguish the cone generated by BPS branes from the subcone of charges that admit BPS black-brane attractor solutions in the infrared limit of the supergravity effective field theory. We denote these cones by $C_{\\rm BPS-B}$ and $C_{\\rm BPS-BB}$, respectively. We conjecture that, in any supersymmetric theory of quantum gravity, every integrally charged state lying in $C_{\\rm BPS-BB}$ is realized by a BPS state in the spectrum. Furthermore, we conjecture and present evidence that when $C_{\\rm BPS-B}$ is moduli independent, it can be determined as the cone dual to the $C_{\\rm BPS-BB}$ under the electric-magnetic pairing.",
-   "date": "2026-06-08",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Cumrun Vafa"
-    }
-   ],
-   "tags": [
-    "strings",
-    "swampland"
-   ]
-  },
-  {
    "id": "2606.08244",
    "recid": "3166398",
    "arxiv": "2606.08244",
@@ -4796,34 +4272,6 @@
    ]
   },
   {
-   "id": "2605.28752",
-   "recid": "3161912",
-   "arxiv": "2605.28752",
-   "title": "Inflation with vector fields revisited: non-Gaussianities",
-   "authors": [
-    "Chong-Bin Chen"
-   ],
-   "author_count": 1,
-   "collaborations": [],
-   "categories": [
-    "hep-th",
-    "astro-ph.CO",
-    "gr-qc"
-   ],
-   "abstract": "{We revisit the resulting bispectrum of inflation with kinetic-coupled vector fields by organizing the dynamics in terms of $h$, which measures the vector kinetic contribution relative to that of the scalar field. We derive a low-energy effective field theory (EFT) and evaluate the bispectrum of the curvature perturbation for the large-$h$ regime. For $h\\gg1$, the entropic perturbation becomes heavy and can be integrated out; the remaining curvature mode has an imaginary sound speed and undergoes transient growth before horizon crossing. In contrast to the $h\\ll1$ regime, where transfer from the vector sector persists outside the horizon and produces a local-type contribution enhanced as $h^2N_K^3$, we find that the bispectrum signals are controlled by the matching parameter $x\\simeq1.63Ah$, where $A<1$ is a numerical factor remaining dependent on the UV-to-EFT matching prescription. As a result, in addition to the known flattened-enhanced signals scaling as $x^3$, a flattened-enhanced signal scaling as $x^2$ and a pronounced local projection scaling as $x$ are present. The bispectrum therefore distinguishes vector-supported inflationary dynamics even for an exactly isotropic background.}",
-   "date": "2026-05-27",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "cites",
-     "label": "Palma BH"
-    }
-   ],
-   "tags": [
-    "inflation"
-   ]
-  },
-  {
    "id": "2605.27107",
    "recid": "3160288",
    "arxiv": "2605.27107",
@@ -4850,246 +4298,6 @@
    "tags": [
     "cosmology",
     "inflation"
-   ]
-  },
-  {
-   "id": "2605.27090",
-   "recid": "3160304",
-   "arxiv": "2605.27090",
-   "title": "Open Data from LIGO, Virgo, and KAGRA through the Second Part of the Fourth Observing Run",
-   "authors": [
-    "A.G. Abac",
-    "A. Abe",
-    "I. Abouelfettouh",
-    "F. Acernese",
-    "K. Ackley",
-    "A. Adam",
-    "S. Adhicary",
-    "D. Adhikari"
-   ],
-   "author_count": 1809,
-   "collaborations": [
-    "LIGO Scientific",
-    "VIRGO",
-    "KAGRA"
-   ],
-   "categories": [
-    "gr-qc",
-    "astro-ph.HE"
-   ],
-   "abstract": "LIGO, Virgo, KAGRA, and GEO 600 form a network of gravitational-wave observatories. Data and analysis results from this network are made publicly available through the Gravitational Wave Open Science Center (GWOSC). This paper describes open data from this network, including the addition of data from the second part of the fourth observing run (O4b) and selected periods from the preceding engineering run (ER16), which were collected from times spanning April 6th, 2024 to January 28th, 2025. The public data set includes calibrated strain time series for each instrument, data from additional channels used for noise subtraction and detector characterization, and new analysis data products in the online GWOSC release associated with version 5.0 of the Gravitational-Wave Transient Catalog.",
-   "date": "2026-05-26",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Neil Cornish"
-    }
-   ],
-   "tags": [
-    "GW",
-    "LISA",
-    "data analysis"
-   ]
-  },
-  {
-   "id": "2605.27225",
-   "recid": "3160310",
-   "arxiv": "2605.27225",
-   "title": "GWTC-5.0: Observations from the Second Part of the Fourth LIGO-Virgo-KAGRA Observing Run and Updates to the Gravitational-Wave Transient Catalog",
-   "authors": [
-    "A.G. Abac",
-    "A. Abe",
-    "I. Abouelfettouh",
-    "F. Acernese",
-    "K. Ackley",
-    "A. Adam",
-    "S. Adhicary",
-    "D. Adhikari"
-   ],
-   "author_count": 1827,
-   "collaborations": [
-    "LIGO Scientific",
-    "VIRGO",
-    "KAGRA"
-   ],
-   "categories": [
-    "gr-qc",
-    "astro-ph.HE"
-   ],
-   "abstract": "Version 5.0 of the Gravitational-Wave Transient Catalog (GWTC-5.0) adds new candidates detected by the LIGO Virgo KAGRA network of observatories through the second part of the fourth observing run (O4b: 2024 April 10 15:00:00 to 2025 January 28 17:00:00 UTC) and four days of the preceding engineering run (2024 April 6 to 2024 April 10). We find 161 compact binary coalescence candidates that are identified by at least one of our search algorithms with a probability of astrophysical origin $p_\\mathrm{astro} \\geq 0.5$ and that are not vetoed during event validation. We also provide detailed source property measurements for 104 candidates that have a false-alarm rate < 1yr$^{-1}$. Based on the inferred component masses, all these candidates are consistent with signals from binary black holes. Median inferred component masses in the new candidates range from 5.14$M_\\odot$ (GW241109_115924) to 70$M_\\odot$ (GW241116_151753). Improvements in detector sensitivity allow us to observe compact binary coalescences with increasing clarity: 5 binary-black-hole signals have network signal-to-noise ratio exceeding 30, with a maximum to date of 76.9 for GW250114_082203. Such loud signals enable more precise studies of properties of their astrophysical sources and tests of general relativity. We also present updated results up to the first part of the fourth observing run, identifying 229 candidates. This brings the total number of transients in the cumulative GWTC having $p_\\mathrm{astro} \\geq 0.5$ to 390, further expanding the size of the catalog and our view of the gravitational-wave universe.",
-   "date": "2026-05-26",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Neil Cornish"
-    }
-   ],
-   "tags": [
-    "GW",
-    "LISA",
-    "data analysis"
-   ]
-  },
-  {
-   "id": "2605.27226",
-   "recid": "3160312",
-   "arxiv": "2605.27226",
-   "title": "GWTC-5.0: Population Properties of Merging Compact Binaries",
-   "authors": [
-    "A.G. Abac",
-    "A. Abe",
-    "I. Abouelfettouh",
-    "F. Acernese",
-    "K. Ackley",
-    "A. Adam",
-    "S. Adhicary",
-    "D. Adhikari"
-   ],
-   "author_count": 1813,
-   "collaborations": [
-    "LIGO Scientific",
-    "VIRGO",
-    "KAGRA"
-   ],
-   "categories": [
-    "astro-ph.HE",
-    "gr-qc"
-   ],
-   "abstract": "We present the population properties of merging compact binaries inferred using 267 mergers from the cumulative Gravitational-Wave Transient Catalog 5.0. As this data set contains no new sources with a neutron star, we primarily focus on the properties of the binary black hole mergers. We infer the merger rate of binary black holes with component masses between $2.5\\,\\mathrm{M}_\\odot $ and $200\\,\\mathrm{M}_\\odot $ to be $27.5\\text{--} 49.4 \\, \\mathrm{Gpc}^{-3}\\,\\mathrm{yr}^{-1}$ (all intervals at $90\\%$ credible levels) at redshift $z = 0.2$. We find evidence for a subpopulation of binary black hole mergers that host a rapidly spinning black hole (dimensionless spins $χ\\sim 0.7$), consistent with signatures of hierarchical mergers. We find that these occur at two mass scales, the first at primary masses $\\sim 10$--$20\\,\\mathrm{M}_\\odot $ and the second above $\\sim 45\\,\\mathrm{M}_\\odot $, and we estimate their total rate at $z=0.2$ to be $0.2\\text{--} 3.11 \\, {\\rm Gpc}^{-3} {\\rm yr}^{-1}$. We infer that, above $40\\,\\mathrm{M}_\\odot $, the mass distribution of the less massive (secondary) black hole declines more steeply than that of the more massive (primary) one. This is consistent with a flatter mass-ratio distribution and indicates the prevalence of unequal-mass binaries with large primary masses. We find evidence for two features in the black hole mass spectrum: a peak around $10\\,\\mathrm{M}_\\odot $ and a change of slope at around $35\\,\\mathrm{M}_\\odot $. Black holes of $\\sim 35\\,\\mathrm{M}_\\odot $ pair preferentially with companions of similar mass. Additionally, we find that the effective inspiral spin distribution of binary black holes is asymmetric about zero, based on which we infer that at least $9 \\%$ of mergers occur in channels with some preference for spin-orbit alignment. We find evidence that...",
-   "date": "2026-05-26",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Neil Cornish"
-    }
-   ],
-   "tags": [
-    "GW",
-    "LISA",
-    "data analysis"
-   ]
-  },
-  {
-   "id": "2605.27227",
-   "recid": "3160313",
-   "arxiv": "2605.27227",
-   "title": "GWTC-5.0: Constraints on the Cosmic Expansion Rate and Modified Gravitational-wave Propagation",
-   "authors": [
-    "A.G. Abac",
-    "A. Abe",
-    "I. Abouelfettouh",
-    "F. Acernese",
-    "K. Ackley",
-    "A. Adam",
-    "S. Adhicary",
-    "D. Adhikari"
-   ],
-   "author_count": 1810,
-   "collaborations": [
-    "LIGO Scientific",
-    "VIRGO",
-    "KAGRA"
-   ],
-   "categories": [
-    "astro-ph.CO",
-    "gr-qc"
-   ],
-   "abstract": "We employ 236 gravitational-wave (GW) sources in the fifth LIGO--Virgo--KAGRA Collaboration (LVK) Gravitational-Wave Transient Catalog (GWTC-5.0) to estimate the Hubble constant $H_0$. We compare the luminosity distance measured from GWs to the redshift inferred i) using features in the mass spectrum, and ii) using statistical host galaxy association. Probing the relationship between source luminosity distances and redshifts obtained in this way yields constraints on cosmological parameters. We estimate $H_0 = {71.7}_{-7.5}^{+9.4}\\,{\\text{km}\\,\\text{s}^{-1}\\,\\text{Mpc}^{-1}}$ (median with $68\\%$ symmetric credible interval). This combines information from the source-frame mass distribution with the $H_0$ measurement from GW170817 and its electromagnetic counterpart as well as galaxy catalog information from Dark Energy Survey Year 6 (DES-Y6). We improve over the GWTC-4.0 measurement by using more GW sources, some with significantly smaller sky localization volumes, which leads to a reduction by $22.0\\%$ of the $H_0$ uncertainty and a reconstructed mass distribution with lower uncertainties. We also constrain deviations from general relativity (GR) which affect GW propagation, specifically that modify the luminosity distance inferred from the GW signal. We find no departures from GR in parameterized tests of GW propagation.",
-   "date": "2026-05-26",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Neil Cornish"
-    }
-   ],
-   "tags": [
-    "GW",
-    "LISA",
-    "data analysis"
-   ]
-  },
-  {
-   "id": "2605.27224",
-   "recid": "3160314",
-   "arxiv": "2605.27224",
-   "title": "GWTC-5.0: Methods for Identifying and Characterizing Gravitational-wave Transients",
-   "authors": [
-    "A.G. Abac",
-    "A. Abe",
-    "I. Abouelfettouh",
-    "F. Acernese",
-    "K. Ackley",
-    "A. Adam",
-    "S. Adhicary",
-    "D. Adhikari"
-   ],
-   "author_count": 1822,
-   "collaborations": [
-    "LIGO Scientific",
-    "VIRGO",
-    "KAGRA"
-   ],
-   "categories": [
-    "gr-qc",
-    "astro-ph.HE"
-   ],
-   "abstract": "The Gravitational-Wave Transient Catalog (GWTC) is a collection of candidate gravitational-wave transient signals identified and characterized by the LIGO-Virgo-KAGRA Collaboration. Producing the contents of the GWTC from detector data requires complex analysis methods. These comprise techniques to model the signal; identify the transients in the data; evaluate the quality of the data and mitigate possible instrumental issues; infer the parameters of each transient; compare the data with the waveform models for compact binary coalescences, and handle the large amount of results associated with all these different analyses. In this paper, we describe the methods employed to produce the catalog's fifth release, GWTC-5.0, focusing on the analysis of the second part of the fourth observing run of LIGO, Virgo and KAGRA.",
-   "date": "2026-05-26",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Neil Cornish"
-    }
-   ],
-   "tags": [
-    "GW",
-    "LISA",
-    "data analysis"
-   ]
-  },
-  {
-   "id": "2605.27223",
-   "recid": "3160317",
-   "arxiv": "2605.27223",
-   "title": "GWTC-5.0: An Introduction to Version 5.0 of the Gravitational-Wave Transient Catalog",
-   "authors": [
-    "A.G. Abac",
-    "A. Abe",
-    "I. Abouelfettouh",
-    "F. Acernese",
-    "K. Ackley",
-    "A. Adam",
-    "S. Adhicary",
-    "D. Adhikari"
-   ],
-   "author_count": 1822,
-   "collaborations": [
-    "LIGO Scientific",
-    "VIRGO",
-    "KAGRA"
-   ],
-   "categories": [
-    "gr-qc",
-    "astro-ph.HE"
-   ],
-   "abstract": "The Gravitational-Wave Transient Catalog (GWTC) is a collection of short-duration (transient) gravitational-wave signals identified by the LIGO-Virgo-KAGRA Collaboration in gravitational-wave data produced by the eponymous detectors. The catalog provides information about the identified candidates, such as the arrival time and amplitude of the signal and properties of the signal's source as inferred from the observational data. GWTC is the release of this dataset and version 5.0 extends the catalog to include observations made during the second part of the fourth LIGO-Virgo-KAGRA observing run up until 2025 January 28. This paper marks an introduction to a collection of articles related to this version of the catalog, GWTC-5.0. This update significantly increases the number of detected merging binary systems of black holes and neutron stars to over 300, enabling many follow-up studies toward understanding the gravitational-wave universe. The collection of articles accompanying the catalog provides documentation of the methods used to analyze the data, summaries of the catalog of events, observational measurements drawn from the population, and detailed discussions of selected candidates.",
-   "date": "2026-05-26",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Neil Cornish"
-    }
-   ],
-   "tags": [
-    "GW",
-    "LISA",
-    "data analysis"
    ]
   },
   {
@@ -5697,46 +4905,6 @@
    "tags": [
     "strings",
     "swampland"
-   ]
-  },
-  {
-   "id": "2605.05444",
-   "recid": "3152831",
-   "arxiv": "2605.05444",
-   "title": "Searches for Binary Mergers with Sub-solar Mass Components in Data from the First Part of LIGO--Virgo--KAGRA's Fourth Observing Run",
-   "authors": [
-    "A.G. Abac",
-    "I. Abouelfettouh",
-    "F. Acernese",
-    "K. Ackley",
-    "A. Adam",
-    "C. Adamcewicz",
-    "S. Adhicary",
-    "D. Adhikari"
-   ],
-   "author_count": 1835,
-   "collaborations": [
-    "LIGO Scientific",
-    "VIRGO",
-    "KAGRA"
-   ],
-   "categories": [
-    "astro-ph.HE",
-    "astro-ph.CO"
-   ],
-   "abstract": "We report on a gravitational wave search for compact binary coalescences involving at least one component with mass between $0.2 M_\\odot$ to $1 M_\\odot$, and ratio of component masses between 0.1 and 1. The analysis uses data collected by the LIGO detectors between May 24 2023 15:00 UTC and January 16 2024 16:00 UTC. No statistically significant sub-solar mass candidates were identified by the participating search algorithms. We report the detection sensitivity of the current searches to the target sub-solar mass black hole population, while also reporting the sensitivity of the search to low-mass neutron star binaries for the first time. With the absence of detections, we place upper limits on the merger rate of sub-solar mass black holes, ranging from $110$$\\mathrm{Gpc^{-3}yr^{-1}}$ to $10000$$\\mathrm{Gpc^{-3}yr^{-1}}$ at 90% confidence. We use the merger rate limits to constrain two illustrative dark matter scenarios that can form sub-solar mass compact objects: primordial black holes, and dark black holes forming in a dissipative dark matter model. For late-forming primordial black hole binaries, our search excludes the fraction of dark matter in primordial black holes to be 1 for masses above $0.9 M_\\odot$. In the early-formation scenario, we limit this fraction to be $\\leq$ 7% at $1 M_\\odot$, and $\\leq$ 40% at $0.35 M_\\odot$. For the dissipative model, the excluded region in the parameter space of dark matter fraction in dark black holes and their minimum possible mass extends down to (1.2 to 1.3) $\\times10^{-5}$ when the minimum mass is $1 M_\\odot$. For binary neutron stars that include sub-solar mass components, we estimate the sensitive space-time hypervolume to be $10^{-3}$ $\\mathrm{Gpc^3yr}$, and report the upper limit on their merger rate for a simple, fixed population as ~86 $\\mathrm{Gpc^{-3}yr^{-1}}$.",
-   "date": "2026-05-06",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Neil Cornish"
-    }
-   ],
-   "tags": [
-    "GW",
-    "LISA",
-    "data analysis"
    ]
   },
   {
@@ -6492,47 +5660,6 @@
    ]
   },
   {
-   "id": "2605.11703",
-   "recid": "3154837",
-   "arxiv": "2605.11703",
-   "title": "GW240925 and GW250207: Astrophysical Calibration of Gravitational-wave Detectors",
-   "authors": [
-    "A.G. Abac",
-    "I. Abouelfettouh",
-    "F. Acernese",
-    "K. Ackley",
-    "A. Adam",
-    "C. Adamcewicz",
-    "S. Adhicary",
-    "D. Adhikari"
-   ],
-   "author_count": 1839,
-   "collaborations": [
-    "LIGO Scientific",
-    "Virgo",
-    "KAGRA"
-   ],
-   "categories": [
-    "gr-qc",
-    "astro-ph.HE",
-    "astro-ph.IM"
-   ],
-   "abstract": "GW240925 and GW250207 are two loud gravitational-wave signals from binary black hole coalescences observed with network signal-to-noise ratios $\\sim 32$ and $\\sim 69$, respectively, by the LIGO Hanford--LIGO Livingston--Virgo network. Gravitational-wave signals from coalescing binaries have characteristic phase and amplitude evolution predicted by general relativity. These signal waveforms, together with measured instrumental calibration uncertainties, are used to infer source parameters. However, for sufficiently loud detections it is possible to constrain the calibration of the detectors directly using the signals themselves. We present the first informative astrophysical measurements of gravitational-wave detector calibration. For GW240925, we verify the inference of Hanford calibration from the astrophysical signal through cross-checks with known calibration errors obtained from in-situ measurements. At the time of GW250207, the Hanford detector was not fully stabilized, leading to elevated calibration uncertainties; thus, astrophysical calibration is essential to obtain accurate data and to enable source localization. These well-localized, high signal-to-noise observations have the potential to offer precise measurements of source properties, stringent tests of general relativity, and informative dark siren measurements, provided that calibration uncertainties are properly incorporated. As detector sensitivity improves, astrophysical calibration will become an increasingly valuable complement to in-situ calibration measurements. Obtaining accurate calibration will be essential for precision gravitational-wave science.",
-   "date": "2026-04-01",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Neil Cornish"
-    }
-   ],
-   "tags": [
-    "GW",
-    "LISA",
-    "data analysis"
-   ]
-  },
-  {
    "id": "2603.29872",
    "recid": "3137720",
    "arxiv": "2603.29872",
@@ -6710,39 +5837,6 @@
    ]
   },
   {
-   "id": "2603.27673",
-   "recid": "3137327",
-   "arxiv": "2603.27673",
-   "title": "Avoiding recollapse in an open-AdS Universe via a self-tuning-like mechanism",
-   "authors": [
-    "Yupeng Zhang",
-    "Shuxun Tian",
-    "Zhengxiang Li"
-   ],
-   "author_count": 3,
-   "collaborations": [],
-   "categories": [
-    "astro-ph.CO"
-   ],
-   "abstract": "We study whether an open FLRW universe with a negative cosmological constant can evade the eventual recollapse characteristic of an AdS-type universe. Within a power-law realization of Fab-Four theory, we solve the background equations numerically and analyze the asymptotic dynamics. For the representative branch and parameter choice studied here, we find that the scalar sector provides a self-tuning-like compensation for the negative Λ, while the curvature term remains unscreened. As a result, the universe can continue expanding instead of recollapsing. Instead, the universe evolves toward a curvature-dominated linear-expansion regime, a ∝ t. To probe the underlying compensation mechanism, we further analyze an auxiliary zero-curvature subsystem using Poincaré compactification. In the Λ<0 domain, there exist background trajectories that approach a critical point at infinity. Near this point, the compensating scalar-Λ sector becomes stiff-like, w_{ϕ+Λ}→ 1, so that the system effective energy density redshifts faster than curvature (w_k = -1/3). Although this auxiliary analysis does not cover the full curved cosmology, it is consistent with and qualitatively supports the numerical finding that the net ϕ+Λ contribution becomes subdominant to curvature, thereby preventing recollapse despite Λ<0. This extends the application of the self-tuning mechanism to the AdS region and offers a possibility for the AdS Universe predicted by string theory to become a reality.",
-   "date": "2026-03-29",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "cites",
-     "label": "Swampland"
-    },
-    {
-     "kind": "cites",
-     "label": "Palti swampland review"
-    }
-   ],
-   "tags": [
-    "strings",
-    "swampland"
-   ]
-  },
-  {
    "id": "2603.27080",
    "recid": "3137173",
    "arxiv": "2603.27080",
@@ -6847,86 +5941,6 @@
     "inflation",
     "strings",
     "swampland"
-   ]
-  },
-  {
-   "id": "2603.25808",
-   "recid": "3136106",
-   "arxiv": "2603.25808",
-   "title": "Searches for Continuous Gravitational Waves from Supernova Remnants in the first part of the LIGO-Virgo-KAGRA Fourth Observing run",
-   "authors": [
-    "A.G. Abac",
-    "I. Abouelfettouh",
-    "F. Acernese",
-    "K. Ackley",
-    "C. Adamcewicz",
-    "S. Adhicary",
-    "D. Adhikari",
-    "N. Adhikari"
-   ],
-   "author_count": 1765,
-   "collaborations": [
-    "LIGO Scientific",
-    "Virgo",
-    "KAGRA"
-   ],
-   "categories": [
-    "gr-qc",
-    "astro-ph.HE"
-   ],
-   "abstract": "We present results from directed searches for continuous gravitational waves from a sample of 15 nearby supernova remnants, likely hosting young neutron star candidates, using data from the first eight months of the fourth observing run (O4) of the LIGO-Virgo-KAGRA Collaboration. The analysis employs five pipelines: four semi-coherent methods -- the Band-Sampled-Data directed pipeline, Weave and two Viterbi pipelines (single- and dual-harmonic) -- and PyStoch, a cross-correlation-based pipeline. These searches cover wide frequency bands and do not assume prior knowledge of the targets' ephemerides. No evidence of a signal is found from any of the 15 sources. We set 95% confidence-level upper limits on the intrinsic strain amplitude, with the most stringent constraints reaching $\\sim 4 \\times 10^{-26}$ near 300 Hz for the nearby source G266.2$-$1.2 (Vela Jr.). We also derive limits on neutron star ellipticity and $r$-mode amplitudes for the same source, with the best constraints reaching $\\lesssim 10^{-7}$ and $\\lesssim 10^{-5}$, respectively, at frequencies above 400 Hz. These results represent the most sensitive wide-band directed searches for continuous gravitational waves from supernova remnants to date.",
-   "date": "2026-03-26",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Neil Cornish"
-    }
-   ],
-   "tags": [
-    "GW",
-    "LISA",
-    "data analysis"
-   ]
-  },
-  {
-   "id": "2603.25938",
-   "recid": "3136113",
-   "arxiv": "2603.25938",
-   "title": "Narrowband searches for continuous gravitational waves from known pulsars in the first two parts of the fourth LIGO--Virgo--KAGRA observing run",
-   "authors": [
-    "A.G. Abac",
-    "I. Abouelfettouh",
-    "F. Acernese",
-    "K. Ackley",
-    "A. Adam",
-    "C. Adamcewicz",
-    "S. Adhicary",
-    "D. Adhikari"
-   ],
-   "author_count": 1853,
-   "collaborations": [
-    "LIGO Scientific",
-    "Virgo",
-    "KAGRA"
-   ],
-   "categories": [
-    "gr-qc",
-    "astro-ph.HE"
-   ],
-   "abstract": "Rotating non-axisymmetric neutron stars (NSs) are promising sources for continuous gravitational waves (CWs). Such CWs can, if detected, inform us about the internal structure and equation of state of NSs. Here, we present a narrowband search for CWs from known pulsars, for which an efficient and sensitive matched-filter search can be applied. Narrowband searches are designed to be robust to mismatches between the electromagnetic (EM) and gravitational emissions, in contrast to fully targeted searches where the CW emission is assumed to be phase-locked to the EM one. In this work, we search for the CW counterparts emitted by 34 pulsars using data from the first and second parts of the fourth LIGO--Virgo--KAGRA observing run. This is the largest number of pulsars so far targeted for narrowband searches in the advanced detector era. We use the 5n-vector narrowband pipeline, which applies frequency-domain matched filtering. In previous searches, it covered a narrow range in the frequency -- frequency time derivative ($f$--$\\dot{f}$) space. Here, we also explore a range in the second time derivative of the frequency $\\ddot{f}$ around the value indicated by EM observations. Additionally, for the first time, we target sources in a binary system with this kind of search. We find no evidence for CWs and therefore set upper limits on the strain amplitude emitted by each pulsar, using simulated signals added in real data. For 20 analyses, we report an upper limit below the theoretical spin-down limit. The tightest constraint is for pulsar PSR J0534+2200 (the Crab pulsar), for which our strain upper limit on the CW amplitude is $\\lesssim 2\\%$ of its spin-down limit, corresponding to less than $0.04\\%$ of the spin-down power being radiated in the CW channel.",
-   "date": "2026-03-26",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Neil Cornish"
-    }
-   ],
-   "tags": [
-    "GW",
-    "LISA",
-    "data analysis"
    ]
   },
   {
@@ -7079,126 +6093,6 @@
    ]
   },
   {
-   "id": "2603.19021",
-   "recid": "3131604",
-   "arxiv": "2603.19021",
-   "title": "GWTC-4.0: Tests of General Relativity. III. Tests of the Remnants",
-   "authors": [
-    "A.G. Abac",
-    "I. Abouelfettouh",
-    "F. Acernese",
-    "K. Ackley",
-    "C. Adamcewicz",
-    "S. Adhicary",
-    "D. Adhikari",
-    "N. Adhikari"
-   ],
-   "author_count": 1779,
-   "collaborations": [
-    "LIGO Scientific",
-    "VIRGO",
-    "KAGRA"
-   ],
-   "categories": [
-    "gr-qc",
-    "astro-ph.HE"
-   ],
-   "abstract": "This is the third paper of the set recording the results of the suite of tests of general relativity (GR) performed on the signals from the fourth Gravitational-Wave Transient Catalog (GWTC-4.0), where we focus on the remnants of the binary mergers. We examine for the first time 42 events from the first part of the fourth observing run of the LIGO-Virgo-KAGRA detectors, alongside events from the previous observation runs, restricting our analysis to the confident signals, which were measured in at least two detectors and that have false alarm rates $\\le 10^{-3} \\mathrm{yr}^{-1}$. This paper focuses on seven tests of the coalescence remnants. Three of these are tests of the ringdown and its consistency with the expected quasinormal mode spectrum of a Kerr black hole. Specifically, two tests analyze just the ringdown in the time domain, and the third test analyzes the entire signal in the frequency domain. Four tests allow for the existence of possible echoes arriving after the end of the ringdown, which are not expected in GR. We find overall consistency of the remnants with GR. When combining events by multiplying likelihoods (hierarchically), one analysis finds that the GR prediction lies at the boundary of the $98.6^{+1.4}_{-9.4}\\%$ ($99.3^{+0.7}_{-4.5}\\%$) credible region, an increase from $93.8^{+6.1}_{-20.0}\\%$ ($94.9^{+4.4}_{-18.2}\\%$) for GWTC-3.0. Here the ranges of values comes from bootstrapping to account for the finite number of events analyzed and suggest that some of the apparently significant deviation could be attributed to variance due to the finite catalog. Since the significance also decreases to 92.2% (96.2%) when including the more recent very loud event GW250114, there is no strong evidence for a GR deviation. We find no evidence for post-merger echoes in the events that were analyzed. (Abridged)",
-   "date": "2026-03-19",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Neil Cornish"
-    }
-   ],
-   "tags": [
-    "GW",
-    "LISA",
-    "data analysis"
-   ]
-  },
-  {
-   "id": "2603.19019",
-   "recid": "3131608",
-   "arxiv": "2603.19019",
-   "title": "GWTC-4.0: Tests of General Relativity. I. Overview and General Tests",
-   "authors": [
-    "A.G. Abac",
-    "I. Abouelfettouh",
-    "F. Acernese",
-    "K. Ackley",
-    "C. Adamcewicz",
-    "S. Adhicary",
-    "D. Adhikari",
-    "N. Adhikari"
-   ],
-   "author_count": 1781,
-   "collaborations": [
-    "LIGO Scientific",
-    "VIRGO",
-    "KAGRA"
-   ],
-   "categories": [
-    "gr-qc",
-    "astro-ph.HE"
-   ],
-   "abstract": "The worldwide LIGO-Virgo-KAGRA network of gravitational-wave (GW) detectors continues to increase in sensitivity, thus increasing the quantity and quality of the detected GW signals from compact binary coalescences. These signals allow us to perform ever-more sensitive tests of general relativity (GR) in the dynamical and strong-field regime of gravity. This paper is the first of three, where we present the results of a suite of tests of GR using the binary signals included in the fourth GW Transient Catalog (GWTC-4.0), i.e., up to and including the first part of the fourth observing run of the detectors (O4a). We restrict our analysis to the 91 confident signals, henceforth called events, that were measured by at least two detectors, and have false alarm rates $\\le 10^{-3} \\mathrm{yr}^{-1}$. These include 42 events from O4a. This first paper presents an overview of the methods, selection of events and GR tests, and serves as a guidemap for all three papers. Here we focus on the four general tests of consistency, where we find no evidence for deviations from our models. Specifically, for all the events considered, we find consistency of the residuals with noise. The final mass and final spin as inferred from the low- and high-frequency parts of the waveform are consistent with each other. We also find no evidence for deviations from the GR predictions for the amplitudes of subdominant GW multipole moments, or for non-GR modes of polarization. We thus find that GR, without new physics beyond it, is still consistent with these GW events. The results of the two additional papers in this trio also find overall consistency with vacuum GR, with more than 90% of the events being consistent with GR at the 90% credible level. While one of the ringdown analyses finds the GR value in the tails for its combined results, this may be due in part to catalog variance.",
-   "date": "2026-03-19",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Neil Cornish"
-    }
-   ],
-   "tags": [
-    "GW",
-    "LISA",
-    "data analysis"
-   ]
-  },
-  {
-   "id": "2603.19020",
-   "recid": "3131614",
-   "arxiv": "2603.19020",
-   "title": "GWTC-4.0: Tests of General Relativity. II. Parameterized Tests",
-   "authors": [
-    "A.G. Abac",
-    "I. Abouelfettouh",
-    "F. Acernese",
-    "K. Ackley",
-    "C. Adamcewicz",
-    "S. Adhicary",
-    "D. Adhikari",
-    "N. Adhikari"
-   ],
-   "author_count": 1785,
-   "collaborations": [
-    "LIGO Scientific",
-    "VIRGO",
-    "KAGRA"
-   ],
-   "categories": [
-    "gr-qc",
-    "astro-ph.HE"
-   ],
-   "abstract": "In this second of three papers on tests of general relativity (GR) applied to the compact binary coalescence signals in the 4th Gravitational-Wave Transient Catalog (GWTC-4.0), we present the results of the parameterized tests of GR and constraints on line-of-sight acceleration (LOSA). We include events up to and including the 1st part of the 4th observing run (O4a) of the LIGO-Virgo-KAGRA detectors. As in the other two papers in this series, we restrict our analysis to the 42 confident signals, measured by at least two detectors, that have FAR < 10^{-3}/yr from O4a, in addition to the 49 such events from previous observing runs. This paper focuses on the 8 tests that constrain parameterized deviations from the expected GR (or unaccelerated) values. These include modifications of post-Newtonian (PN) parameters, spin-induced quadrupole moments different from those of a binary black hole (BH), and possible dispersive or birefringent propagation effects. Overall, we find no evidence for physics beyond GR, for spin-induced quadrupole moments different from those of a Kerr BH in GR, or for LOSA, with more than 90% of the events including the null result (no deviation) within their 90% credible intervals. We discuss possible systematics affecting the other events and tests, even though they are statistically not surprising, given noise. The increased number of events analyzed allow us to improve the constraints on deviations from GR. For instance, for the PN coefficients, we improve the constraints by factors of 1.2-5.5, though some of this improvement is due to allowing the PN coefficient deviations to affect more of the waveform. We also provide illustrative translations to some modified theories. We update the bound on the graviton mass, at 90% credibility, to $m_g\\leq1.92\\times10^{-23}\\mathrm{eV}/c^2$. Many of the bounds on possible deviations derived from our events are the best to date.",
-   "date": "2026-03-19",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Neil Cornish"
-    }
-   ],
-   "tags": [
-    "GW",
-    "LISA",
-    "data analysis"
-   ]
-  },
-  {
    "id": "2603.18341",
    "recid": "3131589",
    "arxiv": "2603.18341",
@@ -7323,111 +6217,6 @@
    ]
   },
   {
-   "id": "2603.14168",
-   "recid": "3129525",
-   "arxiv": "2603.14168",
-   "title": "All-sky Searches for Continuous Gravitational Waves from Isolated Neutron Stars in the Data from the First Part of the Fourth LIGO-Virgo-KAGRA Observing Run",
-   "authors": [
-    "A.G. Abac",
-    "I. Abouelfettouh",
-    "F. Acernese",
-    "K. Ackley",
-    "A. Adam",
-    "C. Adamcewicz",
-    "S. Adhicary",
-    "D. Adhikari"
-   ],
-   "author_count": 1826,
-   "collaborations": [
-    "LIGO Scientific",
-    "VIRGO",
-    "KAGRA"
-   ],
-   "categories": [
-    "gr-qc"
-   ],
-   "abstract": "We present results from an all-sky search for continuous gravitational waves, using three different methods applied to the first eight months of LIGO data from the fourth LIGO-Virgo-KAGRA Collaboration s observing run. We aim at signals potentially emitted by rotating, non-axisymmetric isolated neutron star in the Milky Way. The analysis spans a frequency range from 20 Hz to 2000 Hz and accommodates frequency derivative magnitudes up to $10^{-8}$ Hz/s. No statistically significant periodic gravitational wave signals were detected. We establish 95% confidence-level (CL) frequentist upper limits on the dimensionless strain amplitudes. The most stringent population-averaged strain upper limits reach 9.7 $\\times$ $10^{-26}$ near 290 Hz, matching the best previous constraints from 250 to $\\sim$1700 Hz while extending coverage to a much broader spin-down range. At higher frequencies, the new limits improve upon previous results by factors of approximately $\\sim$1.6. These constraints are applied to three astrophysical scenarios: 1) the distribution of galactic neutron stars as a function of spin frequency and ellipticity; 2) the contribution of millisecond pulsars to the GeV excess near the galactic center; and 3) the possible dark matter fraction composed of nearby inspiraling primordial binary black holes with asteroid-scale masses.",
-   "date": "2026-03-15",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Neil Cornish"
-    }
-   ],
-   "tags": [
-    "GW",
-    "LISA",
-    "data analysis"
-   ]
-  },
-  {
-   "id": "2603.13145",
-   "recid": "3129148",
-   "arxiv": "2603.13145",
-   "title": "Conformal Vacuum of dS$_4\\times \\mathbb R$ with Oppositely Oriented Boundaries",
-   "authors": [
-    "Lucas K. Kovalsky",
-    "Shivesh Pathak",
-    "Kyle Ritchie"
-   ],
-   "author_count": 3,
-   "collaborations": [],
-   "categories": [
-    "hep-th"
-   ],
-   "abstract": "We derive a dS$_4 \\times \\mathbb R$ quotient spacetime that is asymptotically dS$_4$, where the quotient makes its past boundary oppositely oriented relative to its future boundary. This introduces a lightlike singularity that severs the antipodes of the spacetime and simplifies its global vacuum to a trivial product on antipodal static patches. We show that this state is conformal to the vacuum of an infinite orientable cover of a non-orientable AdS$_3$ spacetime with an S$^2$ bundle. The vacuum's separability extends to its holographic dual, which is a product of Cardy states. We find that this candidate dS$_4$ vacuum state is perturbatively unstable within quantum gravity due to a vanishing Hagedorn temperature.",
-   "date": "2026-03-13",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "cites",
-     "label": "Swampland"
-    }
-   ],
-   "tags": [
-    "strings",
-    "swampland"
-   ]
-  },
-  {
-   "id": "2603.13468",
-   "recid": "3129493",
-   "arxiv": "2603.13468",
-   "title": "M-theory on $S^1\\vee S^1$ as Type 0A",
-   "authors": [
-    "Zihni Kaan Baykara",
-    "Emilian Dudas",
-    "Cumrun Vafa"
-   ],
-   "author_count": 3,
-   "collaborations": [],
-   "categories": [
-    "hep-th"
-   ],
-   "abstract": "We propose an exotic geometric M-theory dual for the weak coupling Type 0A string: compactification on a sub-Planckian $S^1\\vee S^1$ (two circles connected at a point), where strong quantum effects lead to fields living on distinct resolutions of that space. Moreover we argue that tachyon condensation of the 0A theory corresponds to shrinking of one of the two circles leading to the IIA supersymmetric string. We use this and other dualities to provide an F-theoretic description of the axio-dilaton and the tachyonic field of Type 0B and argue for the existence of a strong coupling critical point of the potential using the resulting duality symmetry $Γ_0(2)\\subset SL(2,\\mathbb{Z})$ when tachyon field vanishes. The existence of this critical point can also be argued using conventional M-theory dualities. If this critical point is unique it is an unstable dS vacuum. Using this we propose a strong coupling conformal fixed point for a non-supersymmetric gauge theory in four dimensions living on coincident $D3^+-D3^-$branes of 0B. More generally we conjecture that the tachyon field can be identified with a pair of points on the torus parameterized by $z$ leading to the full duality group $SL(2,\\mathbb{Z})$ acting on $(z,τ)$. We find tantalizing hints that for both 0A and 0B the tachyon fields can be identified with the holonomy of a flat $SU(2)$ gauge field suggesting that we have two copies of the universe interacting with one another as if they are D-branes!",
-   "date": "2026-03-13",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "cites",
-     "label": "Swampland"
-    },
-    {
-     "kind": "cites",
-     "label": "Palti swampland review"
-    },
-    {
-     "kind": "author",
-     "label": "Cumrun Vafa"
-    }
-   ],
-   "tags": [
-    "strings",
-    "swampland"
-   ]
-  },
-  {
    "id": "2603.13470",
    "recid": "3129509",
    "arxiv": "2603.13470",
@@ -7487,80 +6276,6 @@
     "GW",
     "cosmology",
     "inflation"
-   ]
-  },
-  {
-   "id": "2603.11163",
-   "recid": "3128788",
-   "arxiv": "2603.11163",
-   "title": "Alice in Warpland: KK modes, Warped Compactifications and the Swampland",
-   "authors": [
-    "Salvatore Raucci",
-    "Ignacio Ruiz",
-    "Irene Valenzuela"
-   ],
-   "author_count": 3,
-   "collaborations": [],
-   "categories": [
-    "hep-th"
-   ],
-   "abstract": "We investigate the asymptotic behavior of Kaluza-Klein (KK) towers in warped compactifications to Minkowski space. Focusing on the overall decompactification limit, we derive the scaling of KK masses at large KK momentum for scalar fluctuations in lower-dimensional Planck units. In codimension-one warped backgrounds sourced by a higher-dimensional exponential potential, we solve explicitly for the internal profiles and obtain a closed expression for the exponential mass decay rate $λ_{\\rm KK}$ of the tower in terms of the moduli space distance. We find that warping reduces $λ_{\\rm KK}$ relative to the unwarped case, in such a way that sufficiently strong warping could in principle violate the Sharpened Distance Conjecture bound. Remarkably, this sharpened bound is still satisfied precisely when the higher-dimensional potential obeys the condition forbidding asymptotic accelerated expansion, establishing a direct link between the Sharpened Distance Conjecture and the Strong de Sitter condition in one higher dimension. We also argue that for higher-codimension warped backgrounds the asymptotic KK scaling remains unmodified.",
-   "date": "2026-03-11",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "cites",
-     "label": "Swampland"
-    },
-    {
-     "kind": "cites",
-     "label": "Palti swampland review"
-    }
-   ],
-   "tags": [
-    "strings",
-    "swampland"
-   ]
-  },
-  {
-   "id": "2603.11167",
-   "recid": "3128823",
-   "arxiv": "2603.11167",
-   "title": "Gravitational Wave Measurement of the $M_\\mathrm{BH}$-$M_\\mathrm{bulge}$ Intrinsic Scatter at High Redshift",
-   "authors": [
-    "Cayenne Matt",
-    "Kayhan Gültekin",
-    "Gabriella Agazie",
-    "Nikita Agarwal",
-    "Akash Anumarlapudi",
-    "Anne M. Archibald",
-    "Zaven Arzoumanian",
-    "Jeremy G. Baier"
-   ],
-   "author_count": 112,
-   "collaborations": [],
-   "categories": [
-    "astro-ph.HE",
-    "astro-ph.CO",
-    "astro-ph.GA"
-   ],
-   "abstract": "The observed GWB spectrum is higher in amplitude than model predictions by a factor of 2-3. Using a semi-analytic model, we evaluate the effect of a high-scatter supermassive black hole (SMBH) scaling relation ($M_\\mathrm{BH}$-$M_\\mathrm{bulge}$) on models of the nanohertz gravitational wave background (GWB). By implementing an intrinsic scatter of the $M_\\mathrm{BH}$-$M_\\mathrm{bulge}$ relation, which is larger at higher redshift, but matches local observations, we find that the amplitude of GWB models increases to be consistent with the low-frequency end of the GWB spectrum. This amplitude increase is not uniform across frequencies, a strongly evolving scatter preferentially increases the number density of the most massive SMBHs which, in the GWB spectrum, minimizes the strength of the low-frequency turnover. Our models with positively evolving intrinsic scatter can reproduce the electromagnetically observed overmassive SMBHs at $4 < z < 6$ without changing the $M_\\mathrm{BH}$-$M_\\mathrm{bulge}$ normalization though we find that including moderate normalization evolution marginally improves fits to the GWB data. We conclude that the $M_\\mathrm{BH}$-$M_\\mathrm{bulge}$ relation which best describes the available GWB and electromagnetic data sets has intrinsic scatter that evolves as $\\varepsilon(z) = \\varepsilon_0 + (0.56 \\pm 0.4) \\log_{10}(1 + z)$ and normalization that evolves as $α(z) = α_0 (1 + z)^{0.84 \\pm 0.35}$. The results of this work imply that the $M_\\mathrm{BH}$-$M_\\mathrm{bulge}$ relation we see today is not universal throughout cosmic time and that a diversity of seeding models and growth mechanisms may be at play in the early stages of SMBH-galaxy evolution.",
-   "date": "2026-03-11",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Joseph Romano"
-    },
-    {
-     "kind": "author",
-     "label": "Neil Cornish"
-    }
-   ],
-   "tags": [
-    "GW",
-    "LISA",
-    "data analysis"
    ]
   },
   {
@@ -8061,37 +6776,6 @@
    ]
   },
   {
-   "id": "2602.20075",
-   "recid": "3122932",
-   "arxiv": "2602.20075",
-   "title": "Addressing leakage and mode suppression in angular power spectrum estimation for gravitational-wave backgrounds using pulsar timing arrays",
-   "authors": [
-    "Deepali Agarwal",
-    "Joseph D. Romano",
-    "Yacine Ali-Haïmoud",
-    "Tristan L. Smith"
-   ],
-   "author_count": 4,
-   "collaborations": [],
-   "categories": [
-    "gr-qc",
-    "astro-ph.CO"
-   ],
-   "abstract": "Mapping gravitational-wave background (GWB) anisotropy with pulsar timing arrays (PTAs) is affected by harmonic-space mode suppression and mode coupling arising from an array's nonuniform sky response. Spherical harmonic expansions must be truncated at finite multipole l_max^rec, often set to l_max^N_pair$\\equiv {\\rm int}\\left[\\sqrt{\\text{N_pair}}-1\\right]$, where N_pair is the number of distinct pulsar pairs in an array. This choice is motivated by the counting argument that cross-correlations provide at most N_pair independent constraints. We obtain the multipole l_max^res corresponding to the maximum informative angular scale of a PTA. It is defined such that expansions to l_max^res (approximately) span the space of \"observable skies\" encoded in the N_pair eigenmaps of the Fisher information matrix, and therefore depends on the array configuration. We explicitly show that GWB power contained in multipoles l$\\gtrsim$l_max^res do not significantly affect analyses that use expansions out to l_max^res, because the PTA response acts as a low-pass filter. In contrast, truncating at l_max^rec< l_max^res leads to leakage of small-scale angular power from l_max^rec<l$\\leq$l_max^res. Even choosing l_max^rec=l_max^res, the standard frequentist estimator of the angular power spectrum C_l remains biased by the modes unobservable by the array. Although we can (partially) debias the standard estimator -- improving its agreement with an injected spectrum -- this reduction in bias comes at the expense of an increase in variance, particularly for poorly constrained modes with l$\\gg$l_eff. We therefore recommend: (i) using l_max^res for PTA analyses involving spherical harmonic expansions, and (ii) using the debiased standard estimator for C_l recovery, but only out to multipoles l<l_eff ($\\ll$l_max^res) corresponding to sufficiently constrained modes.",
-   "date": "2026-02-23",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Joseph Romano"
-    }
-   ],
-   "tags": [
-    "GW",
-    "data analysis"
-   ]
-  },
-  {
    "id": "2602.19118",
    "recid": "3122878",
    "arxiv": "2602.19118",
@@ -8412,38 +7096,6 @@
     "GW",
     "LISA",
     "data analysis"
-   ]
-  },
-  {
-   "id": "2602.07117",
-   "recid": "3117700",
-   "arxiv": "2602.07117",
-   "title": "The Cosmological Grassmannian",
-   "authors": [
-    "Mattia Arundine",
-    "Daniel Baumann",
-    "Mang Hei Gordon Lee",
-    "Guilherme L. Pimentel",
-    "Facundo Rost"
-   ],
-   "author_count": 5,
-   "collaborations": [],
-   "categories": [
-    "hep-th",
-    "gr-qc"
-   ],
-   "abstract": "We introduce the orthogonal Grassmannian as a novel kinematic space for describing correlators of massless spinning fields in de Sitter space. By automatically encoding the constraints of conformal symmetry and current conservation, the formalism drastically simplifies these correlators. We show that three-point functions are fixed by little group covariance and take the same form as the corresponding Schwinger-parameterized correlators in twistor space. The power of the Grassmannian approach is especially evident for four-point functions, which require dynamical input beyond kinematics. We demonstrate that unitarity enforces the same factorization properties as for scattering amplitudes and use these to bootstrap the four-point functions in several non-trivial examples, including Yang-Mills theory and gravity. We find expressions that are astonishingly simple and reveal a close connection to the corresponding scattering amplitudes. Our results suggest that the Grassmannian provides the natural language for spinning correlators in de Sitter space and illuminates their geometric origin.",
-   "date": "2026-02-06",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Daniel Baumann"
-    }
-   ],
-   "tags": [
-    "cosmology",
-    "inflation"
    ]
   },
   {
@@ -8777,42 +7429,6 @@
    ]
   },
   {
-   "id": "2601.16761",
-   "recid": "3110918",
-   "arxiv": "2601.16761",
-   "title": "Illuminating the Physics of Cosmic Origin and Evolution: A UK Space Frontiers 2035 White Paper",
-   "authors": [
-    "Florian Beutler",
-    "Eva-Maria Mueller",
-    "Seshadri Nadathur",
-    "Yun Wang",
-    "David Alonso",
-    "Tessa Baker",
-    "Sownak Bose",
-    "Rebecca Canning"
-   ],
-   "author_count": 64,
-   "collaborations": [],
-   "categories": [
-    "astro-ph.IM",
-    "astro-ph.CO",
-    "astro-ph.GA"
-   ],
-   "abstract": "Understanding the Universe's origins and evolution remains one of the most fundamental challenges in modern cosmology. This white paper explores three key science priorities in this field: unravelling the physics of cosmic inflation, investigating the accelerating expansion of the Universe, and precisely measuring the sum of the neutrino masses. Achieving these goals requires a dedicated survey to map the large-scale structure at high redshift in unprecedented detail. We describe how this can be achieved through a mission concept called SIRMOS, providing a high-throughput, highly multiplexed spectroscopic capability to obtain accurate redshifts for over 100 million galaxies over a wide sky area. Such a survey would leverage the deepest existing wide-area photometric catalogues for targeting, with spectra offering continuous 1.25-2.5~$μ$m wavelength coverage at moderate resolution, allowing precise redshift measurements in the $1<z<4$ range with minimal bias. We outline the scientific opportunities this presents. Recent years have seen significant advances in instrumentation, including digital micromirror devices, complex telescope mirrors, large detector arrays, and data processing pipelines. While these technologies have been demonstrated in terrestrial applications, such a survey is a unique opportunity to apply these proven capabilities in space to address fundamental questions in cosmology. Participation in such a mission will simultaneously deliver a compelling science case, help align UK Space Agency and STFC strategies, demonstrate the UK's growing capability in end-to-end space missions, and strengthen the national space economy through high-value industrial participation.",
-   "date": "2026-01-23",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "David Wands"
-    }
-   ],
-   "tags": [
-    "cosmology",
-    "inflation"
-   ]
-  },
-  {
    "id": "2601.15489",
    "recid": "3110485",
    "arxiv": "2601.15489",
@@ -8838,51 +7454,6 @@
    "tags": [
     "strings",
     "swampland"
-   ]
-  },
-  {
-   "id": "2601.15365",
-   "recid": "3110484",
-   "arxiv": "2601.15365",
-   "title": "LISA and the LISA Science Team",
-   "authors": [
-    "Anna Heffernan",
-    "Chiara Caprini",
-    "Neil Cornish",
-    "Jonathan Gair",
-    "Catia Grimani",
-    "Zoltan Haiman",
-    "Erin Kara",
-    "Nikos Karnesis"
-   ],
-   "author_count": 22,
-   "collaborations": [],
-   "categories": [
-    "astro-ph.IM",
-    "astro-ph.GA",
-    "gr-qc"
-   ],
-   "abstract": "LISA, the Laser Interferometer Space Antenna, due to launch mid-2035, is a large class space mission by the European Space Agency (ESA). In partnership with NASA and ESA-member states, ESA is on track to launch what is expected to be the first space-based gravitational wave detector. By hosting detectors in space, one gains access to a lower frequency band of gravitational wave sources and, with them, a plethora of new science. To maximise this scientific gain, ESA and NASA selected 20 scientists for the LISA Science Team to carry out and/or lead the necessary actions leading up to LISA's launch. We give a short overview and update of the LISA mission, its science objectives and related waveforms, as well as the work of the LISA Science Team as of April 2026.",
-   "date": "2026-01-21",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Neil Cornish"
-    },
-    {
-     "kind": "author",
-     "label": "Nikos Karnesis"
-    },
-    {
-     "kind": "author",
-     "label": "Antoine Petiteau"
-    }
-   ],
-   "tags": [
-    "GW",
-    "LISA",
-    "data analysis"
    ]
   },
   {
@@ -8937,52 +7508,6 @@
    ],
    "tags": [
     "cosmology"
-   ]
-  },
-  {
-   "id": "2601.09481",
-   "recid": "3105013",
-   "arxiv": "2601.09481",
-   "title": "The NANOGrav 15 yr Data Set: Piecewise Power-Law Reconstruction of the Gravitational-Wave Background",
-   "authors": [
-    "Gabriella Agazie",
-    "Akash Anumarlapudi",
-    "Anne M. Archibald",
-    "Zaven Arzoumanian",
-    "Jeremy G. Baier",
-    "Paul T. Baker",
-    "Bence Bécsy",
-    "Amit Bhoonah"
-   ],
-   "author_count": 111,
-   "collaborations": [],
-   "categories": [
-    "astro-ph.HE",
-    "astro-ph.CO",
-    "gr-qc",
-    "hep-ph"
-   ],
-   "abstract": "The NANOGrav 15-year (NG15) data set provides evidence for a gravitational-wave background (GWB) signal at nanohertz frequencies, which is expected to originate either from a cosmic population of inspiraling supermassive black-hole binaries or new particle physics in the early Universe. A firm identification of the source of the NG15 signal requires an accurate reconstruction of its frequency spectrum. In this paper, we provide such a spectral characterization of the NG15 signal based on a piecewise power-law (PPL) ansatz that strikes a balance between existing alternatives in the literature. Our PPL reconstruction is more flexible than the standard constant-power-law model, which describes the GWB spectrum in terms of only two parameters: an amplitude A and a spectral index gamma. Concurrently, it better approximates physically realistic GWB spectra -- especially those of cosmological origin -- than the free spectral model, since the latter allows for arbitrary variations in the GWB amplitude from one frequency bin to the next. Our PPL reconstruction of the NG15 signal relies on individual PPL models with a fixed number of internal nodes (i.e., constant power law, broken power law, doubly broken power law, etc.) that are ultimately combined in a Bayesian model average. The data products resulting from our analysis provide the basis for fast refits of spectral GWB models.",
-   "date": "2026-01-14",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "cites",
-     "label": "SGWBinner release"
-    },
-    {
-     "kind": "author",
-     "label": "Joseph Romano"
-    },
-    {
-     "kind": "author",
-     "label": "Neil Cornish"
-    }
-   ],
-   "tags": [
-    "GW",
-    "LISA",
-    "data analysis"
    ]
   },
   {
@@ -9199,35 +7724,6 @@
    ]
   },
   {
-   "id": "inspire:3217096",
-   "recid": "3217096",
-   "arxiv": null,
-   "title": "Beyond the Tensionless Limit",
-   "authors": [
-    "Beat Nairz"
-   ],
-   "author_count": 1,
-   "collaborations": [],
-   "categories": [],
-   "abstract": "In this thesis we study the duality of a two-dimensional conformal field theory with string theory on three-dimensional Anti-de Sitter space. In particular, we analyse the correspondence around the tensionless point, where an exact duality has been found. We review aspects of this correspondence and describe a manifestly supersymmetric formulation.We then consider a deformation of the conformal field theory which holographically corresponds to turning on Ramond-Ramond flux in the string background. We describe the calculation of anomalous dimensions and find evidence that the deformation is integrable.In a certain limit of the theory we identify an integrable structure controlling the perturbation. Utilising this structure we are able to find results at all order in the coupling. We find dispersion relations and an integrable S-matrix which we compare to string theory expectations.Analysing the form of the primaries in the deformed theory, we are able to identify the holographic duals of the geometric directions in the Anti-de Sitter space.",
-   "date": "2026-01-01",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "cites",
-     "label": "Swampland"
-    },
-    {
-     "kind": "cites",
-     "label": "Palti swampland review"
-    }
-   ],
-   "tags": [
-    "strings",
-    "swampland"
-   ]
-  },
-  {
    "id": "inspire:3156330",
    "recid": "3156330",
    "arxiv": null,
@@ -9402,40 +7898,6 @@
     {
      "kind": "cites",
      "label": "SGWBinner release"
-    }
-   ],
-   "tags": [
-    "GW",
-    "LISA",
-    "data analysis"
-   ]
-  },
-  {
-   "id": "inspire:3141339",
-   "recid": "3141339",
-   "arxiv": null,
-   "title": "A pipeline for searching and fitting instrumental glitches in LISA data",
-   "authors": [
-    "Martina Muratore",
-    "Jonathan Gair",
-    "Olaf Hartwig",
-    "Michael L. Katz",
-    "Alexandre Toubiana"
-   ],
-   "author_count": 5,
-   "collaborations": [],
-   "categories": [],
-   "abstract": "The Laser Interferometer Space Antenna (LISA) relies on robust data analysis pipelines capable of disentangling astrophysical signals from instrumental artefacts. A major challenge will be transient disturbances, or glitches, similar to those observed in LISA Pathfinder. We present a Bayesian pipeline, based on Reversible Jump Markov Chain Monte Carlo and parallel tempering, that simultaneously searches for and characterises multiple glitches while recovering instrumental noise and astrophysical sources such as Massive Black Hole Binaries (MBHBs). We show that the pipeline can fit diverse glitch morphologies, and we apply it to a light version of the ‘Spritz’ Data Challenge, where gaps and galactic binaries have been removed from the data. Similarly, the MBHB signal in the ‘Spritz’ data set has been replaced with a model more suitable for our analysis. Our results demonstrate that high-SNR artefacts can bias MBHBs parameter estimation if unmodelled, but accurate recovery is achieved when simultaneously fitting for glitches, noise, and MBHBs signals. This represents a significant step towards a reliable global fit analysis for LISA, providing guidelines for glitch searches and parameter estimation strategies.",
-   "date": "2026-01-01",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Martina Muratore"
-    },
-    {
-     "kind": "author",
-     "label": "Olaf Hartwig"
     }
    ],
    "tags": [
@@ -9680,35 +8142,6 @@
    ]
   },
   {
-   "id": "2512.19668",
-   "recid": "3094863",
-   "arxiv": "2512.19668",
-   "title": "Are Primordial Black Holes Truly Fine-Tuned?",
-   "authors": [
-    "A.J. Iovino",
-    "A. Riotto"
-   ],
-   "author_count": 2,
-   "collaborations": [],
-   "categories": [
-    "astro-ph.CO",
-    "gr-qc",
-    "hep-ph"
-   ],
-   "abstract": "Single-field inflationary models which generate primordial black holes through the enhancement of the curvature primordial power at small scales are commonly criticized and frequently dismissed because they require a large amount of fine-tuning in the parameters setting the ultra slow-roll phase. However, the standardly adopted definition of fine-tuning has a clear drawback: the more the primordial black hole abundance is small and cosmologically harmless, the larger the parameter space is fine-tuned. A well-defined indicator of fine-tuning should assign large values to scenarios requiring significant parameter adjustment to reproduce the desired primordial black hole abundance, while yielding values of order unity in cases governed by standard sensitivity. Motivated by such arguments, we use the (modified version of) Wilson's naturalness criterion for quantifying the fine-tuning and naturalness and we show that the primordial black hole models are not technically unnatural.",
-   "date": "2025-12-22",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "cites",
-     "label": "Palma BH"
-    }
-   ],
-   "tags": [
-    "inflation"
-   ]
-  },
-  {
    "id": "inspire:3103468",
    "recid": "3103468",
    "arxiv": null,
@@ -9734,46 +8167,6 @@
    "tags": [
     "strings",
     "swampland"
-   ]
-  },
-  {
-   "id": "2512.17990",
-   "recid": "3094760",
-   "arxiv": "2512.17990",
-   "title": "Constraints on gravitational waves from the 2024 Vela pulsar glitch",
-   "authors": [
-    "A.G. Abac",
-    "I. Abouelfettouh",
-    "F. Acernese",
-    "K. Ackley",
-    "C. Adamcewicz",
-    "S. Adhicary",
-    "D. Adhikari",
-    "N. Adhikari"
-   ],
-   "author_count": 1774,
-   "collaborations": [
-    "LIGO Scientific",
-    "VIRGO",
-    "KAGRA"
-   ],
-   "categories": [
-    "gr-qc",
-    "astro-ph.HE"
-   ],
-   "abstract": "Among known neutron stars, the Vela pulsar is one of the best targets for gravitational-wave searches. It is also one of the most prolific in terms of glitches, sudden frequency changes in a pulsar's rotation. Such glitches could cause a variety of transient gravitational-wave signals. Here we search for signals associated with a Vela glitch on 29 April 2024 in data of the two LIGO detectors from the fourth LIGO--Virgo--KAGRA observing run. We search both for seconds-scale burst-like emission, primarily from fundamental (f-)mode oscillations, and for longer quasi-monochromatic transients up to four months in duration, primarily from quasi-static quadrupolar deformations. We find no significant detection candidates, but for the first time we set direct observational upper limits on gravitational strain amplitude that are stricter than what can be indirectly inferred from the overall glitch energy scale. We discuss the short- and long-duration observational constraints in the context of specific emission models. These results demonstrate the potential of gravitational-wave probes of glitching pulsars as detector sensitivity continues to improve.",
-   "date": "2025-12-19",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Neil Cornish"
-    }
-   ],
-   "tags": [
-    "GW",
-    "LISA",
-    "data analysis"
    ]
   },
   {
@@ -9868,46 +8261,6 @@
    "tags": [
     "strings",
     "swampland"
-   ]
-  },
-  {
-   "id": "2512.16347",
-   "recid": "3094005",
-   "arxiv": "2512.16347",
-   "title": "GWTC-4.0: Searches for Gravitational-Wave Lensing Signatures",
-   "authors": [
-    "A.G. Abac",
-    "I. Abouelfettouh",
-    "F. Acernese",
-    "K. Ackley",
-    "C. Adamcewicz",
-    "S. Adhicary",
-    "D. Adhikari",
-    "N. Adhikari"
-   ],
-   "author_count": 1772,
-   "collaborations": [
-    "LIGO Scientific",
-    "VIRGO",
-    "KAGRA"
-   ],
-   "categories": [
-    "gr-qc",
-    "astro-ph.CO"
-   ],
-   "abstract": "Gravitational waves can be gravitationally lensed by massive objects along their path. Depending on the lens mass and the lens--source geometry, this can lead to the observation of a single distorted signal or multiple repeated events with the same frequency evolution. We present the results for gravitational-wave lensing searches on the data from the first part of the fourth LIGO--Virgo--KAGRA observing run (O4a). We search for strongly lensed events in the newly acquired data by (1) searching for an overall phase shift present in an image formed at a saddle point of the lens potential, (2) looking for pairs of detected candidates with consistent frequency evolution, and (3) identifying sub-threshold counterpart candidates to the detected signals. Beyond strong lensing, we also look for lensing-induced distortions in all detected signals using an isolated point-mass model. We do not find evidence for strongly lensed gravitational-wave signals and use this result to constrain the rate of detectable strongly lensed events and the merger rate density of binary black holes at high redshift. In the search for single distorted lensed signals, we find one outlier: GW231123_135430, for which we report more detailed investigations. While this event is interesting, the associated waveform uncertainties make its interpretation complicated, and future observations of the populations of binary black holes and of gravitational lenses will help determine the probability that this event could be lensed.",
-   "date": "2025-12-18",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Neil Cornish"
-    }
-   ],
-   "tags": [
-    "GW",
-    "LISA",
-    "data analysis"
    ]
   },
   {
@@ -10416,49 +8769,6 @@
    ]
   },
   {
-   "id": "2512.07930",
-   "recid": "3091096",
-   "arxiv": "2512.07930",
-   "title": "Inflationary Particle Production and the Swampland",
-   "authors": [
-    "Dieter Lüst",
-    "Joaquin Masias",
-    "Mauro Pieroni",
-    "Marco Scalisi"
-   ],
-   "author_count": 4,
-   "collaborations": [],
-   "categories": [
-    "hep-th",
-    "astro-ph.CO"
-   ],
-   "abstract": "We investigate the impact of particle production during inflation in scenarios where an infinite tower of states features a mass scale that decreases exponentially along the inflationary trajectory. Such couplings naturally arise in string effective field theories and are in fact motivated by the Swampland Distance Conjecture (SDC). We show that the corrections to inflationary observables sourced by the tower scale as $(H/Λ_{\\text{sp}})^{2+p}$, with $H$ being the Hubble scale, $Λ_{\\text{sp}}$ being the species scale, that is the quantum gravity cut-off, and $p\\geq 1$ characterizes the density of states in the tower. As a result, in gravitationally weakly coupled cosmological effective theories, the tower-induced contributions are suppressed relative to the standard single-field predictions, leaving the inflationary phenomenology essentially unchanged. We demonstrate this explicitly across a set of well-motivated inflationary potentials, and we compare the resulting predictions with the most recent observational constraints, including those from the Atacama Cosmology Telescope.",
-   "date": "2025-12-08",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "cites",
-     "label": "Swampland"
-    },
-    {
-     "kind": "cites",
-     "label": "Palti swampland review"
-    },
-    {
-     "kind": "author",
-     "label": "Mauro Pieroni"
-    }
-   ],
-   "tags": [
-    "GW",
-    "LISA",
-    "cosmology",
-    "data analysis",
-    "strings",
-    "swampland"
-   ]
-  },
-  {
    "id": "2512.07929",
    "recid": "3091060",
    "arxiv": "2512.07929",
@@ -10541,39 +8851,6 @@
     "GW",
     "LISA",
     "data analysis"
-   ]
-  },
-  {
-   "id": "2512.04151",
-   "recid": "3089315",
-   "arxiv": "2512.04151",
-   "title": "Counting AdS Vacua",
-   "authors": [
-    "Zihni Kaan Baykara",
-    "Alessandro Tomasiello",
-    "Cumrun Vafa"
-   ],
-   "author_count": 3,
-   "collaborations": [],
-   "categories": [
-    "hep-th"
-   ],
-   "abstract": "We study the 'number' $\\mathfrak{N}(μ)$ of AdS vacua with a UV cut off $ μ$. It has been proposed that this number is finite. We find evidence that $\\mathfrak{N}(μ)\\sim a \\ μ^{-b}$ as $μ\\rightarrow 0$ for some constants $a$ and $b$ of $O(1)$ in Planck units that may depend on dimension and the number of supercharges. For this result to hold it is crucial to integrate over the volume of massless and tachyonic directions of AdS which corresponds to the volume of the space of marginal and relevant deformations of the dual CFT. We are led to the surprising prediction that theories with large number of light moduli contribute very little to the volume measure among all theories. We also speculate about the dS case leading to the number of quasi-dS vacua of the order of $Λ^{-α}$ for some $O(1)$ parameter $α$.",
-   "date": "2025-12-03",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "cites",
-     "label": "Swampland"
-    },
-    {
-     "kind": "author",
-     "label": "Cumrun Vafa"
-    }
-   ],
-   "tags": [
-    "strings",
-    "swampland"
    ]
   },
   {
@@ -10766,46 +9043,6 @@
    ]
   },
   {
-   "id": "2511.19911",
-   "recid": "3086383",
-   "arxiv": "2511.19911",
-   "title": "Search for planetary-mass ultra-compact binaries using data from the first part of the LIGO--Virgo--KAGRA fourth observing run",
-   "authors": [
-    "A.G. Abac",
-    "I. Abouelfettouh",
-    "F. Acernese",
-    "K. Ackley",
-    "C. Adamcewicz",
-    "S. Adhicary",
-    "D. Adhikari",
-    "N. Adhikari"
-   ],
-   "author_count": 1773,
-   "collaborations": [
-    "KAGRA",
-    "VIRGO",
-    "LIGO Scientific"
-   ],
-   "categories": [
-    "gr-qc",
-    "astro-ph.CO"
-   ],
-   "abstract": "We present a search for gravitational waves from inspiraling, planetary-mass ultra-compact binaries using data from the first part of the fourth observing run of LIGO, Virgo and KAGRA. Finding no evidence of such systems, we determine the maximum distance reach for such objects and their merger rate densities, independently of how they could have formed. Then, we identify classes of primordial black-hole mass distributions for which these rate limits can be translated into relevant constraints on the mass distribution of primordial black holes, assuming that they compose all of dark matter, in the mass range $[10^{-6},10^{-3}]M_\\odot$. Our constraints are consistent with existing microlensing results in the planetary-mass range, and provide a complementary probe to sub-solar mass objects.",
-   "date": "2025-11-25",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Neil Cornish"
-    }
-   ],
-   "tags": [
-    "GW",
-    "LISA",
-    "data analysis"
-   ]
-  },
-  {
    "id": "2601.07716",
    "recid": "3103406",
    "arxiv": "2601.07716",
@@ -10887,45 +9124,6 @@
    "tags": [
     "strings",
     "swampland"
-   ]
-  },
-  {
-   "id": "2511.16863",
-   "recid": "3085518",
-   "arxiv": "2511.16863",
-   "title": "All-sky search for continuous gravitational-wave signals from unknown neutron stars in binary systems in the first part of the fourth LIGO-Virgo-KAGRA observing run",
-   "authors": [
-    "A.G. Abac",
-    "I. Abouelfettouh",
-    "F. Acernese",
-    "K. Ackley",
-    "C. Adamcewicz",
-    "S. Adhicary",
-    "D. Adhikari",
-    "N. Adhikari"
-   ],
-   "author_count": 1765,
-   "collaborations": [
-    "LIGO Scientific",
-    "VIRGO",
-    "KAGRA"
-   ],
-   "categories": [
-    "gr-qc"
-   ],
-   "abstract": "We present the results of a blind all-sky search for continuous gravitational-wave signals from neutron stars in binary systems using data from the first part of the fourth observing run (O4a) using LIGO detectors data. Rapidly rotating, non-axisymmetric neutron stars are expected to emit continuous gravitational waves, whose detection would significantly improve our understanding of the galactic neutron star population and matter under extreme conditions, while also providing valuable tests of general relativity. Neutron stars in binary systems likely constitute a substantial fraction of the unobserved galactic population and, due to potential mass accretion, may emit stronger gravitational-wave signals than their isolated counterparts. This search targets signals from neutron stars with frequencies in the 100-350 Hz range, with orbital periods between 7 and 15 days and projected semi-major axes between 5 and 15 light-seconds. The analysis employs the GPU-accelerated fasttracks pipeline. No credible astrophysical signals were identified, and, in the absence of a detection, we report search sensitivity estimates on the population of neutron stars in binary systems in the Milky Way.",
-   "date": "2025-11-21",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Neil Cornish"
-    }
-   ],
-   "tags": [
-    "GW",
-    "LISA",
-    "data analysis"
    ]
   },
   {
@@ -11025,35 +9223,6 @@
     "GW",
     "cosmology",
     "inflation"
-   ]
-  },
-  {
-   "id": "2511.13813",
-   "recid": "3084473",
-   "arxiv": "2511.13813",
-   "title": "Elementary Constituents Conjecture",
-   "authors": [
-    "Vinicius Nevoa",
-    "Sanjay Raman",
-    "Cumrun Vafa"
-   ],
-   "author_count": 3,
-   "collaborations": [],
-   "categories": [
-    "hep-th"
-   ],
-   "abstract": "In this note, we conjecture and provide evidence that quantum gravity cobordism classes are trivialized by elementary generators with tension at most order 1 in Planck units. Motivated by the attractor mechanism and a number of key examples, we propose that there is always a regime in the field space of the EFT in which the intrinsic tension of such an object is at most Planckian. This work brings together kinematic and dynamical aspects of cobordism defects in the context of the Swampland program.",
-   "date": "2025-11-17",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Cumrun Vafa"
-    }
-   ],
-   "tags": [
-    "strings",
-    "swampland"
    ]
   },
   {
@@ -11246,71 +9415,6 @@
    "tags": [
     "cosmology",
     "inflation"
-   ]
-  },
-  {
-   "id": "2611.11292",
-   "recid": "3226481",
-   "arxiv": "2611.11292",
-   "title": "Rapid, High-Precision Numerical Evaluation of Multiloop Feynman Diagrams",
-   "authors": [
-    "Richard Easther"
-   ],
-   "author_count": 1,
-   "collaborations": [],
-   "categories": [
-    "hep-ph"
-   ],
-   "abstract": "We numerically evaluate multiloop Feynman diagrams by using Sinc function approximations to transform the integrals into rapidly convergent, multidimensional sums. We compare the efficiency of this approach to Monte Carlo evaluations of electron g-2 terms. We show that the two strategies reach parity at precisions of around 1% for the full sets of three and four loop diagrams. Beyond this level Sinc function methods are dramatically faster - computing 3-loop integrals to six digit precision takes minutes whereas Monte Carlo timings map to years. We show that the method can evaluate individual 5-loop g-2 integrals and discuss extrapolation techniques that would further improve performance. We note that the method appears to be applicable to more general diagrams.",
-   "date": "2026-11-08",
-   "added": "2026-11-16T16:50:52+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Richard Easther"
-    }
-   ],
-   "tags": [
-    "cosmology",
-    "inflation"
-   ]
-  },
-  {
-   "id": "2611.10116",
-   "recid": "3226344",
-   "arxiv": "2611.10116",
-   "title": "Scale-separated quasi-dS and the Swampland",
-   "authors": [
-    "Rafael Álvarez-García",
-    "Ivano Basile",
-    "Shi Chen",
-    "Cumrun Vafa"
-   ],
-   "author_count": 4,
-   "collaborations": [],
-   "categories": [
-    "hep-th"
-   ],
-   "abstract": "Ideas from the Swampland program (dS conjecture and TCC) suggest that it is impossible to obtain solutions of string theory/M-theory in the weak-coupling regions describing our current universe, with $V>0$, $\\|\\nabla V\\|/V < 2/\\sqrt{d-2}$ and $V \\ll m^2$ (scale-separated \"quasi-dS\") where $m$ is the mass of the light tower. We test this expectation in M-theory compactifications and find that even after including the quantum effect of Casimir energy, for hyperbolic and (rigid) Riemann-flat manifolds, de Sitter critical points under EFT control are excluded: the slope of the potential cannot drop below the asymptotic value predicted by the TCC $\\|\\nabla V\\|/V\\gtrsim 2/\\sqrt{d-2}$ except perhaps in an order-one region in the bulk of moduli space, where EFT control is lost. At the parametric level, our results hold at one-loop level in supergravity; using the scalar-field Casimir energy as a proxy, we also obtain explicit numerical bounds to provide a ballpark estimate of how much control one can expect to achieve in such settings.",
-   "date": "2026-11-06",
-   "added": "2026-11-16T16:50:52+00:00",
-   "why": [
-    {
-     "kind": "cites",
-     "label": "Swampland"
-    },
-    {
-     "kind": "cites",
-     "label": "Palti swampland review"
-    },
-    {
-     "kind": "author",
-     "label": "Cumrun Vafa"
-    }
-   ],
-   "tags": [
-    "strings",
-    "swampland"
    ]
   },
   {
@@ -11633,33 +9737,6 @@
    ]
   },
   {
-   "id": "2610.41823",
-   "recid": "3221665",
-   "arxiv": "2610.41823",
-   "title": "Primordial black holes and gravitational waves from aligned axion inflation",
-   "authors": [
-    "Nadir Ijaz"
-   ],
-   "author_count": 1,
-   "collaborations": [],
-   "categories": [
-    "astro-ph.CO",
-    "hep-ph"
-   ],
-   "abstract": "We study the production of primordial black holes (PBHs) and scalar-induced gravitational waves (SIGWs) in aligned axion inflation through the transition between two stages of inflation. The first stage proceeds along a metastable trajectory and ends when this trajectory loses stability, causing the fields to turn towards the attractor of the second inflationary stage. During the transition, coupled adiabatic--entropy evolution produces a localized enhancement of the curvature power spectrum. We compute the PBH abundance from this spectrum assuming Gaussian primordial curvature perturbations and using the nonlinear compaction-function formalism with a spectrum-dependent collapse threshold and critical collapse. Representative benchmark solutions yield asteroid-mass PBHs with a potentially significant dark-matter abundance, together with an associated SIGW background.",
-   "date": "2026-10-30",
-   "added": "2026-11-16T16:50:52+00:00",
-   "why": [
-    {
-     "kind": "cites",
-     "label": "Palma BH"
-    }
-   ],
-   "tags": [
-    "inflation"
-   ]
-  },
-  {
    "id": "2610.39804",
    "recid": "3220465",
    "arxiv": "2610.39804",
@@ -11903,37 +9980,6 @@
    ]
   },
   {
-   "id": "2610.31226",
-   "recid": "3218146",
-   "arxiv": "2610.31226",
-   "title": "Clarifications on black/white hole metastable relics as dark matter",
-   "authors": [
-    "Aurélien Barrau",
-    "Margaux Gajocha",
-    "Killian Martineau",
-    "Martin Teuscher",
-    "Jamy-Jayme Thézier",
-    "Ruth Durrer"
-   ],
-   "author_count": 6,
-   "collaborations": [],
-   "categories": [
-    "gr-qc"
-   ],
-   "abstract": "The idea that the evaporation of black holes could end around the Planck mass and lead to relics possibly accounting for dark matter is quite old. In this article we focus on new models where the relics are metastable, typically with a lifetime of order $M^5$, where $M$ is the initial mass of the black hole. We show that those relics would actually be quite luminous, radiating -- possibly as much as the stars -- in the optical or UV band. We explicitly construct a proposal for their direct detection.",
-   "date": "2026-10-22",
-   "added": "2026-11-16T16:50:52+00:00",
-   "why": [
-    {
-     "kind": "cites",
-     "label": "Palma BH"
-    }
-   ],
-   "tags": [
-    "inflation"
-   ]
-  },
-  {
    "id": "2610.31665",
    "recid": "3218222",
    "arxiv": "2610.31665",
@@ -12023,39 +10069,6 @@
    "tags": [
     "strings",
     "swampland"
-   ]
-  },
-  {
-   "id": "2610.29885",
-   "recid": "3217435",
-   "arxiv": "2610.29885",
-   "title": "Cosmological Gravitational Wave Collider Physics",
-   "authors": [
-    "Sukannya Bhattacharya",
-    "Matteo Fasiello",
-    "Anish Ghoshal",
-    "Gianmassimo Tasinato"
-   ],
-   "author_count": 4,
-   "collaborations": [],
-   "categories": [
-    "astro-ph.CO",
-    "hep-ph",
-    "hep-th"
-   ],
-   "abstract": "Primordial tensor non-Gaussianity can probe massive particles present during inflation. We investigate this possibility in an effective field theory where the massless graviton mixes with the helicity-two mode of an additional massive spin-two field $σ_{ij}$ with cubic self-interactions. For constant sound speed, we compute the leading tensor power-spectrum correction and the tree-level bispectrum, finding novel analytical expressions for these quantities. In the $m_σ>3H/2$ regime, we find a nonanalytic squeezed contribution that exhibits logarithmic oscillations with characteristic dependence $(k_L/k_S)^{3/2\\pm iμ}$, where $μ=\\sqrt{m_σ^2/H^2-9/4}$. The oscillation frequency is set by the mass $m_σ$, while the polarisation contractions determine the relative amplitudes of the different graviton helicity configurations. The same mixing generates corrections to the power spectrum and the bispectrum. We derive the associated quadrupolar modulation of short-scale tensor power spectrum and relate its amplitude to the model parameters. Finally, we explore how a slowly varying sound speed modifies the squeezed signal.~These results connect the two-point, three-point, and quadrupolar tensor signatures of massive spin-two fields in the cosmological gravitational wave collider.",
-   "date": "2026-10-21",
-   "added": "2026-11-16T16:50:52+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Matteo Fasiello"
-    }
-   ],
-   "tags": [
-    "GW",
-    "cosmology",
-    "inflation"
    ]
   },
   {
@@ -12211,37 +10224,6 @@
    ]
   },
   {
-   "id": "2610.27054",
-   "recid": "3216758",
-   "arxiv": "2610.27054",
-   "title": "Nambu-Goldstone Bosons and Quantum Fisher Information",
-   "authors": [
-    "Eugene Chen",
-    "Daniel Green"
-   ],
-   "author_count": 2,
-   "collaborations": [],
-   "categories": [
-    "hep-th",
-    "cond-mat.other",
-    "hep-ph",
-    "quant-ph"
-   ],
-   "abstract": "The quantum Fisher matrix and geometric tensor are powerful tools for quantifying the nature of quantum systems. Unfortunately, the formalism needed to compute these quantities is opaque and has limited the development of physical intuition for their behavior, even in the ground state. For quantum systems with continuous symmetries, we know the ground state can be understood in a model-independent and intuitive way from the correlation functions of conserved currents and charges. In this paper, we demonstrate an equivalence between the quantum Fisher matrix associated with the ground states of systems with continuous symmetries and the Nambu-Goldstone. bosons produced by broken generators. We will show that the information metric defined by the Fisher matrix is the same as the Zamolodchikov metric that defines the coset space of the system. Next we show that the Uhlmann curvature associated with multi-parameter estimation is the same as the charge density matrix that defines the difference between type-A and type-B Nambu-Goldstone bosons. We demonstrate these connections in several examples and discuss the generalization to finite temperature.",
-   "date": "2026-10-19",
-   "added": "2026-11-16T16:50:52+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Daniel Green"
-    }
-   ],
-   "tags": [
-    "cosmology",
-    "inflation"
-   ]
-  },
-  {
    "id": "2610.24062",
    "recid": "3216178",
    "arxiv": "2610.24062",
@@ -12330,46 +10312,6 @@
    "tags": [
     "strings",
     "swampland"
-   ]
-  },
-  {
-   "id": "2610.20276",
-   "recid": "3215238",
-   "arxiv": "2610.20276",
-   "title": "Search for Compact Binary Coalescences with Sub-solar Mass Components in Data from the Second Part of LIGO-Virgo-KAGRA's Fourth Observing Run",
-   "authors": [
-    "A.G. Abac",
-    "A. Abe",
-    "I. Abouelfettouh",
-    "F. Acernese",
-    "K. Ackley",
-    "A. Adam",
-    "S. Adhicary",
-    "D. Adhikari"
-   ],
-   "author_count": 1817,
-   "collaborations": [
-    "LIGO Scientific",
-    "VIRGO",
-    "KAGRA"
-   ],
-   "categories": [
-    "gr-qc",
-    "astro-ph.HE"
-   ],
-   "abstract": "We report on a gravitational wave search for compact binary coalescences with secondary mass between 0.2 M and 1 M and primary mass between 0.2 M and 10 M, restricting the component mass ratio to lie between 0.1 and 1. The analysis uses data collected by the LIGO and Virgo detectors between 2024 April 10 15:00:00 and 2025 January 28 17:00:00, the second part of the fourth observing run of the LIGO-Virgo-KAGRA Collaboration. Results from two out of three search pipelines show outlier candidates, but not at a sufficient level of significance to provide evidence for detection. We report the combined sensitivity of the current searches over the first and second parts of the observing run to the target sub-solar mass (SSM) black hole (BH) population, as well as to neutron star (NS) binaries with one or more sub-solar component. We place upper limits on the merger rate of SSM BHs, ranging from $50 {\\rm Gpc}^{-3} {\\rm yr}^{-1}$ to~$5000 {\\rm Gpc}^{-3} {\\rm yr}^{-1}$ (90% confidence) for different component mass combinations. We use the merger rate limits to constrain two illustrative dark matter (DM) scenarios that can form SSM compact objects: primordial BHs, and dark BHs forming in a dissipative DM model. Our search limits the fraction of DM in primordial BHs, assuming a monochromatic mass distribution, to be $\\leq$ (0.018-0.032) at 1 M, and $\\leq$ (0.10-0.18) at 0.35 M for early-forming binaries; or to be less than 1 at masses above (0.62-0.74) M for late-forming binaries. For the dissipative model, we constrain the fraction of DM for a range of minimum dark black hole masses below $1\\,M$ to be as low as (1.0-1.1) x $10^{-5}$; we also exclude minimum masses above (0.62-0.74) M, if dark BHs constitute all of the DM. For binary NSs that include sub-solar mass components, assuming a simple, fixed population model we find a merger rate upper limit of $249 {\\rm Gpc}^{-3} {\\rm yr}^{-1}$.",
-   "date": "2026-10-14",
-   "added": "2026-11-16T16:50:52+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Neil Cornish"
-    }
-   ],
-   "tags": [
-    "GW",
-    "LISA",
-    "data analysis"
    ]
   },
   {
@@ -12527,36 +10469,6 @@
    ]
   },
   {
-   "id": "2610.15209",
-   "recid": "3214213",
-   "arxiv": "2610.15209",
-   "title": "Cosmology & Astrophysics of the Dark Dimension with Bulk Majorana Neutrinos",
-   "authors": [
-    "Luis A. Anchordoqui",
-    "Cumrun Vafa"
-   ],
-   "author_count": 2,
-   "collaborations": [],
-   "categories": [
-    "hep-ph",
-    "astro-ph.CO",
-    "hep-th"
-   ],
-   "abstract": "Recently, the possibility of having sterile Majorana neutrinos charged under $B-L$ gauge symmetry in the bulk of the dark dimension has been explored. We point out a cosmological restriction on the Majorana mass of bulk neutrinos leading to mass $\\gtrsim 100~{\\rm GeV}$. This avoids the over-production of Kaluza-Klein neutrino towers in the early universe thus resolving the cosmological neutrino catastrophe of extra dimension scenarios. If the mass of the bulk neutrino is at the lower end of this bound, it can potentially also explain the recently observed Fermi halo excess on gamma rays through the evaporation of long-lived 5d (i.e. dark) black holes through Hawking radiation to bulk neutrinos, which promptly decay into standard model particles.",
-   "date": "2026-10-10",
-   "added": "2026-11-16T16:50:52+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Cumrun Vafa"
-    }
-   ],
-   "tags": [
-    "strings",
-    "swampland"
-   ]
-  },
-  {
    "id": "2610.14354",
    "recid": "3214102",
    "arxiv": "2610.14354",
@@ -12676,38 +10588,6 @@
    "tags": [
     "strings",
     "swampland"
-   ]
-  },
-  {
-   "id": "2610.09049",
-   "recid": "3212470",
-   "arxiv": "2610.09049",
-   "title": "Anisotropic Cosmology with Inhomogeneous $SU(2) $ and $SL(2,\\mathbb{R})$ Nonlinear $σ$-Models",
-   "authors": [
-    "N. Dimakis",
-    "A. Giacomini",
-    "G. Leon",
-    "F. Moncada",
-    "A. Paliathanasis"
-   ],
-   "author_count": 5,
-   "collaborations": [],
-   "categories": [
-    "gr-qc",
-    "hep-th"
-   ],
-   "abstract": "We investigate the cosmological dynamics of the nonlinear $σ$-model in a locally rotational symmetric Bianchi V background geometry. We employ the $SU(2)$ and the $SL(2,\\mathbb{R})$ internal symmetries, for which the kinetic metric of the multi-scalar fields is a space of constant curvature. We assume an inhomogeneous ansatz for the scalar fields, such that the $σ$-model, which allows the existence of nontrivial solutions in the Bianchi V geometry. For an exponential potential, we perform a detailed analysis of the phase space, we determine the stationary points, and we study their stability properties. The scalar field inhomogeneities prevent both the slow-roll and hyperbolic inflationary epochs. The existence of a cosmological constant is required to describe cosmic acceleration.",
-   "date": "2026-10-06",
-   "added": "2026-11-16T16:50:52+00:00",
-   "why": [
-    {
-     "kind": "cites",
-     "label": "Manyfield inflation prior dependence"
-    }
-   ],
-   "tags": [
-    "inflation",
-    "landscape"
    ]
   },
   {
