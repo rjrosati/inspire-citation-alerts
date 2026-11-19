@@ -1,7 +1,37 @@
 {
- "updated": "2026-11-18T14:20:39+00:00",
+ "updated": "2026-11-19T14:32:28+00:00",
  "warnings": [],
  "items": [
+  {
+   "id": "2611.23381",
+   "recid": "3230761",
+   "arxiv": "2611.23381",
+   "title": "Non-Perturbative Moduli Stabilization with Sp$(4,\\mathbb Z)$ Modular Symmetry",
+   "authors": [
+    "Miguel Hernandez-Segura",
+    "Xiang-Gan Liu",
+    "Hans Peter Nilles",
+    "Saul Ramos-Sanchez"
+   ],
+   "author_count": 4,
+   "collaborations": [],
+   "categories": [
+    "hep-th"
+   ],
+   "abstract": "We study the stabilization of the three complex moduli associated with Sp$(4,\\mathbb Z)$ modular symmetry by gaugino condensation in $\\mathcal N=1$ supergravity models from heterotic string theory, where one-loop threshold corrections fix both the modular weight and the singularity structure of the superpotential. We determine, for each threshold class, the complete parametrization of the consistent superpotential relying on Sp$(4,\\mathbb Z)$ basic modular-invariant ratios and their syzygies, generalizing the insufficient SL$(2,\\mathbb Z)$-inspired techniques based solely on polynomials of its absolute invariants. This structure supports a rich landscape of supersymmetric Minkowski vacua. Unlike in the SL$(2,\\mathbb Z)$ case, higher-order zeros produce continuous surfaces and curves of supersymmetric Minkowski vacua, while, among the six isolated fixed points, only those with $S_4$ and $D_{12}$ residual symmetries can stabilize all three moduli. We also construct isolated vacua away from fixed points, some of which lie at the moduli values preferred by genus-two modular flavor fits, and examine the suppression of the geometric moduli masses near an enhanced-symmetry point.",
+   "date": "2026-11-17",
+   "added": "2026-11-19T14:32:28+00:00",
+   "why": [
+    {
+     "kind": "cites",
+     "label": "Swampland"
+    }
+   ],
+   "tags": [
+    "strings",
+    "swampland"
+   ]
+  },
   {
    "id": "2611.22647",
    "recid": "3230348",
@@ -9154,75 +9184,6 @@
     "GW",
     "LISA",
     "data analysis"
-   ]
-  },
-  {
-   "id": "2511.14831",
-   "recid": "3084785",
-   "arxiv": "2511.14831",
-   "title": "Perturbative aspects of the electroweak phase transition with a complex singlet and implications for gravitational wave predictions",
-   "authors": [
-    "Thomas Biekötter",
-    "Andrii Dashko",
-    "Maximilian Löschner",
-    "Georg Weiglein"
-   ],
-   "author_count": 4,
-   "collaborations": [],
-   "categories": [
-    "hep-ph"
-   ],
-   "abstract": "We present a detailed analysis of strong first-order electroweak phase transitions within the extension of the Standard Model by a complex scalar singlet (cxSM). Focusing on the impact of renormalization scale and gauge dependence, we systematically compare commonly used perturbative frameworks for predicting thermodynamic observables that characterize the phase transition and the associated gravitational-wave (GW) spectrum. These include both the four-dimensional ($4D$) formalism and the dimensionally reduced three-dimensional effective field theory ($3D$ EFT) approach in different renormalization schemes. Within the $3D$ EFT, we compute the effective potential up to two-loop order in a general $R_ξ$ gauge, and demonstrate that applying the $\\hbar$-expansion yields gauge-independent results in excellent agreement with those obtained from a direct minimization of the loop-corrected potential. In contrast, large discrepancies between the two methods persist in the $4D$ approaches. We find that, across most of the parameter space, the $3D$ EFT approach provides predictions for phase-transition parameters and GW spectra with theoretical uncertainties in the GW peak amplitude that are reduced by more than an order of magnitude compared to the $4D$ calculations. We point out, however, that the $3D$ EFT approach is subject to an additional theory uncertainty from truncating the EFT at finite operator dimension and show that higher-dimensional operators within the $3D$ EFT approach can substantially modify the predicted transition strength and GW signals. This indicates a potential breakdown of the high-temperature expansion precisely in the region with the lowest transition temperatures, where the strongest GW signals are expected and the detection prospects with LISA are most promising.",
-   "date": "2025-11-18",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "cites",
-     "label": "SGWBinner release"
-    }
-   ],
-   "tags": [
-    "GW",
-    "LISA",
-    "data analysis"
-   ]
-  },
-  {
-   "id": "2511.14673",
-   "recid": "3084500",
-   "arxiv": "2511.14673",
-   "title": "Closing in on $α$-attractors",
-   "authors": [
-    "Laura Iacconi",
-    "Sukannya Bhattacharya",
-    "Matteo Fasiello",
-    "David Wands"
-   ],
-   "author_count": 4,
-   "collaborations": [],
-   "categories": [
-    "astro-ph.CO",
-    "gr-qc",
-    "hep-ph",
-    "hep-th"
-   ],
-   "abstract": "Recent observations of cosmic microwave background (CMB) anisotropies combined with large-scale structure may point towards higher values of the scalar spectral index, $n_s$. This puts previously preferred inflationary models, such as $α$-attractors, in tension with the new measurements. Pending a resolution of the tension between BAO parameters as determined by CMB datasets and those determined by DESI, we explore in this work the large-$n_s$ regime of $α$-attractor T-models. We show that some T-models can self-consistently produce an extended reheating stage with a stiff equation of state $(\\bar w>1/3)$, which allows values for $n_s$ closer to unity. We employ constraints from P-ACT-LB-BK18 data to illustrate what large-$n_s$ observations might imply for T-models with monomial potentials. We show that the $n_s$ measurement yields an upper limit on $α$ that is stronger than the one from the tensor-to-scalar ratio only. We find that $n_s$ is maximised for $α\\sim1$, therefore the seven Poincaré models are well placed to deliver large $n_s$. However, the ability of a stiff reheating stage to increase the compatibility of T-models with large-$n_s$ measurements saturates as $\\bar{w}\\to1$. Thanks to this effect, we establish that the largest $n_s$ that monomial T-models can produce is $n_s=0.9682$. T-models are therefore highly predictive in the large-$n_s$ regime and our result provides, under the assumption of perturbative reheating, a benchmark which could be used in the future to rule out monomial T-models.",
-   "date": "2025-11-18",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "David Wands"
-    },
-    {
-     "kind": "author",
-     "label": "Matteo Fasiello"
-    }
-   ],
-   "tags": [
-    "GW",
-    "cosmology",
-    "inflation"
    ]
   },
   {
