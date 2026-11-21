@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T14:10:38+00:00",
+ "updated": "2026-11-21T13:35:58+00:00",
  "warnings": [],
  "items": [
   {
@@ -9261,36 +9261,6 @@
    "tags": [
     "strings",
     "swampland"
-   ]
-  },
-  {
-   "id": "2511.16748",
-   "recid": "3085438",
-   "arxiv": "2511.16748",
-   "title": "LISA as a probe of pre-big-bang physics: a nested sampling analysis",
-   "authors": [
-    "Xoán Vilas Currás",
-    "Gianluca Calcagni"
-   ],
-   "author_count": 2,
-   "collaborations": [],
-   "categories": [
-    "gr-qc",
-    "hep-th"
-   ],
-   "abstract": "Using a nested sampling analysis, we study the gravitational-wave background (GWB) predicted by the Gasperini--Veneziano model of pre-big-bang cosmology, both in its most recent minimal and non-minimal versions. Within the LISA sensitivity range, the GWB signal is a flat or a broken power law, parametrized by four fundamental quantities: the Hubble parameter at the curvature bounce $H_1$, the axion mass $m$, the initial amplitude of the axion field $σ_i$ and the exponent $β$ governing the high-energy growth of the dilaton and the dynamics of the internal dimensions. We determine the posterior distributions of these parameters based on how LISA would detect such signal. Including the galactic and extra-galactic foregrounds in the analysis, the most stringent constraints on $H_1$, $σ_i$ and $β$ are obtained when the signal exhibits a left-bend feature, while for $m$ this happens for a right-bend feature. Relative uncertainties reach $ΔH_1/H_1 ,\\,Δm/m \\sim 18\\%$ at $68\\%$ confidence level under favourable conditions. LISA will thus be capable of placing significant constraints on the pre-big-bang model and, in the event of detection, providing some preliminary empirical hints of low-energy string-inspired dynamics.",
-   "date": "2025-11-20",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "cites",
-     "label": "SGWBinner release"
-    }
-   ],
-   "tags": [
-    "GW",
-    "LISA",
-    "data analysis"
    ]
   },
   {
