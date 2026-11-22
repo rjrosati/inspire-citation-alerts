@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T13:35:58+00:00",
+ "updated": "2026-11-22T13:27:50+00:00",
  "warnings": [],
  "items": [
   {
@@ -9222,35 +9222,6 @@
    "categories": [],
    "abstract": "In this work, we explore the viability of minimal Higgs inflation with $(R^2)$ term in Palatini gravity within the framework of the swampland program. Our analysis focuses on three central conjectures: the Further Refined de Sitter Swampland Conjecture (FRDSSC), the Scalar Weak Gravity Conjecture (SWGC), and the Strong Scalar Weak Gravity Conjecture (SSWGC). By examining theoretical predictions alongside observational constraints, we investigate how the free parameters of the model influence its consistency with these conjectures. The results demonstrate that the model remains compatible with the FRDSSC across a broad parameter space and aligns well with recent data from the Atacama Cosmology Telescope (ACT), reinforcing its standing as a promising inflationary scenario. A detailed study of the SWGC and SSWGC further reveals that the model’s compatibility is highly sensitive to variations in the scalar coupling parameter. A threshold behavior is identified, above which the parameter space supporting consistency expands significantly. Moreover, the SSWGC exhibits a wider region of validity compared to the SWGC, highlighting the stronger conjecture’s broader applicability. Taken together, these findings confirm that minimal Higgs inflation with $(R^2)$ term in Palatini gravity is consistent with multiple swampland criteria and possesses robustness under parameter variations.",
    "date": "2025-11-23",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "cites",
-     "label": "Palti swampland review"
-    }
-   ],
-   "tags": [
-    "strings",
-    "swampland"
-   ]
-  },
-  {
-   "id": "2512.01265",
-   "recid": "3087985",
-   "arxiv": "2512.01265",
-   "title": "Kiselev Black Holes in Anti-de Sitter Spacetime Are Not Viable",
-   "authors": [
-    "Jiayi Xia",
-    "Yen Chin Ong"
-   ],
-   "author_count": 2,
-   "collaborations": [],
-   "categories": [
-    "gr-qc",
-    "hep-th"
-   ],
-   "abstract": "While the Kiselev black hole solution does not describe a perfect fluid quintessence, it is possible that dark energy fluid is not isotropic, and so one may hope that the solution may still describe at least locally a black hole embedded in such a dark energy fluid environment. Taking into account that the accelerated expansion of the Universe is caused by a dynamical dark energy fluid, and the actual underlying cosmological constant is negative as has been sometimes suggested, we show that the Kiselev solution is untenable as it is unstable against brane nucleation instability.",
-   "date": "2025-11-21",
    "added": "2026-11-16T17:04:01+00:00",
    "why": [
     {
