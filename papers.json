@@ -1,7 +1,291 @@
 {
- "updated": "2026-11-23T16:13:29+00:00",
+ "updated": "2026-11-23T20:50:43+00:00",
  "warnings": [],
  "items": [
+  {
+   "id": "2611.20531",
+   "recid": "3230009",
+   "arxiv": "2611.20531",
+   "title": "First observation of the decay $D_{s1}(2460)^{+} \\to D_{s}^{*+}γ$ and measurement of the branching-fraction ratio $\\mathcal{B}[D_{s1}(2460)^{+} \\to D_{s}^{*+} γ]/\\mathcal{B}[D_{s1}(2460)^{+} \\to D_{s}^{+} γ]$",
+   "authors": [
+    "I. Adachi",
+    "A. Aggarwal",
+    "H. Ahmed",
+    "Y. Ahn",
+    "H. Aihara",
+    "M. Akdag",
+    "N. Akopov",
+    "A. Akram"
+   ],
+   "author_count": 385,
+   "collaborations": [
+    "Belle-II",
+    "Belle"
+   ],
+   "categories": [
+    "hep-ex"
+   ],
+   "abstract": "We report the first observation of the radiative decay $D_{s1}(2460)^{+} \\to D_{s}^{*+} γ$ with a significance greater than 10 standard deviations. The signal is found in $e^{+}e^{-} \\to c\\bar{c}$ production using data samples with integrated luminosities of 980 and 572~$\\mathrm{fb}^{-1}$ collected by the Belle and Belle~II detectors operating at the KEKB and SuperKEKB asymmetric-energy $e^{+}e^{-}$ colliders, respectively. The branching-fraction ratio $\\mathcal{B}[D_{s1}(2460)^{+} \\to D_{s}^{*+} γ]/\\mathcal{B}[D_{s1}(2460)^{+} \\to D_{s}^{+} γ]$ is measured to be $0.74 \\pm 0.05 ({\\rm stat.}) \\pm 0.06 ({\\rm syst.)}$. This result helps discriminate between different theoretical models regarding the internal structure of the charm-strange meson $D_{s1}(2460)^{+}$.",
+   "date": "2026-11-16",
+   "added": "2026-11-23T20:50:43+00:00",
+   "why": [
+    {
+     "kind": "author",
+     "label": "Aaron D. Johnson"
+    }
+   ],
+   "tags": [
+    "GW",
+    "LISA",
+    "PTAs",
+    "data analysis"
+   ]
+  },
+  {
+   "id": "2611.17421",
+   "recid": "3228686",
+   "arxiv": "2611.17421",
+   "title": "The Gravitational Wave Foreground from Galactic Cataclysmic Variables in LISA",
+   "authors": [
+    "Levi Schult",
+    "Alexander Criswell",
+    "Stephen R. Taylor",
+    "Katelyn Breivik"
+   ],
+   "author_count": 4,
+   "collaborations": [],
+   "categories": [
+    "astro-ph.SR",
+    "astro-ph.GA",
+    "gr-qc"
+   ],
+   "abstract": "Electromagnetic observations have been the primary medium for studying cataclysmic variable (CV) systems, capitalizing on the invaluable opportunity they present to study binary stellar evolution and accretion. The launch of the Laser Interferometer Space Antenna (LISA) mission, however, will enable a multi-messenger perspective of the population. We extend previous work to explore the gravitational wave (GW) spectra sourced by a local and Galactic population of CVs. Using the Bayesian LISA Inference Package (BLIP), we simulate LISA data containing these CV populations to understand their impact and our ability to jointly model CV and double white dwarf (DWD) GW spectra. While we find that a local CV population has negligible effect on the LISA datastream, a Galactic CV population will have a signal-to-noise ratio of approximately 76, depending on the characteristics of the DWD population present, and will bias existing DWD spectral models if ignored. Current approaches struggle to accurately recover both populations' respective spectra, calling for the creation of multi-component spectral models that include GW contributions from both CVs and DWDs. These results point toward a promising future for the study of CVs with LISA.",
+   "date": "2026-11-12",
+   "added": "2026-11-23T20:50:43+00:00",
+   "why": [
+    {
+     "kind": "author",
+     "label": "Alexander Criswell"
+    }
+   ],
+   "tags": [
+    "GW",
+    "LISA",
+    "PTAs",
+    "data analysis"
+   ]
+  },
+  {
+   "id": "2611.10271",
+   "recid": "3226345",
+   "arxiv": "2611.10271",
+   "title": "Sensitivity to Sterile Neutrinos with Elastic Neutrino-Electron and Highly Elastic Neutrino-Nucleus Scattering in the DUNE Near Detector",
+   "authors": [
+    "S. Abbaslu",
+    "F. Abd Alrahman",
+    "A. Abed Abud",
+    "R. Acciarri",
+    "M.A. Acero",
+    "M.R. Adames",
+    "G. Adamov",
+    "M. Adamowski"
+   ],
+   "author_count": 1315,
+   "collaborations": [
+    "DUNE"
+   ],
+   "categories": [
+    "hep-ex"
+   ],
+   "abstract": "The Deep Underground Neutrino Experiment (DUNE) is a next-generation neutrino experiment designed for precision measurements of long-baseline three-flavor neutrino oscillations. The DUNE Near Detector (ND) is also sensitive to short-baseline oscillations arising from mixing with an eV-scale sterile neutrino. In this paper, we present a sensitivity study for sterile-neutrino oscillations in the $3+1$ framework using three complementary event samples in the simulated DUNE ND: highly elastic $ν_μ$ charged-current (CC), highly elastic $ν_e$ CC, and neutrino-electron elastic-scattering ($ν+e$) events. These highly exclusive samples are chosen to reduce neutrino-interaction and flux uncertainties: the low-hadronic-energy CC selections enhance the correlation between reconstructed lepton energy and neutrino energy, while the precisely calculable $ν+e$ cross section provides an independent constraint on the neutrino flux. Residual interaction-model dependence remains in the CC samples. The statistical analysis considers $|U_{e4}|^2$, $|U_{\\mu4}|^2$, $|U_{\\tau4}|^2$, and $Δm^2$, with sensitivity results presented as fixed-$Δm^2$ slices for $|U_{\\tau4}|^2=0$. The strongest sensitivity occurs for $4 \\lesssim Δm^2 \\lesssim 10~\\mathrm{eV}^2$, where oscillations produce resolvable distortions of the reconstructed-energy spectra. For one year of on-axis forward-horn-current running, the 90% confidence-level sensitivity reaches approximately $|U_{\\mu4}|^2 \\simeq 0.01$ and $|U_{e4}|^2 \\simeq 0.015$, depending on the value of the other mixing parameter.",
+   "date": "2026-11-06",
+   "added": "2026-11-23T20:50:43+00:00",
+   "why": [
+    {
+     "kind": "author",
+     "label": "Aaron D. Johnson"
+    }
+   ],
+   "tags": [
+    "GW",
+    "LISA",
+    "PTAs",
+    "data analysis"
+   ]
+  },
+  {
+   "id": "2611.03911",
+   "recid": "3222531",
+   "arxiv": "2611.03911",
+   "title": "Noisy pipelines II: Non-parametric Noise Inference for LISA",
+   "authors": [
+    "Charlie Hoy",
+    "Joseph Bayley",
+    "Ollie Burke",
+    "Laura K. Nuttall"
+   ],
+   "author_count": 4,
+   "collaborations": [],
+   "categories": [
+    "gr-qc",
+    "astro-ph.HE",
+    "astro-ph.IM"
+   ],
+   "abstract": "The Laser Interferometer Space Antenna (LISA) is expected to observe gravitational-wave signals from massive black hole binaries, extreme mass ratio inspirals, and more. Despite the significant scientific potential, accurately extracting these signals from the data will only be possible if LISA's instrumental noise is understood: poor noise modelling will result in lost signals, biased parameter estimates, and incorrect astrophysical insights. Modelling LISA's instrumental noise is more challenging than its ground-based counterpart since the data is highly correlated, meaning that the noise covariance matrix can no longer be assumed diagonal in frequency and in the different data streams. In this work, we present an initial approach to perform non-parametric noise inference for LISA that requires no prior knowledge of the LISA observatory. By fitting the full noise covariance matrix with a combination of splines and inverse Lorentzians, we show that our model can estimate the power and cross spectral densities for LISA from 7 days of simulated noise-only data. We find that the median estimate from our non-parametric model whitens the data according to the expected unit normal distribution. We envision that our non-parametric model can be used as part of the global fit, as well as in combination with modelled approaches to identify, quantify, and constrain the frequency dependence of unknown noise artifacts.",
+   "date": "2026-11-02",
+   "added": "2026-11-23T20:50:43+00:00",
+   "why": [
+    {
+     "kind": "author",
+     "label": "Ollie Burke"
+    }
+   ],
+   "tags": [
+    "GW",
+    "LISA",
+    "data analysis"
+   ]
+  },
+  {
+   "id": "2610.41775",
+   "recid": "3221658",
+   "arxiv": "2610.41775",
+   "title": "First Light with the Dark100 Array of PANOSETI Telescopes at Palomar Observatory",
+   "authors": [
+    "Nikolas Korzoun",
+    "Aaron Brown",
+    "Stephen Fegan",
+    "Luca Fiedler",
+    "Benjamin Godfrey",
+    "Jamie Holder",
+    "Paul Horowitz",
+    "Andrew W. Howard"
+   ],
+   "author_count": 17,
+   "collaborations": [],
+   "categories": [
+    "astro-ph.IM",
+    "astro-ph.HE"
+   ],
+   "abstract": "Dark100 is the first phase of an extensive array of Panoramic SETI (PANOSETI) telescopes at Palomar Observatory, California. PANOSETI telescopes are small, 0.5-m Fresnel lens telescopes instrumented with 1024-pixel silicon photomultiplier (SiPM) cameras. The telescopes were originally designed to search for ultra-fast optical transients, but they also function as cost-effective imaging atmospheric Cherenkov telescopes (IACTs). Dark100 will use seven of these widely separated IACTs to map the ultra-high-energy (UHE) gamma-ray sources on the Galactic Plane at high resolution. Dark100 will also leverage the IACT technique to search for evidence of ultra-heavy dark matter in a mass range that extends beyond 100 TeV. Deployment of the first four telescopes and enclosures was completed in December 2025, and commissioning of the next three is scheduled to finish by the end of 2026. The array has so far collected more than 100 hours of 3-telescope data on sources including the Crab Nebula and Markarian 421. Here we present the current status of Dark100.",
+   "date": "2026-10-30",
+   "added": "2026-11-23T20:50:43+00:00",
+   "why": [
+    {
+     "kind": "author",
+     "label": "Aaron D. Johnson"
+    }
+   ],
+   "tags": [
+    "GW",
+    "LISA",
+    "PTAs",
+    "data analysis"
+   ]
+  },
+  {
+   "id": "2610.31377",
+   "recid": "3218221",
+   "arxiv": "2610.31377",
+   "title": "Measurements of the branching fractions of $Λ_c^+\\toΛK^+ π^0$ and $Λ_c^+\\toΛK^+ η$ decays at Belle and Belle II",
+   "authors": [
+    "M. Abumusabh",
+    "I. Adachi",
+    "A. Aggarwal",
+    "Y. Ahn",
+    "H. Aihara",
+    "M. Akdag",
+    "N. Akopov",
+    "A. Akram"
+   ],
+   "author_count": 400,
+   "collaborations": [
+    "Belle-II",
+    "Belle"
+   ],
+   "categories": [
+    "hep-ex"
+   ],
+   "abstract": "We present a study of the three-body, singly Cabibbo-suppressed decays $Λ_c^+ \\to ΛK^+ π^0$ and $Λ_c^+ \\to ΛK^+ η$ using data recorded with the Belle and Belle II detectors at the KEKB and SuperKEKB $e^+ e^-$ colliders. The data samples correspond to integrated luminosities of 980$\\,\\mathrm{fb}^{-1}$ and 570$\\,\\mathrm{fb}^{-1}$, respectively. We measure their branching-fraction ratios relative to the Cabibbo-favored decay $Λ_c^+ \\to Λπ^+ π^0$ as $\\mathcal{B}(Λ_c^+ \\to ΛK^+ π^0)/\\mathcal{B}(Λ_c^+ \\to Λπ^+ π^0)=(1.82 \\pm 0.07 \\pm 0.07)\\%$, with significantly improved precision compared to the previous measurement, and $\\mathcal{B}(Λ_c^+ \\to ΛK^+ η)/\\mathcal{B}(Λ_c^+ \\to Λπ^+ π^0)=(8.73 \\pm 0.35 \\pm 0.43)\\times10^{-3}$, corresponding to the first observation of the $Λ_c^+ \\to ΛK^+ η$ decay with a statistical significance exceeding 10 standard deviations. The first and second uncertainties are statistical and systematic, respectively. Using the world-average value of the branching fraction for $Λ_c^+ \\to Λπ^+ π^0$, we obtain the branching fractions $\\mathcal{B}(Λ_c^+ \\to ΛK^+ π^0)=(1.29\\pm 0.05\\pm 0.05\\pm 0.06)\\times10^{-3}$ and $\\mathcal{B}(Λ_c^+ \\to ΛK^+ η)=(6.20\\pm 0.25\\pm 0.31\\pm 0.30)\\times10^{-4}$, where the third uncertainty arises from the uncertainty in the world-average value of $\\mathcal{B}(Λ_c^+ \\to Λπ^+ π^0)$. The measured $\\mathcal{B}(Λ_c^+\\toΛK^+η)$ is significantly larger than predictions based on $SU(3)$ flavor symmetry.",
+   "date": "2026-10-22",
+   "added": "2026-11-23T20:50:43+00:00",
+   "why": [
+    {
+     "kind": "author",
+     "label": "Aaron D. Johnson"
+    }
+   ],
+   "tags": [
+    "GW",
+    "LISA",
+    "PTAs",
+    "data analysis"
+   ]
+  },
+  {
+   "id": "2610.27642",
+   "recid": "3216874",
+   "arxiv": "2610.27642",
+   "title": "Untangling Extreme Mass Ratio Inspirals and Massive Black Hole Binaries in LISA Data",
+   "authors": [
+    "Rishav Agrawal",
+    "Clémence Allietta",
+    "Ollie Burke",
+    "Alvin J.K. Chua"
+   ],
+   "author_count": 4,
+   "collaborations": [],
+   "categories": [
+    "gr-qc",
+    "astro-ph.IM"
+   ],
+   "abstract": "The Laser Interferometer Space Antenna (LISA) will observe sources in the millihertz regime, such as Galactic Binaries (GBs), Massive Black Hole Binaries (MBHBs), and Extreme Mass Ratio Inspirals (EMRIs), so its data stream will be a superposition of an unknown number of gravitational-wave sources. We consider the joint inference of various representative combinations of MBHB and EMRI signals in LISA data (with assumed instrumental noise and stochastic GB foreground). Our Bayesian analyses confirm the expectation of weak inter-source coupling between EMRIs, and between EMRIs and MBHBs, despite strong intra-source parameter correlations. Weak EMRI-MBHB coupling enables a hierarchically sequential approach to EMRI and MBHB inference, rather than fully joint inference. We further show that imperfect MBHB subtraction, arising from missing modes or overlapping MBHBs, has only a weak impact on EMRI inference. For multiple MBHBs, we mitigate inference errors through a joint MBHB fit. We demonstrate this strategy on simulated LISA data containing noise, three MBHBs, and three EMRIs, jointly fitting and subtracting the MBHBs before sequentially inferring the EMRIs - ultimately observing little to no bias on all recovered astrophysical parameters. The notions described throughout our work are highly relevant to informing optimal strategies for the global-fit-based pipelines that are currently being developed for LISA.",
+   "date": "2026-10-20",
+   "added": "2026-11-23T20:50:43+00:00",
+   "why": [
+    {
+     "kind": "author",
+     "label": "Ollie Burke"
+    }
+   ],
+   "tags": [
+    "GW",
+    "LISA",
+    "data analysis"
+   ]
+  },
+  {
+   "id": "2610.28726",
+   "recid": "3217235",
+   "arxiv": "2610.28726",
+   "title": "Noisy Pipelines I: An end-to-end pipeline to perform multivariate noise inference for LISA",
+   "authors": [
+    "Ollie Burke",
+    "Joseph Bayley",
+    "Charlie Hoy",
+    "Laura Nuttall"
+   ],
+   "author_count": 4,
+   "collaborations": [],
+   "categories": [
+    "gr-qc",
+    "astro-ph.IM"
+   ],
+   "abstract": "Instrumental data from the Laser Interferometer Space Antenna (LISA) must be post-processed prior to any global-fit based analysis. For example, it is critical to filter, downsample, segment and window the data in order to perform inference of both the signal and noise parameters in the frequency domain. Each step alters the noise process, requiring a correction to the noise covariance matrix that describes the underlying data stream. We present $\\texttt{lisa-noise}$, a JAX-based noise inference pipeline that returns a spectral estimate of the noise process subject to post-processing effects. We fit splines to the underlying secondary noises and fit the full multivariate $3 \\times 3$ covariance matrix of the Michelson channels. We assume unequal and non-constant arm-lengths throughout. The drift of the zeros of the transfer functions, a non-stationary effect, is captured by averaging the transfer functions over a number of epochs within each segment. On 30 days of conditioned simulated data, a likelihood evaluation costs $3\\,$ms on a current laptop for a 7 day segment. A gradient-based fit from a tight prior recovers the injected spectra in a fraction of a second. A multi-start search over large priors $\\pm 10$ in $\\log_{10}$ centred on the simulated truth obtains a noise estimate consistent with the data, verified by Bayesian techniques. The fitted covariance whitens the conditioned data in every band and through every zero of the transfer functions, in a form that global-fit pipelines can use directly.",
+   "date": "2026-10-20",
+   "added": "2026-11-23T20:50:43+00:00",
+   "why": [
+    {
+     "kind": "author",
+     "label": "Ollie Burke"
+    }
+   ],
+   "tags": [
+    "GW",
+    "LISA",
+    "data analysis"
+   ]
+  },
   {
    "id": "2611.27848",
    "recid": "3231876",
@@ -256,6 +540,14 @@
     {
      "kind": "author",
      "label": "Quentin Baghi"
+    },
+    {
+     "kind": "author",
+     "label": "Ollie Burke"
+    },
+    {
+     "kind": "author",
+     "label": "Avi Vajpeyi"
     }
    ],
    "tags": [
@@ -10413,37 +10705,6 @@
    "tags": [
     "strings",
     "swampland"
-   ]
-  },
-  {
-   "id": "2610.19002",
-   "recid": "3215045",
-   "arxiv": "2610.19002",
-   "title": "The WDM time-frequency transform in gravitational-wave data analysis II: Evolutionary spectrum and noise covariance",
-   "authors": [
-    "Aaron D. Johnson",
-    "Katerina Chatziioannou",
-    "Robert Rosati"
-   ],
-   "author_count": 3,
-   "collaborations": [],
-   "categories": [
-    "gr-qc",
-    "astro-ph.HE"
-   ],
-   "abstract": "Noise cannot be treated as stationary over the timescales required for upcoming gravitational-wave detectors, minutes for ground-based and months for space-based detectors. Nonstationarity leads to a non-diagonal frequency-domain noise covariance matrix, thus motivating a shift to the time-frequency domain. We introduce \\emph{evolutionary power spectra} for describing nonstationary noise in the Wilson-Daubechies-Meyer time-frequency basis. Under the framework of oscillatory processes, we show that, to leading order in the ratio of the Meyer filter and the nonstationarity timescales, the evolutionary spectrum is a power-frequency distribution that can be estimated from a single noise realization. We derive the corresponding noise covariance matrix and show that it is band tri-diagonal, like its stationary counterpart. The exact covariance to all orders is positive semi-definite by construction and dense depending on the noise. We further derive the optimal tiling of the time-frequency plane that minimizes the error of a diagonal covariance approximation and show that coarse-graining the plane suppresses correlations quadratically. Using simulated data with a LISA Galactic foreground and a drifting powerlaw spectrum, we show that the stationarity approximation leads to signal-to-noise ratio loss and severely biases inference. For realistic LISA data, approximating the covariance as diagonal in the Wilson-Daubechies-Meyer domain is accurate for the narrow-band analysis of a single resolved Galactic binary, but insufficient for a broad-band analysis. Finally, we provide mitigation strategies for the wraparound correlations induced across the data time edges whenever the spectrum differs between the start and the end of the data.",
-   "date": "2026-10-13",
-   "added": "2026-11-16T16:50:52+00:00",
-   "why": [
-    {
-     "kind": "cites",
-     "label": "SGWBinner release"
-    }
-   ],
-   "tags": [
-    "GW",
-    "LISA",
-    "data analysis"
    ]
   },
   {
