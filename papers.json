@@ -1,7 +1,40 @@
 {
- "updated": "2026-11-22T13:27:50+00:00",
+ "updated": "2026-11-23T16:13:29+00:00",
  "warnings": [],
  "items": [
+  {
+   "id": "2611.27848",
+   "recid": "3231876",
+   "arxiv": "2611.27848",
+   "title": "Diffusing the assumptions: towards realistic LISA stochastic component separation with physics-aware simulation-based inference",
+   "authors": [
+    "Iuliu Cuceu",
+    "Nelson Christensen",
+    "Astrid Lamberts",
+    "Coen Rondeel",
+    "Natalia Korsakova"
+   ],
+   "author_count": 5,
+   "collaborations": [],
+   "categories": [
+    "gr-qc",
+    "astro-ph.IM"
+   ],
+   "abstract": "Simultaneous global-fit inference of the numerous sources observed by the Laser Interferometer Space Antenna (LISA) depends on accurate modeling of its stochastic components: instrumental noise, the Galactic foreground, and astrophysical or stochastic gravitational wave backgrounds (SGWB). Realistic features such as non-Gaussian transients and data gaps challenge traditional likelihood-based pipelines, creating an opportunity for simulation-based inference (SBI) to augment traditional analyses. Here, we present an SBI framework for LISA stochastic component separation built on the Simformer, a transformer trained with diffusion or flow matching that ingests the full time-delay interferometry cross-spectral matrix via a physics-aware embedding. We progressively relax standard simplifying assumptions on simulated 11.6-day datasets containing a loud foreground and a faint power-law SGWB. With unequal arms and per-link noise freedom, the networks match 17-dimensional MCMC posteriors after importance reweighting; full cross-spectra constrain each link's optical metrology noise amplitude to $1\\%$. When marginalizing over glitches or massive black hole binary transients, estimation errors remain flat up to transient signal-to-noise ratios of several hundred, whereas ignoring them severely biases likelihood fits. Under time-varying spline noise levels, realistic glitch rates, and gaps up to one day long, posterior coverage remains nominal or conservative across $\\sim 10^4$ simulations. We test coverage in the local neighborhood of a given observation by introducing a novel importance-weighted localized simulation-based calibration test. We find flow matching slightly better calibrated than diffusion in simpler regimes and observe modest gains from physics-aware template inputs. Finally, we outline how these networks can initialize the noise and stochastic blocks of a LISA global fit.",
+   "date": "2026-11-20",
+   "added": "2026-11-23T16:13:29+00:00",
+   "why": [
+    {
+     "kind": "cites",
+     "label": "SGWBinner release"
+    }
+   ],
+   "tags": [
+    "GW",
+    "LISA",
+    "data analysis"
+   ]
+  },
   {
    "id": "2611.25581",
    "recid": "3231275",
