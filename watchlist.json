@@ -65,6 +65,12 @@
     {"label": "Jean-Baptiste Bayle", "bai": "J.B.Bayle.1", "tags": ["LISA","GW","data analysis"]},
     {"label": "Olaf Hartwig", "bai": "O.Hartwig.1", "tags": ["LISA","GW","data analysis"]},
     {"label": "Antoine Petiteau", "bai": "Antoine.Petiteau.1", "tags": ["LISA","GW","data analysis"]},
-    {"label": "LISA Cosmology Working Group", "query": "collaboration:\"LISA Cosmology Working Group\"", "tags": ["LISA","GW","cosmology"]}
+    {"label": "LISA Cosmology Working Group", "query": "collaboration:\"LISA Cosmology Working Group\"", "tags": ["LISA","GW","cosmology"]},
+    {"label": "Ollie Burke", "bai": "O.Burke.1", "tags": ["LISA","GW","data analysis"]},
+    {"label": "Avi Vajpeyi", "bai": "A.Vajpeyi.3", "tags": ["LISA","GW","data analysis"]},
+    {"label": "Aaron D. Johnson", "bai": "Aaron.D.Johnson.1", "tags": ["LISA","GW","data analysis","PTAs"]},
+    {"label": "Alexander Criswell", "bai": "Alexander.Criswell.1", "tags": ["LISA","GW","data analysis","PTAs"]},
+    {"label": "Jonas El Gammal", "bai": "Jonal.El.Gammal.1", "tags": ["LISA","GW","data analysis"]},
+    {"label": "Germano Nardini", "bai": "G.Nardini.1", "tags": ["LISA","GW","data analysis","cosmology"]}
   ]
 }
