@@ -1,7 +1,91 @@
 {
- "updated": "2026-11-24T16:00:14+00:00",
+ "updated": "2026-11-25T15:49:03+00:00",
  "warnings": [],
  "items": [
+  {
+   "id": "2611.32901",
+   "recid": "3233647",
+   "arxiv": "2611.32901",
+   "title": "Fisher information in the flux landscape",
+   "authors": [
+    "Martin Carrascal",
+    "Radu Tatar"
+   ],
+   "author_count": 2,
+   "collaborations": [],
+   "categories": [
+    "hep-th"
+   ],
+   "abstract": "We quantify the fine-tuning of the flux superpotential in Type IIB Calabi-Yau orientifold compactifications using the Fisher Information Metric. Treating the background fluxes as model parameters and the magnitude of the superpotential as the physical observable, we show that the Fisher matrix admits a unique non-zero eigenvalue that bounds the superpotential from above and factorises into axio-dilaton, complex structure components and a bounded factor depending on both moduli and the phase of the superpotential. In the canonical duality frame and over the full flux lattice, this eigenvalue grows linearly with the inverse string coupling and cubically with the complex structure saxions. Specialising to a two modulus orientifold of the degree 18 hypersurface in $\\mathbb{P}^4(1,1,1,6,9)$ at large complex structure, we combine the flux integrality with the D3-brane tadpole condition to show that several flux components, including the one driving this growth, are forced to vanish across deep moduli space patches, truncating the twelve-dimensional flux lattice to an eight-dimensional sublattice. The Fisher eigenvalue restricted to these admissible flux directions either approaches a constant or grows at most linearly, much more slowly than over the full lattice.",
+   "date": "2026-11-24",
+   "added": "2026-11-25T15:49:03+00:00",
+   "why": [
+    {
+     "kind": "cites",
+     "label": "Palti swampland review"
+    }
+   ],
+   "tags": [
+    "strings",
+    "swampland"
+   ]
+  },
+  {
+   "id": "2611.32612",
+   "recid": "3233577",
+   "arxiv": "2611.32612",
+   "title": "Inflation at strong mixing as a connection problem: effective field theory, Stokes phenomenon and the cosmological collider",
+   "authors": [
+    "Sebastian Garcia-Saenz",
+    "Yizhou Lu",
+    "Sébastien Renaux-Petel"
+   ],
+   "author_count": 3,
+   "collaborations": [],
+   "categories": [
+    "hep-th",
+    "astro-ph.CO",
+    "gr-qc"
+   ],
+   "abstract": "We study a massive field strongly mixed with the curvature perturbation during inflation, in the regime where the latter is described at low energies by a single-field effective field theory (EFT) with a quadratic dispersion relation. What this EFT captures, and what lies beyond it, are encoded in a connection problem, which relates the solutions that define the vacuum at early times to those that describe observables at late times. We solve it with a general method that does not rely on an exact solution. An expansion in the inverse mixing, keeping both fields, yields the EFT as its leading order, with corrections under systematic control. It selects the vacuum of the EFT, fixes a phase that the EFT cannot determine on its own, and describes the heavy mode at all times. Particle production lies beyond all orders of this asymptotic expansion. We show that it arises from a Stokes phenomenon at the complex branch points of the dispersion relation and that, in a rotating basis of the two fields, it reduces to the familiar production of particles with half the heavy mass. A reflection symmetry of the equations of motion, combined with the canonical commutation relations, then determines all exponentially small effects exactly, and with them the solution of the connection problem, which combines particle production with a conversion between light and heavy quanta. Together with the expansion, these exact results give a compact analytical formula for the cosmological collider signal, whose exponential suppression, half of the usual Boltzmann one, directly reflects the halved mass of the produced particles. The expansion only requires a separation of scales and the adiabaticity of the heavy mode, while the reflection symmetry holds for many systems in de Sitter space. We therefore expect this approach to bring physical understanding and simple formulas well beyond the present case.",
+   "date": "2026-11-24",
+   "added": "2026-11-25T15:49:03+00:00",
+   "why": [
+    {
+     "kind": "author",
+     "label": "Sébastien Renaux-Petel"
+    }
+   ],
+   "tags": [
+    "cosmology",
+    "inflation"
+   ]
+  },
+  {
+   "id": "inspire:3233112",
+   "recid": "3233112",
+   "arxiv": null,
+   "title": "Predictive Content of Spectral Causal Theory",
+   "authors": [
+    "D. Alferov"
+   ],
+   "author_count": 1,
+   "collaborations": [],
+   "categories": [],
+   "abstract": "The predictions of spectral causal theory (SCT), a one-loop gravitational effective field theory derived from spectral action, are systematized. $S = {\\text{Tr}}(f({{D}^{2}}{\\text{/}}{{\\Lambda }^{2}}))$ spectral triple of non-commutative geometry (NCG) encoding the Standard Model (SM). Predictions are classified as cutoff-independent (determined only by the Seeley-DeWitt coefficient ${{a}_{4}}$) or dependent on the cutoff (sensitive to the type of the cutoff function f). The sector, independent of the cutoff, contains the coefficient of the Weyl square ${{\\alpha }_{C}} = 13{\\text{/}}120$, attitude ${{c}_{1}}{\\text{/}}{{c}_{2}} = - 1{\\text{/}}3$ (frozen under the action of one-loop renormalization group (RG) matter flow under conformal coupling ξ = 1/6), the speed of gravitational waves (GW) ${{c}_{T}} = c$ and the absence of a scalar gravitational mode at ξ = 1/6. Logarithmic correction to the entropy of a black hole (BH) ${{c}_{{\\log }}} = 37{\\text{/}}24$ obtained under explicitly formulated assumptions. Starobinsky inflation is excluded in the standard spectral action because ${{\\alpha }_{R}}(\\xi = 1{\\text{/}}6) = 0$. For quasinormal modes of black holes, modal stability has been analytically proven ($V > 3f{\\text{/}}{{r}^{2}} > 0$ for $\\ell \\geqslant 2$) and it was established that frequency shifts $\\delta \\omega {\\text{/}}\\omega \\sim {{c}_{2}}{{(\\omega {\\text{/}}\\Lambda )}^{2}} \\sim {{10}^{{ - 20}}}$ for stellar BH, which is 15 orders of magnitude lower than the LIGO sensitivity; tidal Love numbers ${{k}_{2}} \\ne 0$ (qualitatively different from the general theory of relativity, but immeasurably small). Comparison with five quantum gravity programs (loop quantum gravity, asymptotic safety, causal dynamical triangulations, string theory, infinite-derivative gravity) along nine quantitative axes reveals three discriminatory observables and five falsification criteria.",
+   "date": "2026-11-18",
+   "added": "2026-11-25T15:49:03+00:00",
+   "why": [
+    {
+     "kind": "cites",
+     "label": "Swampland"
+    }
+   ],
+   "tags": [
+    "strings",
+    "swampland"
+   ]
+  },
   {
    "id": "2611.20531",
    "recid": "3230009",
@@ -295,10 +379,11 @@
     "Iuliu Cuceu",
     "Nelson Christensen",
     "Astrid Lamberts",
+    "Quentin Baghi",
     "Coen Rondeel",
     "Natalia Korsakova"
    ],
-   "author_count": 5,
+   "author_count": 6,
    "collaborations": [],
    "categories": [
     "gr-qc",
@@ -311,6 +396,10 @@
     {
      "kind": "cites",
      "label": "SGWBinner release"
+    },
+    {
+     "kind": "author",
+     "label": "Quentin Baghi"
     }
    ],
    "tags": [
@@ -9502,32 +9591,6 @@
    "tags": [
     "inflation",
     "strings"
-   ]
-  },
-  {
-   "id": "2601.07716",
-   "recid": "3103406",
-   "arxiv": "2601.07716",
-   "title": "Induced gravitational waves -- beyond linear cosmological perturbation theory",
-   "authors": [
-    "Raphael Picard"
-   ],
-   "author_count": 1,
-   "collaborations": [],
-   "categories": [
-    "astro-ph.CO"
-   ],
-   "abstract": "This thesis focuses on gravitational waves (GWs) that arise beyond linear order in cosmological perturbation theory. In recent years, scalar-induced GWs have attracted significant attention because they may serve as the observational signature of primordial black holes (PBHs) formed in the early universe. The formation of PBHs requires large density perturbations, which can naturally emerge in some models of inflation. When these large density fluctuations couple, they act as a source for scalar-induced GWs at second order. In this work, we extend the existing formalism by including linear tensor fluctuations as an additional source term. This gives rise to two new classes of second-order GWs: those sourced by scalar-tensor couplings (scalar-tensor induced GWs) and those quadratic in tensor modes (tensor-tensor induced GWs). We find that the scalar-tensor contribution becomes significant if first-order tensor modes are enhanced, whilst the tensor-tensor contribution remains subdominant. Moreover, we demonstrate that the spectrum of scalar-tensor induced GWs exhibits an unphysical enhancement in the UV limit when the primordial scalar power spectrum is insufficiently peaked. To investigate whether this can be resolved, we study third-order induced GWs and their correlation with primordial GWs. We find that this new contribution suppresses the overall signal but does not cancel the unphysical enhancement. Possible explanations for this behaviour are discussed and left for future work. Finally, we explore the effect of primordial scalar non-Gaussianity on the spectrum of scalar-tensor induced GWs, building on previous results showing its impact on scalar-induced GWs.",
-   "date": "2025-11-24",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "cites",
-     "label": "Palma BH"
-    }
-   ],
-   "tags": [
-    "inflation"
    ]
   },
   {
