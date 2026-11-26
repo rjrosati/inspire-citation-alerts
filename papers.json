@@ -1,7 +1,67 @@
 {
- "updated": "2026-11-25T15:49:03+00:00",
+ "updated": "2026-11-26T15:28:59+00:00",
  "warnings": [],
  "items": [
+  {
+   "id": "2611.34439",
+   "recid": "3233952",
+   "arxiv": "2611.34439",
+   "title": "Inverted Pendulum in the Sky: Floquet Stabilization of Cosmological Axions",
+   "authors": [
+    "Tokiro Numasawa",
+    "Masahito Yamazaki"
+   ],
+   "author_count": 2,
+   "collaborations": [],
+   "categories": [
+    "hep-ph",
+    "astro-ph.CO",
+    "cond-mat.str-el",
+    "hep-th"
+   ],
+   "abstract": "Many cosmological scenarios require a scalar field to sit near the top of its potential, which usually requires a fine-tuned initial condition. We ask whether the hilltop of an axion potential can be dynamically stabilized by a rapidly oscillating coupling, as for the inverted pendulum of Kapitza, and to what extent this can reduce the fine-tuning. Using Floquet theory, we determine the stability window of the hilltop and analyze several realizations: an oscillating coupling, a spinning or oscillating second field, and a gyroscopic analogue, an inverted spinning top realized by a sigma model on a squashed three-sphere. In an expanding Universe the stabilized phase lasts for a number of $e$-folds logarithmic in the hierarchy of scales, independently of the cosmological background. Classifying the stabilizers by how their effective frequency redshifts, we show that in these realizations the hilltop cannot both attract the field and leave it frozen by the Hubble friction during radiation or matter domination, and that during inflation the attraction is limited by the Hubble friction and the energy budget. Thus the simple realizations studied here do not generically remove the hilltop fine-tuning. They can instead delay the onset of the oscillation and enhance the relic abundance as $n_ϕ/n_{ϕ,{\\rm std}}\\propto(\\tilde m/H_c)^{3/2}$ in radiation domination. We discuss the implications for axion dark matter, inflation, quintessence and curvatons.",
+   "date": "2026-11-25",
+   "added": "2026-11-26T15:28:59+00:00",
+   "why": [
+    {
+     "kind": "cites",
+     "label": "Swampland"
+    }
+   ],
+   "tags": [
+    "strings",
+    "swampland"
+   ]
+  },
+  {
+   "id": "2611.33415",
+   "recid": "3233869",
+   "arxiv": "2611.33415",
+   "title": "An Argument for the Weak Gravity Conjecture from Constrained Wormholes",
+   "authors": [
+    "Gabriele Di Ubaldo",
+    "Luca V. Iliesiu",
+    "Dawid Maskalaniec"
+   ],
+   "author_count": 3,
+   "collaborations": [],
+   "categories": [
+    "hep-th"
+   ],
+   "abstract": "The gravitational path integral (GPI) computes inner products between states of open and closed universes in any low-energy effective theory. A well-defined Hilbert space requires these inner products to be positive semidefinite, but this positivity is not manifest in the effective theory. In this paper, we study the constraints that positivity imposes on Einstein--Maxwell theory coupled to charged matter in asymptotically flat space in $D\\geq 4$ dimensions. We start by constructing a new class of constrained instantons that compute multi-boundary wormhole amplitudes. We show that, under mild assumptions, if no charged particle satisfies the weak gravity conjecture (WGC), these amplitudes violate positivity of the GPI. If instead some particle satisfies the WGC, the wormholes develop an instability that allows positivity to be restored. The same argument shows that positivity can only be restored if the magnetic WGC holds and the convex hull condition applies to theories with several $\\mathrm{U}(1)$ gauge fields.",
+   "date": "2026-11-24",
+   "added": "2026-11-26T15:28:59+00:00",
+   "why": [
+    {
+     "kind": "cites",
+     "label": "Palti swampland review"
+    }
+   ],
+   "tags": [
+    "strings",
+    "swampland"
+   ]
+  },
   {
    "id": "2611.32901",
    "recid": "3233647",
@@ -9561,36 +9621,6 @@
    "tags": [
     "strings",
     "swampland"
-   ]
-  },
-  {
-   "id": "2511.20458",
-   "recid": "3086358",
-   "arxiv": "2511.20458",
-   "title": "F-theory Axiverse",
-   "authors": [
-    "Sebastian Vander Ploeg Fallon",
-    "James Halverson",
-    "Liam McAllister",
-    "Yunhao Zhu"
-   ],
-   "author_count": 4,
-   "collaborations": [],
-   "categories": [
-    "hep-th"
-   ],
-   "abstract": "We compute the couplings of Ramond-Ramond four-form axions in three ensembles of F-theory compactifications, with up to 181,200 axions. We work in the stretched Kähler cone, where $α'$ corrections are plausibly controlled, and we use couplings to certain non-Abelian sectors as a proxy for couplings to photons. The axion masses, decay constants, and couplings to gauge sectors show striking universality across the ensembles. In particular, the axion-photon couplings grow with $h^{1,1}$, and models in our ensemble with $h^{1,1} \\gtrsim$ 10,000 axions are in tension with helioscope constraints. Moreover, under mild assumptions about charged matter beyond the Standard Model, theories with $h^{1,1} \\gtrsim$ 5,000 are in tension with Chandra measurements of X-ray spectra. This work is a first step toward understanding the phenomenology of quantum gravity theories with thousands of axions.",
-   "date": "2025-11-25",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "author",
-     "label": "Liam McAllister"
-    }
-   ],
-   "tags": [
-    "inflation",
-    "strings"
    ]
   },
   {
