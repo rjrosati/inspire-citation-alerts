@@ -1,7 +1,38 @@
 {
- "updated": "2026-11-26T15:28:59+00:00",
+ "updated": "2026-11-27T15:21:05+00:00",
  "warnings": [],
  "items": [
+  {
+   "id": "inspire:3234164",
+   "recid": "3234164",
+   "arxiv": null,
+   "title": "Inflationary dynamics in a single-field model with hyperbolic potential",
+   "authors": [
+    "Feyzollah Younesizadeh",
+    "Younes Younesizadeh",
+    "Yahya Younesizadeh"
+   ],
+   "author_count": 3,
+   "collaborations": [],
+   "categories": [],
+   "abstract": "We examine a canonical single-field inflationary model built around the potential \\(V(\\phi) = V_{0}\\, v(\\varphi)\\) with \\(v(\\varphi) = 1 - A/\\sqrt{1 + \\sinh(\\varphi/a)}\\), a shape function that can be connected to certain modified gravity frameworks, including f(R, T) gravity, f(ϕ)T gravity, and Gauss–Bonnet gravity. Working within the slow-roll approximation, we compute the slow-roll parameters and inflationary observables and compare the predictions with both the Planck 2018 data and the more recent Atacama Cosmology Telescope (ACT) Data Release 6 results. The dimensionful normalization V0 is fixed independently through the observed scalar amplitude \\(A_{s} \\simeq 2.1 \\times 10^{- 9}\\), so A and a remain the only shape parameters. For the fiducial choice \\(A = 1\\), \\(a = 1\\), \\(N_{*} = 60\\), we obtain \\(r \\approx 6.88 \\times 10^{- 3}\\), ns≈0.96837, and \\(\\alpha_{s} \\approx - 5.18 \\times 10^{- 4}\\), values that lie within the Planck constraints. The two-parameter structure also covers the ACT-preferred interval 0.971≤ns≤0.977; for instance, \\(A = 5.5\\), \\(a = 1.0\\), \\(N_{*} = 60\\) gives ns≈0.97334 and \\(r \\approx 4.93 \\times 10^{- 3}\\), within the BICEP/Keck tensor bound. We also assess the compatibility of the model with the refined de Sitter swampland conjecture. The inflationary energy scale at horizon crossing is \\(V_{*}^{1/4} \\approx 9.31 \\times 10^{15}\\) GeV for the fiducial case, while the reheating temperature is left unspecified because it depends on couplings that the present potential does not fix; a model-independent reheating treatment is outlined.",
+   "date": "2026-11-19",
+   "added": "2026-11-27T15:21:05+00:00",
+   "why": [
+    {
+     "kind": "cites",
+     "label": "Swampland"
+    },
+    {
+     "kind": "cites",
+     "label": "Palti swampland review"
+    }
+   ],
+   "tags": [
+    "strings",
+    "swampland"
+   ]
+  },
   {
    "id": "2611.34439",
    "recid": "3233952",
@@ -9587,35 +9618,6 @@
     {
      "kind": "cites",
      "label": "Swampland"
-    }
-   ],
-   "tags": [
-    "strings",
-    "swampland"
-   ]
-  },
-  {
-   "id": "2511.21809",
-   "recid": "3087495",
-   "arxiv": "2511.21809",
-   "title": "Expanding the Weak Gravity Conjecture in AdS Space",
-   "authors": [
-    "Puxin Lin",
-    "Alessandro Mininno",
-    "Gary Shiu"
-   ],
-   "author_count": 3,
-   "collaborations": [],
-   "categories": [
-    "hep-th"
-   ],
-   "abstract": "In this work, we investigate the extension of our recent proposal for the Weak Gravity Conjecture (WGC) in AdS space to more general effective field theories. We first extend the conjecture to set-ups where moduli are present and we demand that a particle, produced during the decay of an extremal black hole via the Schwinger effect, is repelled close to the horizon of the black hole. We interpret this condition as the universal criterion imposed by the WGC for any background. Interestingly, the constraint imposed by the WGC on the particle spectrum, before the stabilization of the moduli, is independent of the background, resulting in the same bound both in Minkowski and in AdS space. For the case of AdS space, after the stabilization of the moduli, the WGC in AdS space is reproduced due to the formation of a non-singular horizon of the extremal black hole. In that case, the particle spectrum must satisfy the stronger of the two WGC conditions obtained before and after moduli stabilization. Finally, we use these results to argue that a similar version of the tower WGC should also apply to an AdS background.",
-   "date": "2025-11-26",
-   "added": "2026-11-16T17:04:01+00:00",
-   "why": [
-    {
-     "kind": "cites",
-     "label": "Palti swampland review"
     }
    ],
    "tags": [
